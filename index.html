@@ -144,6 +144,35 @@
         .ac-exchange { font-weight: 400; color: #4a6a4a; font-size: 11px; }
         .ac-name { font-size: 12px; color: #6a8a6a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
+        .quick-picks {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .quick-pick {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            background: #0a0f0a;
+            border: 1px solid #1a2e1a;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: border-color 0.15s, background 0.15s;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .quick-pick:hover { border-color: #00ff41; background: #111a11; }
+        .quick-pick img {
+            width: 22px;
+            height: 22px;
+            border-radius: 4px;
+            object-fit: contain;
+            background: #1a1a1a;
+        }
+        .quick-pick span { font-size: 13px; font-weight: 700; color: #00ff41; }
+
         .loading { text-align: center; padding: 40px; }
         .spinner {
             width: 36px; height: 36px;
@@ -245,7 +274,7 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.4);
             font-family: 'Inter', sans-serif;
         }
-        .ratio-help:hover .ratio-help-tip { display: block; }
+        .ratio-help:hover .ratio-help-tip, .ratio-help.active .ratio-help-tip { display: block; }
         @media (max-width: 600px) {
             .ratio-help-tip { left: auto; right: 0; top: 28px; transform: none; width: 220px; }
         }
@@ -342,7 +371,7 @@
 </head>
 <body>
     <canvas id="binaryBg"></canvas>
-    <div class="header" style="cursor:pointer" onclick="document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('tickerInput').value='';document.getElementById('tickerInput').focus();document.getElementById('binaryBg').classList.remove('fade-out');">
+    <div class="header" style="cursor:pointer" onclick="document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('tickerInput').value='';document.getElementById('tickerInput').focus();document.getElementById('binaryBg').classList.remove('fade-out');renderQuickPicks();">
         <div class="header-mark">
             <svg viewBox="0 0 24 24" fill="none" stroke="#0a0f0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
@@ -364,6 +393,7 @@
                 <div class="ac-dropdown hidden" id="acList"></div>
             </div>
             <div class="search-hint">Data sourced from Financial Modeling Prep</div>
+            <div class="quick-picks" id="quickPicks"></div>
         </div>
 
         <div id="loading" class="loading hidden">
@@ -411,6 +441,38 @@
     var API_KEY = 'SVmuQaYdToRtkpfy5olBaRbE6RBNxGPG';
     var API = 'https://financialmodelingprep.com/stable';
     var FMP_IMG = 'https://financialmodelingprep.com/image-stock/';
+
+    // ---- Fortune 500 Quick Picks ----
+    var F500 = [
+        'AAPL','MSFT','GOOGL','AMZN','NVDA','META','TSLA','BRK-B','JPM','V',
+        'UNH','JNJ','WMT','MA','PG','HD','KO','PEP','COST','ABBV',
+        'MRK','CRM','NFLX','AMD','INTC','DIS','NKE','BA','CAT','GS',
+        'SNOW','UBER','SQ','SHOP','ABNB','PLTR','COIN','CRWD','ZS','NET'
+    ];
+    function renderQuickPicks() {
+        var picked = [];
+        var pool = F500.slice();
+        for (var i = 0; i < 6 && pool.length; i++) {
+            var r = Math.floor(Math.random() * pool.length);
+            picked.push(pool.splice(r, 1)[0]);
+        }
+        var el = document.getElementById('quickPicks');
+        el.innerHTML = picked.map(function(t) {
+            return '<div class="quick-pick" onclick="selectTicker(\'' + t + '\')">' +
+                '<img src="' + FMP_IMG + t + '.png" alt="" onerror="this.style.display=\'none\'">' +
+                '<span>' + t + '</span></div>';
+        }).join('');
+    }
+    renderQuickPicks();
+
+    // ---- Help Bubble Touch Toggle ----
+    document.addEventListener('click', function(e) {
+        var help = e.target.closest('.ratio-help');
+        document.querySelectorAll('.ratio-help.active').forEach(function(el) {
+            if (el !== help) el.classList.remove('active');
+        });
+        if (help) help.classList.toggle('active');
+    });
 
     // ---- Sector Benchmarks ----
     var SECTOR_BENCHMARKS = {
