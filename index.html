@@ -485,10 +485,16 @@
         .save-btn .star { font-size: 15px; }
 
         @media (max-width: 600px) {
-            .company-header { flex-direction: column; align-items: flex-start; }
-            .price-box { text-align: left; }
+            .company-header { padding: 14px 16px; gap: 8px; }
+            .company-left { gap: 10px; }
+            .company-logo, .company-logo-fallback { width: 38px; height: 38px; }
+            .company-name { font-size: 16px; }
+            .company-meta { font-size: 11px; margin-top: 2px; }
+            .company-meta span { margin-right: 8px; }
+            .price-box .price { font-size: 20px; }
             .ratio-value { font-size: 22px; }
             .watchlist-grid { grid-template-columns: 1fr; }
+            .save-btn { padding: 5px 10px; font-size: 11px; }
         }
     </style>
 </head>
