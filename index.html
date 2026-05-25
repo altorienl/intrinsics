@@ -968,7 +968,7 @@
     });
 
     tickerInput.addEventListener('focus', function() {
-        tickerInput.select();
+        tickerInput.value = '';
     });
     tickerInput.addEventListener('blur', function() {
         setTimeout(function() { acList.classList.add('hidden'); }, 150);
