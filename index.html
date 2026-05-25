@@ -1144,7 +1144,7 @@
             if (low52 && high52) {
                 var pct52 = ((currentPrice - low52) / low52 * 100);
                 var color52 = pct52 >= 0 ? '#00ff41' : '#ff3344';
-                stats.push('<div class="stat-item"><div class="stat-label">52 Week</div><div class="stat-value" style="color:' + color52 + '">' + (pct52 >= 0 ? '+' : '') + pct52.toFixed(1) + '%</div><div class="stat-sub">$' + low52.toFixed(0) + ' – $' + high52.toFixed(0) + '</div></div>');
+                stats.push('<div class="stat-item" id="statRange"><div class="stat-label">52 Week</div><div class="stat-value" style="color:' + color52 + '">' + (pct52 >= 0 ? '+' : '') + pct52.toFixed(1) + '%</div><div class="stat-sub">$' + low52.toFixed(0) + ' – $' + high52.toFixed(0) + '</div></div>');
             }
         }
         if (prof.marketCap) {
@@ -1266,8 +1266,29 @@
             btn.classList.add('active');
             chartRange = btn.dataset.range;
             drawChart();
+            updateRangeStat();
         });
     });
+
+    function updateRangeStat() {
+        var el = document.getElementById('statRange');
+        if (!el) return;
+        var filtered = getFilteredData();
+        if (filtered.length < 2) return;
+        var startPrice = filtered[0].close;
+        var endPrice = filtered[filtered.length - 1].close;
+        var low = Infinity, high = -Infinity;
+        filtered.forEach(function(d) {
+            if (d.close < low) low = d.close;
+            if (d.close > high) high = d.close;
+        });
+        var pct = ((endPrice - startPrice) / startPrice * 100);
+        var color = pct >= 0 ? '#00ff41' : '#ff3344';
+        var labels = { '1M': '1 Month', '3M': '3 Month', '1Y': '52 Week', '5Y': '5 Year' };
+        el.innerHTML = '<div class="stat-label">' + (labels[chartRange] || '52 Week') + '</div>' +
+            '<div class="stat-value" style="color:' + color + '">' + (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%</div>' +
+            '<div class="stat-sub">$' + low.toFixed(0) + ' – $' + high.toFixed(0) + '</div>';
+    }
 
     async function fetchChartData(ticker) {
         currentChartTicker = ticker;
@@ -1286,6 +1307,7 @@
             chartData = data.reverse();
             document.getElementById('chartCard').classList.remove('hidden');
             drawChart();
+            updateRangeStat();
         } catch(e) {
             chartData = [];
             document.getElementById('chartCard').classList.add('hidden');
