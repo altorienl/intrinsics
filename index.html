@@ -467,6 +467,25 @@
             cursor: pointer; padding: 4px 8px; transition: color 0.15s;
         }
         .wl-card-remove:hover { color: #ff3344; }
+        .company-stats {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        .stat-bubble {
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 20px;
+            padding: 6px 14px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #6a8a6a;
+        }
+        .stat-bubble span {
+            color: #c0d0c0;
+            font-weight: 700;
+        }
 
         .save-btn {
             display: inline-flex;
@@ -535,6 +554,7 @@
 
         <div id="results" class="hidden">
             <div class="company-header" id="companyHeader"></div>
+            <div class="company-stats" id="companyStats"></div>
             <div class="chart-card hidden" id="chartCard">
                 <div class="chart-header">
                     <h3>Price History</h3>
@@ -1093,6 +1113,20 @@
             (currentPrice ? '<div class="price-box"><div class="price">$' + currentPrice.toFixed(2) + '</div><div class="price-label">Current Price</div></div>' : '') +
             '<button class="save-btn' + (saved ? ' saved' : '') + '" id="saveBtn" onclick="toggleWatchlist(\'' + ticker + '\',\'' + escapeHtml(companyName).replace(/'/g, "\\'") + '\')">' +
             '<span class="star">' + (saved ? '★' : '☆') + '</span>' + (saved ? 'Saved' : 'Watch') + '</button>';
+
+        var statsEl = document.getElementById('companyStats');
+        var statsHtml = '';
+        if (prof.marketCap) {
+            statsHtml += '<div class="stat-bubble">Mkt Cap <span>' + fmt(prof.marketCap) + '</span></div>';
+            if (currentPrice && currentPrice > 0) {
+                var sharesOut = Math.round(prof.marketCap / currentPrice);
+                statsHtml += '<div class="stat-bubble">Shares Out <span>' + fmt(sharesOut) + '</span></div>';
+            }
+        }
+        if (prof.averageVolume) {
+            statsHtml += '<div class="stat-bubble">Avg Vol <span>' + fmt(prof.averageVolume) + '</span></div>';
+        }
+        statsEl.innerHTML = statsHtml;
 
         var defs = [
             { key: 'currentRatio', category: 'Liquidity', name: 'Current Ratio', formula: 'Current Assets / Current Liabilities',
