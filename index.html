@@ -573,21 +573,38 @@
         .install-banner {
             position: fixed; bottom: 0; left: 0; right: 0;
             background: #111a11; border-top: 1px solid #1a2e1a;
-            padding: 14px 20px; display: flex; align-items: center;
-            justify-content: space-between; z-index: 9999;
-            font-family: 'Inter', sans-serif; font-size: 13px;
+            padding: 16px 20px; z-index: 9999;
+            font-family: 'Inter', sans-serif;
             animation: slideUp 0.3s ease;
         }
         .install-banner.hidden { display: none; }
-        .install-banner-text { color: #c0d0c0; }
-        .install-banner-text strong { color: #00ff41; }
-        .install-banner-close {
-            background: none; border: 1px solid #1a2e1a; color: #5a7a5a;
-            font-family: 'JetBrains Mono', monospace; font-size: 11px;
-            padding: 6px 12px; border-radius: 6px; cursor: pointer;
-            white-space: nowrap; margin-left: 12px;
+        .install-banner-header {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 12px;
         }
-        .install-banner-close:hover { color: #00ff41; border-color: #00ff41; }
+        .install-banner-title { font-size: 14px; font-weight: 700; color: #e0e0e0; }
+        .install-banner-close {
+            background: none; border: none; color: #5a7a5a;
+            font-size: 18px; cursor: pointer; padding: 0 4px; line-height: 1;
+        }
+        .install-banner-close:hover { color: #00ff41; }
+        .install-steps {
+            display: flex; gap: 12px; align-items: center; justify-content: center;
+        }
+        .install-step {
+            display: flex; flex-direction: column; align-items: center;
+            gap: 6px; flex: 1; text-align: center;
+        }
+        .install-step-icon {
+            width: 36px; height: 36px; border-radius: 10px;
+            background: #1a2e1a; display: flex; align-items: center;
+            justify-content: center; color: #00ff41; font-size: 16px;
+        }
+        .install-step-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px; color: #6a8a6a; line-height: 1.3;
+        }
+        .install-step-arrow { color: #2a4a2a; font-size: 16px; flex-shrink: 0; margin-top: -14px; }
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
     </style>
 </head>
@@ -1670,8 +1687,11 @@
     </script>
 
     <div class="install-banner hidden" id="installBanner">
-        <span class="install-banner-text">Add <strong>Intrinsics</strong> to your home screen for quick access</span>
-        <button class="install-banner-close" id="installDismiss">Got it</button>
+        <div class="install-banner-header">
+            <span class="install-banner-title">Install Intrinsics</span>
+            <button class="install-banner-close" id="installDismiss">&times;</button>
+        </div>
+        <div class="install-steps" id="installSteps"></div>
     </div>
     <script>
     (function() {
@@ -1679,6 +1699,22 @@
         var isAndroid = /Android/.test(navigator.userAgent);
         var isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
         if ((isIOS || isAndroid) && !isStandalone && !localStorage.getItem('installDismissed')) {
+            var steps = document.getElementById('installSteps');
+            if (isIOS) {
+                steps.innerHTML =
+                    '<div class="install-step"><div class="install-step-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg></div><div class="install-step-label">Tap Share</div></div>' +
+                    '<span class="install-step-arrow">&rarr;</span>' +
+                    '<div class="install-step"><div class="install-step-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div><div class="install-step-label">Add to<br>Home Screen</div></div>' +
+                    '<span class="install-step-arrow">&rarr;</span>' +
+                    '<div class="install-step"><div class="install-step-icon" style="background:#00ff41;color:#0a0f0a;font-weight:800;font-family:monospace;font-size:18px;">I</div><div class="install-step-label">Done!</div></div>';
+            } else {
+                steps.innerHTML =
+                    '<div class="install-step"><div class="install-step-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg></div><div class="install-step-label">Tap &#8942; Menu</div></div>' +
+                    '<span class="install-step-arrow">&rarr;</span>' +
+                    '<div class="install-step"><div class="install-step-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div><div class="install-step-label">Add to<br>Home Screen</div></div>' +
+                    '<span class="install-step-arrow">&rarr;</span>' +
+                    '<div class="install-step"><div class="install-step-icon" style="background:#00ff41;color:#0a0f0a;font-weight:800;font-family:monospace;font-size:18px;">I</div><div class="install-step-label">Done!</div></div>';
+            }
             setTimeout(function() {
                 document.getElementById('installBanner').classList.remove('hidden');
             }, 3000);
