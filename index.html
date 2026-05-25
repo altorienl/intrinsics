@@ -1377,15 +1377,22 @@
         overlay.onmousemove = function(e) { showAt(e.clientX); };
         overlay.onmouseleave = hideTooltip;
 
+        var touchStartX = 0, touchStartY = 0, chartTouching = false;
         overlay.addEventListener('touchstart', function(e) {
-            e.preventDefault();
-            showAt(e.touches[0].clientX);
-        }, { passive: false });
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            chartTouching = false;
+        }, { passive: true });
         overlay.addEventListener('touchmove', function(e) {
+            var dx = Math.abs(e.touches[0].clientX - touchStartX);
+            var dy = Math.abs(e.touches[0].clientY - touchStartY);
+            if (!chartTouching && dy > dx) return;
+            chartTouching = true;
             e.preventDefault();
             showAt(e.touches[0].clientX);
         }, { passive: false });
         overlay.addEventListener('touchend', function() {
+            chartTouching = false;
             hideTooltip();
         });
     }
