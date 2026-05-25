@@ -633,9 +633,11 @@
             if (sector && SECTOR_STOCKS[sector]) {
                 var sectorPool = SECTOR_STOCKS[sector].filter(function(t) { return t !== ex; });
                 var otherPool = F500.filter(function(t) { return t !== ex && sectorPool.indexOf(t) === -1; });
-                var sectorPicks = pickRandom(sectorPool, 4);
-                var otherPicks = pickRandom(otherPool, 2);
-                resultsPicks = sectorPicks.concat(otherPicks);
+                resultsPicks = pickRandom(sectorPool, 6);
+                if (resultsPicks.length < 6) {
+                    var otherPool = F500.filter(function(t) { return t !== ex && sectorPool.indexOf(t) === -1; });
+                    resultsPicks = resultsPicks.concat(pickRandom(otherPool, 6 - resultsPicks.length));
+                }
             } else {
                 resultsPicks = pickRandom(F500.filter(function(t) { return t !== ex; }), 6);
             }
