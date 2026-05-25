@@ -945,9 +945,9 @@
         var lineColor = isUp ? '#00ff41' : '#ff3344';
         var dirClass = isUp ? 'up' : 'down';
 
-        overlay.onmousemove = function(e) {
+        function showAt(clientX) {
             var rect = overlay.getBoundingClientRect();
-            var mx = e.clientX - rect.left;
+            var mx = clientX - rect.left;
             var idx = Math.round(((mx - pad.left) / cw) * (data.length - 1));
             idx = Math.max(0, Math.min(data.length - 1, idx));
 
@@ -983,12 +983,27 @@
             octx.stroke();
 
             octx.restore();
-        };
+        }
 
-        overlay.onmouseleave = function() {
+        function hideTooltip() {
             tooltip.className = 'chart-tooltip';
             octx.clearRect(0, 0, overlay.width, overlay.height);
-        };
+        }
+
+        overlay.onmousemove = function(e) { showAt(e.clientX); };
+        overlay.onmouseleave = hideTooltip;
+
+        overlay.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            showAt(e.touches[0].clientX);
+        }, { passive: false });
+        overlay.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+            showAt(e.touches[0].clientX);
+        }, { passive: false });
+        overlay.addEventListener('touchend', function() {
+            hideTooltip();
+        });
     }
 
     window.addEventListener('resize', function() {
