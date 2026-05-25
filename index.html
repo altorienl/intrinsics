@@ -1126,6 +1126,21 @@
         if (prof.averageVolume) {
             statsHtml += '<div class="stat-bubble">Avg Vol <span>' + fmt(prof.averageVolume) + '</span></div>';
         }
+        if (prof.range) {
+            var parts = prof.range.split('-');
+            var low52 = parseFloat(parts[0]);
+            var high52 = parseFloat(parts[1]);
+            if (low52 && high52 && currentPrice) {
+                var pctFrom52Low = ((currentPrice - low52) / low52 * 100);
+                var color52 = pctFrom52Low >= 0 ? '#00ff41' : '#ff3344';
+                statsHtml += '<div class="stat-bubble">52W <span style="color:' + color52 + '">' + (pctFrom52Low >= 0 ? '+' : '') + pctFrom52Low.toFixed(1) + '%</span> <span style="color:#4a6a4a;font-weight:400;font-size:11px">($' + low52.toFixed(0) + '–$' + high52.toFixed(0) + ')</span></div>';
+            }
+        }
+        if (prof.changePercentage !== undefined && prof.changePercentage !== null) {
+            var dayPct = prof.changePercentage;
+            var dayColor = dayPct >= 0 ? '#00ff41' : '#ff3344';
+            statsHtml += '<div class="stat-bubble">Today <span style="color:' + dayColor + '">' + (dayPct >= 0 ? '+' : '') + dayPct.toFixed(2) + '%</span></div>';
+        }
         statsEl.innerHTML = statsHtml;
 
         var defs = [
