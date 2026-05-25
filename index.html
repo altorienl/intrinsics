@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrinsics</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='8' fill='%2300ff41'/><polyline points='29 10 20 19 15 14 7 22' fill='none' stroke='%230a0f0a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/><polyline points='23 10 29 10 29 16' fill='none' stroke='%230a0f0a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0f0a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        #binaryBg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            transition: opacity 0.8s ease;
+        }
+        #binaryBg.fade-out { opacity: 0; }
+        .header, .container, footer { position: relative; z-index: 1; }
+        .header {
+            background: #0d120d;
+            border-bottom: 1px solid #1a2e1a;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .header-mark {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: #00ff41;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .header-mark svg { width: 20px; height: 20px; }
+        .header h1 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            font-weight: 700;
+            color: #e0e0e0;
+            letter-spacing: 0.5px;
+        }
+        .header h1 span { color: #00ff41; }
+        .header .subtitle { display: none; }
+        .container { max-width: 820px; margin: 28px auto; padding: 0 16px; }
+
+        .search-card {
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .search-card h2 { font-size: 20px; color: #00ff41; margin-bottom: 16px; font-weight: 700; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; text-transform: uppercase; }
+        .search-container { position: relative; max-width: 500px; margin: 0 auto; }
+        .search-input {
+            width: 100%;
+            padding: 14px 16px 14px 44px;
+            border: 2px solid #1a2e1a;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            background: #0a0f0a;
+            color: #00ff41;
+        }
+        .search-input:focus { border-color: #00ff41; box-shadow: 0 0 20px rgba(0,255,65,0.1); }
+        .search-input::placeholder { text-transform: none; color: #3a5a3a; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #3a5a3a;
+            pointer-events: none;
+        }
+        .search-hint { font-size: 11px; color: #3a5a3a; margin-top: 12px; letter-spacing: 0.5px; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; }
+
+        .ac-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0;
+            right: 0;
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 10px;
+            max-height: 360px;
+            overflow-y: auto;
+            z-index: 50;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+        }
+        .ac-dropdown.hidden { display: none; }
+        .ac-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            cursor: pointer;
+            border-bottom: 1px solid #152015;
+            transition: background 0.1s;
+        }
+        .ac-item:last-child { border-bottom: none; }
+        .ac-item:hover, .ac-item.active { background: #1a2e1a; }
+        .ac-logo {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            object-fit: contain;
+            background: #1a1a1a;
+            flex-shrink: 0;
+        }
+        .ac-logo-fallback {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            background: #1a2e1a;
+            color: #00ff41;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+            flex-shrink: 0;
+        }
+        .ac-info { flex: 1; min-width: 0; }
+        .ac-ticker { font-size: 14px; font-weight: 700; color: #00ff41; font-family: 'JetBrains Mono', monospace; }
+        .ac-exchange { font-weight: 400; color: #4a6a4a; font-size: 11px; }
+        .ac-name { font-size: 12px; color: #6a8a6a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+        .loading { text-align: center; padding: 40px; }
+        .spinner {
+            width: 36px; height: 36px;
+            border: 3px solid #1a2e1a;
+            border-top-color: #00ff41;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 12px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading p { color: #4a6a4a; font-size: 14px; }
+
+        .company-header {
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .company-left { display: flex; align-items: center; gap: 14px; }
+        .company-logo { width: 48px; height: 48px; border-radius: 10px; object-fit: contain; background: #1a1a1a; }
+        .company-logo-fallback {
+            width: 48px; height: 48px; border-radius: 10px;
+            background: #1a2e1a; color: #00ff41;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 18px; font-weight: 700; font-family: 'JetBrains Mono', monospace;
+        }
+        .company-name { font-size: 20px; font-weight: 700; color: #e0e0e0; }
+        .company-meta { font-size: 13px; color: #6a8a6a; margin-top: 4px; }
+        .company-meta span { margin-right: 16px; }
+        .sector-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #1a2e1a;
+            color: #00ff41;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .price-box { text-align: right; }
+        .price-box .price { font-size: 26px; font-weight: 700; color: #00ff41; font-family: 'JetBrains Mono', monospace; }
+        .price-box .price-label { font-size: 11px; color: #4a6a4a; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        .ratio-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 20px; }
+        .ratio-card {
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 12px;
+            padding: 20px 24px;
+            border-left: 4px solid #2a3a2a;
+        }
+        .ratio-card.good { border-left-color: #00ff41; }
+        .ratio-card.ok { border-left-color: #ffaa00; }
+        .ratio-card.bad { border-left-color: #ff3344; }
+        .ratio-card.neutral { border-left-color: #3a5a3a; }
+        .ratio-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+        .ratio-category { font-size: 11px; color: #4a6a4a; text-transform: uppercase; letter-spacing: 1px; }
+        .ratio-name { font-size: 16px; font-weight: 700; color: #c0d0c0; margin-top: 2px; display: flex; align-items: center; gap: 8px; }
+        .ratio-help {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #1a2e1a;
+            color: #4a6a4a;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: help;
+            position: relative;
+            flex-shrink: 0;
+            transition: background 0.15s, color 0.15s;
+        }
+        .ratio-help:hover { background: #00ff41; color: #0a0f0a; }
+        .ratio-help-tip {
+            display: none;
+            position: absolute;
+            left: 28px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #1a2e1a;
+            border: 1px solid #2a3e2a;
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #c0d0c0;
+            width: 260px;
+            line-height: 1.5;
+            z-index: 20;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            font-family: 'Inter', sans-serif;
+        }
+        .ratio-help:hover .ratio-help-tip { display: block; }
+        @media (max-width: 600px) {
+            .ratio-help-tip { left: auto; right: 0; top: 28px; transform: none; width: 220px; }
+        }
+        .ratio-value { font-size: 28px; font-weight: 700; text-align: right; font-family: 'JetBrains Mono', monospace; }
+        .ratio-value.good { color: #00ff41; }
+        .ratio-value.ok { color: #ffaa00; }
+        .ratio-value.bad { color: #ff3344; }
+        .ratio-grade { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; margin-top: 4px; letter-spacing: 0.5px; }
+        .ratio-grade.good { background: rgba(0,255,65,0.1); color: #00ff41; }
+        .ratio-grade.ok { background: rgba(255,170,0,0.1); color: #ffaa00; }
+        .ratio-grade.bad { background: rgba(255,51,68,0.1); color: #ff3344; }
+        .ratio-bar { height: 6px; background: #1a2e1a; border-radius: 3px; margin: 10px 0; position: relative; overflow: visible; }
+        .ratio-bar-fill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+        .ratio-bar-fill.good { background: #00ff41; }
+        .ratio-bar-fill.ok { background: #ffaa00; }
+        .ratio-bar-fill.bad { background: #ff3344; }
+        .ratio-benchmark { position: absolute; top: -6px; width: 2px; height: 18px; background: #6a8a6a; border-radius: 1px; }
+        .ratio-benchmark-label { position: absolute; top: 14px; font-size: 10px; color: #4a6a4a; white-space: nowrap; transform: translateX(-50%); }
+        .ratio-explain { font-size: 13px; color: #8a9a8a; line-height: 1.5; margin-top: 8px; }
+        .ratio-formula { font-size: 11px; color: #3a5a3a; margin-top: 4px; font-style: italic; }
+        .ratio-components { font-size: 12px; color: #5a7a5a; margin-top: 4px; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+
+        .chart-card {
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+        }
+        .chart-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+        .chart-header h3 { font-size: 15px; color: #c0d0c0; font-weight: 600; }
+        .chart-range-btns { display: flex; gap: 6px; }
+        .chart-range-btn {
+            background: #1a2e1a;
+            border: 1px solid #2a3e2a;
+            color: #6a8a6a;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .chart-range-btn:hover { color: #c0d0c0; border-color: #4a6a4a; }
+        .chart-range-btn.active { background: #00ff41; color: #0a0f0a; border-color: #00ff41; }
+        .chart-canvas-wrap { position: relative; width: 100%; height: 220px; }
+        .chart-canvas-wrap canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        #chartOverlay { z-index: 2; }
+        #priceChart { z-index: 1; }
+        .chart-info { display: flex; justify-content: space-between; margin-top: 10px; font-size: 12px; font-family: 'JetBrains Mono', monospace; }
+        .chart-info .chart-change { font-weight: 700; }
+        .chart-info .chart-change.up { color: #00ff41; }
+        .chart-info .chart-change.down { color: #ff3344; }
+        .chart-info .chart-dates { color: #3a5a3a; }
+        .chart-tooltip {
+            font-family: 'JetBrains Mono', monospace;
+            min-height: 38px;
+            margin-bottom: 8px;
+            opacity: 0;
+            transition: opacity 0.15s;
+        }
+        .chart-tooltip.visible { opacity: 1; }
+        .chart-tooltip .tt-price { font-size: 22px; font-weight: 700; }
+        .chart-tooltip .tt-date { font-size: 11px; color: #4a6a4a; margin-top: 1px; }
+        .chart-tooltip.up .tt-price { color: #00ff41; }
+        .chart-tooltip.down .tt-price { color: #ff3344; }
+
+        .summary-card {
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+        }
+        .summary-card h3 { font-size: 16px; margin-bottom: 12px; color: #c0d0c0; }
+        .overall-grade { font-size: 52px; font-weight: 800; text-align: center; margin: 8px 0; font-family: 'JetBrains Mono', monospace; }
+        .overall-grade.good { color: #00ff41; }
+        .overall-grade.ok { color: #ffaa00; }
+        .overall-grade.bad { color: #ff3344; }
+        .overall-label { text-align: center; font-size: 14px; color: #4a6a4a; margin-bottom: 12px; }
+        .overall-summary { font-size: 14px; color: #8a9a8a; line-height: 1.6; }
+
+        .hidden { display: none; }
+        .error-msg { text-align: center; padding: 24px; color: #ff3344; font-size: 14px; }
+        .disclaimer { text-align: center; font-size: 11px; color: #2a3a2a; margin-top: 16px; padding: 0 16px; }
+
+        @media (max-width: 600px) {
+            .company-header { flex-direction: column; align-items: flex-start; }
+            .price-box { text-align: left; }
+            .ratio-value { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="binaryBg"></canvas>
+    <div class="header" style="cursor:pointer" onclick="document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('tickerInput').value='';document.getElementById('tickerInput').focus();document.getElementById('binaryBg').classList.remove('fade-out');">
+        <div class="header-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0a0f0a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                <polyline points="16 7 22 7 22 13"/>
+            </svg>
+        </div>
+        <div>
+            <h1>INTRINS<span>ICS</span></h1>
+            <div class="subtitle">Financial health check for any public company</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="search-card">
+            <h2>Look up any stock</h2>
+            <div class="search-container">
+                <span class="search-icon">&#128269;</span>
+                <input type="text" class="search-input" id="tickerInput" placeholder="Search by ticker or company name..." autocomplete="off">
+                <div class="ac-dropdown hidden" id="acList"></div>
+            </div>
+            <div class="search-hint">Data sourced from Financial Modeling Prep</div>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Pulling latest financials...</p>
+        </div>
+
+        <div id="errorMsg" class="error-msg hidden"></div>
+
+        <div id="results" class="hidden">
+            <div class="company-header" id="companyHeader"></div>
+            <div class="chart-card hidden" id="chartCard">
+                <div class="chart-header">
+                    <h3>Price History</h3>
+                    <div class="chart-range-btns">
+                        <button class="chart-range-btn" data-range="1M">1M</button>
+                        <button class="chart-range-btn" data-range="3M">3M</button>
+                        <button class="chart-range-btn active" data-range="1Y">1Y</button>
+                        <button class="chart-range-btn" data-range="5Y">5Y</button>
+                    </div>
+                </div>
+                <div class="chart-tooltip" id="chartTooltip"></div>
+                <div class="chart-canvas-wrap">
+                    <canvas id="priceChart"></canvas>
+                    <canvas id="chartOverlay"></canvas>
+                </div>
+                <div class="chart-info">
+                    <span class="chart-change" id="chartChange"></span>
+                    <span class="chart-dates" id="chartDates"></span>
+                </div>
+            </div>
+            <div class="summary-card" id="summaryCard"></div>
+            <div class="ratio-grid" id="ratioGrid"></div>
+            <div class="disclaimer">
+                Data from Financial Modeling Prep. Not financial advice. Balance sheet from latest quarter, income metrics trailing twelve months (TTM).
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align:center;padding:24px 16px 32px;font-size:12px;color:#2a3a2a;font-family:'JetBrains Mono',monospace;letter-spacing:0.5px;">
+        &copy; 2026 Altorien Lockwood. All rights reserved.
+    </footer>
+
+    <script>
+    var API_KEY = 'SVmuQaYdToRtkpfy5olBaRbE6RBNxGPG';
+    var API = 'https://financialmodelingprep.com/stable';
+    var FMP_IMG = 'https://financialmodelingprep.com/image-stock/';
+
+    // ---- Sector Benchmarks ----
+    var SECTOR_BENCHMARKS = {
+        'Technology': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.6, ok: 0.3 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 25, ok: 40 }, revenueGrowth: { good: 0.20, ok: 0.10 }, label: 'Technology' },
+        'Healthcare': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.6, ok: 1.5 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.15, ok: 0.07 }, label: 'Healthcare' },
+        'Financial Services': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 2.0, ok: 5.0 }, assetTurnover: { good: 0.08, ok: 0.03 }, operatingMargin: { good: 0.30, ok: 0.15 }, peRatio: { good: 15, ok: 25 }, revenueGrowth: { good: 0.10, ok: 0.05 }, label: 'Financial Services' },
+        'Consumer Cyclical': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 1.2, ok: 0.6 }, operatingMargin: { good: 0.12, ok: 0.05 }, peRatio: { good: 20, ok: 30 }, revenueGrowth: { good: 0.12, ok: 0.05 }, label: 'Consumer Cyclical' },
+        'Consumer Defensive': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 1.0, ok: 0.5 }, operatingMargin: { good: 0.15, ok: 0.08 }, peRatio: { good: 22, ok: 30 }, revenueGrowth: { good: 0.08, ok: 0.03 }, label: 'Consumer Defensive' },
+        'Energy': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 12, ok: 20 }, revenueGrowth: { good: 0.10, ok: 0.03 }, label: 'Energy' },
+        'Industrials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.7, ok: 1.8 }, assetTurnover: { good: 0.8, ok: 0.4 }, operatingMargin: { good: 0.12, ok: 0.06 }, peRatio: { good: 18, ok: 28 }, revenueGrowth: { good: 0.10, ok: 0.04 }, label: 'Industrials' },
+        'Real Estate': { currentRatio: { good: 1.0, ok: 0.5 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 0.15, ok: 0.06 }, operatingMargin: { good: 0.30, ok: 0.15 }, peRatio: { good: 30, ok: 50 }, revenueGrowth: { good: 0.08, ok: 0.03 }, label: 'Real Estate' },
+        'Utilities': { currentRatio: { good: 1.0, ok: 0.7 }, debtToEquity: { good: 1.2, ok: 2.5 }, assetTurnover: { good: 0.35, ok: 0.15 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 18, ok: 25 }, revenueGrowth: { good: 0.06, ok: 0.02 }, label: 'Utilities' },
+        'Communication Services': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.12, ok: 0.05 }, label: 'Communication Services' },
+        'Basic Materials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.35 }, operatingMargin: { good: 0.15, ok: 0.07 }, peRatio: { good: 15, ok: 25 }, revenueGrowth: { good: 0.10, ok: 0.04 }, label: 'Basic Materials' },
+        'Default': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.10, ok: 0.05 }, label: 'General' }
+    };
+
+    function fmpSectorMap(sector) {
+        if (!sector) return 'Default';
+        if (SECTOR_BENCHMARKS[sector]) return sector;
+        var s = sector.toLowerCase();
+        if (s.includes('technol')) return 'Technology';
+        if (s.includes('health') || s.includes('pharma')) return 'Healthcare';
+        if (s.includes('financ')) return 'Financial Services';
+        if (s.includes('consumer') && s.includes('cycl')) return 'Consumer Cyclical';
+        if (s.includes('consumer') && s.includes('def')) return 'Consumer Defensive';
+        if (s.includes('energy')) return 'Energy';
+        if (s.includes('industrial')) return 'Industrials';
+        if (s.includes('real estate')) return 'Real Estate';
+        if (s.includes('utilit')) return 'Utilities';
+        if (s.includes('commun')) return 'Communication Services';
+        if (s.includes('basic') || s.includes('material')) return 'Basic Materials';
+        return 'Default';
+    }
+
+    function logoImg(ticker, cls, fallbackCls) {
+        var src = FMP_IMG + ticker.toUpperCase() + '.png';
+        var fb = fallbackCls || 'ac-logo-fallback';
+        var letters = escapeHtml(ticker.slice(0, 2).toUpperCase());
+        return '<img class="' + cls + '" src="' + src + '" alt="" onerror="this.outerHTML=\'<div class=' + fb + '>' + letters + '</div>\'">';
+    }
+
+    function escapeHtml(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+    function fmt(n) {
+        if (Math.abs(n) >= 1e12) return (n / 1e12).toFixed(1) + 'T';
+        if (Math.abs(n) >= 1e9) return (n / 1e9).toFixed(1) + 'B';
+        if (Math.abs(n) >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+        if (Math.abs(n) >= 1e3) return (n / 1e3).toFixed(1) + 'K';
+        return n.toFixed(2);
+    }
+
+    // ---- Autocomplete (live from FMP) ----
+    var tickerInput = document.getElementById('tickerInput');
+    var acList = document.getElementById('acList');
+    var acIndex = -1;
+    var acMatches = [];
+    var searchTimer = null;
+
+    tickerInput.addEventListener('input', function() {
+        var q = tickerInput.value.trim().replace(/^\$/, '');
+        if (q.length < 1) { acList.classList.add('hidden'); acMatches = []; return; }
+
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(function() {
+            fetch(API + '/search-symbol?query=' + encodeURIComponent(q) + '&limit=12&apikey=' + API_KEY)
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    if (!Array.isArray(data) || data.length === 0) {
+                        acList.classList.add('hidden');
+                        acMatches = [];
+                        return;
+                    }
+                    acMatches = data.filter(function(d) {
+                        return d.exchange === 'NYSE' || d.exchange === 'NASDAQ' || d.exchange === 'AMEX'
+                            || d.exchange === 'CBOE' || (d.exchangeFullName && d.exchangeFullName.includes('NASDAQ'));
+                    }).slice(0, 8);
+                    acIndex = -1;
+                    renderAC();
+                    acList.classList.remove('hidden');
+                })
+                .catch(function() {});
+        }, 200);
+    });
+
+    function renderAC() {
+        acList.innerHTML = acMatches.map(function(m, i) {
+            return '<div class="ac-item' + (i === acIndex ? ' active' : '') + '" onmousedown="selectTicker(\'' + m.symbol + '\')">' +
+                logoImg(m.symbol, 'ac-logo', 'ac-logo-fallback') +
+                '<div class="ac-info">' +
+                '<div class="ac-ticker">' + m.symbol + ' <span class="ac-exchange">' + (m.exchange || '') + '</span></div>' +
+                '<div class="ac-name">' + escapeHtml(m.name || '') + '</div>' +
+                '</div></div>';
+        }).join('');
+    }
+
+    tickerInput.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            acIndex = Math.min(acIndex + 1, acMatches.length - 1);
+            renderAC();
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            acIndex = Math.max(acIndex - 1, -1);
+            renderAC();
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (acIndex >= 0 && acMatches[acIndex]) {
+                selectTicker(acMatches[acIndex].symbol);
+            } else if (tickerInput.value.trim()) {
+                acList.classList.add('hidden');
+                analyze(tickerInput.value.trim().replace(/^\$/, '').toUpperCase());
+            }
+        } else if (e.key === 'Escape') {
+            acList.classList.add('hidden');
+        }
+    });
+
+    tickerInput.addEventListener('blur', function() {
+        setTimeout(function() { acList.classList.add('hidden'); }, 150);
+    });
+
+    function selectTicker(ticker) {
+        tickerInput.value = ticker;
+        acList.classList.add('hidden');
+        analyze(ticker);
+    }
+
+    // ---- Analyze ----
+    var analyzeId = 0;
+    async function analyze(ticker) {
+        var myId = ++analyzeId;
+        document.getElementById('results').classList.add('hidden');
+        document.getElementById('errorMsg').classList.add('hidden');
+        document.getElementById('chartCard').classList.add('hidden');
+        document.getElementById('loading').classList.remove('hidden');
+        document.getElementById('binaryBg').classList.add('fade-out');
+
+        try {
+            var sym = encodeURIComponent(ticker);
+            var [bsResp, isResp, profResp] = await Promise.all([
+                fetch(API + '/balance-sheet-statement?symbol=' + sym + '&period=quarter&limit=1&apikey=' + API_KEY),
+                fetch(API + '/income-statement?symbol=' + sym + '&period=quarter&limit=8&apikey=' + API_KEY),
+                fetch(API + '/profile?symbol=' + sym + '&apikey=' + API_KEY)
+            ]);
+
+            var bsText = await bsResp.text();
+            var isText = await isResp.text();
+            var profText = await profResp.text();
+
+            if (bsText.startsWith('Premium') || isText.startsWith('Premium') || profText.startsWith('Premium')) {
+                throw new Error(ticker + ' is not available on the free FMP plan. Upgrade at financialmodelingprep.com to unlock all stocks.');
+            }
+
+            var bs, isArr, prof;
+            try { bs = JSON.parse(bsText); } catch(e) { throw new Error('Unexpected response for ' + ticker + '. Try a different stock.'); }
+            try { isArr = JSON.parse(isText); } catch(e) { isArr = []; }
+            try { prof = JSON.parse(profText); } catch(e) { prof = []; }
+
+            if (myId !== analyzeId) return;
+            if (!Array.isArray(bs) || bs.length === 0) throw new Error('No financial data found for ' + ticker + '. Make sure it\'s a US-listed stock.');
+            bs = bs[0];
+            isArr = Array.isArray(isArr) ? isArr : [];
+            prof = Array.isArray(prof) && prof.length > 0 ? prof[0] : {};
+
+            var recent4 = isArr.slice(0, 4);
+            var prior4 = isArr.slice(4, 8);
+            var ttm = {};
+            if (recent4.length > 0) {
+                ttm.revenue = recent4.reduce(function(s, q) { return s + (q.revenue || 0); }, 0);
+                ttm.operatingIncome = recent4.reduce(function(s, q) { return s + (q.operatingIncome || 0); }, 0);
+                ttm.epsDiluted = recent4.reduce(function(s, q) { return s + (q.epsDiluted || 0); }, 0);
+                ttm.date = recent4[0].date;
+                ttm.quarters = recent4.length;
+            }
+            if (prior4.length >= 4 && ttm.revenue) {
+                var priorRev = prior4.reduce(function(s, q) { return s + (q.revenue || 0); }, 0);
+                if (priorRev > 0) {
+                    ttm.revenueGrowth = (ttm.revenue - priorRev) / priorRev;
+                    ttm.priorRevenue = priorRev;
+                }
+            }
+
+            processData(bs, ttm, prof, ticker);
+            fetchChartData(ticker);
+        } catch (err) {
+            showError(err.message || 'Failed to fetch data');
+        } finally {
+            document.getElementById('loading').classList.add('hidden');
+        }
+    }
+
+    function showError(msg) {
+        var el = document.getElementById('errorMsg');
+        el.textContent = msg;
+        el.classList.remove('hidden');
+    }
+
+    function processData(bs, ttm, prof, ticker) {
+        var ratios = {};
+        var bsPeriod = 'Q ' + (bs.date || '');
+        var ttmLabel = 'TTM ' + (ttm.date || '');
+
+        if (bs.totalCurrentAssets && bs.totalCurrentLiabilities && bs.totalCurrentLiabilities !== 0) {
+            ratios.currentRatio = {
+                value: bs.totalCurrentAssets / bs.totalCurrentLiabilities,
+                components: 'Current Assets: $' + fmt(bs.totalCurrentAssets) + ' / Current Liabilities: $' + fmt(bs.totalCurrentLiabilities),
+                period: bsPeriod
+            };
+        }
+
+        if (bs.totalStockholdersEquity && bs.totalStockholdersEquity !== 0) {
+            var debtVal = (bs.longTermDebt || 0) + (bs.shortTermDebt || 0);
+            if (debtVal > 0) {
+                ratios.debtToEquity = {
+                    value: debtVal / Math.abs(bs.totalStockholdersEquity),
+                    components: 'Total Debt: $' + fmt(debtVal) + ' / Equity: $' + fmt(bs.totalStockholdersEquity),
+                    period: bsPeriod
+                };
+            }
+        }
+
+        var revenue = ttm.revenue || 0;
+        if (revenue && bs.totalAssets && bs.totalAssets !== 0) {
+            ratios.assetTurnover = {
+                value: revenue / bs.totalAssets,
+                components: 'TTM Revenue: $' + fmt(revenue) + ' / Total Assets: $' + fmt(bs.totalAssets),
+                period: ttmLabel
+            };
+        }
+
+        var opIncome = ttm.operatingIncome || 0;
+        if (opIncome && revenue && revenue !== 0) {
+            ratios.operatingMargin = {
+                value: opIncome / revenue,
+                components: 'TTM Op Income: $' + fmt(opIncome) + ' / TTM Revenue: $' + fmt(revenue),
+                period: ttmLabel
+            };
+        }
+
+        var price = prof.price || null;
+        var epsVal = ttm.epsDiluted || null;
+        if (price && epsVal && epsVal > 0) {
+            ratios.peRatio = {
+                value: price / epsVal,
+                components: 'Price: $' + price.toFixed(2) + ' / TTM EPS: $' + epsVal.toFixed(2),
+                period: ttmLabel
+            };
+        }
+
+        if (ttm.revenueGrowth !== undefined) {
+            ratios.revenueGrowth = {
+                value: ttm.revenueGrowth,
+                components: 'TTM Revenue: $' + fmt(ttm.revenue) + ' / Prior Year: $' + fmt(ttm.priorRevenue),
+                period: ttmLabel
+            };
+        }
+
+        var sector = fmpSectorMap(prof.sector);
+        var benchmarks = SECTOR_BENCHMARKS[sector] || SECTOR_BENCHMARKS['Default'];
+
+        renderResults(ticker, prof, sector, benchmarks, ratios, price);
+    }
+
+    function renderResults(ticker, prof, sector, benchmarks, ratios, currentPrice) {
+        var headerEl = document.getElementById('companyHeader');
+        var companyName = prof.companyName || ticker;
+
+        headerEl.innerHTML = '<div class="company-left">' + logoImg(ticker, 'company-logo', 'company-logo-fallback') + '<div>' +
+            '<div class="company-name">' + ticker + ' &mdash; ' + escapeHtml(companyName) + '</div>' +
+            '<div class="company-meta"><span class="sector-tag">' + (SECTOR_BENCHMARKS[sector] ? SECTOR_BENCHMARKS[sector].label : sector) + '</span>' +
+            (prof.industry ? ' <span>' + escapeHtml(prof.industry) + '</span>' : '') +
+            '</div></div></div>' +
+            (currentPrice ? '<div class="price-box"><div class="price">$' + currentPrice.toFixed(2) + '</div><div class="price-label">Current Price</div></div>' : '');
+
+        var defs = [
+            { key: 'currentRatio', category: 'Liquidity', name: 'Current Ratio', formula: 'Current Assets / Current Liabilities',
+              tip: 'Measures whether a company has enough short-term assets (cash, receivables, inventory) to cover its short-term debts. Above 1.0 means they can pay their bills.',
+              explain: function(v, g) { return v >= g.good ? 'Strong liquidity. This company can comfortably cover its short-term debts with current assets.' : v >= g.ok ? 'Adequate liquidity, but limited cushion if revenue slows down.' : 'May struggle to pay short-term obligations. Low liquidity is a warning sign.'; },
+              format: function(v) { return v.toFixed(2) + 'x'; }, barMax: 3, higherBetter: true },
+            { key: 'debtToEquity', category: 'Leverage', name: 'Debt to Equity', formula: "Total Debt / Shareholders' Equity",
+              tip: 'Shows how much debt a company uses compared to what shareholders own. A lower number means less reliance on borrowed money. Banks naturally run higher.',
+              explain: function(v, g) { return v <= g.good ? 'Conservative use of debt. Not over-leveraged.' : v <= g.ok ? 'Moderate debt levels. Not unusual, but worth watching.' : 'Heavy reliance on debt financing. Higher risk if earnings dip or rates rise.'; },
+              format: function(v) { return v.toFixed(2) + 'x'; }, barMax: 4, higherBetter: false },
+            { key: 'assetTurnover', category: 'Efficiency', name: 'Asset Turnover', formula: 'Net Sales / Total Assets',
+              tip: 'How efficiently a company turns its assets into revenue. Higher means the company is squeezing more sales out of every dollar of assets it owns.',
+              explain: function(v, g) { return v >= g.good ? 'Efficiently turning assets into revenue. Getting strong output from what they own.' : v >= g.ok ? 'Average efficiency. Some industries are naturally asset-heavy.' : 'Low asset utilization. Could signal heavy investments or underperforming sales.'; },
+              format: function(v) { return v.toFixed(2) + 'x'; }, barMax: 2, higherBetter: true },
+            { key: 'operatingMargin', category: 'Profitability', name: 'Operating Margin', formula: 'Operating Income / Net Sales',
+              tip: 'The percentage of revenue left after paying operating costs (salaries, rent, materials) but before interest and taxes. Shows how profitable the core business is.',
+              explain: function(v, g) { return v >= g.good ? 'Healthy profits from core operations. Strong pricing power or cost discipline.' : v >= g.ok ? 'Thin but positive margins. Competitive pressure may be squeezing profits.' : 'Weak operating margins. The core business is struggling to generate profit.'; },
+              format: function(v) { return (v * 100).toFixed(1) + '%'; }, barMax: 0.4, higherBetter: true },
+            { key: 'peRatio', category: 'Market Value', name: 'P/E Ratio', formula: 'Share Price / Earnings Per Share',
+              tip: 'How much investors pay for each dollar of earnings. A high P/E means people expect big growth ahead. A low P/E could mean a bargain — or a company in trouble.',
+              explain: function(v, g) { return v <= g.good ? 'Reasonably valued. May be a good deal or reflect lower growth expectations.' : v <= g.ok ? 'Investors are paying a premium, expecting strong future growth.' : 'Very high valuation. Priced for perfection — any earnings miss could hurt.'; },
+              format: function(v) { return v.toFixed(1) + 'x'; }, barMax: 60, higherBetter: false },
+            { key: 'revenueGrowth', category: 'Growth', name: 'Revenue Growth', formula: '(Recent TTM Revenue − Prior TTM Revenue) / Prior TTM Revenue',
+              tip: 'Year-over-year revenue growth comparing the last 4 quarters to the 4 quarters before that. Shows whether the company is expanding its top line. Crucial for evaluating growth stocks.',
+              explain: function(v, g) { return v >= g.good ? 'Strong revenue growth. The business is scaling well and gaining market share.' : v >= g.ok ? 'Moderate growth. Keeping pace but not accelerating.' : v < 0 ? 'Revenue is shrinking. The company is losing ground — could be cyclical or a deeper issue.' : 'Slow growth. May be a mature business, or facing headwinds.'; },
+              format: function(v) { return (v * 100).toFixed(1) + '%'; }, barMax: 0.5, higherBetter: true }
+        ];
+
+        var scores = [];
+        var gridEl = document.getElementById('ratioGrid');
+        gridEl.innerHTML = '';
+
+        defs.forEach(function(def) {
+            var ratio = ratios[def.key];
+            if (!ratio) {
+                gridEl.innerHTML += renderCard(def, null, null, null);
+                return;
+            }
+            var bench = benchmarks[def.key];
+            var grade;
+            if (def.higherBetter) {
+                grade = ratio.value >= bench.good ? 'good' : ratio.value >= bench.ok ? 'ok' : 'bad';
+            } else {
+                grade = ratio.value <= bench.good ? 'good' : ratio.value <= bench.ok ? 'ok' : 'bad';
+            }
+            scores.push(grade);
+            gridEl.innerHTML += renderCard(def, ratio, bench, grade);
+        });
+
+        var goodCount = scores.filter(function(s) { return s === 'good'; }).length;
+        var badCount = scores.filter(function(s) { return s === 'bad'; }).length;
+        var total = scores.length;
+        var overallGrade, overallClass, overallText;
+        var sectorLabel = SECTOR_BENCHMARKS[sector] ? SECTOR_BENCHMARKS[sector].label : '';
+
+        if (total === 0) { overallGrade = '?'; overallClass = 'ok'; overallText = 'Not enough data to assess.'; }
+        else if (goodCount >= 5) { overallGrade = 'A'; overallClass = 'good'; overallText = 'Strong financial health across ' + goodCount + ' of ' + total + ' metrics vs. ' + sectorLabel + ' benchmarks.'; }
+        else if (goodCount >= 4 && badCount === 0) { overallGrade = 'B+'; overallClass = 'good'; overallText = 'Above average. ' + goodCount + ' strong metrics with no red flags.'; }
+        else if (badCount <= 1) { overallGrade = 'B'; overallClass = 'ok'; overallText = 'Decent fundamentals with some areas to watch. ' + goodCount + ' of ' + total + ' metrics look healthy.'; }
+        else if (badCount <= 2) { overallGrade = 'C'; overallClass = 'ok'; overallText = 'Mixed signals. ' + badCount + ' metrics below ' + sectorLabel + ' benchmarks. Worth digging deeper.'; }
+        else { overallGrade = 'D'; overallClass = 'bad'; overallText = 'Multiple warning signs. ' + badCount + ' of ' + total + ' metrics are below healthy levels. Proceed with caution.'; }
+
+        document.getElementById('summaryCard').innerHTML = '<h3>Overall Health &mdash; ' + sectorLabel + ' Sector</h3>' +
+            '<div class="overall-grade ' + overallClass + '">' + overallGrade + '</div>' +
+            '<div class="overall-label">' + goodCount + ' of ' + total + ' ratios at healthy levels</div>' +
+            '<div class="overall-summary">' + overallText + '</div>';
+
+        document.getElementById('results').classList.remove('hidden');
+    }
+
+    function helpBubble(tip) {
+        return '<span class="ratio-help">?<span class="ratio-help-tip">' + tip + '</span></span>';
+    }
+
+    function renderCard(def, ratio, bench, grade) {
+        var hb = helpBubble(def.tip);
+        if (!ratio) {
+            return '<div class="ratio-card neutral"><div class="ratio-top"><div>' +
+                '<div class="ratio-category">' + def.category + '</div>' +
+                '<div class="ratio-name">' + def.name + hb + '</div></div>' +
+                '<div class="ratio-value" style="color:#3a5a3a">N/A</div></div>' +
+                '<div class="ratio-explain" style="color:#4a6a4a">Data not available for this company.</div>' +
+                '<div class="ratio-formula">' + def.formula + '</div></div>';
+        }
+        var gradeLabel = grade === 'good' ? 'Healthy' : grade === 'ok' ? 'Watch' : 'Concern';
+        var fillPct = Math.min(100, Math.max(0, (Math.abs(ratio.value) / def.barMax) * 100));
+        var benchPct = Math.min(100, (bench.good / def.barMax) * 100);
+
+        return '<div class="ratio-card ' + grade + '"><div class="ratio-top"><div>' +
+            '<div class="ratio-category">' + def.category + '</div>' +
+            '<div class="ratio-name">' + def.name + hb + '</div>' +
+            '<span class="ratio-grade ' + grade + '">' + gradeLabel + '</span></div>' +
+            '<div class="ratio-value ' + grade + '">' + def.format(ratio.value) + '</div></div>' +
+            '<div class="ratio-bar"><div class="ratio-bar-fill ' + grade + '" style="width:' + fillPct + '%"></div>' +
+            '<div class="ratio-benchmark" style="left:' + benchPct + '%"><div class="ratio-benchmark-label">Sector avg</div></div></div>' +
+            '<div class="ratio-explain">' + def.explain(ratio.value, bench) + '</div>' +
+            '<div class="ratio-components">' + ratio.components + '</div>' +
+            '<div class="ratio-formula">' + def.formula + ' &mdash; ' + (ratio.period || 'N/A') + '</div></div>';
+    }
+
+    // ---- Price Chart ----
+    var chartData = [];
+    var chartRange = '1Y';
+    var currentChartTicker = '';
+
+    document.querySelectorAll('.chart-range-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.chart-range-btn').forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            chartRange = btn.dataset.range;
+            drawChart();
+        });
+    });
+
+    async function fetchChartData(ticker) {
+        currentChartTicker = ticker;
+        var today = new Date();
+        var from = new Date(today);
+        from.setFullYear(from.getFullYear() - 5);
+        var fromStr = from.toISOString().slice(0, 10);
+        var toStr = today.toISOString().slice(0, 10);
+
+        try {
+            var resp = await fetch(API + '/historical-price-eod/light?symbol=' + encodeURIComponent(ticker) + '&from=' + fromStr + '&to=' + toStr + '&apikey=' + API_KEY);
+            var text = await resp.text();
+            if (text.startsWith('Premium')) { chartData = []; return; }
+            var data = JSON.parse(text);
+            if (!Array.isArray(data)) { chartData = []; return; }
+            chartData = data.reverse();
+            document.getElementById('chartCard').classList.remove('hidden');
+            drawChart();
+        } catch(e) {
+            chartData = [];
+            document.getElementById('chartCard').classList.add('hidden');
+        }
+    }
+
+    function getFilteredData() {
+        if (!chartData.length) return [];
+        var now = new Date(chartData[chartData.length - 1].date);
+        var cutoff = new Date(now);
+        if (chartRange === '1M') cutoff.setMonth(cutoff.getMonth() - 1);
+        else if (chartRange === '3M') cutoff.setMonth(cutoff.getMonth() - 3);
+        else if (chartRange === '1Y') cutoff.setFullYear(cutoff.getFullYear() - 1);
+        else cutoff.setFullYear(cutoff.getFullYear() - 5);
+        return chartData.filter(function(d) { return new Date(d.date) >= cutoff; });
+    }
+
+    function drawChart() {
+        var canvas = document.getElementById('priceChart');
+        var wrap = canvas.parentElement;
+        var dpr = window.devicePixelRatio || 1;
+        var w = wrap.clientWidth;
+        var h = wrap.clientHeight;
+        canvas.width = w * dpr;
+        canvas.height = h * dpr;
+        var ctx = canvas.getContext('2d');
+        ctx.scale(dpr, dpr);
+
+        var data = getFilteredData();
+        if (data.length < 2) return;
+
+        var prices = data.map(function(d) { return d.price; });
+        var minP = Math.min.apply(null, prices);
+        var maxP = Math.max.apply(null, prices);
+        var range = maxP - minP || 1;
+        var pad = { top: 10, bottom: 25, left: 0, right: 0 };
+        var cw = w - pad.left - pad.right;
+        var ch = h - pad.top - pad.bottom;
+
+        var firstPrice = prices[0];
+        var lastPrice = prices[prices.length - 1];
+        var change = lastPrice - firstPrice;
+        var changePct = (change / firstPrice * 100);
+        var isUp = change >= 0;
+        var lineColor = isUp ? '#00ff41' : '#ff3344';
+        var fillColor = isUp ? 'rgba(0,255,65,0.08)' : 'rgba(255,51,68,0.08)';
+
+        ctx.clearRect(0, 0, w, h);
+
+        // Grid lines
+        ctx.strokeStyle = '#1a2e1a';
+        ctx.lineWidth = 0.5;
+        for (var gi = 0; gi < 4; gi++) {
+            var gy = pad.top + (ch / 3) * gi;
+            ctx.beginPath();
+            ctx.moveTo(pad.left, gy);
+            ctx.lineTo(w - pad.right, gy);
+            ctx.stroke();
+        }
+
+        // Price labels
+        ctx.fillStyle = '#3a5a3a';
+        ctx.font = '10px JetBrains Mono, monospace';
+        ctx.textAlign = 'right';
+        for (var li = 0; li < 4; li++) {
+            var lp = maxP - (range / 3) * li;
+            var ly = pad.top + (ch / 3) * li;
+            ctx.fillText('$' + lp.toFixed(lp >= 100 ? 0 : 2), w - 4, ly - 3);
+        }
+
+        // Line path
+        ctx.beginPath();
+        for (var i = 0; i < data.length; i++) {
+            var x = pad.left + (i / (data.length - 1)) * cw;
+            var y = pad.top + ch - ((prices[i] - minP) / range) * ch;
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+        }
+        ctx.strokeStyle = lineColor;
+        ctx.lineWidth = 2;
+        ctx.lineJoin = 'round';
+        ctx.stroke();
+
+        // Fill under
+        ctx.lineTo(pad.left + cw, pad.top + ch);
+        ctx.lineTo(pad.left, pad.top + ch);
+        ctx.closePath();
+        ctx.fillStyle = fillColor;
+        ctx.fill();
+
+        // Date labels
+        ctx.fillStyle = '#3a5a3a';
+        ctx.font = '10px JetBrains Mono, monospace';
+        ctx.textAlign = 'center';
+        var labelCount = w < 500 ? 3 : 5;
+        for (var di = 0; di < labelCount; di++) {
+            var idx = Math.floor(di / (labelCount - 1) * (data.length - 1));
+            var dx = pad.left + (idx / (data.length - 1)) * cw;
+            var dt = data[idx].date.slice(5);
+            if (di === 0) { ctx.textAlign = 'left'; dx = pad.left; }
+            else if (di === labelCount - 1) { ctx.textAlign = 'right'; dx = w - pad.right; }
+            else { ctx.textAlign = 'center'; }
+            ctx.fillText(dt, dx, h - 4);
+        }
+
+        // Change info
+        var changeEl = document.getElementById('chartChange');
+        changeEl.textContent = (isUp ? '+' : '') + change.toFixed(2) + ' (' + (isUp ? '+' : '') + changePct.toFixed(2) + '%)';
+        changeEl.className = 'chart-change ' + (isUp ? 'up' : 'down');
+
+        var datesEl = document.getElementById('chartDates');
+        datesEl.textContent = data[0].date + ' → ' + data[data.length - 1].date;
+
+        // Tooltip on hover
+        setupTooltip(canvas, data, prices, minP, range, pad, cw, ch);
+    }
+
+    function setupTooltip(canvas, data, prices, minP, range, pad, cw, ch) {
+        var tooltip = document.getElementById('chartTooltip');
+        var overlay = document.getElementById('chartOverlay');
+        var dpr = window.devicePixelRatio || 1;
+        var wrap = overlay.parentElement;
+        overlay.width = wrap.clientWidth * dpr;
+        overlay.height = wrap.clientHeight * dpr;
+        var octx = overlay.getContext('2d');
+        var isUp = prices[prices.length-1] >= prices[0];
+        var lineColor = isUp ? '#00ff41' : '#ff3344';
+        var dirClass = isUp ? 'up' : 'down';
+
+        overlay.onmousemove = function(e) {
+            var rect = overlay.getBoundingClientRect();
+            var mx = e.clientX - rect.left;
+            var idx = Math.round(((mx - pad.left) / cw) * (data.length - 1));
+            idx = Math.max(0, Math.min(data.length - 1, idx));
+
+            var x = pad.left + (idx / (data.length - 1)) * cw;
+            var y = pad.top + ch - ((prices[idx] - minP) / range) * ch;
+
+            tooltip.innerHTML = '<div class="tt-price">$' + prices[idx].toFixed(2) + '</div><div class="tt-date">' + data[idx].date + '</div>';
+            tooltip.className = 'chart-tooltip visible ' + dirClass;
+
+            octx.clearRect(0, 0, overlay.width, overlay.height);
+            octx.save();
+            octx.scale(dpr, dpr);
+
+            octx.setLineDash([3, 3]);
+            octx.strokeStyle = '#2a4a2a';
+            octx.lineWidth = 1;
+            octx.beginPath();
+            octx.moveTo(x, pad.top);
+            octx.lineTo(x, pad.top + ch);
+            octx.stroke();
+            octx.setLineDash([]);
+
+            octx.beginPath();
+            octx.arc(x, y, 7, 0, Math.PI * 2);
+            octx.fillStyle = lineColor + '30';
+            octx.fill();
+            octx.beginPath();
+            octx.arc(x, y, 3.5, 0, Math.PI * 2);
+            octx.fillStyle = lineColor;
+            octx.fill();
+            octx.strokeStyle = '#0a0f0a';
+            octx.lineWidth = 1.5;
+            octx.stroke();
+
+            octx.restore();
+        };
+
+        overlay.onmouseleave = function() {
+            tooltip.className = 'chart-tooltip';
+            octx.clearRect(0, 0, overlay.width, overlay.height);
+        };
+    }
+
+    window.addEventListener('resize', function() {
+        if (chartData.length) drawChart();
+    });
+
+    // ---- Binary Rain Background ----
+    (function() {
+        var c = document.getElementById('binaryBg');
+        var ctx = c.getContext('2d');
+        var cols, drops;
+        var fontSize = 14;
+
+        function initRain() {
+            c.width = window.innerWidth;
+            c.height = window.innerHeight;
+            cols = Math.floor(c.width / fontSize);
+            drops = [];
+            for (var i = 0; i < cols; i++) {
+                drops[i] = Math.random() * -100;
+            }
+        }
+        initRain();
+
+        function drawRain() {
+            ctx.fillStyle = 'rgba(10, 15, 10, 0.15)';
+            ctx.fillRect(0, 0, c.width, c.height);
+            ctx.font = fontSize + 'px JetBrains Mono, monospace';
+
+            for (var i = 0; i < cols; i++) {
+                var char = Math.random() > 0.5 ? '1' : '0';
+                var x = i * fontSize;
+                var y = drops[i] * fontSize;
+                var alpha = 0.03 + Math.random() * 0.06;
+                ctx.fillStyle = 'rgba(0, 255, 65, ' + alpha + ')';
+                ctx.fillText(char, x, y);
+                if (y > c.height && Math.random() > 0.98) {
+                    drops[i] = 0;
+                }
+                drops[i] += 0.5;
+            }
+            requestAnimationFrame(drawRain);
+        }
+        drawRain();
+
+        window.addEventListener('resize', initRain);
+    })();
+    </script>
+</body>
+</html>
