@@ -454,7 +454,8 @@
         'SNOW','UBER','SQ','SHOP','ABNB','PLTR','COIN','CRWD','ZS','NET'
     ];
     function renderQuickPicks(exclude) {
-        var pool = F500.filter(function(t) { return t !== exclude; });
+        var ex = (exclude || '').toUpperCase();
+        var pool = F500.filter(function(t) { return t.toUpperCase() !== ex; });
         var picked = [];
         for (var i = 0; i < 6 && pool.length; i++) {
             var r = Math.floor(Math.random() * pool.length);
