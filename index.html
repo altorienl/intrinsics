@@ -150,12 +150,42 @@
         .ac-exchange { font-weight: 400; color: #4a6a4a; font-size: 11px; }
         .ac-name { font-size: 12px; color: #6a8a6a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
+        .sector-pills {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding: 4px 0;
+            margin-top: 16px;
+        }
+        .sector-pills::-webkit-scrollbar { display: none; }
+        .sector-pill {
+            flex-shrink: 0;
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid #1a2e1a;
+            background: transparent;
+            color: #5a7a5a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+        .sector-pill:hover { border-color: #2a4a2a; color: #8a9a8a; }
+        .sector-pill.active {
+            background: #00ff41;
+            border-color: #00ff41;
+            color: #0a0f0a;
+        }
         .quick-picks {
             display: flex;
             gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 16px;
         }
         .quick-pick {
             display: flex;
@@ -563,7 +593,7 @@
 </head>
 <body>
     <canvas id="binaryBg"></canvas>
-    <div class="header" style="cursor:pointer" onclick="document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('tickerInput').value='';document.getElementById('tickerInput').focus();document.getElementById('binaryBg').classList.remove('fade-out');document.getElementById('popularSection').style.display='';renderQuickPicks();switchTab('analyze');">
+    <div class="header" style="cursor:pointer" onclick="document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('tickerInput').value='';document.getElementById('tickerInput').focus();document.getElementById('binaryBg').classList.remove('fade-out');document.getElementById('popularSection').style.display='';activeSector=null;renderSectorPills();renderQuickPicks();switchTab('analyze');">
         <h1>INTRINSICS</h1>
     </div>
 
@@ -576,12 +606,13 @@
         <div class="search-card">
             <h2>Look up any stock</h2>
             <div class="search-container">
-                <span class="search-icon" onclick="document.getElementById('tickerInput').value='';document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('binaryBg').classList.remove('fade-out');document.getElementById('popularSection').style.display='';document.getElementById('tickerInput').focus();renderQuickPicks();"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+                <span class="search-icon" onclick="document.getElementById('tickerInput').value='';document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('binaryBg').classList.remove('fade-out');document.getElementById('popularSection').style.display='';document.getElementById('tickerInput').focus();activeSector=null;renderSectorPills();renderQuickPicks();"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
                 <input type="text" class="search-input" id="tickerInput" placeholder="Search any stock..." autocomplete="off" enterkeyhint="search">
                 <div class="ac-dropdown hidden" id="acList"></div>
             </div>
             <div id="popularSection">
-                <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-top:20px;">Popular stocks</div>
+                <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-top:20px;">Browse by sector</div>
+                <div class="sector-pills" id="sectorPills"></div>
                 <div class="quick-picks" id="quickPicks"></div>
             </div>
         </div>
@@ -674,11 +705,47 @@
         return picked;
     }
 
+    var activeSector = null;
+    var SECTOR_SHORT = {
+        'Technology': 'Tech',
+        'Consumer Cyclical': 'Consumer',
+        'Financial Services': 'Finance',
+        'Healthcare': 'Health',
+        'Consumer Defensive': 'Staples',
+        'Communication Services': 'Media',
+        'Industrials': 'Industrial',
+        'Energy': 'Energy',
+        'Real Estate': 'Real Estate',
+        'Utilities': 'Utilities',
+        'Basic Materials': 'Materials'
+    };
+
+    function renderSectorPills() {
+        var pills = '<button class="sector-pill' + (!activeSector ? ' active' : '') + '" data-sector="">All</button>';
+        Object.keys(SECTOR_STOCKS).forEach(function(s) {
+            var label = SECTOR_SHORT[s] || s;
+            pills += '<button class="sector-pill' + (activeSector === s ? ' active' : '') + '" data-sector="' + s + '">' + label + '</button>';
+        });
+        document.getElementById('sectorPills').innerHTML = pills;
+        document.querySelectorAll('.sector-pill').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                activeSector = btn.dataset.sector || null;
+                renderSectorPills();
+                renderQuickPicks();
+            });
+        });
+    }
+
     function renderQuickPicks(exclude, sector) {
         var ex = (exclude || '').toUpperCase();
 
-        var landingPool = F500.filter(function(t) { return t !== ex; });
-        var landingPicks = pickRandom(landingPool, 6);
+        var landingPool;
+        if (activeSector && SECTOR_STOCKS[activeSector]) {
+            landingPool = SECTOR_STOCKS[activeSector].filter(function(t) { return t !== ex; });
+        } else {
+            landingPool = F500.filter(function(t) { return t !== ex; });
+        }
+        var landingPicks = activeSector ? landingPool : pickRandom(landingPool, 8);
         var landingHtml = landingPicks.map(function(t) {
             var letters = t.slice(0, 2);
             return '<div class="quick-pick" onclick="selectTicker(\'' + t + '\')">' +
@@ -711,6 +778,7 @@
             }).join('');
         }
     }
+    renderSectorPills();
     renderQuickPicks();
 
     // ---- Help Bubble Touch Toggle ----
