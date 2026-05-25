@@ -914,21 +914,35 @@
 
         clearTimeout(searchTimer);
         searchTimer = setTimeout(function() {
+            var usExchanges = function(d) {
+                return d.exchange === 'NYSE' || d.exchange === 'NASDAQ' || d.exchange === 'AMEX'
+                    || d.exchange === 'CBOE' || (d.exchangeFullName && d.exchangeFullName.includes('NASDAQ'));
+            };
             fetch(API + '/search-symbol?query=' + encodeURIComponent(q) + '&limit=12&apikey=' + API_KEY)
                 .then(function(r) { return r.json(); })
                 .then(function(data) {
-                    if (!Array.isArray(data) || data.length === 0) {
-                        acList.classList.add('hidden');
-                        acMatches = [];
-                        return;
+                    var results = Array.isArray(data) ? data.filter(usExchanges) : [];
+                    if (results.length > 0) {
+                        acMatches = results.slice(0, 8);
+                        acIndex = -1;
+                        renderAC();
+                        acList.classList.remove('hidden');
+                    } else {
+                        return fetch(API + '/search-name?query=' + encodeURIComponent(q) + '&limit=12&apikey=' + API_KEY)
+                            .then(function(r) { return r.json(); })
+                            .then(function(nameData) {
+                                var nameResults = Array.isArray(nameData) ? nameData.filter(usExchanges) : [];
+                                if (nameResults.length > 0) {
+                                    acMatches = nameResults.slice(0, 8);
+                                    acIndex = -1;
+                                    renderAC();
+                                    acList.classList.remove('hidden');
+                                } else {
+                                    acList.classList.add('hidden');
+                                    acMatches = [];
+                                }
+                            });
                     }
-                    acMatches = data.filter(function(d) {
-                        return d.exchange === 'NYSE' || d.exchange === 'NASDAQ' || d.exchange === 'AMEX'
-                            || d.exchange === 'CBOE' || (d.exchangeFullName && d.exchangeFullName.includes('NASDAQ'));
-                    }).slice(0, 8);
-                    acIndex = -1;
-                    renderAC();
-                    acList.classList.remove('hidden');
                 })
                 .catch(function() {});
         }, 200);
