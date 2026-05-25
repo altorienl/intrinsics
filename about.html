@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Intrinsics</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='8' fill='%230a0f0a'/><rect width='36' height='36' rx='8' stroke='%2300ff41' stroke-width='1.5' fill='none' opacity='0.4'/><text font-family='monospace' font-size='6' fill='%2300ff41' opacity='0.15'><tspan x='3' y='10'>01101</tspan><tspan x='3' y='17'>10010</tspan><tspan x='3' y='24'>01110</tspan><tspan x='3' y='31'>10101</tspan></text><polyline points='5 26 12 20 18 24 24 14 31 10' fill='none' stroke='%2300ff41' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><circle cx='31' cy='10' r='2' fill='%2300ff41'/></svg>">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0f0a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        .header {
+            background: transparent;
+            border-bottom: none;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .header h1 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            font-weight: 700;
+            color: #e0e0e0;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 640px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+        .about-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 28px;
+            font-weight: 700;
+            color: #e0e0e0;
+            margin-bottom: 32px;
+            letter-spacing: 1px;
+        }
+        .about-section {
+            margin-bottom: 36px;
+        }
+        .about-section h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 700;
+            color: #00ff41;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .about-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #8a9a8a;
+        }
+        .about-section a {
+            color: #00ff41;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(0,255,65,0.3);
+            transition: border-color 0.15s;
+        }
+        .about-section a:hover {
+            border-color: #00ff41;
+        }
+        .ratios-list {
+            list-style: none;
+            margin-top: 12px;
+        }
+        .ratios-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #141e14;
+            font-size: 14px;
+            color: #6a8a6a;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .ratios-list li span {
+            color: #c0d0c0;
+            font-weight: 600;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: #3a5a3a;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: color 0.15s;
+        }
+        .back-link:hover { color: #00ff41; }
+        footer {
+            text-align: center;
+            padding: 24px 16px 32px;
+            font-size: 12px;
+            color: #2a3a2a;
+            font-family: 'JetBrains Mono', monospace;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" onclick="window.location.href='index.html'">
+        <h1>INTRINSICS</h1>
+    </div>
+
+    <div class="container">
+        <div class="about-title">About</div>
+
+        <div class="about-section">
+            <h2>What is Intrinsics</h2>
+            <p>Intrinsics is a free stock analysis tool that breaks down any US-listed company's financial health into simple, color-coded grades. No jargon, no paywall, no login required. Just search a ticker and get an instant read on whether the fundamentals are strong, shaky, or somewhere in between.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>How it works</h2>
+            <p>Every stock is evaluated across 6 key financial ratios, each graded against sector-specific benchmarks. A tech company is measured against tech peers, not utilities. The result is a clear, honest snapshot of financial health.</p>
+            <ul class="ratios-list">
+                <li><span>Current Ratio</span> — Can the company pay its short-term bills?</li>
+                <li><span>Debt to Equity</span> — How much does it rely on borrowed money?</li>
+                <li><span>Asset Turnover</span> — How efficiently does it use what it owns?</li>
+                <li><span>Operating Margin</span> — How profitable is the core business?</li>
+                <li><span>P/E Ratio</span> — Are investors paying a fair price?</li>
+                <li><span>Revenue Growth</span> — Is the top line growing or shrinking?</li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h2>Why I built this</h2>
+            <p>I'm <a href="https://www.linkedin.com/in/altorien/" target="_blank" rel="noopener">Altorien Lockwood</a> — FP&A Analyst and CPA candidate. I built Intrinsics because I wanted a tool that could give anyone, regardless of their finance background, a quick and honest look at a company's financial health. The kind of analysis that used to require a Bloomberg terminal or an accounting degree should be accessible to everyone.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Connect</h2>
+            <p>Have feedback, ideas, or just want to say what's up?<br>
+            Find me on <a href="https://www.linkedin.com/in/altorien/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+        </div>
+
+        <a href="index.html" class="back-link">&larr; Back to Intrinsics</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Altorien Lockwood. All rights reserved.<br>
+        <span style="color:#1a2e1a;font-size:10px;">Data sourced from Financial Modeling Prep</span>
+    </footer>
+</body>
+</html>
