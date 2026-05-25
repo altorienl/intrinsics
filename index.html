@@ -1131,10 +1131,11 @@
 
         var statsEl = document.getElementById('companyStats');
         var stats = [];
-        if (prof.changePercentage !== undefined && prof.changePercentage !== null) {
+        if (prof.change !== undefined && prof.changePercentage !== undefined) {
+            var dayChg = prof.change;
             var dayPct = prof.changePercentage;
-            var dayColor = dayPct >= 0 ? '#00ff41' : '#ff3344';
-            stats.push('<div class="stat-item"><div class="stat-label">Today</div><div class="stat-value" style="color:' + dayColor + '">' + (dayPct >= 0 ? '+' : '') + dayPct.toFixed(2) + '%</div></div>');
+            var dayColor = dayChg >= 0 ? '#00ff41' : '#ff3344';
+            stats.push('<div class="stat-item"><div class="stat-label">Today</div><div class="stat-value" style="color:' + dayColor + '">' + (dayChg >= 0 ? '+' : '') + '$' + Math.abs(dayChg).toFixed(2) + '</div><div class="stat-sub" style="color:' + dayColor + '">' + (dayPct >= 0 ? '+' : '') + dayPct.toFixed(2) + '%</div></div>');
         }
         if (prof.range && currentPrice) {
             var parts = prof.range.split('-');
@@ -1152,9 +1153,6 @@
         if (currentPrice && currentPrice > 0 && prof.marketCap) {
             var sharesOut = Math.round(prof.marketCap / currentPrice);
             stats.push('<div class="stat-item"><div class="stat-label">Shares Out</div><div class="stat-value">' + fmt(sharesOut) + '</div></div>');
-        }
-        if (prof.averageVolume) {
-            stats.push('<div class="stat-item"><div class="stat-label">Avg Volume</div><div class="stat-value">' + fmt(prof.averageVolume) + '</div></div>');
         }
         statsEl.innerHTML = stats.join('');
 
