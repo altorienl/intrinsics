@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intrinsics — Stock Valuation</title>
+    <title>Intrinsics</title>
     <meta name="description" content="Instantly analyze any stock's financial health with sector-specific benchmarks, key ratios, and plain-English insights. Free, no login required.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://intrinsics.app">
@@ -16,6 +16,11 @@
     <meta name="twitter:image" content="https://intrinsics.app/og.png">
     <meta name="theme-color" content="#0a0f0a">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='8' fill='%230a0f0a'/><text font-family='monospace' font-weight='bold' font-size='26' fill='%2300ff41' x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle'>I</text></svg>">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Intrinsics">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -535,6 +540,25 @@
             .watchlist-grid { grid-template-columns: 1fr; }
             .save-btn { padding: 5px 10px; font-size: 11px; }
         }
+        .install-banner {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            background: #111a11; border-top: 1px solid #1a2e1a;
+            padding: 14px 20px; display: flex; align-items: center;
+            justify-content: space-between; z-index: 9999;
+            font-family: 'Inter', sans-serif; font-size: 13px;
+            animation: slideUp 0.3s ease;
+        }
+        .install-banner.hidden { display: none; }
+        .install-banner-text { color: #c0d0c0; }
+        .install-banner-text strong { color: #00ff41; }
+        .install-banner-close {
+            background: none; border: 1px solid #1a2e1a; color: #5a7a5a;
+            font-family: 'JetBrains Mono', monospace; font-size: 11px;
+            padding: 6px 12px; border-radius: 6px; cursor: pointer;
+            white-space: nowrap; margin-left: 12px;
+        }
+        .install-banner-close:hover { color: #00ff41; border-color: #00ff41; }
+        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
     </style>
 </head>
 <body>
@@ -1574,6 +1598,27 @@
         drawRain();
 
         window.addEventListener('resize', initRain);
+    })();
+    </script>
+
+    <div class="install-banner hidden" id="installBanner">
+        <span class="install-banner-text">Add <strong>Intrinsics</strong> to your home screen for quick access</span>
+        <button class="install-banner-close" id="installDismiss">Got it</button>
+    </div>
+    <script>
+    (function() {
+        var isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+        var isAndroid = /Android/.test(navigator.userAgent);
+        var isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
+        if ((isIOS || isAndroid) && !isStandalone && !localStorage.getItem('installDismissed')) {
+            setTimeout(function() {
+                document.getElementById('installBanner').classList.remove('hidden');
+            }, 3000);
+        }
+        document.getElementById('installDismiss').addEventListener('click', function() {
+            document.getElementById('installBanner').classList.add('hidden');
+            localStorage.setItem('installDismissed', '1');
+        });
     })();
     </script>
 </body>
