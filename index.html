@@ -85,10 +85,12 @@
             top: 50%;
             transform: translateY(-50%);
             color: #2a4a2a;
-            pointer-events: none;
+            cursor: pointer;
             display: flex;
             align-items: center;
+            transition: color 0.15s;
         }
+        .search-icon:hover { color: #00ff41; }
         .search-icon svg { width: 20px; height: 20px; }
 
         .ac-dropdown {
@@ -550,7 +552,7 @@
         <div class="search-card">
             <h2>Look up any stock</h2>
             <div class="search-container">
-                <span class="search-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+                <span class="search-icon" onclick="document.getElementById('tickerInput').value='';document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('binaryBg').classList.remove('fade-out');document.getElementById('popularSection').style.display='';document.getElementById('tickerInput').focus();renderQuickPicks();"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
                 <input type="text" class="search-input" id="tickerInput" placeholder="Search any stock..." autocomplete="off">
                 <div class="ac-dropdown hidden" id="acList"></div>
             </div>
