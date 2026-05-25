@@ -972,6 +972,8 @@
             e.preventDefault();
             if (acIndex >= 0 && acMatches[acIndex]) {
                 selectTicker(acMatches[acIndex].symbol);
+            } else if (acMatches.length > 0) {
+                selectTicker(acMatches[0].symbol);
             } else if (tickerInput.value.trim()) {
                 acList.classList.add('hidden');
                 analyze(tickerInput.value.trim().replace(/^\$/, '').toUpperCase());
