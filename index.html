@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Intrinsics</title>
     <meta name="description" content="Instantly analyze any stock's financial health with sector-specific benchmarks, key ratios, and plain-English insights. Free, no login required.">
     <meta property="og:type" content="website">
@@ -29,6 +29,10 @@
             background: #0a0f0a;
             color: #e0e0e0;
             min-height: 100vh;
+            padding-top: env(safe-area-inset-top);
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+            padding-bottom: env(safe-area-inset-bottom);
         }
         #binaryBg {
             position: fixed;
