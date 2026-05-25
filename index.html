@@ -171,6 +171,12 @@
             object-fit: contain;
             background: #1a1a1a;
         }
+        .qp-fallback {
+            width: 22px; height: 22px; border-radius: 4px;
+            background: #1a2e1a; color: #4a6a4a;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 9px; font-weight: 700; font-family: 'JetBrains Mono', monospace;
+        }
         .quick-pick span { font-size: 13px; font-weight: 700; color: #6a8a6a; }
         .quick-pick:hover span { color: #c0d0c0; }
 
@@ -464,8 +470,9 @@
             picked.push(pool.splice(r, 1)[0]);
         }
         var html = picked.map(function(t) {
+            var letters = t.slice(0, 2);
             return '<div class="quick-pick" onclick="selectTicker(\'' + t + '\')">' +
-                '<img src="' + FMP_IMG + t + '.png" alt="" onerror="this.style.display=\'none\'">' +
+                '<img src="' + FMP_IMG + t + '.png" alt="" onerror="this.outerHTML=\'<div class=qp-fallback>' + letters + '</div>\'">' +
                 '<span>' + t + '</span></div>';
         }).join('');
         document.getElementById('quickPicks').innerHTML = html;
