@@ -469,22 +469,37 @@
         .wl-card-remove:hover { color: #ff3344; }
         .company-stats {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             margin-bottom: 16px;
-            flex-wrap: wrap;
-        }
-        .stat-bubble {
             background: #111a11;
             border: 1px solid #1a2e1a;
-            border-radius: 20px;
-            padding: 6px 14px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
-            color: #6a8a6a;
+            border-radius: 12px;
+            padding: 14px 16px;
+            justify-content: space-between;
         }
-        .stat-bubble span {
-            color: #c0d0c0;
+        .stat-item {
+            text-align: center;
+            flex: 1;
+            min-width: 0;
+        }
+        .stat-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: #4a6a4a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
             font-weight: 700;
+            color: #c0d0c0;
+        }
+        .stat-sub {
+            font-size: 10px;
+            color: #4a6a4a;
+            font-weight: 400;
         }
 
         .save-btn {
@@ -1115,33 +1130,33 @@
             '<span class="star">' + (saved ? '★' : '☆') + '</span>' + (saved ? 'Saved' : 'Watch') + '</button>';
 
         var statsEl = document.getElementById('companyStats');
-        var statsHtml = '';
-        if (prof.marketCap) {
-            statsHtml += '<div class="stat-bubble">Mkt Cap <span>' + fmt(prof.marketCap) + '</span></div>';
-            if (currentPrice && currentPrice > 0) {
-                var sharesOut = Math.round(prof.marketCap / currentPrice);
-                statsHtml += '<div class="stat-bubble">Shares Out <span>' + fmt(sharesOut) + '</span></div>';
-            }
-        }
-        if (prof.averageVolume) {
-            statsHtml += '<div class="stat-bubble">Avg Vol <span>' + fmt(prof.averageVolume) + '</span></div>';
-        }
-        if (prof.range) {
-            var parts = prof.range.split('-');
-            var low52 = parseFloat(parts[0]);
-            var high52 = parseFloat(parts[1]);
-            if (low52 && high52 && currentPrice) {
-                var pctFrom52Low = ((currentPrice - low52) / low52 * 100);
-                var color52 = pctFrom52Low >= 0 ? '#00ff41' : '#ff3344';
-                statsHtml += '<div class="stat-bubble">52W <span style="color:' + color52 + '">' + (pctFrom52Low >= 0 ? '+' : '') + pctFrom52Low.toFixed(1) + '%</span> <span style="color:#4a6a4a;font-weight:400;font-size:11px">($' + low52.toFixed(0) + '–$' + high52.toFixed(0) + ')</span></div>';
-            }
-        }
+        var stats = [];
         if (prof.changePercentage !== undefined && prof.changePercentage !== null) {
             var dayPct = prof.changePercentage;
             var dayColor = dayPct >= 0 ? '#00ff41' : '#ff3344';
-            statsHtml += '<div class="stat-bubble">Today <span style="color:' + dayColor + '">' + (dayPct >= 0 ? '+' : '') + dayPct.toFixed(2) + '%</span></div>';
+            stats.push('<div class="stat-item"><div class="stat-label">Today</div><div class="stat-value" style="color:' + dayColor + '">' + (dayPct >= 0 ? '+' : '') + dayPct.toFixed(2) + '%</div></div>');
         }
-        statsEl.innerHTML = statsHtml;
+        if (prof.range && currentPrice) {
+            var parts = prof.range.split('-');
+            var low52 = parseFloat(parts[0]);
+            var high52 = parseFloat(parts[1]);
+            if (low52 && high52) {
+                var pct52 = ((currentPrice - low52) / low52 * 100);
+                var color52 = pct52 >= 0 ? '#00ff41' : '#ff3344';
+                stats.push('<div class="stat-item"><div class="stat-label">52 Week</div><div class="stat-value" style="color:' + color52 + '">' + (pct52 >= 0 ? '+' : '') + pct52.toFixed(1) + '%</div><div class="stat-sub">$' + low52.toFixed(0) + ' – $' + high52.toFixed(0) + '</div></div>');
+            }
+        }
+        if (prof.marketCap) {
+            stats.push('<div class="stat-item"><div class="stat-label">Mkt Cap</div><div class="stat-value">' + fmt(prof.marketCap) + '</div></div>');
+        }
+        if (currentPrice && currentPrice > 0 && prof.marketCap) {
+            var sharesOut = Math.round(prof.marketCap / currentPrice);
+            stats.push('<div class="stat-item"><div class="stat-label">Shares Out</div><div class="stat-value">' + fmt(sharesOut) + '</div></div>');
+        }
+        if (prof.averageVolume) {
+            stats.push('<div class="stat-item"><div class="stat-label">Avg Volume</div><div class="stat-value">' + fmt(prof.averageVolume) + '</div></div>');
+        }
+        statsEl.innerHTML = stats.join('');
 
         var defs = [
             { key: 'currentRatio', category: 'Liquidity', name: 'Current Ratio', formula: 'Current Assets / Current Liabilities',
