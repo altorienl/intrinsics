@@ -1028,10 +1028,12 @@
             '<div class="company-name">' + ticker + ' &mdash; ' + escapeHtml(companyName) + '</div>' +
             '<div class="company-meta"><span class="sector-tag">' + (SECTOR_BENCHMARKS[sector] ? SECTOR_BENCHMARKS[sector].label : sector) + '</span>' +
             (prof.industry ? ' <span>' + escapeHtml(prof.industry) + '</span>' : '') +
-            ' <button class="save-btn' + (saved ? ' saved' : '') + '" id="saveBtn" onclick="toggleWatchlist(\'' + ticker + '\',\'' + escapeHtml(companyName).replace(/'/g, "\\'") + '\')">' +
-            '<span class="star">' + (saved ? '★' : '☆') + '</span>' + (saved ? 'Saved' : 'Watch') + '</button>' +
             '</div></div></div>' +
-            (currentPrice ? '<div class="price-box"><div class="price">$' + currentPrice.toFixed(2) + '</div><div class="price-label">Current Price</div></div>' : '');
+            '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">' +
+            (currentPrice ? '<div class="price-box"><div class="price">$' + currentPrice.toFixed(2) + '</div><div class="price-label">Current Price</div></div>' : '') +
+            '<button class="save-btn' + (saved ? ' saved' : '') + '" id="saveBtn" onclick="toggleWatchlist(\'' + ticker + '\',\'' + escapeHtml(companyName).replace(/'/g, "\\'") + '\')">' +
+            '<span class="star">' + (saved ? '★' : '☆') + '</span>' + (saved ? 'Saved' : 'Watch') + '</button>' +
+            '</div>';
 
         var defs = [
             { key: 'currentRatio', category: 'Liquidity', name: 'Current Ratio', formula: 'Current Assets / Current Liabilities',
