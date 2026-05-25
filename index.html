@@ -419,17 +419,20 @@
             right: 0;
             top: 0;
             bottom: 0;
-            width: 80px;
-            background: #ff3344;
+            left: 0;
+            background: linear-gradient(90deg, transparent 60%, #ff3344 100%);
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
+            padding-right: 24px;
             color: #fff;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
+            font-size: 18px;
             font-weight: 700;
             border-radius: 12px;
-            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.15s;
+            pointer-events: none;
         }
         .wl-card {
             background: #111a11;
@@ -717,7 +720,7 @@
         el.innerHTML = '<div class="watchlist-grid">' + list.map(function(w) {
             var letters = w.ticker.slice(0, 2).toUpperCase();
             return '<div class="wl-card-wrap" data-ticker="' + w.ticker + '">' +
-                '<div class="wl-card-delete">Delete</div>' +
+                '<div class="wl-card-delete">&#128465;</div>' +
                 '<div class="wl-card">' +
                 '<img src="' + FMP_IMG + w.ticker + '.png" alt="" style="width:36px;height:36px;border-radius:8px;object-fit:contain;background:#1a1a1a" onerror="this.outerHTML=\'<div class=wl-card-fallback>' + letters + '</div>\'">' +
                 '<div class="wl-card-info" onclick="switchTab(\'analyze\');selectTicker(\'' + w.ticker + '\')">' +
@@ -756,48 +759,56 @@
     function initSwipeToDelete() {
         document.querySelectorAll('.wl-card-wrap').forEach(function(wrap) {
             var card = wrap.querySelector('.wl-card');
-            var startX = 0, currentX = 0, swiping = false;
+            var delBg = wrap.querySelector('.wl-card-delete');
+            var startX = 0, startY = 0, currentX = 0, swiping = false, locked = false;
 
             card.addEventListener('touchstart', function(e) {
                 startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
                 currentX = 0;
                 swiping = true;
+                locked = false;
                 card.style.transition = 'none';
             });
 
             card.addEventListener('touchmove', function(e) {
                 if (!swiping) return;
                 var dx = e.touches[0].clientX - startX;
+                var dy = e.touches[0].clientY - startY;
+                if (!locked) {
+                    if (Math.abs(dy) > Math.abs(dx)) { swiping = false; return; }
+                    locked = true;
+                }
+                e.preventDefault();
                 if (dx > 0) dx = 0;
-                currentX = Math.max(dx, -100);
+                currentX = Math.max(dx, -160);
                 card.style.transform = 'translateX(' + currentX + 'px)';
-            });
+                var progress = Math.min(1, Math.abs(currentX) / 100);
+                delBg.style.opacity = progress;
+                if (Math.abs(currentX) > 80) {
+                    card.style.borderColor = 'rgba(255,51,68,' + (progress * 0.5) + ')';
+                }
+            }, { passive: false });
 
             card.addEventListener('touchend', function() {
                 swiping = false;
                 card.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
-                if (currentX < -60) {
+                if (currentX < -80) {
                     var ticker = wrap.dataset.ticker;
                     card.style.transform = 'translateX(-100%)';
                     card.style.opacity = '0';
+                    wrap.style.transition = 'max-height 0.3s ease, margin 0.3s ease';
+                    wrap.style.maxHeight = '0';
+                    wrap.style.overflow = 'hidden';
                     setTimeout(function() {
                         removeFromWatchlist(ticker);
                         renderWatchlist();
-                    }, 300);
+                    }, 350);
                 } else {
                     card.style.transform = 'translateX(0)';
+                    card.style.borderColor = '';
+                    delBg.style.opacity = '0';
                 }
-            });
-
-            wrap.querySelector('.wl-card-delete').addEventListener('click', function() {
-                var ticker = wrap.dataset.ticker;
-                card.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
-                card.style.transform = 'translateX(-100%)';
-                card.style.opacity = '0';
-                setTimeout(function() {
-                    removeFromWatchlist(ticker);
-                    renderWatchlist();
-                }, 300);
             });
         });
     }
