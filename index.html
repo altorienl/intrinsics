@@ -404,6 +404,26 @@
         .overall-grade.bad { color: #ff3344; }
         .overall-label { text-align: center; font-size: 14px; color: #4a6a4a; margin-bottom: 12px; }
         .overall-summary { font-size: 14px; color: #8a9a8a; line-height: 1.6; }
+        .one-liner {
+            margin-top: 16px;
+            padding: 14px 16px;
+            background: #0a0f0a;
+            border: 1px solid #1a2e1a;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #c0d0c0;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        .one-liner-label {
+            font-style: normal;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: #3a5a3a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
 
         .hidden { display: none; }
         .error-msg { text-align: center; padding: 24px; color: #ff3344; font-size: 14px; }
@@ -1248,6 +1268,68 @@
         renderQuickPicks(ticker, sector);
     }
 
+    function buildOneLiner(ticker, ratios, benchmarks, defs, overallGrade) {
+        function g(key) {
+            var r = ratios[key];
+            if (!r) return null;
+            var def = defs.find(function(d) { return d.key === key; });
+            var bench = benchmarks[key];
+            if (!def || !bench) return null;
+            if (def.higherBetter) {
+                return r.value >= bench.good ? 'good' : r.value >= bench.ok ? 'ok' : 'bad';
+            } else {
+                return r.value <= bench.good ? 'good' : r.value <= bench.ok ? 'ok' : 'bad';
+            }
+        }
+
+        var liquidity = g('currentRatio');
+        var leverage = g('debtToEquity');
+        var efficiency = g('assetTurnover');
+        var profitability = g('operatingMargin');
+        var valuation = g('peRatio');
+        var growth = g('revenueGrowth');
+
+        var strengths = [];
+        var weaknesses = [];
+
+        if (liquidity === 'good') strengths.push('strong liquidity');
+        else if (liquidity === 'bad') weaknesses.push('weak liquidity');
+
+        if (leverage === 'good') strengths.push('low debt');
+        else if (leverage === 'bad') weaknesses.push('heavy debt load');
+
+        if (efficiency === 'good') strengths.push('efficient asset use');
+        else if (efficiency === 'bad') weaknesses.push('low asset efficiency');
+
+        if (profitability === 'good') strengths.push('healthy margins');
+        else if (profitability === 'bad') weaknesses.push('weak profitability');
+
+        if (valuation === 'good') strengths.push('reasonable valuation');
+        else if (valuation === 'bad') weaknesses.push('expensive valuation');
+
+        if (growth === 'good') strengths.push('strong revenue growth');
+        else if (growth === 'bad') {
+            var rv = ratios.revenueGrowth;
+            weaknesses.push(rv && rv.value < 0 ? 'shrinking revenue' : 'slowing growth');
+        }
+
+        if (strengths.length === 0 && weaknesses.length === 0) {
+            return ticker + ' shows a mixed financial profile — no major red flags but no clear strengths either.';
+        }
+
+        if (weaknesses.length === 0) {
+            return ticker + ' is in excellent shape with ' + strengths.join(', ') + '.';
+        }
+
+        if (strengths.length === 0) {
+            return ticker + ' faces challenges including ' + weaknesses.join(', ') + '.';
+        }
+
+        var s = strengths.length > 2 ? strengths.slice(0, 2).join(', ') : strengths.join(' and ');
+        var w = weaknesses.length > 2 ? weaknesses.slice(0, 2).join(', ') : weaknesses.join(' and ');
+        return ticker + ' shows ' + s + ' but has ' + w + '.';
+    }
+
     function renderResults(ticker, prof, sector, benchmarks, ratios, currentPrice) {
         var headerEl = document.getElementById('companyHeader');
         var companyName = prof.companyName || ticker;
@@ -1352,10 +1434,13 @@
         else if (badCount <= 2) { overallGrade = 'C'; overallClass = 'ok'; overallText = 'Mixed signals. ' + badCount + ' metrics below ' + sectorLabel + ' benchmarks. Worth digging deeper.'; }
         else { overallGrade = 'D'; overallClass = 'bad'; overallText = 'Multiple warning signs. ' + badCount + ' of ' + total + ' metrics are below healthy levels. Proceed with caution.'; }
 
+        var oneLiner = buildOneLiner(ticker, ratios, benchmarks, defs, overallGrade);
+
         document.getElementById('summaryCard').innerHTML = '<h3>Overall Health &mdash; ' + sectorLabel + ' Sector</h3>' +
             '<div class="overall-grade ' + overallClass + '">' + overallGrade + '</div>' +
             '<div class="overall-label">' + goodCount + ' of ' + total + ' ratios at healthy levels</div>' +
-            '<div class="overall-summary">' + overallText + '</div>';
+            '<div class="overall-summary">' + overallText + '</div>' +
+            '<div class="one-liner"><div class="one-liner-label">In one sentence</div>' + oneLiner + '</div>';
 
         document.getElementById('results').classList.remove('hidden');
     }
