@@ -500,7 +500,7 @@
 </head>
 <body>
     <canvas id="binaryBg"></canvas>
-    <div class="header" style="cursor:pointer" onclick="document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('tickerInput').value='';document.getElementById('tickerInput').focus();document.getElementById('binaryBg').classList.remove('fade-out');renderQuickPicks();switchTab('analyze');">
+    <div class="header" style="cursor:pointer" onclick="document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('tickerInput').value='';document.getElementById('tickerInput').focus();document.getElementById('binaryBg').classList.remove('fade-out');document.getElementById('popularSection').style.display='';renderQuickPicks();switchTab('analyze');">
         <h1>INTRINSICS</h1>
     </div>
 
@@ -517,8 +517,10 @@
                 <input type="text" class="search-input" id="tickerInput" placeholder="Search any stock..." autocomplete="off">
                 <div class="ac-dropdown hidden" id="acList"></div>
             </div>
-            <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-top:20px;">Popular stocks</div>
-            <div class="quick-picks" id="quickPicks"></div>
+            <div id="popularSection">
+                <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-top:20px;">Popular stocks</div>
+                <div class="quick-picks" id="quickPicks"></div>
+            </div>
         </div>
 
         <div id="loading" class="loading hidden">
@@ -930,6 +932,7 @@
         document.getElementById('chartCard').classList.add('hidden');
         document.getElementById('loading').classList.remove('hidden');
         document.getElementById('binaryBg').classList.add('fade-out');
+        document.getElementById('popularSection').style.display = 'none';
 
         try {
             var sym = encodeURIComponent(ticker);
