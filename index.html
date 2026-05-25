@@ -1311,6 +1311,9 @@
 
     async function fetchChartData(ticker) {
         currentChartTicker = ticker;
+        chartRange = '1Y';
+        document.querySelectorAll('.chart-range-btn').forEach(function(b) { b.classList.remove('active'); });
+        document.querySelector('.chart-range-btn[data-range="1Y"]').classList.add('active');
         var today = new Date();
         var from = new Date(today);
         from.setFullYear(from.getFullYear() - 5);
