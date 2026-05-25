@@ -276,7 +276,7 @@
         }
         .ratio-help:hover .ratio-help-tip, .ratio-help.active .ratio-help-tip { display: block; }
         @media (max-width: 600px) {
-            .ratio-help-tip { left: auto; right: 0; top: 28px; transform: none; width: 220px; }
+            .ratio-help-tip { left: 50%; right: auto; top: 28px; transform: translateX(-50%); width: calc(100vw - 80px); max-width: 280px; }
         }
         .ratio-value { font-size: 28px; font-weight: 700; text-align: right; font-family: 'JetBrains Mono', monospace; }
         .ratio-value.good { color: #00ff41; }
