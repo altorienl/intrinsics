@@ -1275,12 +1275,12 @@
         if (!el) return;
         var filtered = getFilteredData();
         if (filtered.length < 2) return;
-        var startPrice = filtered[0].close;
-        var endPrice = filtered[filtered.length - 1].close;
+        var startPrice = filtered[0].price;
+        var endPrice = filtered[filtered.length - 1].price;
         var low = Infinity, high = -Infinity;
         filtered.forEach(function(d) {
-            if (d.close < low) low = d.close;
-            if (d.close > high) high = d.close;
+            if (d.price < low) low = d.price;
+            if (d.price > high) high = d.price;
         });
         var pct = ((endPrice - startPrice) / startPrice * 100);
         var color = pct >= 0 ? '#00ff41' : '#ff3344';
