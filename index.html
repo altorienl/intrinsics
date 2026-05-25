@@ -553,7 +553,7 @@
             <h2>Look up any stock</h2>
             <div class="search-container">
                 <span class="search-icon" onclick="document.getElementById('tickerInput').value='';document.getElementById('results').classList.add('hidden');document.getElementById('chartCard').classList.add('hidden');document.getElementById('errorMsg').classList.add('hidden');document.getElementById('binaryBg').classList.remove('fade-out');document.getElementById('popularSection').style.display='';document.getElementById('tickerInput').focus();renderQuickPicks();"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
-                <input type="text" class="search-input" id="tickerInput" placeholder="Search any stock..." autocomplete="off">
+                <input type="text" class="search-input" id="tickerInput" placeholder="Search any stock..." autocomplete="off" enterkeyhint="search">
                 <div class="ac-dropdown hidden" id="acList"></div>
             </div>
             <div id="popularSection">
@@ -976,6 +976,7 @@
                 acList.classList.add('hidden');
                 analyze(tickerInput.value.trim().replace(/^\$/, '').toUpperCase());
             }
+            tickerInput.blur();
         } else if (e.key === 'Escape') {
             acList.classList.add('hidden');
         }
