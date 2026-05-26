@@ -1231,11 +1231,14 @@
         var ratios = {};
         var bsPeriod = 'Q ' + (bs.date || '');
         var ttmLabel = 'TTM ' + (ttm.date || '');
+        var rt = ratiosTtm || {};
+        var cur = bs.reportedCurrency || 'USD';
+        var cs = cur === 'USD' ? '$' : cur + ' ';
 
         if (bs.totalCurrentAssets && bs.totalCurrentLiabilities && bs.totalCurrentLiabilities !== 0) {
             ratios.currentRatio = {
-                value: bs.totalCurrentAssets / bs.totalCurrentLiabilities,
-                components: 'Current Assets: $' + fmt(bs.totalCurrentAssets) + ' / Current Liabilities: $' + fmt(bs.totalCurrentLiabilities),
+                value: (typeof rt.currentRatioTTM === 'number') ? rt.currentRatioTTM : (bs.totalCurrentAssets / bs.totalCurrentLiabilities),
+                components: 'Current Assets: ' + cs + fmt(bs.totalCurrentAssets) + ' / Current Liabilities: ' + cs + fmt(bs.totalCurrentLiabilities),
                 period: bsPeriod
             };
         }
@@ -1244,8 +1247,8 @@
             var debtVal = (bs.longTermDebt || 0) + (bs.shortTermDebt || 0);
             if (debtVal > 0) {
                 ratios.debtToEquity = {
-                    value: debtVal / Math.abs(bs.totalStockholdersEquity),
-                    components: 'Total Debt: $' + fmt(debtVal) + ' / Equity: $' + fmt(bs.totalStockholdersEquity),
+                    value: (typeof rt.debtToEquityRatioTTM === 'number') ? rt.debtToEquityRatioTTM : (debtVal / Math.abs(bs.totalStockholdersEquity)),
+                    components: 'Total Debt: ' + cs + fmt(debtVal) + ' / Equity: ' + cs + fmt(bs.totalStockholdersEquity),
                     period: bsPeriod
                 };
             }
@@ -1254,8 +1257,8 @@
         var revenue = ttm.revenue || 0;
         if (revenue && bs.totalAssets && bs.totalAssets !== 0) {
             ratios.assetTurnover = {
-                value: revenue / bs.totalAssets,
-                components: 'TTM Revenue: $' + fmt(revenue) + ' / Total Assets: $' + fmt(bs.totalAssets),
+                value: (typeof rt.assetTurnoverTTM === 'number') ? rt.assetTurnoverTTM : (revenue / bs.totalAssets),
+                components: 'TTM Revenue: ' + cs + fmt(revenue) + ' / Total Assets: ' + cs + fmt(bs.totalAssets),
                 period: ttmLabel
             };
         }
@@ -1263,23 +1266,23 @@
         var opIncome = ttm.operatingIncome || 0;
         if (opIncome && revenue && revenue !== 0) {
             ratios.operatingMargin = {
-                value: opIncome / revenue,
-                components: 'TTM Op Income: $' + fmt(opIncome) + ' / TTM Revenue: $' + fmt(revenue),
+                value: (typeof rt.operatingProfitMarginTTM === 'number') ? rt.operatingProfitMarginTTM : (opIncome / revenue),
+                components: 'TTM Op Income: ' + cs + fmt(opIncome) + ' / TTM Revenue: ' + cs + fmt(revenue),
                 period: ttmLabel
             };
         }
 
         var price = prof.price || null;
         var epsVal = ttm.epsDiluted || null;
-        var fmpPE = ratiosTtm && ratiosTtm.priceToEarningsRatioTTM;
+        var fmpPE = rt.priceToEarningsRatioTTM;
         if (fmpPE && fmpPE > 0) {
-            var peEps = price && fmpPE ? (price / fmpPE) : epsVal;
+            var peEps = price && fmpPE ? (price / fmpPE) : null;
             ratios.peRatio = {
                 value: fmpPE,
                 components: 'Price: $' + (price ? price.toFixed(2) : '—') + ' / TTM EPS: $' + (peEps ? peEps.toFixed(2) : '—'),
                 period: ttmLabel
             };
-        } else if (price && epsVal && epsVal > 0) {
+        } else if (price && epsVal && epsVal > 0 && cur === 'USD') {
             ratios.peRatio = {
                 value: price / epsVal,
                 components: 'Price: $' + price.toFixed(2) + ' / TTM EPS: $' + epsVal.toFixed(2),
@@ -1290,7 +1293,7 @@
         if (ttm.revenueGrowth !== undefined) {
             ratios.revenueGrowth = {
                 value: ttm.revenueGrowth,
-                components: 'TTM Revenue: $' + fmt(ttm.revenue) + ' / Prior Year: $' + fmt(ttm.priorRevenue),
+                components: 'TTM Revenue: ' + cs + fmt(ttm.revenue) + ' / Prior Year: ' + cs + fmt(ttm.priorRevenue),
                 period: ttmLabel
             };
         }
