@@ -1251,15 +1251,29 @@
             };
         }
 
-        if (bs.totalStockholdersEquity && bs.totalStockholdersEquity !== 0) {
-            var debtVal = (bs.longTermDebt || 0) + (bs.shortTermDebt || 0);
-            if (debtVal > 0) {
-                ratios.debtToEquity = {
-                    value: (typeof rt.debtToEquityRatioTTM === 'number') ? rt.debtToEquityRatioTTM : (debtVal / Math.abs(bs.totalStockholdersEquity)),
-                    components: 'Total Debt: ' + cs + fmt(debtVal) + ' / Equity: ' + cs + fmt(bs.totalStockholdersEquity),
-                    period: bsPeriod
-                };
-            }
+        var debtVal = (bs.longTermDebt || 0) + (bs.shortTermDebt || 0);
+        var equity = bs.totalStockholdersEquity || 0;
+        var deApi = rt.debtToEquityRatioTTM;
+        if (typeof deApi === 'number') {
+            ratios.debtToEquity = deApi < 0 ? {
+                value: Math.abs(deApi),
+                components: 'Negative equity — total liabilities exceed shareholders\' equity',
+                period: bsPeriod
+            } : {
+                value: deApi,
+                components: 'Total Debt: ' + cs + fmt(debtVal) + ' / Equity: ' + cs + fmt(equity),
+                period: bsPeriod
+            };
+        } else if (equity !== 0) {
+            ratios.debtToEquity = equity < 0 ? {
+                value: debtVal / Math.abs(equity),
+                components: 'Negative equity — total liabilities exceed shareholders\' equity',
+                period: bsPeriod
+            } : {
+                value: debtVal / equity,
+                components: 'Total Debt: ' + cs + fmt(debtVal) + ' / Equity: ' + cs + fmt(equity),
+                period: bsPeriod
+            };
         }
 
         var revenue = ttm.revenue || 0;
@@ -1430,7 +1444,7 @@
               format: function(v) { return v.toFixed(2) + 'x'; }, barMax: 3, higherBetter: true },
             { key: 'debtToEquity', category: 'Leverage', name: 'Debt to Equity', formula: "Total Debt / Shareholders' Equity",
               tip: 'Shows how much debt a company uses compared to what shareholders own. A lower number means less reliance on borrowed money. Banks naturally run higher.',
-              explain: function(v, g) { return v <= g.good ? 'Conservative use of debt. Not over-leveraged.' : v <= g.ok ? 'Moderate debt levels. Not unusual, but worth watching.' : 'Heavy reliance on debt financing. Higher risk if earnings dip or rates rise.'; },
+              explain: function(v, g) { return v <= g.good ? 'Conservative use of debt. Not over-leveraged.' : v <= g.ok ? 'Moderate debt levels. Not unusual, but worth watching.' : v > 10 ? 'Negative shareholders\' equity. Liabilities exceed what shareholders own — often from aggressive buybacks or accumulated losses.' : 'Heavy reliance on debt financing. Higher risk if earnings dip or rates rise.'; },
               format: function(v) { return v.toFixed(2) + 'x'; }, barMax: 4, higherBetter: false },
             { key: 'assetTurnover', category: 'Efficiency', name: 'Asset Turnover', formula: 'Net Sales / Total Assets',
               tip: 'How efficiently a company turns its assets into revenue. Higher means the company is squeezing more sales out of every dollar of assets it owns.',
