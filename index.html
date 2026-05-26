@@ -1393,7 +1393,9 @@
             var sharesOut = Math.round(prof.marketCap / currentPrice);
             stats.push('<div class="stat-item"><div class="stat-label">Shares Out</div><div class="stat-value">' + fmt(sharesOut) + '</div></div>');
         }
+        stats.push('<div class="stat-item" id="statEarnings"><div class="stat-label">Next Earnings</div><div class="stat-value" style="font-size:12px;color:#5a7a5a;">—</div></div>');
         statsEl.innerHTML = stats.join('');
+        fetchEarningsDate(ticker);
 
         var defs = [
             { key: 'currentRatio', category: 'Liquidity', name: 'Current Ratio', formula: 'Current Assets / Current Liabilities',
@@ -1530,6 +1532,25 @@
         el.innerHTML = '<div class="stat-label">' + (labels[chartRange] || '52 Week') + '</div>' +
             '<div class="stat-value" style="color:' + color + '">' + (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%</div>' +
             '<div class="stat-sub">$' + low.toFixed(0) + ' – $' + high.toFixed(0) + '</div>';
+    }
+
+    function fetchEarningsDate(ticker) {
+        var today = new Date().toISOString().split('T')[0];
+        var future = new Date();
+        future.setMonth(future.getMonth() + 3);
+        var toDate = future.toISOString().split('T')[0];
+        fetch(API + '/earning_calendar?symbol=' + encodeURIComponent(ticker) + '&from=' + today + '&to=' + toDate + '&apikey=' + API_KEY)
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                var el = document.getElementById('statEarnings');
+                if (!el || !Array.isArray(data) || data.length === 0) return;
+                var upcoming = data.filter(function(e) { return e.date >= today; }).sort(function(a, b) { return a.date.localeCompare(b.date); });
+                if (upcoming.length === 0) return;
+                var d = new Date(upcoming[0].date + 'T00:00:00');
+                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                var label = months[d.getMonth()] + ' ' + d.getDate();
+                el.innerHTML = '<div class="stat-label">Next Earnings</div><div class="stat-value" style="font-size:13px;color:#c0d0c0;">' + label + '</div>';
+            }).catch(function() {});
     }
 
     async function fetchChartData(ticker) {
