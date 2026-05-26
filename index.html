@@ -495,6 +495,28 @@
             transition: opacity 0.15s;
             pointer-events: none;
         }
+        .wl-card-remove {
+            display: none;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #1a2e1a;
+            border: none;
+            color: #5a7a5a;
+            font-size: 14px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            transition: all 0.15s;
+        }
+        .wl-card-remove:hover { background: #ff3344; color: #fff; }
+        @media (hover: hover) {
+            .wl-card-wrap:hover .wl-card-remove { display: flex; }
+        }
         .wl-card {
             background: #111a11;
             border: 1px solid #1a2e1a;
@@ -890,7 +912,8 @@
         el.innerHTML = '<div class="watchlist-grid">' + list.map(function(w) {
             var letters = w.ticker.slice(0, 2).toUpperCase();
             return '<div class="wl-card-wrap" data-ticker="' + w.ticker + '">' +
-                '<div class="wl-card-delete">&#128465;</div>' +
+                '<div class="wl-card-delete">Delete</div>' +
+                '<button class="wl-card-remove" onclick="event.stopPropagation();removeFromWatchlist(\'' + w.ticker + '\');renderWatchlist();">&times;</button>' +
                 '<div class="wl-card">' +
                 '<img src="' + FMP_IMG + w.ticker + '.png" alt="" style="width:36px;height:36px;border-radius:8px;object-fit:contain;background:#1a1a1a" onerror="this.outerHTML=\'<div class=wl-card-fallback>' + letters + '</div>\'">' +
                 '<div class="wl-card-info" onclick="switchTab(\'analyze\');selectTicker(\'' + w.ticker + '\')">' +
