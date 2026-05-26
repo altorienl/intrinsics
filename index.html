@@ -1165,30 +1165,34 @@
 
         try {
             var sym = encodeURIComponent(ticker);
-            var [bsResp, isResp, profResp] = await Promise.all([
+            var [bsResp, isResp, profResp, ratiosResp] = await Promise.all([
                 fetch(API + '/balance-sheet-statement?symbol=' + sym + '&period=quarter&limit=1&apikey=' + API_KEY),
                 fetch(API + '/income-statement?symbol=' + sym + '&period=quarter&limit=8&apikey=' + API_KEY),
-                fetch(API + '/profile?symbol=' + sym + '&apikey=' + API_KEY)
+                fetch(API + '/profile?symbol=' + sym + '&apikey=' + API_KEY),
+                fetch(API + '/ratios-ttm?symbol=' + sym + '&apikey=' + API_KEY)
             ]);
 
             var bsText = await bsResp.text();
             var isText = await isResp.text();
             var profText = await profResp.text();
+            var ratiosText = await ratiosResp.text();
 
             if (bsText.startsWith('Premium') || isText.startsWith('Premium') || profText.startsWith('Premium')) {
                 throw new Error(ticker + ' is not available on the free FMP plan. Upgrade at financialmodelingprep.com to unlock all stocks.');
             }
 
-            var bs, isArr, prof;
+            var bs, isArr, prof, ratiosTtm;
             try { bs = JSON.parse(bsText); } catch(e) { throw new Error('Unexpected response for ' + ticker + '. Try a different stock.'); }
             try { isArr = JSON.parse(isText); } catch(e) { isArr = []; }
             try { prof = JSON.parse(profText); } catch(e) { prof = []; }
+            try { ratiosTtm = JSON.parse(ratiosText); } catch(e) { ratiosTtm = []; }
 
             if (myId !== analyzeId) return;
             if (!Array.isArray(bs) || bs.length === 0) throw new Error('No financial data found for ' + ticker + '. Make sure it\'s a US-listed stock.');
             bs = bs[0];
             isArr = Array.isArray(isArr) ? isArr : [];
             prof = Array.isArray(prof) && prof.length > 0 ? prof[0] : {};
+            ratiosTtm = Array.isArray(ratiosTtm) && ratiosTtm.length > 0 ? ratiosTtm[0] : {};
 
             var recent4 = isArr.slice(0, 4);
             var prior4 = isArr.slice(4, 8);
@@ -1208,7 +1212,7 @@
                 }
             }
 
-            processData(bs, ttm, prof, ticker);
+            processData(bs, ttm, prof, ticker, ratiosTtm);
             fetchChartData(ticker);
         } catch (err) {
             showError(err.message || 'Failed to fetch data');
@@ -1223,7 +1227,7 @@
         el.classList.remove('hidden');
     }
 
-    function processData(bs, ttm, prof, ticker) {
+    function processData(bs, ttm, prof, ticker, ratiosTtm) {
         var ratios = {};
         var bsPeriod = 'Q ' + (bs.date || '');
         var ttmLabel = 'TTM ' + (ttm.date || '');
@@ -1267,7 +1271,15 @@
 
         var price = prof.price || null;
         var epsVal = ttm.epsDiluted || null;
-        if (price && epsVal && epsVal > 0) {
+        var fmpPE = ratiosTtm && ratiosTtm.priceToEarningsRatioTTM;
+        if (fmpPE && fmpPE > 0) {
+            var peEps = price && fmpPE ? (price / fmpPE) : epsVal;
+            ratios.peRatio = {
+                value: fmpPE,
+                components: 'Price: $' + (price ? price.toFixed(2) : '—') + ' / TTM EPS: $' + (peEps ? peEps.toFixed(2) : '—'),
+                period: ttmLabel
+            };
+        } else if (price && epsVal && epsVal > 0) {
             ratios.peRatio = {
                 value: price / epsVal,
                 components: 'Price: $' + price.toFixed(2) + ' / TTM EPS: $' + epsVal.toFixed(2),
