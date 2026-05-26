@@ -1680,19 +1680,7 @@
         statsEl.innerHTML = stats.join('');
 
         var descEl = document.getElementById('companyDesc');
-        var descHtml = '';
-        if (prof.description) {
-            var shortDesc = prof.description.length > 200 ? prof.description.substring(0, 200).replace(/\s+\S*$/, '') + '...' : prof.description;
-            descHtml += '<div class="company-desc-text">' + escapeHtml(shortDesc) + '</div>';
-        }
-        var sectorStocks = SECTOR_STOCKS[sector] || [];
-        var comps = sectorStocks.filter(function(t) { return t !== ticker; }).slice(0, 5);
-        if (comps.length > 0) {
-            descHtml += '<div class="company-comps"><span class="comps-label">Compare:</span> ' + comps.map(function(t) {
-                return '<span class="comp-link" onclick="selectTicker(\'' + t + '\')">' + t + '</span>';
-            }).join(' ') + '</div>';
-        }
-        descEl.innerHTML = descHtml;
+        descEl.innerHTML = prof.description ? '<div class="company-desc-text">' + escapeHtml(prof.description) + '</div>' : '';
 
         var defs = [
             { key: 'currentRatio', category: 'Liquidity', name: 'Current Ratio', formula: 'Current Assets / Current Liabilities',
