@@ -1237,8 +1237,8 @@
 
     function processData(bs, ttm, prof, ticker, ratiosTtm) {
         var ratios = {};
-        var bsPeriod = 'Q ' + (bs.date || '');
-        var ttmLabel = 'TTM ' + (ttm.date || '');
+        var bsPeriod = bs.period ? (bs.period + ' ' + (bs.fiscalYear || '')) : 'Latest Quarter';
+        var ttmLabel = 'Trailing 12 Months';
         var rt = ratiosTtm || {};
         var cur = bs.reportedCurrency || 'USD';
         var cs = cur === 'USD' ? '$' : cur + ' ';
