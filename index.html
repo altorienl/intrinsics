@@ -1689,7 +1689,8 @@
         var descEl = document.getElementById('companyDesc');
         if (prof.description) {
             var fullDesc = escapeHtml(prof.description);
-            var firstSentence = fullDesc.split(/(?<=[.!?])\s/)[0];
+            var sentences = fullDesc.split(/(?<=[.!?])\s/);
+            var firstSentence = sentences.slice(0, 2).join(' ');
             var hasMore = fullDesc.length > firstSentence.length;
             descEl.innerHTML = '<div class="company-desc-text">' +
                 '<span class="desc-short">' + firstSentence + '</span>' +
