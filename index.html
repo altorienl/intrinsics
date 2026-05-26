@@ -497,10 +497,6 @@
         }
         .wl-card-remove {
             display: none;
-            position: absolute;
-            top: 50%;
-            right: 12px;
-            transform: translateY(-50%);
             width: 28px;
             height: 28px;
             border-radius: 6px;
@@ -512,7 +508,8 @@
             cursor: pointer;
             align-items: center;
             justify-content: center;
-            z-index: 2;
+            flex-shrink: 0;
+            margin-left: 12px;
             transition: all 0.15s;
         }
         .wl-card-remove:hover { color: #ff3344; border-color: #ff3344; }
@@ -915,7 +912,6 @@
             var letters = w.ticker.slice(0, 2).toUpperCase();
             return '<div class="wl-card-wrap" data-ticker="' + w.ticker + '">' +
                 '<div class="wl-card-delete">Delete</div>' +
-                '<button class="wl-card-remove" onclick="event.stopPropagation();removeFromWatchlist(\'' + w.ticker + '\');renderWatchlist();">&times;</button>' +
                 '<div class="wl-card">' +
                 '<img src="' + FMP_IMG + w.ticker + '.png" alt="" style="width:36px;height:36px;border-radius:8px;object-fit:contain;background:#1a1a1a" onerror="this.outerHTML=\'<div class=wl-card-fallback>' + letters + '</div>\'">' +
                 '<div class="wl-card-info" onclick="switchTab(\'analyze\');selectTicker(\'' + w.ticker + '\')">' +
@@ -924,6 +920,7 @@
                 '</div>' +
                 '<div class="wl-card-price" id="wlPrice_' + w.ticker.replace('-','_') + '">' +
                 '<div class="wl-price-loading">...</div></div>' +
+                '<button class="wl-card-remove" onclick="event.stopPropagation();removeFromWatchlist(\'' + w.ticker + '\');renderWatchlist();">&times;</button>' +
                 '</div></div>';
         }).join('') + '</div>';
 
