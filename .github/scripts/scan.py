@@ -124,14 +124,15 @@ def process_stock(ticker):
             rg = (recent - prior) / prior
 
     # Grade each ratio
-    grades = [
-        grade_higher(cr, bench['currentRatio']),
-        'bad' if (de is not None and de < 0) else grade_lower(de, bench['debtToEquity']),
-        grade_higher(at, bench['assetTurnover']),
-        grade_higher(om, bench['operatingMargin']),
-        grade_lower(pe, bench['peRatio']) if pe and pe > 0 else None,
-        grade_higher(rg, bench['revenueGrowth']),
-    ]
+    ratio_grades = {
+        'currentRatio': grade_higher(cr, bench['currentRatio']),
+        'debtToEquity': 'bad' if (de is not None and de < 0) else grade_lower(de, bench['debtToEquity']),
+        'assetTurnover': grade_higher(at, bench['assetTurnover']),
+        'operatingMargin': grade_higher(om, bench['operatingMargin']),
+        'peRatio': grade_lower(pe, bench['peRatio']) if pe and pe > 0 else None,
+        'revenueGrowth': grade_higher(rg, bench['revenueGrowth']),
+    }
+    grades = list(ratio_grades.values())
 
     scored = [g for g in grades if g is not None]
     total = len(scored)
@@ -139,6 +140,7 @@ def process_stock(ticker):
     bad = scored.count('bad')
 
     if total == 0: overall = '?'
+    elif good == total: overall = 'A+'
     elif good >= 5: overall = 'A'
     elif good >= 4 and bad == 0: overall = 'B+'
     elif bad <= 1: overall = 'B'
@@ -154,7 +156,8 @@ def process_stock(ticker):
         'change': prof.get('change'),
         'changePct': prof.get('changePercentage'),
         'marketCap': prof.get('marketCap'),
-        'scores': {'good': good, 'ok': scored.count('ok'), 'bad': bad, 'total': total}
+        'scores': {'good': good, 'ok': scored.count('ok'), 'bad': bad, 'total': total},
+        'ratioGrades': ratio_grades
     }
 
 def main():

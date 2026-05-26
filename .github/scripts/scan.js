@@ -236,7 +236,8 @@ function computeOverallGrade(grades) {
   const badCount  = scored.filter((g) => g === 'bad').length;
 
   let overallGrade;
-  if (goodCount >= 5)                        overallGrade = 'A';
+  if (goodCount === total)                   overallGrade = 'A+';
+  else if (goodCount >= 5)                   overallGrade = 'A';
   else if (goodCount >= 4 && badCount === 0) overallGrade = 'B+';
   else if (badCount <= 1)                    overallGrade = 'B';
   else if (badCount <= 2)                    overallGrade = 'C';
@@ -315,14 +316,15 @@ async function processStock(ticker, apiKey) {
   }
 
   // ---- Grade each ratio ----
-  const grades = [
-    gradeHigherBetter(currentRatio, bench.currentRatio),
-    gradeDebtToEquity(debtToEquity, bench.debtToEquity),
-    gradeHigherBetter(assetTurnover, bench.assetTurnover),
-    gradeHigherBetter(operatingMargin, bench.operatingMargin),
-    gradePeRatio(peRatio, bench.peRatio),
-    gradeHigherBetter(revenueGrowth, bench.revenueGrowth),
-  ];
+  const ratioGrades = {
+    currentRatio:    gradeHigherBetter(currentRatio, bench.currentRatio),
+    debtToEquity:    gradeDebtToEquity(debtToEquity, bench.debtToEquity),
+    assetTurnover:   gradeHigherBetter(assetTurnover, bench.assetTurnover),
+    operatingMargin: gradeHigherBetter(operatingMargin, bench.operatingMargin),
+    peRatio:         gradePeRatio(peRatio, bench.peRatio),
+    revenueGrowth:   gradeHigherBetter(revenueGrowth, bench.revenueGrowth),
+  };
+  const grades = Object.values(ratioGrades);
 
   const { grade, good, ok, bad, total } = computeOverallGrade(grades);
 
@@ -347,6 +349,7 @@ async function processStock(ticker, apiKey) {
     changePct,
     marketCap: mktCap,
     scores:    { good, ok, bad, total },
+    ratioGrades,
   };
 }
 
