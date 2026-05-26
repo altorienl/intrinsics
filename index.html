@@ -427,6 +427,32 @@
 
         .hidden { display: none; }
         .error-msg { text-align: center; padding: 24px; color: #ff3344; font-size: 14px; }
+        .news-section { margin-top: 20px; }
+        .news-header {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px; color: #4a6a4a; text-transform: uppercase;
+            letter-spacing: 1px; margin-bottom: 12px;
+        }
+        .news-item {
+            display: flex; gap: 12px; padding: 14px;
+            background: #111a11; border: 1px solid #1a2e1a; border-radius: 10px;
+            margin-bottom: 8px; text-decoration: none; transition: background 0.15s;
+        }
+        .news-item:hover { background: #151f15; }
+        .news-img {
+            width: 72px; height: 72px; border-radius: 8px; object-fit: cover;
+            flex-shrink: 0; background: #1a1a1a;
+        }
+        .news-body { flex: 1; min-width: 0; }
+        .news-title {
+            font-size: 13px; font-weight: 600; color: #c0d0c0;
+            line-height: 1.4; margin-bottom: 6px;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .news-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px; color: #3a5a3a;
+        }
         .disclaimer { text-align: center; font-size: 11px; color: #2a3a2a; margin-top: 16px; padding: 0 16px; }
 
         .tab-bar {
@@ -711,6 +737,10 @@
             </div>
             <div class="summary-card" id="summaryCard"></div>
             <div class="ratio-grid" id="ratioGrid"></div>
+            <div class="news-section hidden" id="newsSection">
+                <div class="news-header">Latest News</div>
+                <div id="newsContent"></div>
+            </div>
             <div class="disclaimer">
                 Data from Financial Modeling Prep. Not financial advice. Balance sheet from latest quarter, income metrics trailing twelve months (TTM).
             </div>
@@ -1210,6 +1240,7 @@
 
             processData(bs, ttm, prof, ticker);
             fetchChartData(ticker);
+            fetchNews(ticker);
         } catch (err) {
             showError(err.message || 'Failed to fetch data');
         } finally {
@@ -1532,6 +1563,29 @@
             '<div class="stat-sub">$' + low.toFixed(0) + ' – $' + high.toFixed(0) + '</div>';
     }
 
+
+    function fetchNews(ticker) {
+        var newsEl = document.getElementById('newsSection');
+        var contentEl = document.getElementById('newsContent');
+        newsEl.classList.add('hidden');
+        contentEl.innerHTML = '';
+        fetch('https://financialmodelingprep.com/stable/news/stock?tickers=' + encodeURIComponent(ticker) + '&limit=5&apikey=' + API_KEY)
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (!Array.isArray(data) || data.length === 0) return;
+                contentEl.innerHTML = data.map(function(n) {
+                    var date = n.publishedDate ? n.publishedDate.split(' ')[0] : '';
+                    var imgHtml = n.image ? '<img class="news-img" src="' + n.image + '" alt="" onerror="this.style.display=\'none\'">' : '';
+                    return '<a class="news-item" href="' + n.url + '" target="_blank" rel="noopener">' +
+                        imgHtml +
+                        '<div class="news-body">' +
+                        '<div class="news-title">' + escapeHtml(n.title) + '</div>' +
+                        '<div class="news-meta">' + escapeHtml(n.publisher || n.site || '') + (date ? ' · ' + date : '') + '</div>' +
+                        '</div></a>';
+                }).join('');
+                newsEl.classList.remove('hidden');
+            }).catch(function() {});
+    }
 
     async function fetchChartData(ticker) {
         currentChartTicker = ticker;
