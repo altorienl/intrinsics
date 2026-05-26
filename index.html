@@ -1393,6 +1393,10 @@
             var sharesOut = Math.round(prof.marketCap / currentPrice);
             stats.push('<div class="stat-item"><div class="stat-label">Shares Out</div><div class="stat-value">' + fmt(sharesOut) + '</div></div>');
         }
+        if (prof.lastDividend && currentPrice && currentPrice > 0) {
+            var divYield = (prof.lastDividend / currentPrice * 100);
+            stats.push('<div class="stat-item"><div class="stat-label">Div Yield</div><div class="stat-value">' + divYield.toFixed(2) + '%</div></div>');
+        }
         statsEl.innerHTML = stats.join('');
 
         var defs = [
