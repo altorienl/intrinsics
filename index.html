@@ -425,6 +425,14 @@
             margin-bottom: 6px;
         }
 
+        .filing-date {
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: #3a5a3a;
+            margin-top: 14px;
+            letter-spacing: 0.5px;
+        }
         .hidden { display: none; }
         .error-msg { text-align: center; padding: 24px; color: #ff3344; font-size: 14px; }
         .disclaimer { text-align: center; font-size: 11px; color: #2a3a2a; margin-top: 16px; padding: 0 16px; }
@@ -1301,7 +1309,8 @@
         var sector = fmpSectorMap(prof.sector);
         var benchmarks = SECTOR_BENCHMARKS[sector] || SECTOR_BENCHMARKS['Default'];
 
-        renderResults(ticker, prof, sector, benchmarks, ratios, price);
+        var filingInfo = { period: bs.period || '', year: bs.fiscalYear || '', filed: bs.filingDate || '' };
+        renderResults(ticker, prof, sector, benchmarks, ratios, price, filingInfo);
         renderQuickPicks(ticker, sector);
     }
 
@@ -1367,7 +1376,7 @@
         return ticker + ' shows ' + s + ' but has ' + w + '.';
     }
 
-    function renderResults(ticker, prof, sector, benchmarks, ratios, currentPrice) {
+    function renderResults(ticker, prof, sector, benchmarks, ratios, currentPrice, filingInfo) {
         var headerEl = document.getElementById('companyHeader');
         var companyName = prof.companyName || ticker;
         currentTicker = ticker;
@@ -1477,11 +1486,24 @@
 
         var oneLiner = buildOneLiner(ticker, ratios, benchmarks, defs, overallGrade);
 
+        var filingLine = '';
+        if (filingInfo && filingInfo.period && filingInfo.year) {
+            var fd = filingInfo.filed;
+            var filedStr = '';
+            if (fd) {
+                var fp = fd.split('-');
+                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                filedStr = ' · Filed ' + months[parseInt(fp[1],10)-1] + ' ' + parseInt(fp[2],10) + ', ' + fp[0];
+            }
+            filingLine = '<div class="filing-date">Latest: ' + filingInfo.period + ' ' + filingInfo.year + ' filing' + filedStr + '</div>';
+        }
+
         document.getElementById('summaryCard').innerHTML = '<h3>Overall Health &mdash; ' + sectorLabel + ' Sector</h3>' +
             '<div class="overall-grade ' + overallClass + '">' + overallGrade + '</div>' +
             '<div class="overall-label">' + goodCount + ' of ' + total + ' ratios at healthy levels</div>' +
             '<div class="overall-summary">' + overallText + '</div>' +
-            '<div class="one-liner"><div class="one-liner-label">AI Insight</div>' + oneLiner + '</div>';
+            '<div class="one-liner"><div class="one-liner-label">AI Insight</div>' + oneLiner + '</div>' +
+            filingLine;
 
         document.getElementById('results').classList.remove('hidden');
     }
