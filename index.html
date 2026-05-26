@@ -700,6 +700,13 @@
             border-radius: 12px;
         }
         .company-desc:empty { display: none; }
+        .desc-toggle {
+            color: #00ff41;
+            cursor: pointer;
+            font-size: 12px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .desc-toggle:hover { text-decoration: underline; }
         .company-desc-text {
             font-size: 13px;
             color: #6a8a6a;
@@ -1680,7 +1687,18 @@
         statsEl.innerHTML = stats.join('');
 
         var descEl = document.getElementById('companyDesc');
-        descEl.innerHTML = prof.description ? '<div class="company-desc-text">' + escapeHtml(prof.description) + '</div>' : '';
+        if (prof.description) {
+            var fullDesc = escapeHtml(prof.description);
+            var firstSentence = fullDesc.split(/(?<=[.!?])\s/)[0];
+            var hasMore = fullDesc.length > firstSentence.length;
+            descEl.innerHTML = '<div class="company-desc-text">' +
+                '<span class="desc-short">' + firstSentence + '</span>' +
+                (hasMore ? '<span class="desc-full" style="display:none"> ' + fullDesc.substring(firstSentence.length).trim() + '</span>' +
+                ' <span class="desc-toggle" onclick="var f=this.previousElementSibling;var s=f.previousElementSibling;if(f.style.display===\'none\'){f.style.display=\'inline\';this.textContent=\'Show less\';}else{f.style.display=\'none\';this.textContent=\'Show more\';}">Show more</span>' : '') +
+                '</div>';
+        } else {
+            descEl.innerHTML = '';
+        }
 
         var defs = [
             { key: 'currentRatio', category: 'Liquidity', name: 'Current Ratio', formula: 'Current Assets / Current Liabilities',
