@@ -1,0 +1,7877 @@
+{
+  "updated": "2026-05-26T15:53:48.647232Z",
+  "stocks": [
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 311.388,
+      "change": 2.568,
+      "changePct": 0.83155,
+      "marketCap": 4573466410128,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ABBV",
+      "name": "AbbVie Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 214.17,
+      "change": -1.53,
+      "changePct": -0.70932,
+      "marketCap": 378394018474,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ABT",
+      "name": "Abbott Laboratories",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 86.39,
+      "change": -1.02,
+      "changePct": -1.16691,
+      "marketCap": 150474965900,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture plc",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 177.64,
+      "change": -1.6,
+      "changePct": -0.89266,
+      "marketCap": 109325899848,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 242.15,
+      "change": -2.61,
+      "changePct": -1.06635,
+      "marketCap": 97877030000,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 415.41501,
+      "change": 18.34501,
+      "changePct": 4.62009,
+      "marketCap": 202343266884,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ADM",
+      "name": "Archer-Daniels-Midland Company",
+      "sector": "Consumer Defensive",
+      "grade": "D",
+      "price": 79.12,
+      "change": 1.6,
+      "changePct": 2.06398,
+      "marketCap": 38132400416,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 221.22,
+      "change": -4.09,
+      "changePct": -1.81528,
+      "marketCap": 88429217864,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 238.1824,
+      "change": -2.8076,
+      "changePct": -1.16503,
+      "marketCap": 50291022848,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AEE",
+      "name": "Ameren Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 110.97,
+      "change": -0.32,
+      "changePct": -0.28754,
+      "marketCap": 30711126828,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AEP",
+      "name": "American Electric Power Company, Inc.",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 131.06,
+      "change": -0.53,
+      "changePct": -0.40277,
+      "marketCap": 71310401300,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AES",
+      "name": "The AES Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 14.675,
+      "change": -0.00499981,
+      "changePct": -0.03405865,
+      "marketCap": 10465589574,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AFL",
+      "name": "Aflac Incorporated",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 117.54,
+      "change": -0.32,
+      "changePct": -0.27151,
+      "marketCap": 59826096900,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AIG",
+      "name": "American International Group, Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 78.02,
+      "change": 0.97,
+      "changePct": 1.25892,
+      "marketCap": 41366689362,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AIZ",
+      "name": "Assurant, Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 256.51,
+      "change": 1.69,
+      "changePct": 0.66321,
+      "marketCap": 12709464367,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 204.41,
+      "change": -0.34,
+      "changePct": -0.16606,
+      "marketCap": 52521514220,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AKAM",
+      "name": "Akamai Technologies, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 147.29,
+      "change": 0.06,
+      "changePct": 0.04075256,
+      "marketCap": 21413823078,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle Corporation",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 176.88,
+      "change": 5.3,
+      "changePct": 3.08894,
+      "marketCap": 20860281069,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "ALGN",
+      "name": "Align Technology, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 163.6045,
+      "change": -0.0055,
+      "changePct": -0.00336165,
+      "marketCap": 11717047859,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ALK",
+      "name": "Alaska Air Group, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 43.35,
+      "change": 2.01,
+      "changePct": 4.86212,
+      "marketCap": 4830446980,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ALL",
+      "name": "The Allstate Corporation",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 214.715,
+      "change": -1.885,
+      "changePct": -0.87027,
+      "marketCap": 55272150015,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ALLE",
+      "name": "Allegion plc",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 131.45,
+      "change": 1.02,
+      "changePct": 0.78203,
+      "marketCap": 11296268666,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 449.73,
+      "change": 17.57,
+      "changePct": 4.06562,
+      "marketCap": 357067181070,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AMCR",
+      "name": "Amcor plc",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 38.755,
+      "change": 0.375,
+      "changePct": 0.97707,
+      "marketCap": 17918207216,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 491.08,
+      "change": 23.57,
+      "changePct": 5.0416,
+      "marketCap": 800755048000,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AME",
+      "name": "AMETEK, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 227.03,
+      "change": 2.51,
+      "changePct": 1.11794,
+      "marketCap": 52035957090,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 337.215,
+      "change": -2.085,
+      "changePct": -0.6145,
+      "marketCap": 181997633220,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AMP",
+      "name": "Ameriprise Financial, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 453.75,
+      "change": 1.44,
+      "changePct": 0.31837,
+      "marketCap": 40790809125,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AMT",
+      "name": "American Tower Corporation",
+      "sector": "Real Estate",
+      "grade": "D",
+      "price": 183.17,
+      "change": -0.68,
+      "changePct": -0.36987,
+      "marketCap": 85337633449,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 263.49,
+      "change": -2.83,
+      "changePct": -1.06263,
+      "marketCap": 2834388279000,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 158.75,
+      "change": 4.72,
+      "changePct": 3.06434,
+      "marketCap": 199893148283,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ANSS",
+      "name": "ANSYS, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 374.3,
+      "change": -18.42,
+      "changePct": -4.69036,
+      "marketCap": 32906994733,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 321.86,
+      "change": -2.92,
+      "changePct": -0.89907,
+      "marketCap": 68741876805,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AOS",
+      "name": "A. O. Smith Corporation",
+      "sector": "Industrials",
+      "grade": "A",
+      "price": 58.17,
+      "change": 0.89,
+      "changePct": 1.55377,
+      "marketCap": 8126744265,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "APA",
+      "name": "APA Corporation",
+      "sector": "Energy",
+      "grade": "B",
+      "price": 38.44,
+      "change": -0.36,
+      "changePct": -0.92784,
+      "marketCap": 13587386315,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "APD",
+      "name": "Air Products and Chemicals, Inc.",
+      "sector": "Basic Materials",
+      "grade": "D",
+      "price": 287.675,
+      "change": -1.795,
+      "changePct": -0.6201,
+      "marketCap": 64059666345,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "APH",
+      "name": "Amphenol Corporation",
+      "sector": "Technology",
+      "grade": "B+",
+      "price": 141.775,
+      "change": 9.715,
+      "changePct": 7.3565,
+      "marketCap": 174415858250,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv PLC",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 57.86,
+      "change": 0.5,
+      "changePct": 0.87169,
+      "marketCap": 12244391189,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ARE",
+      "name": "Alexandria Real Estate Equities, Inc.",
+      "sector": "Real Estate",
+      "grade": "D",
+      "price": 48.03,
+      "change": -0.34,
+      "changePct": -0.70292,
+      "marketCap": 8370140070,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "ATO",
+      "name": "Atmos Energy Corporation",
+      "sector": "Utilities",
+      "grade": "B+",
+      "price": 177.787,
+      "change": -0.023,
+      "changePct": -0.01293516,
+      "marketCap": 29676174394,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 424.04,
+      "change": 9.9,
+      "changePct": 2.3905,
+      "marketCap": 2007689466800,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AVY",
+      "name": "Avery Dennison Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 159.05,
+      "change": -0.61,
+      "changePct": -0.38206,
+      "marketCap": 12165798120,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AWK",
+      "name": "American Water Works Company, Inc.",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 124.5395,
+      "change": -0.6605,
+      "changePct": -0.52756,
+      "marketCap": 24320138445,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AXP",
+      "name": "American Express Company",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 310.42,
+      "change": -1.36,
+      "changePct": -0.43621,
+      "marketCap": 211807774436,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "AZO",
+      "name": "AutoZone, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 3017.89,
+      "change": -388.61,
+      "changePct": -11.4079,
+      "marketCap": 49725230310,
+      "scores": {
+        "good": 0,
+        "ok": 1,
+        "bad": 5,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BA",
+      "name": "The Boeing Company",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 220.4,
+      "change": 1.38,
+      "changePct": 0.63008,
+      "marketCap": 173741760800,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BAC",
+      "name": "Bank of America Corporation",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 52.04,
+      "change": 0.24,
+      "changePct": 0.46332,
+      "marketCap": 369306583975,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 19.375,
+      "change": 0.195,
+      "changePct": 1.01668,
+      "marketCap": 10006586875,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "BBWI",
+      "name": "Bath & Body Works, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 18.055,
+      "change": 0.295,
+      "changePct": 1.66104,
+      "marketCap": 3635961362,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BBY",
+      "name": "Best Buy Co., Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 62.86,
+      "change": 1.23,
+      "changePct": 1.99578,
+      "marketCap": 13244287700,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BDX",
+      "name": "Becton, Dickinson and Company",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 146.82,
+      "change": -0.81,
+      "changePct": -0.54867,
+      "marketCap": 53192166729,
+      "scores": {
+        "good": 0,
+        "ok": 3,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BEN",
+      "name": "Franklin Resources, Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 31.38,
+      "change": 0.36,
+      "changePct": 1.16054,
+      "marketCap": 16306214144,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global S.A.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 122.615,
+      "change": 1.905,
+      "changePct": 1.57816,
+      "marketCap": 23789517070,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BIIB",
+      "name": "Biogen Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 194.7611,
+      "change": 1.0011,
+      "changePct": 0.51667,
+      "marketCap": 28753944521,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BIO",
+      "name": "Bio-Rad Laboratories, Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 289.79,
+      "change": 2.05,
+      "changePct": 0.71245,
+      "marketCap": 7834557558,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BK",
+      "name": "The Bank of New York Mellon Corporation",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 141.295,
+      "change": 2.145,
+      "changePct": 1.5415,
+      "marketCap": 96981920805,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 163.97,
+      "change": 2.91,
+      "changePct": 1.80678,
+      "marketCap": 127056817151,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes Company",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 67.0889,
+      "change": 1.0289,
+      "changePct": 1.55752,
+      "marketCap": 66556797606,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BLDR",
+      "name": "Builders FirstSource, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 74.5791,
+      "change": 0.4291,
+      "changePct": 0.57869,
+      "marketCap": 8021728164,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BLK",
+      "name": "BlackRock, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 1072.38,
+      "change": -0.62,
+      "changePct": -0.05778192,
+      "marketCap": 166469836920,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol-Myers Squibb Company",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 58.33,
+      "change": -1.13,
+      "changePct": -1.90044,
+      "marketCap": 119113943100,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BR",
+      "name": "Broadridge Financial Solutions, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 147.445,
+      "change": -3.045,
+      "changePct": -2.02339,
+      "marketCap": 17053237601,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BRK-B",
+      "name": "Berkshire Hathaway Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 485.24,
+      "change": -1.14,
+      "changePct": -0.23438,
+      "marketCap": 1046591732574,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BRO",
+      "name": "Brown & Brown, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 57.55,
+      "change": -0.27,
+      "changePct": -0.46697,
+      "marketCap": 19506457400,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BSX",
+      "name": "Boston Scientific Corporation",
+      "sector": "Healthcare",
+      "grade": "B+",
+      "price": 57.685,
+      "change": -0.095,
+      "changePct": -0.16442,
+      "marketCap": 85740398501,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BWA",
+      "name": "BorgWarner Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 66.67,
+      "change": 0.85,
+      "changePct": 1.2914,
+      "marketCap": 13675017050,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 118.413,
+      "change": -0.097,
+      "changePct": -0.08184963,
+      "marketCap": 142245322345,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "BXP",
+      "name": "BXP, Inc.",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 60.72,
+      "change": 0.43,
+      "changePct": 0.71322,
+      "marketCap": 9683443440,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "C",
+      "name": "Citigroup Inc.",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 125.85,
+      "change": 0.76,
+      "changePct": 0.60756,
+      "marketCap": 215821423500,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CAG",
+      "name": "Conagra Brands, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 13.245,
+      "change": -0.31,
+      "changePct": -2.28698,
+      "marketCap": 6336898010,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 200.59,
+      "change": -0.09,
+      "changePct": -0.04484752,
+      "marketCap": 46979381540,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CARR",
+      "name": "Carrier Global Corporation",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 64.685,
+      "change": 1.545,
+      "changePct": 2.44694,
+      "marketCap": 53726094662,
+      "scores": {
+        "good": 0,
+        "ok": 4,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 902.6,
+      "change": 22.71,
+      "changePct": 2.581,
+      "marketCap": 415770956200,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb Limited",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 326.79,
+      "change": -1.1,
+      "changePct": -0.33548,
+      "marketCap": 126748804040,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CBOE",
+      "name": "Cboe Global Markets, Inc.",
+      "sector": "Financial Services",
+      "grade": "A",
+      "price": 356.275,
+      "change": -1.075,
+      "changePct": -0.30083,
+      "marketCap": 37285603850,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CBRE",
+      "name": "CBRE Group, Inc.",
+      "sector": "Real Estate",
+      "grade": "A",
+      "price": 130,
+      "change": -1.07,
+      "changePct": -0.81636,
+      "marketCap": 38066210000,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CCI",
+      "name": "Crown Castle Inc.",
+      "sector": "Real Estate",
+      "grade": "D",
+      "price": 90.66,
+      "change": -0.8,
+      "changePct": -0.8747,
+      "marketCap": 39568736779,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 26.685,
+      "change": 0.705,
+      "changePct": 2.71363,
+      "marketCap": 36962447424,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 382.18,
+      "change": 8.59,
+      "changePct": 2.29931,
+      "marketCap": 105411358880,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CDW",
+      "name": "CDW Corporation",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 110.085,
+      "change": -0.735,
+      "changePct": -0.66324,
+      "marketCap": 14063738653,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CE",
+      "name": "Celanese Corporation",
+      "sector": "Basic Materials",
+      "grade": "D",
+      "price": 52.55,
+      "change": 0.16,
+      "changePct": 0.3054,
+      "marketCap": 5762790650,
+      "scores": {
+        "good": 0,
+        "ok": 2,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 303.3,
+      "change": 9.23,
+      "changePct": 3.13871,
+      "marketCap": 109548946108,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries Holdings, Inc.",
+      "sector": "Basic Materials",
+      "grade": "B+",
+      "price": 121.87,
+      "change": 0.17,
+      "changePct": 0.13969,
+      "marketCap": 18722766230,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CFG",
+      "name": "Citizens Financial Group, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 63.215,
+      "change": 0.325,
+      "changePct": 0.51678,
+      "marketCap": 26732485630,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CHD",
+      "name": "Church & Dwight Co., Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 97.01,
+      "change": 0.76,
+      "changePct": 0.78961,
+      "marketCap": 22985899336,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 177.3172,
+      "change": 3.0872,
+      "changePct": 1.77191,
+      "marketCap": 20900917763,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CHTR",
+      "name": "Charter Communications, Inc.",
+      "sector": "Communication Services",
+      "grade": "D",
+      "price": 143.905,
+      "change": -1.245,
+      "changePct": -0.85773,
+      "marketCap": 17698156425,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CI",
+      "name": "Cigna Corporation",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 281.65,
+      "change": -4.59,
+      "changePct": -1.60355,
+      "marketCap": 74505437518,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CINF",
+      "name": "Cincinnati Financial Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 167.8236,
+      "change": -0.2764,
+      "changePct": -0.16443,
+      "marketCap": 25960129213,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CL",
+      "name": "Colgate-Palmolive Company",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 90.56,
+      "change": -0.05,
+      "changePct": -0.05518155,
+      "marketCap": 72465143914,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CLX",
+      "name": "The Clorox Company",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 96.4,
+      "change": 1.29,
+      "changePct": 1.35632,
+      "marketCap": 11656784400,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CMA",
+      "name": "Comerica Incorporated",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 88.67,
+      "change": -4.19,
+      "changePct": -4.51217,
+      "marketCap": 11348051950,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "grade": "B",
+      "price": 24.985,
+      "change": -0.22,
+      "changePct": -0.87284,
+      "marketCap": 89252127773,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CME",
+      "name": "CME Group Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 283.55,
+      "change": -7.68,
+      "changePct": -2.63709,
+      "marketCap": 102746043800,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 32.2075,
+      "change": -0.6825,
+      "changePct": -2.0751,
+      "marketCap": 41313655892,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CMI",
+      "name": "Cummins Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 657.09,
+      "change": 17.54,
+      "changePct": 2.74255,
+      "marketCap": 90671236035,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CMS",
+      "name": "CMS Energy Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 74.25,
+      "change": -0.28,
+      "changePct": -0.37569,
+      "marketCap": 22937280449,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CNC",
+      "name": "Centene Corporation",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 58.055,
+      "change": -1.085,
+      "changePct": -1.83463,
+      "marketCap": 28667384835,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "CNP",
+      "name": "CenterPoint Energy, Inc.",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 42.855,
+      "change": 0.025,
+      "changePct": 0.0583703,
+      "marketCap": 28034433065,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 187.13,
+      "change": -0.66,
+      "changePct": -0.35146,
+      "marketCap": 116449648483,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "COO",
+      "name": "The Cooper Companies, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 62.2331,
+      "change": -0.3169,
+      "changePct": -0.50663,
+      "marketCap": 12142573842,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "grade": "B",
+      "price": 118.42,
+      "change": -2.04,
+      "changePct": -1.69351,
+      "marketCap": 144270374078,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "COR",
+      "name": "Cencora, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 272.51,
+      "change": -2.4,
+      "changePct": -0.87301,
+      "marketCap": 53019818110,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 999.42,
+      "change": -28.82,
+      "changePct": -2.80285,
+      "marketCap": 443395681260,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CPAY",
+      "name": "Corpay, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 344.11,
+      "change": -3.79,
+      "changePct": -1.08939,
+      "marketCap": 22491689947,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CPB",
+      "name": "Campbell Soup Company",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 20.46,
+      "change": -0.12,
+      "changePct": -0.58309,
+      "marketCap": 6100067160,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 33.05,
+      "change": -0.74,
+      "changePct": -2.19,
+      "marketCap": 31837342223,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CPT",
+      "name": "Camden Property Trust",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 107.75,
+      "change": 0.28,
+      "changePct": 0.26054,
+      "marketCap": 10831030000,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CRL",
+      "name": "Charles River Laboratories International, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 156.03999,
+      "change": -4.26001,
+      "changePct": -2.65752,
+      "marketCap": 7516092266,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 181.475,
+      "change": 1.405,
+      "changePct": 0.78025,
+      "marketCap": 172399373911,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 676.1097,
+      "change": 12.6497,
+      "changePct": 1.90663,
+      "marketCap": 172094610852,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco Systems, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 118.1706,
+      "change": -2.2394,
+      "changePct": -1.85981,
+      "marketCap": 465761702887,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CSGP",
+      "name": "CoStar Group, Inc.",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 33.0461,
+      "change": -0.9039,
+      "changePct": -2.66244,
+      "marketCap": 13494573212,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CSX",
+      "name": "CSX Corporation",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 46.28,
+      "change": 0.76,
+      "changePct": 1.6696,
+      "marketCap": 85994719200,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CTAS",
+      "name": "Cintas Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 170.7,
+      "change": -2.23,
+      "changePct": -1.28954,
+      "marketCap": 68294850900,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Coterra Energy Inc.",
+      "sector": "Energy",
+      "grade": "B",
+      "price": 32.56,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 24724651515,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CTSH",
+      "name": "Cognizant Technology Solutions Corporation",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 52.1625,
+      "change": -0.5875,
+      "changePct": -1.11375,
+      "marketCap": 24718190989,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CTVA",
+      "name": "Corteva, Inc.",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 79.73,
+      "change": 0.17,
+      "changePct": 0.21368,
+      "marketCap": 53325018600,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS Health Corporation",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 91.84,
+      "change": -1.42,
+      "changePct": -1.52262,
+      "marketCap": 117181163875,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron Corporation",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 187.43,
+      "change": -4,
+      "changePct": -2.08954,
+      "marketCap": 373285588000,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "CZR",
+      "name": "Caesars Entertainment, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 28.335,
+      "change": -0.135,
+      "changePct": -0.47418,
+      "marketCap": 5771185812,
+      "scores": {
+        "good": 1,
+        "ok": 0,
+        "bad": 4,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 67.43,
+      "change": -0.24,
+      "changePct": -0.35466,
+      "marketCap": 59301650650,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 78.61,
+      "change": 2.47,
+      "changePct": 3.24402,
+      "marketCap": 51646298340,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DAY",
+      "name": "Dayforce Inc",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 69.86,
+      "change": 0.94,
+      "changePct": 1.3639,
+      "marketCap": 11180042515,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "DD",
+      "name": "DuPont de Nemours, Inc.",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 49.18,
+      "change": 1.06,
+      "changePct": 2.20283,
+      "marketCap": 20159914780,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 525.69,
+      "change": -3.46,
+      "changePct": -0.65388,
+      "marketCap": 141992697075,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DECK",
+      "name": "Deckers Outdoor Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "A",
+      "price": 108.81,
+      "change": 2.14,
+      "changePct": 2.00619,
+      "marketCap": 15445579500,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DFS",
+      "name": "Discover Financial Services",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 200.05,
+      "change": -0.43,
+      "changePct": -0.21449,
+      "marketCap": 50343181050,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 103.15,
+      "change": -2.5,
+      "changePct": -2.3663,
+      "marketCap": 22716312236,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DGX",
+      "name": "Quest Diagnostics Incorporated",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 192.94,
+      "change": -2.27,
+      "changePct": -1.16285,
+      "marketCap": 21357686240,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DHI",
+      "name": "D.R. Horton, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 144.44,
+      "change": 0.71,
+      "changePct": 0.49398,
+      "marketCap": 40960239302,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DHR",
+      "name": "Danaher Corporation",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 171.86,
+      "change": -0.14,
+      "changePct": -0.08139535,
+      "marketCap": 121637459956,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DIS",
+      "name": "The Walt Disney Company",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 102.7701,
+      "change": -0.2299,
+      "changePct": -0.2232,
+      "marketCap": 178461452696,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DLTR",
+      "name": "Dollar Tree, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 92.52,
+      "change": -2.46,
+      "changePct": -2.59002,
+      "marketCap": 18015994563,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DOV",
+      "name": "Dover Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 212.745,
+      "change": 2.845,
+      "changePct": 1.35541,
+      "marketCap": 28648542521,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DOW",
+      "name": "Dow Inc.",
+      "sector": "Basic Materials",
+      "grade": "C",
+      "price": 35.37,
+      "change": -0.64,
+      "changePct": -1.77728,
+      "marketCap": 25492609170,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "DPZ",
+      "name": "Domino's Pizza, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 315.16,
+      "change": -1.36,
+      "changePct": -0.42967,
+      "marketCap": 10482820089,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DRI",
+      "name": "Darden Restaurants, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 202.76,
+      "change": -0.75,
+      "changePct": -0.36853,
+      "marketCap": 23223117208,
+      "scores": {
+        "good": 0,
+        "ok": 4,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DTE",
+      "name": "DTE Energy Company",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 144.29,
+      "change": -1.01,
+      "changePct": -0.69511,
+      "marketCap": 30016360120,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DUK",
+      "name": "Duke Energy Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 125.2,
+      "change": -0.47,
+      "changePct": -0.374,
+      "marketCap": 97605419200,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DVA",
+      "name": "DaVita Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 198.74,
+      "change": 0.22,
+      "changePct": 0.11082,
+      "marketCap": 12759108000,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy Corporation",
+      "sector": "Energy",
+      "grade": "B",
+      "price": 46.42,
+      "change": -0.8,
+      "changePct": -1.6942,
+      "marketCap": 28846832173,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "DXCM",
+      "name": "DexCom, Inc.",
+      "sector": "Healthcare",
+      "grade": "A",
+      "price": 72.5983,
+      "change": 0.4983,
+      "changePct": 0.69112,
+      "marketCap": 28013722146,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 200.802,
+      "change": -0.168,
+      "changePct": -0.08359457,
+      "marketCap": 50351302302,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 115.5394,
+      "change": -0.2106,
+      "changePct": -0.18194,
+      "marketCap": 51299493600,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials",
+      "grade": "C",
+      "price": 252.42,
+      "change": -0.9,
+      "changePct": -0.35528,
+      "marketCap": 71040579960,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ED",
+      "name": "Consolidated Edison, Inc.",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 107.8,
+      "change": -0.74,
+      "changePct": -0.68178,
+      "marketCap": 39727502199,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EFX",
+      "name": "Equifax Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 163.98,
+      "change": -0.06,
+      "changePct": -0.03657644,
+      "marketCap": 19781660068,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EIX",
+      "name": "Edison International",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 70.85,
+      "change": -0.33,
+      "changePct": -0.46361,
+      "marketCap": 27262654900,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EL",
+      "name": "The Est\u00e9e Lauder Companies Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 88.03,
+      "change": -0.29,
+      "changePct": -0.32835,
+      "marketCap": 31838218735,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "EMN",
+      "name": "Eastman Chemical Company",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 74.08,
+      "change": -0.04,
+      "changePct": -0.05396654,
+      "marketCap": 8471045037,
+      "scores": {
+        "good": 0,
+        "ok": 5,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric Co.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 138.74,
+      "change": 2.32,
+      "changePct": 1.70063,
+      "marketCap": 77708274000,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ENPH",
+      "name": "Enphase Energy, Inc.",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 67.9,
+      "change": 3.87,
+      "changePct": 6.04404,
+      "marketCap": 8949084200,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources, Inc.",
+      "sector": "Energy",
+      "grade": "B",
+      "price": 139.03,
+      "change": -2.19,
+      "changePct": -1.55077,
+      "marketCap": 74051409870,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EPAM",
+      "name": "EPAM Systems, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 101.36,
+      "change": -1.33,
+      "changePct": -1.29516,
+      "marketCap": 5295497553,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EQIX",
+      "name": "Equinix, Inc.",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 1080.5401,
+      "change": 0.7501,
+      "changePct": 0.06946721,
+      "marketCap": 106567402930,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EQR",
+      "name": "Equity Residential",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 66.32,
+      "change": 0.12,
+      "changePct": 0.18127,
+      "marketCap": 24848247040,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT Corporation",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 56.915,
+      "change": -1.005,
+      "changePct": -1.73515,
+      "marketCap": 35599080943,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ERIE",
+      "name": "Erie Indemnity Company",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 225.55,
+      "change": 1.32,
+      "changePct": 0.58868,
+      "marketCap": 10417944287,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ES",
+      "name": "Eversource Energy",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 69.615,
+      "change": -0.385,
+      "changePct": -0.55,
+      "marketCap": 26180809200,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ESS",
+      "name": "Essex Property Trust, Inc.",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 277.015,
+      "change": 0.315,
+      "changePct": 0.11384,
+      "marketCap": 17801787244,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation plc",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 407.98,
+      "change": 16.63,
+      "changePct": 4.24939,
+      "marketCap": 158418634000,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ETR",
+      "name": "Entergy Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 112.11,
+      "change": -0.29,
+      "changePct": -0.25801,
+      "marketCap": 51327545520,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EVRG",
+      "name": "Evergy, Inc.",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 83.9917,
+      "change": 0.0517,
+      "changePct": 0.06159161,
+      "marketCap": 19361178742,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences Corporation",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 86.78,
+      "change": 1,
+      "changePct": 1.16577,
+      "marketCap": 49967924000,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EXC",
+      "name": "Exelon Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 46.22,
+      "change": -0.01,
+      "changePct": -0.02163098,
+      "marketCap": 47292680323,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EXPD",
+      "name": "Expeditors International of Washington, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 160.62,
+      "change": 2.14,
+      "changePct": 1.35033,
+      "marketCap": 21007671144,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EXPE",
+      "name": "Expedia Group, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 222.12,
+      "change": 7.47,
+      "changePct": 3.48008,
+      "marketCap": 25432517880,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "EXR",
+      "name": "Extra Space Storage Inc.",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 143.6,
+      "change": 0.3,
+      "changePct": 0.20935,
+      "marketCap": 30337070410,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 15.18,
+      "change": 0.25,
+      "changePct": 1.67448,
+      "marketCap": 59412100804,
+      "scores": {
+        "good": 0,
+        "ok": 2,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy, Inc.",
+      "sector": "Energy",
+      "grade": "D",
+      "price": 198.9,
+      "change": -1.81,
+      "changePct": -0.9018,
+      "marketCap": 55953155700,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FAST",
+      "name": "Fastenal Company",
+      "sector": "Industrials",
+      "grade": "A",
+      "price": 44.095,
+      "change": 0.155,
+      "changePct": 0.35275,
+      "marketCap": 50622823800,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FBHS",
+      "name": "Fortune Brands Home & Security, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 61.9,
+      "change": -1.32,
+      "changePct": -2.088,
+      "marketCap": 7940036800,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 63.875,
+      "change": 1.885,
+      "changePct": 3.04081,
+      "marketCap": 91824136377,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FDS",
+      "name": "FactSet Research Systems Inc.",
+      "sector": "Financial Services",
+      "grade": "A",
+      "price": 233.84,
+      "change": 1.84,
+      "changePct": 0.7931,
+      "marketCap": 8519054738,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 398.82,
+      "change": 4.62,
+      "changePct": 1.17199,
+      "marketCap": 95161146428,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FE",
+      "name": "FirstEnergy Corp.",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 46.48,
+      "change": 0.17,
+      "changePct": 0.36709,
+      "marketCap": 26885472880,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FFIV",
+      "name": "F5, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 397.19,
+      "change": 3.56,
+      "changePct": 0.9044,
+      "marketCap": 22409160716,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FI",
+      "name": "Fiserv, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 63.8,
+      "change": 0.1,
+      "changePct": 0.15699,
+      "marketCap": 34314950646,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac Corporation",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 1252.48,
+      "change": 12.57,
+      "changePct": 1.01378,
+      "marketCap": 29046145947,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FIS",
+      "name": "Fidelity National Information Services, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 42.46,
+      "change": -1.1,
+      "changePct": -2.52525,
+      "marketCap": 21946682340,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FISV",
+      "name": "Fiserv, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 55.6905,
+      "change": -1.4395,
+      "changePct": -2.51969,
+      "marketCap": 29697181887,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FITB",
+      "name": "Fifth Third Bancorp",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 49.7742,
+      "change": 0.2942,
+      "changePct": 0.59458,
+      "marketCap": 35173349117,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FMC",
+      "name": "FMC Corporation",
+      "sector": "Basic Materials",
+      "grade": "D",
+      "price": 13.14,
+      "change": 0.03,
+      "changePct": 0.22883,
+      "marketCap": 1643091300,
+      "scores": {
+        "good": 0,
+        "ok": 2,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "FOX",
+      "name": "Fox Corporation",
+      "sector": "Communication Services",
+      "grade": "B",
+      "price": 57.6597,
+      "change": 0.4197,
+      "changePct": 0.73323,
+      "marketCap": 25284057696,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FOXA",
+      "name": "Fox Corporation",
+      "sector": "Communication Services",
+      "grade": "B",
+      "price": 64.49,
+      "change": 0.51,
+      "changePct": 0.79712,
+      "marketCap": 28279177325,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FRT",
+      "name": "Federal Realty Investment Trust",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 119.905,
+      "change": 0.155,
+      "changePct": 0.12944,
+      "marketCap": 10358496666,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar, Inc.",
+      "sector": "Energy",
+      "grade": "B+",
+      "price": 272.77,
+      "change": 14.92,
+      "changePct": 5.78631,
+      "marketCap": 29309954810,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 134.57,
+      "change": 0.64,
+      "changePct": 0.47786,
+      "marketCap": 98592493977,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "FTV",
+      "name": "Fortive Corporation",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 59.865,
+      "change": 0.735,
+      "changePct": 1.24303,
+      "marketCap": 18250505534,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GD",
+      "name": "General Dynamics Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 343.78,
+      "change": 0.89,
+      "changePct": 0.25956,
+      "marketCap": 92968489687,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GDDY",
+      "name": "GoDaddy Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 89.325,
+      "change": -1.135,
+      "changePct": -1.2547,
+      "marketCap": 11827523250,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GE",
+      "name": "GE Aerospace",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 311.725,
+      "change": 8.885,
+      "changePct": 2.93389,
+      "marketCap": 325699507372,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare Technologies Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 64.5302,
+      "change": 0.3002,
+      "changePct": 0.46738,
+      "marketCap": 29354257929,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GEN",
+      "name": "Gen Digital Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 24.9333,
+      "change": 0.1133,
+      "changePct": 0.45649,
+      "marketCap": 15101196576,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 134.98,
+      "change": 0.62,
+      "changePct": 0.46145,
+      "marketCap": 167587101593,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GIS",
+      "name": "General Mills, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 33.49,
+      "change": -0.2,
+      "changePct": -0.59365,
+      "marketCap": 17872976690,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 156.71,
+      "change": 0.43,
+      "changePct": 0.27515,
+      "marketCap": 12167716608,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Incorporated",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 197.19,
+      "change": 3.14,
+      "changePct": 1.61814,
+      "marketCap": 169709172712,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GM",
+      "name": "General Motors Company",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 79.2,
+      "change": 0.41,
+      "changePct": 0.52037,
+      "marketCap": 71411883444,
+      "scores": {
+        "good": 0,
+        "ok": 3,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GNRC",
+      "name": "Generac Holdings Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 275.585,
+      "change": 5.445,
+      "changePct": 2.01562,
+      "marketCap": 16223325453,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "grade": "A",
+      "price": 382.31,
+      "change": 2.93,
+      "changePct": 0.77231,
+      "marketCap": 4623989861717,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "grade": "A",
+      "price": 386.34,
+      "change": 3.37,
+      "changePct": 0.87996,
+      "marketCap": 4672732144705,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GPC",
+      "name": "Genuine Parts Company",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 96.72,
+      "change": -1.15,
+      "changePct": -1.17503,
+      "marketCap": 13455890769,
+      "scores": {
+        "good": 0,
+        "ok": 3,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GPN",
+      "name": "Global Payments Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 73.53,
+      "change": 0.27,
+      "changePct": 0.36855,
+      "marketCap": 17404191732,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "GRMN",
+      "name": "Garmin Ltd.",
+      "sector": "Technology",
+      "grade": "B+",
+      "price": 238.66,
+      "change": -2.05,
+      "changePct": -0.85165,
+      "marketCap": 46027062124,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GS",
+      "name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 993.5,
+      "change": -3.23,
+      "changePct": -0.32406,
+      "marketCap": 293089872764,
+      "scores": {
+        "good": 0,
+        "ok": 3,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 1245.05,
+      "change": -2.74,
+      "changePct": -0.21959,
+      "marketCap": 58782693811,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton Company",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 41.3,
+      "change": -0.17,
+      "changePct": -0.40993,
+      "marketCap": 34501926456,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HAS",
+      "name": "Hasbro, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 89.3243,
+      "change": 1.2243,
+      "changePct": 1.38967,
+      "marketCap": 12638584531,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 16,
+      "change": 0.08,
+      "changePct": 0.50251,
+      "marketCap": 25322906336,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 390.9,
+      "change": -3.17,
+      "changePct": -0.80443,
+      "marketCap": 86717256000,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HD",
+      "name": "The Home Depot, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 309.88,
+      "change": -3.19,
+      "changePct": -1.01894,
+      "marketCap": 308649050661,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HOLX",
+      "name": "Hologic, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 76.01,
+      "change": 2e-06,
+      "changePct": 2.631233e-06,
+      "marketCap": 16968845229,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell International Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 231.84,
+      "change": 3.92,
+      "changePct": 1.7199,
+      "marketCap": 146906139109,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise Company",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 38.155,
+      "change": 0.575,
+      "changePct": 1.53007,
+      "marketCap": 50626116146,
+      "scores": {
+        "good": 0,
+        "ok": 4,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "HPQ",
+      "name": "HP Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 24.38,
+      "change": -0.86,
+      "changePct": -3.40729,
+      "marketCap": 22380462524,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HRL",
+      "name": "Hormel Foods Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 20.995,
+      "change": -0.245,
+      "changePct": -1.15348,
+      "marketCap": 11553212580,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 74.04,
+      "change": -0.17,
+      "changePct": -0.22908,
+      "marketCap": 8434414680,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HST",
+      "name": "Host Hotels & Resorts, Inc.",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 22.8757,
+      "change": 0.4957,
+      "changePct": 2.21492,
+      "marketCap": 15667092968,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HSY",
+      "name": "The Hershey Company",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 193.14,
+      "change": -1.64,
+      "changePct": -0.84198,
+      "marketCap": 39177168358,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HUBB",
+      "name": "Hubbell Incorporated",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 475.885,
+      "change": 0.875,
+      "changePct": 0.18421,
+      "marketCap": 25146619993,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 303.34,
+      "change": -4.61,
+      "changePct": -1.497,
+      "marketCap": 36419455410,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 259.08,
+      "change": 2.53,
+      "changePct": 0.98616,
+      "marketCap": 103659846696,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 249.2,
+      "change": -4.64,
+      "changePct": -1.82792,
+      "marketCap": 234219342000,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ICE",
+      "name": "Intercontinental Exchange, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 150.76,
+      "change": -2.21,
+      "changePct": -1.44473,
+      "marketCap": 85256739880,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 556.4366,
+      "change": -2.9334,
+      "changePct": -0.52441,
+      "marketCap": 43893388318,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IEX",
+      "name": "IDEX Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 210.04,
+      "change": 1.26,
+      "changePct": 0.60351,
+      "marketCap": 15546121522,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 75.77,
+      "change": 0.49,
+      "changePct": 0.6509,
+      "marketCap": 19344344149,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ILMN",
+      "name": "Illumina, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 145.834,
+      "change": 1.424,
+      "changePct": 0.98608,
+      "marketCap": 22064684200,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "INCY",
+      "name": "Incyte Corporation",
+      "sector": "Healthcare",
+      "grade": "A",
+      "price": 97.0044,
+      "change": -0.1556,
+      "changePct": -0.16015,
+      "marketCap": 19379733041,
+      "scores": {
+        "good": 6,
+        "ok": 0,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 122.0589,
+      "change": 2.2189,
+      "changePct": 1.85155,
+      "marketCap": 613468031400,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 308.425,
+      "change": -11.515,
+      "changePct": -3.59911,
+      "marketCap": 84365649225,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "INVH",
+      "name": "Invitation Homes Inc.",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 29.355,
+      "change": 0.065,
+      "changePct": 0.22192,
+      "marketCap": 17438102910,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IP",
+      "name": "International Paper Company",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 31.765,
+      "change": 0.475,
+      "changePct": 1.51806,
+      "marketCap": 16820106679,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "IPG",
+      "name": "The Interpublic Group of Companies, Inc.",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 24.57,
+      "change": -0.49,
+      "changePct": -1.95531,
+      "marketCap": 8927760777,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IQV",
+      "name": "IQVIA Holdings Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 162.86,
+      "change": -5.04,
+      "changePct": -3.00179,
+      "marketCap": 27181334000,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IR",
+      "name": "Ingersoll Rand Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 71.57,
+      "change": 0.66,
+      "changePct": 0.93076,
+      "marketCap": 28007989090,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IRM",
+      "name": "Iron Mountain Incorporated",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 127.63,
+      "change": 1.17,
+      "changePct": 0.92519,
+      "marketCap": 37973075036,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "sector": "Healthcare",
+      "grade": "A",
+      "price": 436.535,
+      "change": -1.565,
+      "changePct": -0.35722,
+      "marketCap": 154604545205,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IT",
+      "name": "Gartner, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 159.41,
+      "change": -0.6,
+      "changePct": -0.37498,
+      "marketCap": 10672802220,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 250.09,
+      "change": -2.11,
+      "changePct": -0.83664,
+      "marketCap": 71950893000,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "IVZ",
+      "name": "Invesco Ltd.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 27.435,
+      "change": 0.385,
+      "changePct": 1.42329,
+      "marketCap": 12161853195,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "J",
+      "name": "Jacobs Solutions Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 116.505,
+      "change": 1.815,
+      "changePct": 1.58253,
+      "marketCap": 13757012808,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "JBHT",
+      "name": "J.B. Hunt Transport Services, Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 264.1291,
+      "change": 5.3591,
+      "changePct": 2.07099,
+      "marketCap": 24907163619,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "JBL",
+      "name": "Jabil Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 376.48,
+      "change": 12.13,
+      "changePct": 3.32922,
+      "marketCap": 39719769440,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "JCI",
+      "name": "Johnson Controls International plc",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 139.43,
+      "change": 1.07,
+      "changePct": 0.77334,
+      "marketCap": 85068473880,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "JKHY",
+      "name": "Jack Henry & Associates, Inc.",
+      "sector": "Technology",
+      "grade": "A",
+      "price": 137.7838,
+      "change": -2.4062,
+      "changePct": -1.71638,
+      "marketCap": 9789649217,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 230.24,
+      "change": -4.1,
+      "changePct": -1.74959,
+      "marketCap": 554238332800,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "JNPR",
+      "name": "Juniper Networks, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 39.95,
+      "change": 0.02,
+      "changePct": 0.05008765,
+      "marketCap": 13358600850,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 306.92999,
+      "change": 0.54999,
+      "changePct": 0.17951,
+      "marketCap": 822422419901,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "K",
+      "name": "Kellanova",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 83.44,
+      "change": -0.01,
+      "changePct": -0.01198322,
+      "marketCap": 29031498564,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KDP",
+      "name": "Keurig Dr Pepper Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 30.1758,
+      "change": 1.0558,
+      "changePct": 3.62569,
+      "marketCap": 41055970485,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KEY",
+      "name": "KeyCorp",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 21.635,
+      "change": 0.075,
+      "changePct": 0.34787,
+      "marketCap": 23457222760,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KEYS",
+      "name": "Keysight Technologies, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 352.67499,
+      "change": 6.11499,
+      "changePct": 1.76448,
+      "marketCap": 60484818431,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KHC",
+      "name": "The Kraft Heinz Company",
+      "sector": "Consumer Defensive",
+      "grade": "D",
+      "price": 23.935,
+      "change": 0.145,
+      "changePct": 0.6095,
+      "marketCap": 28381587766,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "KIM",
+      "name": "Kimco Realty Corporation",
+      "sector": "Real Estate",
+      "grade": "B+",
+      "price": 24.27,
+      "change": 0.16,
+      "changePct": 0.66363,
+      "marketCap": 16367445300,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 1978.7157,
+      "change": 90.3357,
+      "changePct": 4.78377,
+      "marketCap": 258475672481,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KMB",
+      "name": "Kimberly-Clark Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "D",
+      "price": 99.61,
+      "change": 0.47,
+      "changePct": 0.47408,
+      "marketCap": 33064543400,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KMI",
+      "name": "Kinder Morgan, Inc.",
+      "sector": "Energy",
+      "grade": "D",
+      "price": 33.125,
+      "change": -0.665,
+      "changePct": -1.96804,
+      "marketCap": 73697353201,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KMX",
+      "name": "CarMax, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 40.885,
+      "change": 0.555,
+      "changePct": 1.37615,
+      "marketCap": 5798339933,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KO",
+      "name": "The Coca-Cola Company",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 80.62,
+      "change": -0.86,
+      "changePct": -1.05547,
+      "marketCap": 346866132539,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KR",
+      "name": "The Kroger Co.",
+      "sector": "Consumer Defensive",
+      "grade": "D",
+      "price": 65.31,
+      "change": -1.94,
+      "changePct": -2.88476,
+      "marketCap": 40267577815,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "KVUE",
+      "name": "Kenvue Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 17.605,
+      "change": 0.075,
+      "changePct": 0.42784,
+      "marketCap": 33801752600,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "L",
+      "name": "Loews Corporation",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 108.96,
+      "change": 0.09,
+      "changePct": 0.0826674,
+      "marketCap": 22420576402,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LDOS",
+      "name": "Leidos Holdings, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 127.07,
+      "change": 1.06,
+      "changePct": 0.8412,
+      "marketCap": 15983559165,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LEN",
+      "name": "Lennar Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 88.81,
+      "change": -0.05,
+      "changePct": -0.05626829,
+      "marketCap": 22484182585,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LH",
+      "name": "Labcorp Holdings Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 259.21,
+      "change": -0.72,
+      "changePct": -0.277,
+      "marketCap": 21255220000,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LHX",
+      "name": "L3Harris Technologies, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 311.4,
+      "change": -0.58,
+      "changePct": -0.18591,
+      "marketCap": 58012263000,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde plc",
+      "sector": "Basic Materials",
+      "grade": "C",
+      "price": 514.1492,
+      "change": -3.4308,
+      "changePct": -0.66285,
+      "marketCap": 237845419920,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LKQ",
+      "name": "LKQ Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 26.7955,
+      "change": -0.3545,
+      "changePct": -1.30571,
+      "marketCap": 6827252241,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 1075.77,
+      "change": 10.77,
+      "changePct": 1.01127,
+      "marketCap": 1013096715570,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 532.02,
+      "change": -1.22,
+      "changePct": -0.22879,
+      "marketCap": 122664450728,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LNT",
+      "name": "Alliant Energy Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 73.5352,
+      "change": -0.4148,
+      "changePct": -0.56092,
+      "marketCap": 18992450850,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's Companies, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 211.925,
+      "change": -3.105,
+      "changePct": -1.44398,
+      "marketCap": 118691352984,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "sector": "Technology",
+      "grade": "A",
+      "price": 314.33,
+      "change": 8.98,
+      "changePct": 2.94089,
+      "marketCap": 393091668100,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LULU",
+      "name": "Lululemon Athletica Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "A",
+      "price": 126.95,
+      "change": -0.23,
+      "changePct": -0.18085,
+      "marketCap": 15176986898,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LUV",
+      "name": "Southwest Airlines Co.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 42.04,
+      "change": 1.18,
+      "changePct": 2.88791,
+      "marketCap": 20548058960,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LVS",
+      "name": "Las Vegas Sands Corp.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 50.01,
+      "change": 0.585,
+      "changePct": 1.18361,
+      "marketCap": 33138492623,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LW",
+      "name": "Lamb Weston Holdings, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 42.455,
+      "change": -1.305,
+      "changePct": -2.98218,
+      "marketCap": 5861889215,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "LYB",
+      "name": "LyondellBasell Industries N.V.",
+      "sector": "Basic Materials",
+      "grade": "C",
+      "price": 69.44,
+      "change": -0.28,
+      "changePct": -0.40161,
+      "marketCap": 22414174637,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "LYV",
+      "name": "Live Nation Entertainment, Inc.",
+      "sector": "Communication Services",
+      "grade": "D",
+      "price": 166.515,
+      "change": 0.965,
+      "changePct": 0.58291,
+      "marketCap": 38750171583,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MA",
+      "name": "Mastercard Incorporated",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 493.17,
+      "change": -5.37,
+      "changePct": -1.07715,
+      "marketCap": 435757049770,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MAA",
+      "name": "Mid-America Apartment Communities, Inc.",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 130.76,
+      "change": -0.38,
+      "changePct": -0.28977,
+      "marketCap": 15218476710,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MAR",
+      "name": "Marriott International, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 372.0685,
+      "change": 2.9185,
+      "changePct": 0.7906,
+      "marketCap": 98110370697,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MAS",
+      "name": "Masco Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 67.77,
+      "change": 0.51,
+      "changePct": 0.75825,
+      "marketCap": 13671542795,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MCD",
+      "name": "McDonald's Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 280.44,
+      "change": -1.83,
+      "changePct": -0.64832,
+      "marketCap": 199254302640,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology Incorporated",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 97.8,
+      "change": 4.37,
+      "changePct": 4.6773,
+      "marketCap": 53015326200,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 754.38,
+      "change": -11.7,
+      "changePct": -1.52726,
+      "marketCap": 90679531993,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MCO",
+      "name": "Moody's Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 450.57,
+      "change": 1.45,
+      "changePct": 0.32285,
+      "marketCap": 78714579000,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MDLZ",
+      "name": "Mondelez International, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 61.91,
+      "change": 0.15,
+      "changePct": 0.24288,
+      "marketCap": 79470757013,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MDT",
+      "name": "Medtronic plc",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 77.66,
+      "change": -0.94,
+      "changePct": -1.19593,
+      "marketCap": 99706506304,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MET",
+      "name": "MetLife, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 83.5,
+      "change": -0.56,
+      "changePct": -0.66619,
+      "marketCap": 53726989500,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "grade": "A",
+      "price": 608.10858,
+      "change": -2.15142,
+      "changePct": -0.35254,
+      "marketCap": 1543637075629,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MGM",
+      "name": "MGM Resorts International",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 38.44,
+      "change": 0.04,
+      "changePct": 0.10417,
+      "marketCap": 9834912440,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MHK",
+      "name": "Mohawk Industries, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 103.07,
+      "change": 0.67,
+      "changePct": 0.6543,
+      "marketCap": 6282440655,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MKC",
+      "name": "McCormick & Company, Incorporated",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 46.66,
+      "change": -1.14,
+      "changePct": -2.38494,
+      "marketCap": 12544223064,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MKTX",
+      "name": "MarketAxess Holdings Inc.",
+      "sector": "Financial Services",
+      "grade": "B+",
+      "price": 131.925,
+      "change": -5.205,
+      "changePct": -3.79567,
+      "marketCap": 4688548538,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MLM",
+      "name": "Martin Marietta Materials, Inc.",
+      "sector": "Basic Materials",
+      "grade": "C",
+      "price": 548.97,
+      "change": 12.49,
+      "changePct": 2.32814,
+      "marketCap": 32963397723,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MMC",
+      "name": "Marsh & McLennan Companies, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 182.7,
+      "change": -2.93,
+      "changePct": -1.57841,
+      "marketCap": 89819709368,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MMM",
+      "name": "3M Company",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 153.56,
+      "change": 1.12,
+      "changePct": 0.73471,
+      "marketCap": 80091867326,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 87.19,
+      "change": 0.4,
+      "changePct": 0.46088,
+      "marketCap": 85272517520,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MO",
+      "name": "Altria Group, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 72.14,
+      "change": -1.76,
+      "changePct": -2.3816,
+      "marketCap": 120465953693,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MOH",
+      "name": "Molina Healthcare, Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 175.61,
+      "change": -8.53,
+      "changePct": -4.63234,
+      "marketCap": 9149281000,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MOS",
+      "name": "The Mosaic Company",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 22.73,
+      "change": 0.22,
+      "changePct": 0.97734,
+      "marketCap": 7224654218,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 257.21,
+      "change": 2.56,
+      "changePct": 1.0053,
+      "marketCap": 75089115770,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems, Inc.",
+      "sector": "Technology",
+      "grade": "A",
+      "price": 1670.85,
+      "change": 81.04,
+      "changePct": 5.09746,
+      "marketCap": 82088860500,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck & Co., Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 120.5725,
+      "change": -1.8375,
+      "changePct": -1.5011,
+      "marketCap": 297792909554,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 47.67,
+      "change": 0.79,
+      "changePct": 1.68515,
+      "marketCap": 18914788620,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "MS",
+      "name": "Morgan Stanley",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 200.72,
+      "change": -0.31,
+      "changePct": -0.15421,
+      "marketCap": 316592608468,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MSCI",
+      "name": "MSCI Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 588.445,
+      "change": -0.105,
+      "changePct": -0.01784046,
+      "marketCap": 42838796000,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 415.7487,
+      "change": -2.8213,
+      "changePct": -0.67403,
+      "marketCap": 3088360115540.9995,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MSI",
+      "name": "Motorola Solutions, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 409.91,
+      "change": 5.83,
+      "changePct": 1.44278,
+      "marketCap": 68043420360,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 214.88,
+      "change": 1.7,
+      "changePct": 0.79745,
+      "marketCap": 31468114493,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MTCH",
+      "name": "Match Group, Inc.",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 35.505,
+      "change": -0.295,
+      "changePct": -0.82402,
+      "marketCap": 8282128006,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MTD",
+      "name": "Mettler-Toledo International Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 1097.82,
+      "change": -5.27,
+      "changePct": -0.47775,
+      "marketCap": 22184308530,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 875.2278,
+      "change": 124.2278,
+      "changePct": 16.54165,
+      "marketCap": 987020646894,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NCLH",
+      "name": "Norwegian Cruise Line Holdings Ltd.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 16.905,
+      "change": 0.605,
+      "changePct": 3.71166,
+      "marketCap": 7761254550,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 90.98,
+      "change": -0.03,
+      "changePct": -0.03296341,
+      "marketCap": 51452920180,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NDSN",
+      "name": "Nordson Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 287.5001,
+      "change": -2.3999,
+      "changePct": -0.82784,
+      "marketCap": 16018930572,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy, Inc.",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 87.985,
+      "change": -0.565,
+      "changePct": -0.63806,
+      "marketCap": 183478641173,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Basic Materials",
+      "grade": "A",
+      "price": 110.52,
+      "change": 2.88,
+      "changePct": 2.67559,
+      "marketCap": 117985931477,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "grade": "A",
+      "price": 87.741,
+      "change": -0.859,
+      "changePct": -0.96953,
+      "marketCap": 369459802800,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NI",
+      "name": "NiSource Inc.",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 47.785,
+      "change": -0.065,
+      "changePct": -0.13584,
+      "marketCap": 22909992615,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NKE",
+      "name": "NIKE, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 44.585,
+      "change": -0.08500092,
+      "changePct": -0.19029,
+      "marketCap": 65913370537,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 552.86,
+      "change": -2.72,
+      "changePct": -0.48958,
+      "marketCap": 78524364380,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 101.73,
+      "change": -0.4,
+      "changePct": -0.39166,
+      "marketCap": 104914962840,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NRG",
+      "name": "NRG Energy, Inc.",
+      "sector": "Utilities",
+      "grade": "D",
+      "price": 139.57,
+      "change": 1.92,
+      "changePct": 1.39484,
+      "marketCap": 29447381618,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NSC",
+      "name": "Norfolk Southern Corporation",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 319.15,
+      "change": 4.62,
+      "changePct": 1.46886,
+      "marketCap": 71679175100,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 138.3858,
+      "change": -0.9742,
+      "changePct": -0.69905,
+      "marketCap": 27408740121,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NTRS",
+      "name": "Northern Trust Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 168.57,
+      "change": 0.8,
+      "changePct": 0.47684,
+      "marketCap": 31193416281,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NUE",
+      "name": "Nucor Corporation",
+      "sector": "Basic Materials",
+      "grade": "B+",
+      "price": 238.75,
+      "change": 6.75,
+      "changePct": 2.90948,
+      "marketCap": 54373163750,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Technology",
+      "grade": "A",
+      "price": 213.63,
+      "change": -1.7,
+      "changePct": -0.78949,
+      "marketCap": 5174332230000,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NVR",
+      "name": "NVR, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "A",
+      "price": 6095.04,
+      "change": 58.05,
+      "changePct": 0.96157,
+      "marketCap": 16452292712,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NWS",
+      "name": "News Corporation",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 29.6401,
+      "change": -0.0399,
+      "changePct": -0.13443,
+      "marketCap": 16224917203,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 25.875,
+      "change": -0.015,
+      "changePct": -0.05793743,
+      "marketCap": 14524462576,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors N.V.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 328.15,
+      "change": 11.68,
+      "changePct": 3.69071,
+      "marketCap": 82848384574,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "O",
+      "name": "Realty Income Corporation",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 62.19,
+      "change": 0.17,
+      "changePct": 0.27411,
+      "marketCap": 57991710441,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ODFL",
+      "name": "Old Dominion Freight Line, Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 215.0479,
+      "change": 4.5779,
+      "changePct": 2.17508,
+      "marketCap": 44723142526,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "OKE",
+      "name": "ONEOK, Inc.",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 91.67,
+      "change": -2.36,
+      "changePct": -2.50984,
+      "marketCap": 57755111543,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "OMC",
+      "name": "Omnicom Group Inc.",
+      "sector": "Communication Services",
+      "grade": "B",
+      "price": 74.42,
+      "change": -0.51,
+      "changePct": -0.68064,
+      "marketCap": 21210161106,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ON",
+      "name": "ON Semiconductor Corporation",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 126.19,
+      "change": 9.99,
+      "changePct": 8.59725,
+      "marketCap": 49454239570,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 192.73,
+      "change": 0.65,
+      "changePct": 0.3384,
+      "marketCap": 554300345580,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ORLY",
+      "name": "O'Reilly Automotive, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 88.03,
+      "change": -3.71,
+      "changePct": -4.04404,
+      "marketCap": 72951788404,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "OTIS",
+      "name": "Otis Worldwide Corporation",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 72.32,
+      "change": -0.45,
+      "changePct": -0.61839,
+      "marketCap": 27750346499,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum Corporation",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 58.83,
+      "change": 0.02,
+      "changePct": 0.03400782,
+      "marketCap": 58514359460,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 259.015,
+      "change": -1.565,
+      "changePct": -0.60058,
+      "marketCap": 176521655586,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PARA",
+      "name": "Paramount Global",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 11.04,
+      "change": -0.71,
+      "changePct": -6.04255,
+      "marketCap": 6994082703,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "PAYC",
+      "name": "Paycom Software, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 135.61,
+      "change": -2.19,
+      "changePct": -1.58926,
+      "marketCap": 7401441815,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 95.98,
+      "change": -1.02,
+      "changePct": -1.05155,
+      "marketCap": 34388770180,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PCAR",
+      "name": "PACCAR Inc",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 110.435,
+      "change": 1.085,
+      "changePct": 0.99223,
+      "marketCap": 58120394300,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PCG",
+      "name": "PG&E Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 16.415,
+      "change": -0.07499908,
+      "changePct": -0.45482,
+      "marketCap": 36149443316,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PEG",
+      "name": "Public Service Enterprise Group Incorporated",
+      "sector": "Utilities",
+      "grade": "A",
+      "price": 80.45,
+      "change": 0.94,
+      "changePct": 1.18224,
+      "marketCap": 40089956791,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 147.1015,
+      "change": -3.4685,
+      "changePct": -2.30358,
+      "marketCap": 201079078572,
+      "scores": {
+        "good": 0,
+        "ok": 6,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PFE",
+      "name": "Pfizer Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 25.745,
+      "change": -0.155,
+      "changePct": -0.59845,
+      "marketCap": 146732087583,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 104.48,
+      "change": 0.63,
+      "changePct": 0.60664,
+      "marketCap": 22568973880,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PG",
+      "name": "The Procter & Gamble Company",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 143.83,
+      "change": -0.61,
+      "changePct": -0.42232,
+      "marketCap": 334922538000,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PGR",
+      "name": "The Progressive Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 198.12,
+      "change": -1.39,
+      "changePct": -0.69671,
+      "marketCap": 115768846440,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 864.97,
+      "change": -1.99,
+      "changePct": -0.22954,
+      "marketCap": 109060943893,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PHM",
+      "name": "PulteGroup, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 116.4,
+      "change": -0.03,
+      "changePct": -0.02576656,
+      "marketCap": 22172611489,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PKG",
+      "name": "Packaging Corporation of America",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 216.13,
+      "change": 0.22,
+      "changePct": 0.10189,
+      "marketCap": 19256902031,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PLD",
+      "name": "Prologis, Inc.",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 146.82,
+      "change": 0.92,
+      "changePct": 0.63057,
+      "marketCap": 136885865160,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PM",
+      "name": "Philip Morris International Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 183.6,
+      "change": -5.39,
+      "changePct": -2.852,
+      "marketCap": 286151404126,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PNC",
+      "name": "The PNC Financial Services Group, Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 219.98,
+      "change": 0.75,
+      "changePct": 0.34211,
+      "marketCap": 88336268700,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PNR",
+      "name": "Pentair plc",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 74.175,
+      "change": -0.645,
+      "changePct": -0.86206,
+      "marketCap": 11987091497,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PNW",
+      "name": "Pinnacle West Capital Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 102.69,
+      "change": -0.25,
+      "changePct": -0.24286,
+      "marketCap": 12444693030,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corporation",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 154.59,
+      "change": -0.28,
+      "changePct": -0.1808,
+      "marketCap": 10707625954,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "POOL",
+      "name": "Pool Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 181.9679,
+      "change": -2.6721,
+      "changePct": -1.44719,
+      "marketCap": 6631456726,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PPG",
+      "name": "PPG Industries, Inc.",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 109.32,
+      "change": 1.54,
+      "changePct": 1.42884,
+      "marketCap": 24367428000,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PPL",
+      "name": "PPL Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 35.825,
+      "change": -0.495,
+      "changePct": -1.36288,
+      "marketCap": 26952939324,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PRU",
+      "name": "Prudential Financial, Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 102.7,
+      "change": -1.42,
+      "changePct": -1.36381,
+      "marketCap": 35670288489,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PSA",
+      "name": "Public Storage",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 305.66,
+      "change": 0.41,
+      "changePct": 0.13432,
+      "marketCap": 53657313334,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 178.145,
+      "change": 0.455,
+      "changePct": 0.25606,
+      "marketCap": 71424569138,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PTC",
+      "name": "PTC Inc.",
+      "sector": "Technology",
+      "grade": "B+",
+      "price": 145.3571,
+      "change": -2.8729,
+      "changePct": -1.93814,
+      "marketCap": 16789617193,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PVH",
+      "name": "PVH Corp.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 92.475,
+      "change": 3.555,
+      "changePct": 3.99798,
+      "marketCap": 4260693150,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 741.225,
+      "change": 17.785,
+      "changePct": 2.45839,
+      "marketCap": 111228223500,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "sector": "Financial Services",
+      "grade": "B+",
+      "price": 44.0482,
+      "change": -0.1818,
+      "changePct": -0.41103,
+      "marketCap": 38855159177,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 249.5,
+      "change": 11.34,
+      "changePct": 4.7615,
+      "marketCap": 262973000000,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "QRVO",
+      "name": "Qorvo, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 106.414,
+      "change": -0.016,
+      "changePct": -0.01503336,
+      "marketCap": 9365889872,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 266.125,
+      "change": 10.025,
+      "changePct": 3.91449,
+      "marketCap": 71373394375,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "REG",
+      "name": "Regency Centers Corporation",
+      "sector": "Real Estate",
+      "grade": "A",
+      "price": 78.755,
+      "change": -0.085,
+      "changePct": -0.10781,
+      "marketCap": 14419787696,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 640.58,
+      "change": 1.7,
+      "changePct": 0.26609,
+      "marketCap": 65993832760,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "RF",
+      "name": "Regions Financial Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 28.089,
+      "change": 0.259,
+      "changePct": 0.93065,
+      "marketCap": 23970590820,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "RHI",
+      "name": "Robert Half International Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 27.295,
+      "change": -0.01499992,
+      "changePct": -0.05492466,
+      "marketCap": 2792114738,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "RJF",
+      "name": "Raymond James Financial, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 151.9,
+      "change": 0.44,
+      "changePct": 0.29051,
+      "marketCap": 29602734839,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "RL",
+      "name": "Ralph Lauren Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "B+",
+      "price": 387.87,
+      "change": 10.09,
+      "changePct": 2.67087,
+      "marketCap": 23659997080,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "RMD",
+      "name": "ResMed Inc.",
+      "sector": "Healthcare",
+      "grade": "B+",
+      "price": 209.07,
+      "change": 1.02,
+      "changePct": 0.49027,
+      "marketCap": 30326938203,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ROK",
+      "name": "Rockwell Automation, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 453.07,
+      "change": 0.78,
+      "changePct": 0.17246,
+      "marketCap": 50414911180,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ROL",
+      "name": "Rollins, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 53.04,
+      "change": -0.42,
+      "changePct": -0.78563,
+      "marketCap": 25536850560,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 320.805,
+      "change": -6.135,
+      "changePct": -1.87649,
+      "marketCap": 32374793354,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ROST",
+      "name": "Ross Stores, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 233.81,
+      "change": -1,
+      "changePct": -0.42588,
+      "marketCap": 75624660720,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "RSG",
+      "name": "Republic Services, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 206.6,
+      "change": -2.33,
+      "changePct": -1.11521,
+      "marketCap": 63563400374,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 177.67,
+      "change": 0.66,
+      "changePct": 0.37286,
+      "marketCap": 239264635600,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "RVTY",
+      "name": "Revvity, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 95.66,
+      "change": -1.29,
+      "changePct": -1.33058,
+      "marketCap": 10671829600,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SBAC",
+      "name": "SBA Communications Corporation",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 202.44,
+      "change": -3.13,
+      "changePct": -1.5226,
+      "marketCap": 21471397161,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SBUX",
+      "name": "Starbucks Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 101.86,
+      "change": -1.25,
+      "changePct": -1.2123,
+      "marketCap": 116089842000,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SCHW",
+      "name": "The Charles Schwab Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 90.22,
+      "change": 0.07,
+      "changePct": 0.07764836,
+      "marketCap": 156905210800,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SEE",
+      "name": "Sealed Air Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 42.15,
+      "change": 0.01,
+      "changePct": 0.02373042,
+      "marketCap": 6211799263,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SHW",
+      "name": "The Sherwin-Williams Company",
+      "sector": "Basic Materials",
+      "grade": "D",
+      "price": 309.55,
+      "change": 0.47,
+      "changePct": 0.15206,
+      "marketCap": 76346173800,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SJM",
+      "name": "The J. M. Smucker Company",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 103.125,
+      "change": -0.235,
+      "changePct": -0.22736,
+      "marketCap": 10998107897,
+      "scores": {
+        "good": 0,
+        "ok": 3,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB N.V.",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 58.215,
+      "change": 0.935,
+      "changePct": 1.63233,
+      "marketCap": 87034917900,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 36.4717,
+      "change": 0.8917,
+      "changePct": 2.50618,
+      "marketCap": 21934736871,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SNA",
+      "name": "Snap-on Incorporated",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 369.24,
+      "change": 2.59,
+      "changePct": 0.7064,
+      "marketCap": 19127339464,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 535.33,
+      "change": 10.59,
+      "changePct": 2.01814,
+      "marketCap": 102548885460,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SO",
+      "name": "The Southern Company",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 94.17,
+      "change": -0.38,
+      "changePct": -0.4019,
+      "marketCap": 106157841000,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SOLV",
+      "name": "Solventum Corporation",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 75.63,
+      "change": -1.2,
+      "changePct": -1.56189,
+      "marketCap": 13097203469,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SPG",
+      "name": "Simon Property Group, Inc.",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 205.86501,
+      "change": 1.45501,
+      "changePct": 0.71181,
+      "marketCap": 66873188384,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SPGI",
+      "name": "S&P Global Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 412.13,
+      "change": -5.47,
+      "changePct": -1.30987,
+      "marketCap": 121990480000,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SRE",
+      "name": "Sempra",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 92.09,
+      "change": -0.71,
+      "changePct": -0.76509,
+      "marketCap": 60198312100,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "STE",
+      "name": "STERIS plc",
+      "sector": "Healthcare",
+      "grade": "B+",
+      "price": 214.38,
+      "change": -2.19,
+      "changePct": -1.01122,
+      "marketCap": 21040756433,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "STLD",
+      "name": "Steel Dynamics, Inc.",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 248.1612,
+      "change": 8.1312,
+      "changePct": 3.38758,
+      "marketCap": 35788071136,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "STT",
+      "name": "State Street Corporation",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 156.89,
+      "change": 2.94,
+      "changePct": 1.90971,
+      "marketCap": 43421979807,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 842.51007,
+      "change": 29.78007,
+      "changePct": 3.6642,
+      "marketCap": 188915183926,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "STZ",
+      "name": "Constellation Brands, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 144.205,
+      "change": -5.295,
+      "changePct": -3.54181,
+      "marketCap": 24828207465,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SWK",
+      "name": "Stanley Black & Decker, Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 78.11,
+      "change": 1.65,
+      "changePct": 2.15799,
+      "marketCap": 12142634104,
+      "scores": {
+        "good": 0,
+        "ok": 4,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SWKS",
+      "name": "Skyworks Solutions, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 81.63,
+      "change": -0.79,
+      "changePct": -0.95851,
+      "marketCap": 12277638760,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SYF",
+      "name": "Synchrony Financial",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 72.555,
+      "change": 0.725,
+      "changePct": 1.00933,
+      "marketCap": 24405342908,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 311.04,
+      "change": -5.44,
+      "changePct": -1.71891,
+      "marketCap": 119240531412,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "SYY",
+      "name": "Sysco Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 75.5,
+      "change": -0.79,
+      "changePct": -1.03552,
+      "marketCap": 36102816500,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T Inc.",
+      "sector": "Communication Services",
+      "grade": "B",
+      "price": 25.045,
+      "change": -0.215,
+      "changePct": -0.85115,
+      "marketCap": 174021175300,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TAP",
+      "name": "Molson Coors Beverage Company",
+      "sector": "Consumer Defensive",
+      "grade": "D",
+      "price": 40.96,
+      "change": -1.59,
+      "changePct": -3.73678,
+      "marketCap": 7682103337,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "TDG",
+      "name": "TransDigm Group Incorporated",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 1214.15,
+      "change": 0.64,
+      "changePct": 0.05273957,
+      "marketCap": 67911780440,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TDY",
+      "name": "Teledyne Technologies Incorporated",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 632.84,
+      "change": 12.39,
+      "changePct": 1.99694,
+      "marketCap": 29318907644,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TECH",
+      "name": "Bio-Techne Corporation",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 47.92,
+      "change": -0.29,
+      "changePct": -0.60153,
+      "marketCap": 7502774548,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TEL",
+      "name": "TE Connectivity Ltd.",
+      "sector": "Technology",
+      "grade": "B+",
+      "price": 210.74,
+      "change": 7.96,
+      "changePct": 3.92544,
+      "marketCap": 61514163040,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne, Inc.",
+      "sector": "Technology",
+      "grade": "A",
+      "price": 379.2339,
+      "change": 20.7939,
+      "changePct": 5.80122,
+      "marketCap": 59366094610,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TFC",
+      "name": "Truist Financial Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 48.5,
+      "change": 0.12,
+      "changePct": 0.24804,
+      "marketCap": 60425131500,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TFX",
+      "name": "Teleflex Incorporated",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 133.31,
+      "change": 0.56,
+      "changePct": 0.42185,
+      "marketCap": 5901660362,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 124.645,
+      "change": -0.955,
+      "changePct": -0.76035,
+      "marketCap": 56610767520,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TJX",
+      "name": "The TJX Companies, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 158.66,
+      "change": 0.39,
+      "changePct": 0.24641,
+      "marketCap": 175606474600,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher Scientific Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 446.715,
+      "change": -1.565,
+      "changePct": -0.34911,
+      "marketCap": 166008675015,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TMUS",
+      "name": "T-Mobile US, Inc.",
+      "sector": "Communication Services",
+      "grade": "B",
+      "price": 191.2,
+      "change": -0.27,
+      "changePct": -0.14101,
+      "marketCap": 206917541890,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TPR",
+      "name": "Tapestry, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 139.37,
+      "change": 0.88,
+      "changePct": 0.63542,
+      "marketCap": 28159011650,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TRGP",
+      "name": "Targa Resources Corp.",
+      "sector": "Energy",
+      "grade": "D",
+      "price": 271.75,
+      "change": -5,
+      "changePct": -1.80668,
+      "marketCap": 58329507000,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TRMB",
+      "name": "Trimble Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 56.1525,
+      "change": -0.1875,
+      "changePct": -0.3328,
+      "marketCap": 13089794571,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TROW",
+      "name": "T. Rowe Price Group, Inc.",
+      "sector": "Financial Services",
+      "grade": "A",
+      "price": 103.53,
+      "change": 0.14,
+      "changePct": 0.13541,
+      "marketCap": 22183062510,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TRV",
+      "name": "The Travelers Companies, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 305.475,
+      "change": -0.985,
+      "changePct": -0.32141,
+      "marketCap": 64957637594,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TSCO",
+      "name": "Tractor Supply Company",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 29.8,
+      "change": -1.82,
+      "changePct": -5.75585,
+      "marketCap": 15628610000,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 430.82,
+      "change": 4.81,
+      "changePct": 1.12908,
+      "marketCap": 1618039290400,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TSN",
+      "name": "Tyson Foods, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 65.54,
+      "change": 0.49,
+      "changePct": 0.75327,
+      "marketCap": 23332204412,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TT",
+      "name": "Trane Technologies plc",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 460.78,
+      "change": 9.76,
+      "changePct": 2.16398,
+      "marketCap": 101857942692,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive Software, Inc.",
+      "sector": "Communication Services",
+      "grade": "B",
+      "price": 221.991,
+      "change": -5.559,
+      "changePct": -2.44298,
+      "marketCap": 41107183425,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 1,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "TXN",
+      "name": "Texas Instruments Incorporated",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 322.1438,
+      "change": 12.9338,
+      "changePct": 4.18285,
+      "marketCap": 293180817373,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TXT",
+      "name": "Textron Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 92.44,
+      "change": 0.61,
+      "changePct": 0.66427,
+      "marketCap": 16074299160,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "TYL",
+      "name": "Tyler Technologies, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 310.34,
+      "change": -2.91,
+      "changePct": -0.92897,
+      "marketCap": 13086261950,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "UAL",
+      "name": "United Airlines Holdings, Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 105.7151,
+      "change": 5.7551,
+      "changePct": 5.7574,
+      "marketCap": 34311950007,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 70.54,
+      "change": -1.28,
+      "changePct": -1.78223,
+      "marketCap": 143591224000,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "UDR",
+      "name": "UDR, Inc.",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 38.105,
+      "change": 0.095,
+      "changePct": 0.24993,
+      "marketCap": 12380924180,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "UHS",
+      "name": "Universal Health Services, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 156.82001,
+      "change": -0.97999,
+      "changePct": -0.62103,
+      "marketCap": 9817926070,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ULTA",
+      "name": "Ulta Beauty, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B+",
+      "price": 515.89,
+      "change": 0.85,
+      "changePct": 0.16504,
+      "marketCap": 22563289535,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 378.4999,
+      "change": -9.9701,
+      "changePct": -2.5665,
+      "marketCap": 343732566100,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "UNP",
+      "name": "Union Pacific Corporation",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 271.35,
+      "change": 5.47,
+      "changePct": 2.05732,
+      "marketCap": 161104022550,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "UPS",
+      "name": "United Parcel Service, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 101.74,
+      "change": 0.72,
+      "changePct": 0.71273,
+      "marketCap": 86479639131,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 956.36,
+      "change": 17.74,
+      "changePct": 1.89001,
+      "marketCap": 59912702376,
+      "scores": {
+        "good": 1,
+        "ok": 4,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "USB",
+      "name": "U.S. Bancorp",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 54.93,
+      "change": 0.1,
+      "changePct": 0.18238,
+      "marketCap": 85267839474,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 326.15,
+      "change": -2.73,
+      "changePct": -0.83009,
+      "marketCap": 625172917640,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "VICI",
+      "name": "VICI Properties Inc.",
+      "sector": "Real Estate",
+      "grade": "B+",
+      "price": 28.475,
+      "change": -0.025,
+      "changePct": -0.0877193,
+      "marketCap": 30661315825,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy Corporation",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 247.94,
+      "change": 0.98,
+      "changePct": 0.39683,
+      "marketCap": 73621568020,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "VLTO",
+      "name": "Veralto Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 86.25,
+      "change": -0.55,
+      "changePct": -0.63364,
+      "marketCap": 21182936175,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "VMC",
+      "name": "Vulcan Materials Company",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 266.01999,
+      "change": 5.36999,
+      "changePct": 2.06023,
+      "marketCap": 34517423674,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "VRSK",
+      "name": "Verisk Analytics, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 169.3344,
+      "change": -1.7756,
+      "changePct": -1.0377,
+      "marketCap": 22186504663,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "VRSN",
+      "name": "VeriSign, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 309.08,
+      "change": -0.92,
+      "changePct": -0.29677,
+      "marketCap": 28126280000,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals Incorporated",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 436.92,
+      "change": 2.4,
+      "changePct": 0.55233,
+      "marketCap": 110892662796,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "VTR",
+      "name": "Ventas, Inc.",
+      "sector": "Real Estate",
+      "grade": "D",
+      "price": 87.595,
+      "change": -0.585,
+      "changePct": -0.66342,
+      "marketCap": 42586036886,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "VTRS",
+      "name": "Viatris Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 16.4179,
+      "change": -0.2321,
+      "changePct": -1.39399,
+      "marketCap": 19119465445,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon Communications Inc.",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 48.225,
+      "change": -0.125,
+      "changePct": -0.25853,
+      "marketCap": 201366374629,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WAB",
+      "name": "Westinghouse Air Brake Technologies Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 259.905,
+      "change": 3.495,
+      "changePct": 1.36305,
+      "marketCap": 44099990612,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WAT",
+      "name": "Waters Corporation",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 339.99,
+      "change": -2.38,
+      "changePct": -0.69515,
+      "marketCap": 22161780664,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WBA",
+      "name": "Walgreens Boots Alliance, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 11.98,
+      "change": 0.06,
+      "changePct": 0.50336,
+      "marketCap": 10369421068,
+      "scores": {
+        "good": 1,
+        "ok": 0,
+        "bad": 4,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "WBD",
+      "name": "Warner Bros. Discovery, Inc.",
+      "sector": "Communication Services",
+      "grade": "D",
+      "price": 26.9801,
+      "change": -0.0499,
+      "changePct": -0.18461,
+      "marketCap": 67642798934,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 3,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corporation",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 528.269,
+      "change": 43.989,
+      "changePct": 9.08338,
+      "marketCap": 182084815458,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WEC",
+      "name": "WEC Energy Group, Inc.",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 113.245,
+      "change": -0.165,
+      "changePct": -0.14549,
+      "marketCap": 36886804405,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WELL",
+      "name": "Welltower Inc.",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 216.1,
+      "change": -0.07,
+      "changePct": -0.03238192,
+      "marketCap": 152548015400,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WFC",
+      "name": "Wells Fargo & Company",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 77.36,
+      "change": 0.96,
+      "changePct": 1.25655,
+      "marketCap": 236736300268,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 215.87,
+      "change": -2.03,
+      "changePct": -0.93162,
+      "marketCap": 86688211120,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WMB",
+      "name": "The Williams Companies, Inc.",
+      "sector": "Energy",
+      "grade": "D",
+      "price": 76.88,
+      "change": -1.59,
+      "changePct": -2.02625,
+      "marketCap": 94024106613,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 4,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "D",
+      "price": 118.84,
+      "change": -1.43,
+      "changePct": -1.18899,
+      "marketCap": 947272512803,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WRB",
+      "name": "W. R. Berkley Corporation",
+      "sector": "Financial Services",
+      "grade": "B+",
+      "price": 67.41,
+      "change": -0.13,
+      "changePct": -0.19248,
+      "marketCap": 25095192570,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WRK",
+      "name": "WestRock Company",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 51.51,
+      "change": 1.76,
+      "changePct": 3.5377,
+      "marketCap": 13303641818,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "WST",
+      "name": "West Pharmaceutical Services, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 316.95999,
+      "change": 0.53999,
+      "changePct": 0.17065,
+      "marketCap": 22392462692,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WTW",
+      "name": "Willis Towers Watson Public Limited Company",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 257.225,
+      "change": -0.175,
+      "changePct": -0.06798757,
+      "marketCap": 24294380627,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Basic Materials",
+      "grade": "C",
+      "price": 23.805,
+      "change": 0.145,
+      "changePct": 0.61285,
+      "marketCap": 17164419527,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "WYNN",
+      "name": "Wynn Resorts, Limited",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 98.2046,
+      "change": 0.9646,
+      "changePct": 0.99198,
+      "marketCap": 10192360820,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "XEL",
+      "name": "Xcel Energy Inc.",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 80.9707,
+      "change": -0.1093,
+      "changePct": -0.13481,
+      "marketCap": 50547543262,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 151.89,
+      "change": -3.03,
+      "changePct": -1.95585,
+      "marketCap": 629576455500,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "XRAY",
+      "name": "DENTSPLY SIRONA Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 10.1696,
+      "change": -0.0404,
+      "changePct": -0.39569,
+      "marketCap": 2037242235,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 2,
+        "total": 5
+      }
+    },
+    {
+      "ticker": "XYL",
+      "name": "Xylem Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 111.11,
+      "change": 0.83,
+      "changePct": 0.75263,
+      "marketCap": 26410180340,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "YUM",
+      "name": "Yum! Brands, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 155.34,
+      "change": 0.19,
+      "changePct": 0.12246,
+      "marketCap": 42814997519,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ZBH",
+      "name": "Zimmer Biomet Holdings, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 84.5,
+      "change": -1,
+      "changePct": -1.16959,
+      "marketCap": 16347579729,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 0,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ZBRA",
+      "name": "Zebra Technologies Corporation",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 251.65,
+      "change": -3.9,
+      "changePct": -1.52612,
+      "marketCap": 11986945110,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ZION",
+      "name": "Zions Bancorporation, National Association",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 62.8345,
+      "change": 0.7145,
+      "changePct": 1.15019,
+      "marketCap": 9242440775,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      }
+    },
+    {
+      "ticker": "ZTS",
+      "name": "Zoetis Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 80.72,
+      "change": -0.6,
+      "changePct": -0.73783,
+      "marketCap": 33840093685,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      }
+    }
+  ]
+}

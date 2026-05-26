@@ -464,6 +464,107 @@
         .tab-btn:hover { color: #6a8a6a; }
         .tab-btn.active { color: #00ff41; border-bottom-color: #00ff41; }
 
+        .screener-view { position: relative; z-index: 1; }
+        .screener-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .screener-header h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 16px;
+            font-weight: 700;
+            color: #c0d0c0;
+            margin-bottom: 4px;
+        }
+        .screener-header p {
+            font-size: 12px;
+            color: #3a5a3a;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .grade-pills {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .grade-pill {
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid #1a2e1a;
+            background: transparent;
+            color: #4a6a4a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .grade-pill:hover { color: #6a8a6a; border-color: #2a4a2a; }
+        .grade-pill.active { color: #00ff41; border-color: #00ff41; background: rgba(0,255,65,0.06); }
+        .screener-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 12px;
+        }
+        .screener-card {
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 12px;
+            padding: 16px;
+            cursor: pointer;
+            transition: border-color 0.15s, background 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .screener-card:hover { border-color: #2a4a2a; background: #141e14; }
+        .screener-card-logo { width: 40px; height: 40px; border-radius: 8px; background: #0a0f0a; flex-shrink: 0; }
+        .screener-card-info { flex: 1; min-width: 0; }
+        .screener-card-ticker {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 700;
+            color: #e0e0e0;
+        }
+        .screener-card-name {
+            font-size: 12px;
+            color: #5a7a5a;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .screener-card-sector {
+            font-size: 10px;
+            color: #3a5a3a;
+            font-family: 'JetBrains Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+        .screener-card-grade {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 24px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+        .screener-card-grade.good { color: #00ff41; }
+        .screener-card-grade.ok { color: #ffaa00; }
+        .screener-card-grade.bad { color: #ff3344; }
+        .screener-count {
+            text-align: center;
+            font-size: 11px;
+            color: #3a5a3a;
+            font-family: 'JetBrains Mono', monospace;
+            margin-bottom: 16px;
+        }
+        .screener-loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: #3a5a3a;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+        }
         .watchlist-view { position: relative; z-index: 1; }
         .watchlist-empty {
             text-align: center;
@@ -669,6 +770,7 @@
 
     <div class="tab-bar">
         <button class="tab-btn active" id="tabAnalyze" onclick="switchTab('analyze')">Analyze</button>
+        <button class="tab-btn" id="tabScreener" onclick="switchTab('screener')">Screener</button>
         <button class="tab-btn" id="tabWatchlist" onclick="switchTab('watchlist')">Watchlist</button>
     </div>
 
@@ -727,6 +829,17 @@
                 <div class="quick-picks" id="resultsPicks"></div>
             </div>
         </div>
+    </div>
+
+    <div class="container screener-view hidden" id="screenerView">
+        <div class="screener-header">
+            <h2>Stock Screener</h2>
+            <p id="screenerUpdated"></p>
+        </div>
+        <div class="grade-pills" id="gradePills"></div>
+        <div class="screener-count" id="screenerCount"></div>
+        <div class="screener-grid" id="screenerGrid"></div>
+        <div class="screener-loading hidden" id="screenerLoading">Loading grades...</div>
     </div>
 
     <div class="container watchlist-view hidden" id="watchlistView">
@@ -863,10 +976,68 @@
     // ---- Tab Switching ----
     function switchTab(tab) {
         document.getElementById('tabAnalyze').classList.toggle('active', tab === 'analyze');
+        document.getElementById('tabScreener').classList.toggle('active', tab === 'screener');
         document.getElementById('tabWatchlist').classList.toggle('active', tab === 'watchlist');
         document.getElementById('analyzeView').classList.toggle('hidden', tab !== 'analyze');
+        document.getElementById('screenerView').classList.toggle('hidden', tab !== 'screener');
         document.getElementById('watchlistView').classList.toggle('hidden', tab !== 'watchlist');
         if (tab === 'watchlist') renderWatchlist();
+        if (tab === 'screener') loadScreener();
+    }
+
+    // ---- Screener ----
+    var screenerData = null;
+    var screenerGrade = 'All';
+
+    function loadScreener() {
+        if (screenerData) { renderScreener(); return; }
+        document.getElementById('screenerLoading').classList.remove('hidden');
+        document.getElementById('screenerGrid').innerHTML = '';
+        fetch('grades.json?t=' + Date.now())
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                screenerData = data;
+                document.getElementById('screenerLoading').classList.add('hidden');
+                renderScreener();
+            })
+            .catch(function() {
+                document.getElementById('screenerLoading').textContent = 'Screener data not available yet. Check back soon.';
+            });
+    }
+
+    function renderScreener() {
+        if (!screenerData) return;
+        var updated = screenerData.updated;
+        if (updated) {
+            var d = new Date(updated);
+            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            document.getElementById('screenerUpdated').textContent = 'Updated ' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+        }
+
+        var grades = ['All','A','B+','B','C','D'];
+        var pillsEl = document.getElementById('gradePills');
+        pillsEl.innerHTML = grades.map(function(g) {
+            return '<button class="grade-pill' + (screenerGrade === g ? ' active' : '') + '" onclick="screenerGrade=\'' + g + '\';renderScreener();">' + g + '</button>';
+        }).join('');
+
+        var stocks = screenerData.stocks || [];
+        var filtered = screenerGrade === 'All' ? stocks : stocks.filter(function(s) { return s.grade === screenerGrade; });
+
+        document.getElementById('screenerCount').textContent = filtered.length + ' stock' + (filtered.length !== 1 ? 's' : '') + (screenerGrade !== 'All' ? ' rated ' + screenerGrade : ' scanned');
+
+        var gradeClass = function(g) { return g === 'A' || g === 'B+' ? 'good' : g === 'B' || g === 'C' ? 'ok' : 'bad'; };
+
+        document.getElementById('screenerGrid').innerHTML = filtered.map(function(s) {
+            return '<div class="screener-card" onclick="switchTab(\'analyze\');selectTicker(\'' + s.ticker + '\')">' +
+                logoImg(s.ticker, 'screener-card-logo', 'screener-card-logo') +
+                '<div class="screener-card-info">' +
+                '<div class="screener-card-ticker">' + s.ticker + '</div>' +
+                '<div class="screener-card-name">' + escapeHtml(s.name) + '</div>' +
+                '<div class="screener-card-sector">' + escapeHtml(s.sector) + '</div>' +
+                '</div>' +
+                '<div class="screener-card-grade ' + gradeClass(s.grade) + '">' + s.grade + '</div>' +
+                '</div>';
+        }).join('');
     }
 
     // ---- Watchlist (localStorage) ----
