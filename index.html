@@ -1477,7 +1477,7 @@
 
             var forwardEps = null;
             var now = new Date();
-            for (var ei = 0; ei < estimates.length; ei++) {
+            for (var ei = estimates.length - 1; ei >= 0; ei--) {
                 if (estimates[ei].date && new Date(estimates[ei].date) > now && estimates[ei].epsAvg) {
                     forwardEps = estimates[ei].epsAvg;
                     break;
