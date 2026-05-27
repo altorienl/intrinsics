@@ -342,6 +342,7 @@
         .ratio-explain { font-size: 13px; color: #8a9a8a; line-height: 1.5; margin-top: 4px; }
         .ratio-formula { font-size: 11px; color: #3a5a3a; margin-top: 4px; font-style: italic; }
         .ratio-components { font-size: 12px; color: #5a7a5a; margin-top: 4px; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+        .ratio-forward-pe { font-size: 12px; color: #00ff41; margin-top: 4px; font-family: 'JetBrains Mono', monospace; }
 
         .chart-card {
             background: #111a11;
@@ -1422,17 +1423,19 @@
 
         try {
             var sym = encodeURIComponent(ticker);
-            var [bsResp, isResp, profResp, ratiosResp] = await Promise.all([
+            var [bsResp, isResp, profResp, ratiosResp, estResp] = await Promise.all([
                 fetch(API + '/balance-sheet-statement?symbol=' + sym + '&period=quarter&limit=1&apikey=' + API_KEY),
                 fetch(API + '/income-statement?symbol=' + sym + '&period=quarter&limit=8&apikey=' + API_KEY),
                 fetch(API + '/profile?symbol=' + sym + '&apikey=' + API_KEY),
-                fetch(API + '/ratios-ttm?symbol=' + sym + '&apikey=' + API_KEY)
+                fetch(API + '/ratios-ttm?symbol=' + sym + '&apikey=' + API_KEY),
+                fetch(API + '/analyst-estimates?symbol=' + sym + '&period=annual&limit=5&apikey=' + API_KEY)
             ]);
 
             var bsText = await bsResp.text();
             var isText = await isResp.text();
             var profText = await profResp.text();
             var ratiosText = await ratiosResp.text();
+            var estText = await estResp.text();
 
             if (bsText.startsWith('Premium') || isText.startsWith('Premium') || profText.startsWith('Premium')) {
                 throw new Error(ticker + ' is not available on the free FMP plan. Upgrade at financialmodelingprep.com to unlock all stocks.');
@@ -1443,6 +1446,9 @@
             try { isArr = JSON.parse(isText); } catch(e) { isArr = []; }
             try { prof = JSON.parse(profText); } catch(e) { prof = []; }
             try { ratiosTtm = JSON.parse(ratiosText); } catch(e) { ratiosTtm = []; }
+            var estimates = [];
+            try { estimates = JSON.parse(estText); } catch(e) { estimates = []; }
+            if (!Array.isArray(estimates)) estimates = [];
 
             if (myId !== analyzeId) return;
             if (!Array.isArray(bs) || bs.length === 0) throw new Error('No financial data found for ' + ticker + '. Make sure it\'s a US-listed stock.');
@@ -1469,7 +1475,16 @@
                 }
             }
 
-            processData(bs, ttm, prof, ticker, ratiosTtm);
+            var forwardEps = null;
+            var now = new Date();
+            for (var ei = 0; ei < estimates.length; ei++) {
+                if (estimates[ei].date && new Date(estimates[ei].date) > now && estimates[ei].epsAvg) {
+                    forwardEps = estimates[ei].epsAvg;
+                    break;
+                }
+            }
+
+            processData(bs, ttm, prof, ticker, ratiosTtm, forwardEps);
             fetchChartData(ticker);
         } catch (err) {
             showError(err.message || 'Failed to fetch data');
@@ -1484,7 +1499,7 @@
         el.classList.remove('hidden');
     }
 
-    function processData(bs, ttm, prof, ticker, ratiosTtm) {
+    function processData(bs, ttm, prof, ticker, ratiosTtm, forwardEps) {
         var ratios = {};
         var bsPeriod = bs.period ? (bs.period + ' ' + (bs.fiscalYear || '')) : 'Latest Quarter';
         var ttmLabel = 'Trailing 12 Months';
@@ -1559,6 +1574,10 @@
                 components: 'Price: $' + price.toFixed(2) + ' / TTM EPS: $' + epsVal.toFixed(2),
                 period: ttmLabel
             };
+        }
+        if (price && forwardEps && forwardEps > 0 && ratios.peRatio) {
+            ratios.peRatio.forwardPE = price / forwardEps;
+            ratios.peRatio.forwardEps = forwardEps;
         }
 
         if (ttm.revenueGrowth !== undefined) {
@@ -1814,6 +1833,7 @@
             '<div class="ratio-benchmark" style="left:' + benchPct + '%"><div class="ratio-benchmark-label">' + def.format(bench.good) + '</div></div></div>' +
             '<div class="ratio-explain">' + def.explain(ratio.value, bench) + '</div>' +
             '<div class="ratio-components">' + ratio.components + '</div>' +
+            (ratio.forwardPE ? '<div class="ratio-forward-pe">Forward P/E: ' + ratio.forwardPE.toFixed(1) + 'x <span style="color:#4a6a4a">(Est. EPS: $' + ratio.forwardEps.toFixed(2) + ')</span></div>' : '') +
             '<div class="ratio-formula">' + def.formula + ' &mdash; ' + (ratio.period || 'N/A') + '</div></div>';
     }
 
