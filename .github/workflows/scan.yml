@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   scan:
@@ -27,3 +28,15 @@ jobs:
           git add grades.json
           git diff --cached --quiet || git commit -m "Update stock grades $(date -u +%Y-%m-%d)"
           git push
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Nightly stock scan failed — ' + new Date().toISOString().slice(0, 10),
+              body: 'The nightly scan workflow failed.\n\n**Run:** ' + context.serverUrl + '/' + context.repo.owner + '/' + context.repo.repo + '/actions/runs/' + context.runId,
+              labels: ['bug']
+            });
