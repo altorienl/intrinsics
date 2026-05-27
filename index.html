@@ -846,6 +846,7 @@
                 <div class="chart-header">
                     <h3>Price History</h3>
                     <div class="chart-range-btns">
+                        <button class="chart-range-btn" data-range="1D">1D</button>
                         <button class="chart-range-btn" data-range="1M">1M</button>
                         <button class="chart-range-btn" data-range="3M">3M</button>
                         <button class="chart-range-btn active" data-range="1Y">1Y</button>
@@ -876,7 +877,7 @@
 
     <div class="container screener-view hidden" id="screenerView">
         <div class="screener-header">
-            <h2>Stock Screener</h2>
+            <h2>S&amp;P 500 Screener</h2>
             <p id="screenerUpdated"></p>
         </div>
         <div class="grade-pills" id="gradePills"></div>
@@ -1819,6 +1820,7 @@
 
     // ---- Price Chart ----
     var chartData = [];
+    var intradayData = [];
     var chartRange = '1Y';
     var currentChartTicker = '';
 
@@ -1827,10 +1829,29 @@
             document.querySelectorAll('.chart-range-btn').forEach(function(b) { b.classList.remove('active'); });
             btn.classList.add('active');
             chartRange = btn.dataset.range;
-            drawChart();
-            updateRangeStat();
+            if (chartRange === '1D' && intradayData.length === 0) {
+                fetchIntradayData(currentChartTicker);
+            } else {
+                drawChart();
+                updateRangeStat();
+            }
         });
     });
+
+    async function fetchIntradayData(ticker) {
+        try {
+            var resp = await fetch(API + '/historical-chart/5min?symbol=' + encodeURIComponent(ticker) + '&apikey=' + API_KEY);
+            var data = await resp.json();
+            if (!Array.isArray(data) || data.length === 0) { intradayData = []; return; }
+            var today = data[0].date.slice(0, 10);
+            var todayPoints = data.filter(function(d) { return d.date.slice(0, 10) === today; });
+            intradayData = todayPoints.reverse().map(function(d) {
+                return { date: d.date, price: d.close };
+            });
+            drawChart();
+            updateRangeStat();
+        } catch(e) { intradayData = []; }
+    }
 
     function updateRangeStat() {
         var el = document.getElementById('statRange');
@@ -1846,7 +1867,7 @@
         });
         var pct = ((endPrice - startPrice) / startPrice * 100);
         var color = pct >= 0 ? '#00ff41' : '#ff3344';
-        var labels = { '1M': '1 Month', '3M': '3 Month', '1Y': '52 Week', '5Y': '5 Year' };
+        var labels = { '1D': 'Today', '1M': '1 Month', '3M': '3 Month', '1Y': '52 Week', '5Y': '5 Year' };
         el.innerHTML = '<div class="stat-label">' + (labels[chartRange] || '52 Week') + '</div>' +
             '<div class="stat-value" style="color:' + color + '">' + (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%</div>' +
             '<div class="stat-sub">$' + low.toFixed(0) + ' – $' + high.toFixed(0) + '</div>';
@@ -1855,6 +1876,7 @@
 
     async function fetchChartData(ticker) {
         currentChartTicker = ticker;
+        intradayData = [];
         chartRange = '1Y';
         document.querySelectorAll('.chart-range-btn').forEach(function(b) { b.classList.remove('active'); });
         document.querySelector('.chart-range-btn[data-range="1Y"]').classList.add('active');
@@ -1881,6 +1903,7 @@
     }
 
     function getFilteredData() {
+        if (chartRange === '1D') return intradayData;
         if (!chartData.length) return [];
         var now = new Date(chartData[chartData.length - 1].date);
         var cutoff = new Date(now);
@@ -1972,7 +1995,16 @@
         for (var di = 0; di < labelCount; di++) {
             var idx = Math.floor(di / (labelCount - 1) * (data.length - 1));
             var dx = pad.left + (idx / (data.length - 1)) * cw;
-            var dt = data[idx].date.slice(5);
+            var dt;
+            if (chartRange === '1D' && data[idx].date.length > 10) {
+                var tdt = new Date(data[idx].date);
+                var thh = tdt.getHours(); var tmm = tdt.getMinutes();
+                var tampm = thh >= 12 ? 'PM' : 'AM';
+                thh = thh % 12 || 12;
+                dt = thh + ':' + (tmm < 10 ? '0' : '') + tmm + ' ' + tampm;
+            } else {
+                dt = data[idx].date.slice(5);
+            }
             if (di === 0) { ctx.textAlign = 'left'; dx = pad.left; }
             else if (di === labelCount - 1) { ctx.textAlign = 'right'; dx = w - pad.right; }
             else { ctx.textAlign = 'center'; }
@@ -1985,7 +2017,11 @@
         changeEl.className = 'chart-change ' + (isUp ? 'up' : 'down');
 
         var datesEl = document.getElementById('chartDates');
-        datesEl.textContent = data[0].date + ' → ' + data[data.length - 1].date;
+        if (chartRange === '1D') {
+            datesEl.textContent = data[0].date.slice(0, 10);
+        } else {
+            datesEl.textContent = data[0].date + ' → ' + data[data.length - 1].date;
+        }
 
         // Tooltip on hover
         setupTooltip(canvas, data, prices, minP, range, pad, cw, ch);
@@ -2012,7 +2048,15 @@
             var x = pad.left + (idx / (data.length - 1)) * cw;
             var y = pad.top + ch - ((prices[idx] - minP) / range) * ch;
 
-            tooltip.innerHTML = '<div class="tt-price">$' + prices[idx].toFixed(2) + '</div><div class="tt-date">' + data[idx].date + '</div>';
+            var ttDate = data[idx].date;
+            if (chartRange === '1D' && ttDate.length > 10) {
+                var dt = new Date(ttDate);
+                var hh = dt.getHours(); var mm = dt.getMinutes();
+                var ampm = hh >= 12 ? 'PM' : 'AM';
+                hh = hh % 12 || 12;
+                ttDate = hh + ':' + (mm < 10 ? '0' : '') + mm + ' ' + ampm;
+            }
+            tooltip.innerHTML = '<div class="tt-price">$' + prices[idx].toFixed(2) + '</div><div class="tt-date">' + ttDate + '</div>';
             tooltip.className = 'chart-tooltip visible ' + dirClass;
 
             octx.clearRect(0, 0, overlay.width, overlay.height);
