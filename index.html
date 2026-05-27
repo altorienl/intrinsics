@@ -269,10 +269,6 @@
         .price-box { text-align: right; }
         .price-box .price { font-size: 26px; font-weight: 700; color: #00ff41; font-family: 'JetBrains Mono', monospace; }
         .price-box .price-label { font-size: 11px; color: #4a6a4a; text-transform: uppercase; letter-spacing: 0.5px; }
-        .ah-price { font-size: 12px; font-family: 'JetBrains Mono', monospace; margin-top: 2px; }
-        .ah-price .ah-val { font-weight: 600; }
-        .ah-price .ah-label { color: #4a6a4a; font-size: 10px; }
-
         .ratio-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 20px; }
         .ratio-card {
             background: #111a11;
@@ -1475,7 +1471,6 @@
 
             processData(bs, ttm, prof, ticker, ratiosTtm);
             fetchChartData(ticker);
-            fetchAfterHours(ticker, prof.price);
         } catch (err) {
             showError(err.message || 'Failed to fetch data');
         } finally {
@@ -1656,7 +1651,7 @@
             '<div class="company-meta"><span class="sector-tag">' + (SECTOR_BENCHMARKS[sector] ? SECTOR_BENCHMARKS[sector].label : sector) + '</span>' +
             (prof.industry ? ' <span>' + escapeHtml(prof.industry) + '</span>' : '') +
             '</div></div></div>' +
-            (currentPrice ? '<div class="price-box"><div class="price">$' + currentPrice.toFixed(2) + '</div><div class="price-label">Current Price</div><div class="ah-price" id="ahPrice"></div></div>' : '') +
+            (currentPrice ? '<div class="price-box"><div class="price">$' + currentPrice.toFixed(2) + '</div><div class="price-label">Current Price</div></div>' : '') +
             '<button class="save-btn' + (saved ? ' saved' : '') + '" id="saveBtn" onclick="toggleWatchlist(\'' + ticker + '\',\'' + escapeHtml(companyName).replace(/'/g, "\\'") + '\')">' +
             '<span class="star">' + (saved ? '★' : '☆') + '</span>' + (saved ? 'Saved' : 'Watch') + '</button>';
 
@@ -1820,24 +1815,6 @@
             '<div class="ratio-explain">' + def.explain(ratio.value, bench) + '</div>' +
             '<div class="ratio-components">' + ratio.components + '</div>' +
             '<div class="ratio-formula">' + def.formula + ' &mdash; ' + (ratio.period || 'N/A') + '</div></div>';
-    }
-
-    // ---- After Hours ----
-    async function fetchAfterHours(ticker, closePrice) {
-        var el = document.getElementById('ahPrice');
-        if (!el) return;
-        el.innerHTML = '';
-        try {
-            var resp = await fetch(API + '/aftermarket-trade?symbol=' + encodeURIComponent(ticker) + '&apikey=' + API_KEY);
-            var data = await resp.json();
-            var item = Array.isArray(data) ? data[0] : data;
-            if (!item || !item.price) return;
-            var ahp = item.price;
-            var chg = ahp - closePrice;
-            var pct = (chg / closePrice) * 100;
-            var color = chg >= 0 ? '#00ff41' : '#ff3344';
-            el.innerHTML = '<span class="ah-val" style="color:' + color + '">$' + ahp.toFixed(2) + ' ' + (chg >= 0 ? '+' : '') + chg.toFixed(2) + ' (' + (chg >= 0 ? '+' : '') + pct.toFixed(2) + '%)</span> <span class="ah-label">After Hours</span>';
-        } catch(e) {}
     }
 
     // ---- Price Chart ----
