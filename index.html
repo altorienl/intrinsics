@@ -1233,8 +1233,8 @@
             });
         }
 
-        var countLabel = filtered.length + ' stock' + (filtered.length !== 1 ? 's' : '');
-        if (screenerGrade !== 'All') countLabel += ' rated ' + screenerGrade;
+        var countLabel = filtered.length + ' stock' + (filtered.length !== 1 ? 's' : '') + ' screened';
+        if (screenerGrade !== 'All') countLabel += ' · rated ' + screenerGrade;
         if (screenerRatio !== 'all') {
             var rl = ratioFilters.find(function(r) { return r.key === screenerRatio; });
             countLabel += (screenerGrade !== 'All' ? ' with' : ' with') + ' healthy ' + (rl ? rl.label : screenerRatio);
