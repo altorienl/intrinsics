@@ -1169,10 +1169,16 @@
         });
     }
 
+    function filterMovers(list) {
+        return list.filter(function(s) {
+            return s.price >= 5 && ['NYSE','NASDAQ','AMEX'].indexOf(s.exchange) !== -1;
+        });
+    }
+
     function renderMovers() {
         if (!moversData) return;
-        document.getElementById('gainersGrid').innerHTML = renderMoverCards(moversData.gainers.slice(0, 10), 'up');
-        document.getElementById('losersGrid').innerHTML = renderMoverCards(moversData.losers.slice(0, 10), 'down');
+        document.getElementById('gainersGrid').innerHTML = renderMoverCards(filterMovers(moversData.gainers).slice(0, 10), 'up');
+        document.getElementById('losersGrid').innerHTML = renderMoverCards(filterMovers(moversData.losers).slice(0, 10), 'down');
     }
 
     function renderMoverCards(stocks, dir) {
@@ -1847,7 +1853,7 @@
         var overallGrade, overallClass, overallText;
         var sectorLabel = SECTOR_BENCHMARKS[sector] ? SECTOR_BENCHMARKS[sector].label : '';
 
-        if (total === 0) { overallGrade = '?'; overallClass = 'ok'; overallText = 'Not enough data to assess.'; }
+        if (total < 4) { overallGrade = '?'; overallClass = 'ok'; overallText = 'Not enough data to grade — only ' + total + ' of 6 ratios available.'; }
         else if (goodCount === total) { overallGrade = 'A+'; overallClass = 'good'; overallText = 'Exceptional. All ' + total + ' metrics at healthy levels vs. ' + sectorLabel + ' benchmarks.'; }
         else if (goodCount >= 5) { overallGrade = 'A'; overallClass = 'good'; overallText = 'Strong financial health across ' + goodCount + ' of ' + total + ' metrics vs. ' + sectorLabel + ' benchmarks.'; }
         else if (goodCount >= 4 && badCount === 0) { overallGrade = 'B+'; overallClass = 'good'; overallText = 'Above average. ' + goodCount + ' strong metrics with no red flags.'; }
