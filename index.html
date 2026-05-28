@@ -1364,23 +1364,47 @@
     }
 
     function fetchWatchlistPrices(list) {
+        var info = getMarketSession();
         list.forEach(function(w) {
-            fetch(API + '/profile?symbol=' + encodeURIComponent(w.ticker) + '&apikey=' + API_KEY)
-                .then(function(r) { return r.text(); })
-                .then(function(text) {
-                    if (text.startsWith('Premium')) return;
-                    var data = JSON.parse(text);
-                    if (!Array.isArray(data) || !data[0]) return;
-                    var p = data[0].price;
-                    var ch = data[0].changes || 0;
-                    var el = document.getElementById('wlPrice_' + w.ticker.replace('-','_'));
-                    if (!el) return;
-                    var isUp = ch >= 0;
-                    el.innerHTML = '<div class="wl-price" style="color:' + (isUp ? '#00ff41' : '#ff3344') + '">$' + p.toFixed(2) + '</div>' +
-                        '<div style="font-size:11px;color:' + (isUp ? '#00ff41' : '#ff3344') + ';font-family:JetBrains Mono,monospace">' +
-                        (isUp ? '+' : '') + ch.toFixed(2) + '</div>';
+            var sym = encodeURIComponent(w.ticker);
+            if (info.session === 'market') {
+                fetch(API + '/quote?symbol=' + sym + '&apikey=' + API_KEY)
+                    .then(function(r) { return r.json(); })
+                    .then(function(data) {
+                        if (!Array.isArray(data) || !data[0]) return;
+                        var p = data[0];
+                        renderWatchlistPrice(w.ticker, p.price, p.change, info.label);
+                    }).catch(function() {});
+            } else if (info.session === 'pre' || info.session === 'after') {
+                Promise.all([
+                    fetch(API + '/aftermarket-trade?symbol=' + sym + '&apikey=' + API_KEY).then(function(r) { return r.json(); }),
+                    fetch(API + '/quote?symbol=' + sym + '&apikey=' + API_KEY).then(function(r) { return r.json(); })
+                ]).then(function(results) {
+                    var ah = (Array.isArray(results[0]) && results[0][0]) ? results[0][0] : null;
+                    var q = (Array.isArray(results[1]) && results[1][0]) ? results[1][0] : null;
+                    var price = (ah && ah.price) ? ah.price : (q ? q.price : null);
+                    var change = q ? q.change : 0;
+                    if (price) renderWatchlistPrice(w.ticker, price, change, info.label);
                 }).catch(function() {});
+            } else {
+                fetch(API + '/quote?symbol=' + sym + '&apikey=' + API_KEY)
+                    .then(function(r) { return r.json(); })
+                    .then(function(data) {
+                        if (!Array.isArray(data) || !data[0]) return;
+                        var p = data[0];
+                        renderWatchlistPrice(w.ticker, p.price, p.change, info.label);
+                    }).catch(function() {});
+            }
         });
+    }
+
+    function renderWatchlistPrice(ticker, price, change, label) {
+        var el = document.getElementById('wlPrice_' + ticker.replace('-','_'));
+        if (!el || !price) return;
+        var isUp = change >= 0;
+        el.innerHTML = '<div class="wl-price" style="color:' + (isUp ? '#00ff41' : '#ff3344') + '">$' + price.toFixed(2) + '</div>' +
+            '<div style="font-size:11px;color:' + (isUp ? '#00ff41' : '#ff3344') + ';font-family:JetBrains Mono,monospace">' +
+            (isUp ? '+' : '') + change.toFixed(2) + '</div>';
     }
 
     function initSwipeToDelete() {
