@@ -920,7 +920,7 @@
                     <div class="movers-grid" id="moversGrid" style="display:none"></div>
                 </div>
                 <div id="earningsCalSection" style="margin-top:24px;">
-                    <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;cursor:pointer;user-select:none;" onclick="var g=document.getElementById('earningsCalGrid');var a=document.getElementById('earningsCalArrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}">Earnings this week <span id="earningsCalArrow">▸</span></div>
+                    <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;cursor:pointer;user-select:none;" onclick="var g=document.getElementById('earningsCalGrid');var a=document.getElementById('earningsCalArrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}">Today's earnings <span id="earningsCalArrow">▸</span></div>
                     <div id="earningsCalGrid" style="display:none"></div>
                 </div>
             </div>
@@ -1310,38 +1310,27 @@
     // ---- Earnings Calendar ----
     function loadEarningsCal() {
         var now = new Date();
-        var day = now.getDay();
-        var mon = new Date(now);
-        mon.setDate(now.getDate() - (day === 0 ? 6 : day - 1));
-        var fri = new Date(mon);
-        fri.setDate(mon.getDate() + 4);
-        var from = mon.toISOString().slice(0, 10);
-        var to = fri.toISOString().slice(0, 10);
-        fetch(API + '/earnings-calendar?from=' + from + '&to=' + to + '&apikey=' + API_KEY)
+        var today = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
+        fetch(API + '/earnings-calendar?from=' + today + '&to=' + today + '&apikey=' + API_KEY)
             .then(function(r) { return r.json(); })
             .then(function(data) {
                 if (!Array.isArray(data)) return;
                 var candidates = data.filter(function(e) {
                     return e.symbol && e.symbol.length <= 5 && e.epsEstimated !== null;
                 });
-                candidates.sort(function(a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : a.symbol < b.symbol ? -1 : 1; });
-                var toCheck = candidates.slice(0, 60);
+                candidates.sort(function(a, b) { return a.symbol < b.symbol ? -1 : 1; });
+                var toCheck = candidates.slice(0, 40);
                 Promise.all(toCheck.map(function(e) { return checkLogo(e.symbol); })).then(function(logos) {
                     var valid = [];
                     for (var i = 0; i < toCheck.length && valid.length < 12; i++) {
                         if (logos[i]) valid.push(toCheck[i]);
                     }
                     if (valid.length === 0) return;
-                    var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-                    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                     var html = '<div class="ecal-grid">';
                     valid.forEach(function(e) {
-                        var d = new Date(e.date + 'T12:00:00');
-                        var label = days[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate();
                         html += '<div class="ecal-card" onclick="selectTicker(\'' + e.symbol + '\')">' +
                             '<img src="' + FMP_IMG + e.symbol + '.png" alt="" style="width:32px;height:32px;border-radius:8px;object-fit:contain;background:#0a0f0a">' +
-                            '<div><div class="ecal-ticker">' + e.symbol + '</div>' +
-                            '<div class="ecal-date">' + label + '</div></div></div>';
+                            '<div class="ecal-ticker">' + e.symbol + '</div></div>';
                     });
                     html += '</div>';
                     document.getElementById('earningsCalGrid').innerHTML = html;
