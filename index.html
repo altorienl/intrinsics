@@ -1057,6 +1057,7 @@
             renderQuickPicks();
             document.getElementById('moversGrid').style.display = 'none';
             document.getElementById('moversArrow').textContent = '▸';
+            stopPricePolling();
         }
         if (tab === 'watchlist') renderWatchlist();
         if (tab === 'screener') loadScreener();
@@ -1514,7 +1515,38 @@
 
     // ---- Analyze ----
     var analyzeId = 0;
+    var priceInterval = null;
+
+    function stopPricePolling() {
+        if (priceInterval) { clearInterval(priceInterval); priceInterval = null; }
+    }
+
+    function startPricePolling(ticker) {
+        stopPricePolling();
+        priceInterval = setInterval(function() {
+            fetch(API + '/profile?symbol=' + encodeURIComponent(ticker) + '&apikey=' + API_KEY)
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    if (!Array.isArray(data) || !data[0]) return;
+                    var p = data[0];
+                    var priceEl = document.querySelector('.price-box .price');
+                    if (priceEl && p.price) priceEl.textContent = '$' + p.price.toFixed(2);
+                    var statsEl = document.getElementById('companyStats');
+                    if (statsEl && p.change !== undefined && p.changePercentage !== undefined) {
+                        var dayItem = statsEl.querySelector('.stat-item:first-child');
+                        if (dayItem && dayItem.querySelector('.stat-label') && dayItem.querySelector('.stat-label').textContent === 'Today') {
+                            var color = p.change >= 0 ? '#00ff41' : '#ff3344';
+                            dayItem.querySelector('.stat-value').style.color = color;
+                            dayItem.querySelector('.stat-value').textContent = (p.changePercentage >= 0 ? '+' : '') + p.changePercentage.toFixed(2) + '%';
+                            dayItem.querySelector('.stat-sub').style.color = color;
+                            dayItem.querySelector('.stat-sub').textContent = (p.change >= 0 ? '+' : '') + '$' + Math.abs(p.change).toFixed(2);
+                        }
+                    }
+                }).catch(function() {});
+        }, 15000);
+    }
     async function analyze(ticker) {
+        stopPricePolling();
         var myId = ++analyzeId;
         document.getElementById('results').classList.add('hidden');
         document.getElementById('errorMsg').classList.add('hidden');
@@ -1590,8 +1622,10 @@
             fetchChartData(ticker);
             fetchFilings(prof.cik);
             fetchPeers(ticker);
+            startPricePolling(ticker);
         } catch (err) {
             showError(err.message || 'Failed to fetch data');
+            stopPricePolling();
         } finally {
             document.getElementById('loading').classList.add('hidden');
         }
