@@ -2221,11 +2221,10 @@
             if (upcoming) columns.push(upcoming);
             var html = '<h3>Recent Earnings</h3>';
             html += '<table class="earnings-table"><thead><tr><th></th>';
+            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
             columns.forEach(function(e, i) {
                 var d = new Date(e.date + 'T12:00:00');
-                d.setMonth(d.getMonth() - 3);
-                var q = 'Q' + (Math.ceil((d.getMonth() + 1) / 3));
-                var label = q + " '" + String(d.getFullYear()).slice(2);
+                var label = months[d.getMonth()] + " '" + String(d.getFullYear()).slice(2);
                 if (i === columns.length - 1 && e.revenueActual === null) label += ' Est.';
                 html += '<th>' + label + '</th>';
             });
