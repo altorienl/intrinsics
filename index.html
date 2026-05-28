@@ -1178,8 +1178,8 @@
 
     function renderMovers() {
         if (!moversData) return;
-        var gainers = filterMovers(moversData.gainers).slice(0, 10);
-        var losers = filterMovers(moversData.losers).slice(0, 10);
+        var gainers = filterMovers(moversData.gainers).slice(0, 15);
+        var losers = filterMovers(moversData.losers).slice(0, 15);
         var html = '<div class="movers-row"><div class="movers-label">Gainers</div><div class="movers-cards" id="moversGainers">';
         html += gainers.map(function(s) { return renderMoverCard(s, 'up'); }).join('');
         html += '</div></div>';
@@ -1197,7 +1197,7 @@
         for (var i = 0; i < all.length; i++) {
             if (all[i].style.display === 'none') continue;
             count++;
-            if (count > 3) all[i].style.display = 'none';
+            if (count > 4) all[i].style.display = 'none';
         }
     }
 
