@@ -476,9 +476,9 @@
         .tab-btn.active { color: #00ff41; border-bottom-color: #00ff41; }
 
         .movers-section { margin-bottom: 24px; }
-        .movers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-family: 'JetBrains Mono', monospace; color: #3a5a3a; writing-mode: vertical-lr; transform: rotate(180deg); display: flex; align-items: center; padding: 0 2px; }
-        .movers-row { display: flex; gap: 10px; margin-bottom: 12px; }
-        .movers-cards { flex: 1; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+        .movers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-family: 'JetBrains Mono', monospace; color: #3a5a3a; margin-bottom: 8px; text-align: left; }
+        .movers-row { margin-bottom: 16px; }
+        .movers-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
         .movers-arrow { font-size: 12px; color: #4a6a4a; }
         .movers-grid { }
         .mover-card { background: #111a11; border: 1px solid #1a2a1a; border-radius: 10px; padding: 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; transition: border-color 0.2s; }
@@ -1055,6 +1055,8 @@
             activeSector = null;
             renderSectorPills();
             renderQuickPicks();
+            document.getElementById('moversGrid').style.display = 'none';
+            document.getElementById('moversArrow').textContent = '▸';
         }
         if (tab === 'watchlist') renderWatchlist();
         if (tab === 'screener') loadScreener();
@@ -1190,9 +1192,12 @@
     function capMovers(card) {
         var container = card.closest('.movers-cards');
         if (!container) return;
-        var visible = container.querySelectorAll('.mover-card:not([style*="display: none"])');
-        if (visible.length > 3) {
-            for (var i = 3; i < visible.length; i++) visible[i].style.display = 'none';
+        var all = container.querySelectorAll('.mover-card');
+        var count = 0;
+        for (var i = 0; i < all.length; i++) {
+            if (all[i].style.display === 'none') continue;
+            count++;
+            if (count > 3) all[i].style.display = 'none';
         }
     }
 
