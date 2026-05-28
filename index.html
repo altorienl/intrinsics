@@ -64,6 +64,46 @@
         }
         .container { max-width: 820px; margin: 28px auto; padding: 0 16px; }
 
+        .market-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: #0a110a;
+            border: 1px solid #1a2a1a;
+            border-radius: 20px;
+            width: fit-content;
+            margin: 0 auto 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .market-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .market-dot.open {
+            background: #00ff41;
+            box-shadow: 0 0 6px #00ff41, 0 0 12px rgba(0,255,65,0.3);
+            animation: pulse-green 2s ease-in-out infinite;
+        }
+        .market-dot.closed {
+            background: #ff3344;
+            box-shadow: 0 0 6px #ff3344, 0 0 12px rgba(255,51,68,0.3);
+            animation: pulse-red 2s ease-in-out infinite;
+        }
+        @keyframes pulse-green {
+            0%, 100% { box-shadow: 0 0 6px #00ff41, 0 0 12px rgba(0,255,65,0.3); }
+            50% { box-shadow: 0 0 10px #00ff41, 0 0 20px rgba(0,255,65,0.5); }
+        }
+        @keyframes pulse-red {
+            0%, 100% { box-shadow: 0 0 6px #ff3344, 0 0 12px rgba(255,51,68,0.3); }
+            50% { box-shadow: 0 0 10px #ff3344, 0 0 20px rgba(255,51,68,0.5); }
+        }
+        .market-text { color: #6a8a6a; min-width: 100px; }
         .search-card {
             background: transparent;
             border: none;
@@ -854,6 +894,10 @@
     </div>
 
     <div class="container" id="analyzeView">
+        <div class="market-status" id="marketStatus">
+            <span class="market-dot" id="marketDot"></span>
+            <span class="market-text" id="marketText"></span>
+        </div>
         <div class="search-card">
             <h2>Look up any stock</h2>
             <div class="search-container">
@@ -1036,6 +1080,26 @@
     renderSectorPills();
     renderQuickPicks();
     loadMovers();
+    initMarketStatus();
+
+    function initMarketStatus() {
+        var info = getMarketSession();
+        var isOpen = info.session === 'market';
+        var dot = document.getElementById('marketDot');
+        var textEl = document.getElementById('marketText');
+        dot.className = 'market-dot ' + (isOpen ? 'open' : 'closed');
+        var msg = isOpen ? 'Market Open' : 'Market Closed';
+        var i = 0;
+        textEl.textContent = '';
+        function type() {
+            if (i < msg.length) {
+                textEl.textContent += msg.charAt(i);
+                i++;
+                setTimeout(type, 60);
+            }
+        }
+        type();
+    }
 
     // ---- Help Bubble Touch Toggle ----
     document.addEventListener('click', function(e) {
