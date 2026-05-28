@@ -2192,6 +2192,15 @@
                 } else { html += '<td>—</td>'; }
             });
             html += '</tr></tbody></table>';
+            if (upcoming && upcoming.date) {
+                var ud = new Date(upcoming.date + 'T12:00:00');
+                var now = new Date();
+                var diff = Math.ceil((ud - now) / (1000 * 60 * 60 * 24));
+                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                var dateStr = months[ud.getMonth()] + ' ' + ud.getDate() + ', ' + ud.getFullYear();
+                var countdown = diff > 0 ? ' · ~' + diff + ' day' + (diff !== 1 ? 's' : '') + ' away' : diff === 0 ? ' · Today' : '';
+                html += '<div style="margin-top:12px;font-size:11px;color:#4a6a4a;font-family:JetBrains Mono,monospace">Est. next earnings: ' + dateStr + countdown + '</div>';
+            }
             card.innerHTML = html;
             card.classList.remove('hidden');
         } catch (err) {}
@@ -2219,7 +2228,6 @@
             var rows = [];
             var counts = { '10-Q': 0, '10-K': 0 };
             var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-            var filingDates = [];
             for (var i = 0; i < forms.length && rows.length < 2; i++) {
                 var f = forms[i];
                 if (f !== '10-Q' && f !== '10-K') continue;
@@ -2233,32 +2241,8 @@
                     '<div><span class="filing-type">' + f + '</span> <span class="filing-period">' + (descriptions[i] || '') + '</span></div>' +
                     '<div style="text-align:right"><div class="filing-date">' + dateStr + '</div><div class="filing-open">View →</div></div></div>');
             }
-            for (var j = 0; j < forms.length && filingDates.length < 5; j++) {
-                if (forms[j] === '10-Q' || forms[j] === '10-K') {
-                    filingDates.push(new Date(dates[j]));
-                }
-            }
-            var estLine = '';
-            if (filingDates.length >= 2) {
-                var gaps = [];
-                for (var g = 0; g < filingDates.length - 1; g++) {
-                    gaps.push(filingDates[g].getTime() - filingDates[g + 1].getTime());
-                }
-                var avgGap = gaps.reduce(function(a, b) { return a + b; }, 0) / gaps.length;
-                var nextEst = new Date(filingDates[0].getTime() + avgGap);
-                var today = new Date();
-                var daysAway = Math.round((nextEst - today) / (1000 * 60 * 60 * 24));
-                if (daysAway > 0 && daysAway < 120) {
-                    var estStr = months[nextEst.getMonth()] + ' ' + nextEst.getDate() + ', ' + nextEst.getFullYear();
-                    estLine = '<div style="padding:10px 0 0;font-family:JetBrains Mono,monospace;font-size:12px;color:#00ff41;">' +
-                        'Est. next filing: ~' + daysAway + ' days <span style="color:#4a6a4a">(' + estStr + ')</span></div>';
-                } else if (daysAway <= 0 && daysAway > -14) {
-                    estLine = '<div style="padding:10px 0 0;font-family:JetBrains Mono,monospace;font-size:12px;color:#ffaa00;">' +
-                        'Next filing expected any day now</div>';
-                }
-            }
             if (rows.length > 0) {
-                list.innerHTML = rows.join('') + estLine;
+                list.innerHTML = rows.join('');
                 card.classList.remove('hidden');
             }
         } catch(e) {}
