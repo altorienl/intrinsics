@@ -2030,34 +2030,28 @@
             var resp = await fetch(API + '/earnings?symbol=' + encodeURIComponent(ticker) + '&limit=5&apikey=' + API_KEY);
             var data = await resp.json();
             if (!Array.isArray(data) || data.length === 0) return;
-            var reports = data.filter(function(e) { return e.epsActual !== null; }).slice(0, 4);
-            if (reports.length === 0) return;
-            reports.reverse();
+            var reported = data.filter(function(e) { return e.revenueActual !== null; }).slice(0, 3);
+            var upcoming = data.find(function(e) { return e.revenueActual === null && e.revenueEstimated; });
+            if (reported.length === 0) return;
+            reported.reverse();
+            var columns = reported.slice();
+            if (upcoming) columns.push(upcoming);
             var html = '<h3>Recent Earnings</h3>';
             html += '<table class="earnings-table"><thead><tr><th></th>';
-            reports.forEach(function(e) {
+            columns.forEach(function(e, i) {
                 var d = new Date(e.date);
                 var q = 'Q' + (Math.ceil((d.getMonth() + 1) / 3));
-                html += '<th>' + q + "'" + String(d.getFullYear()).slice(2) + '</th>';
+                var label = q + "'" + String(d.getFullYear()).slice(2);
+                if (i === columns.length - 1 && e.revenueActual === null) label += ' Est.';
+                html += '<th>' + label + '</th>';
             });
             html += '</tr></thead><tbody>';
-            html += '<tr><td>EPS Actual</td>';
-            reports.forEach(function(e) { html += '<td>$' + e.epsActual.toFixed(2) + '</td>'; });
-            html += '</tr><tr><td>EPS Estimate</td>';
-            reports.forEach(function(e) { html += '<td>' + (e.epsEstimated ? '$' + e.epsEstimated.toFixed(2) : '—') + '</td>'; });
-            html += '</tr><tr><td>EPS Surprise</td>';
-            reports.forEach(function(e) {
-                if (e.epsEstimated && e.epsEstimated !== 0) {
-                    var s = ((e.epsActual - e.epsEstimated) / Math.abs(e.epsEstimated) * 100);
-                    html += '<td class="' + (s >= 0 ? 'surprise-pos' : 'surprise-neg') + '">' + (s >= 0 ? '+' : '') + s.toFixed(2) + '%</td>';
-                } else { html += '<td>—</td>'; }
-            });
-            html += '</tr><tr><td>Revenue</td>';
-            reports.forEach(function(e) { html += '<td>' + (e.revenueActual ? fmt(e.revenueActual) : '—') + '</td>'; });
-            html += '</tr><tr><td>Rev. Estimate</td>';
-            reports.forEach(function(e) { html += '<td>' + (e.revenueEstimated ? fmt(e.revenueEstimated) : '—') + '</td>'; });
-            html += '</tr><tr><td>Rev. Surprise</td>';
-            reports.forEach(function(e) {
+            html += '<tr><td>Revenue</td>';
+            columns.forEach(function(e) { html += '<td>' + (e.revenueActual ? fmt(e.revenueActual) : '—') + '</td>'; });
+            html += '</tr><tr><td>Estimate</td>';
+            columns.forEach(function(e) { html += '<td>' + (e.revenueEstimated ? fmt(e.revenueEstimated) : '—') + '</td>'; });
+            html += '</tr><tr><td>Surprise</td>';
+            columns.forEach(function(e) {
                 if (e.revenueActual && e.revenueEstimated && e.revenueEstimated !== 0) {
                     var s = ((e.revenueActual - e.revenueEstimated) / Math.abs(e.revenueEstimated) * 100);
                     html += '<td class="' + (s >= 0 ? 'surprise-pos' : 'surprise-neg') + '">' + (s >= 0 ? '+' : '') + s.toFixed(2) + '%</td>';
