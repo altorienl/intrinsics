@@ -1521,29 +1521,65 @@
         if (priceInterval) { clearInterval(priceInterval); priceInterval = null; }
     }
 
-    function startPricePolling(ticker) {
-        stopPricePolling();
-        priceInterval = setInterval(function() {
-            fetch(API + '/profile?symbol=' + encodeURIComponent(ticker) + '&apikey=' + API_KEY)
+    function getMarketSession() {
+        var now = new Date();
+        var et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+        var h = et.getHours(), m = et.getMinutes(), t = h * 60 + m;
+        var day = et.getDay();
+        if (day === 0 || day === 6) return { session: 'closed', label: 'After Hours' };
+        if (t >= 570 && t < 960) return { session: 'market', label: 'Current Price' };
+        if (t >= 480 && t < 570) return { session: 'pre', label: 'Pre-Market' };
+        if (t >= 960 && t < 1200) return { session: 'after', label: 'After Hours' };
+        return { session: 'closed', label: 'After Hours' };
+    }
+
+    function pollPrice(ticker) {
+        var info = getMarketSession();
+        var sym = encodeURIComponent(ticker);
+        if (info.session === 'market') {
+            fetch(API + '/quote?symbol=' + sym + '&apikey=' + API_KEY)
                 .then(function(r) { return r.json(); })
                 .then(function(data) {
                     if (!Array.isArray(data) || !data[0]) return;
                     var p = data[0];
-                    var priceEl = document.querySelector('.price-box .price');
-                    if (priceEl && p.price) priceEl.textContent = '$' + p.price.toFixed(2);
-                    var statsEl = document.getElementById('companyStats');
-                    if (statsEl && p.change !== undefined && p.changePercentage !== undefined) {
-                        var dayItem = statsEl.querySelector('.stat-item:first-child');
-                        if (dayItem && dayItem.querySelector('.stat-label') && dayItem.querySelector('.stat-label').textContent === 'Today') {
-                            var color = p.change >= 0 ? '#00ff41' : '#ff3344';
-                            dayItem.querySelector('.stat-value').style.color = color;
-                            dayItem.querySelector('.stat-value').textContent = (p.changePercentage >= 0 ? '+' : '') + p.changePercentage.toFixed(2) + '%';
-                            dayItem.querySelector('.stat-sub').style.color = color;
-                            dayItem.querySelector('.stat-sub').textContent = (p.change >= 0 ? '+' : '') + '$' + Math.abs(p.change).toFixed(2);
-                        }
-                    }
+                    updatePriceDisplay(p.price, info.label);
+                    updateTodayStat(p.change, p.changePercentage);
                 }).catch(function() {});
-        }, 15000);
+        } else if (info.session === 'pre' || info.session === 'after') {
+            fetch(API + '/aftermarket-trade?symbol=' + sym + '&apikey=' + API_KEY)
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    if (!Array.isArray(data) || !data[0] || !data[0].price) return;
+                    updatePriceDisplay(data[0].price, info.label);
+                }).catch(function() {});
+        }
+    }
+
+    function updatePriceDisplay(price, label) {
+        var priceEl = document.querySelector('.price-box .price');
+        var labelEl = document.querySelector('.price-box .price-label');
+        if (priceEl && price) priceEl.textContent = '$' + price.toFixed(2);
+        if (labelEl && label) labelEl.textContent = label;
+    }
+
+    function updateTodayStat(change, changePct) {
+        if (change === undefined || changePct === undefined) return;
+        var statsEl = document.getElementById('companyStats');
+        if (!statsEl) return;
+        var dayItem = statsEl.querySelector('.stat-item:first-child');
+        if (dayItem && dayItem.querySelector('.stat-label') && dayItem.querySelector('.stat-label').textContent === 'Today') {
+            var color = change >= 0 ? '#00ff41' : '#ff3344';
+            dayItem.querySelector('.stat-value').style.color = color;
+            dayItem.querySelector('.stat-value').textContent = (changePct >= 0 ? '+' : '') + changePct.toFixed(2) + '%';
+            dayItem.querySelector('.stat-sub').style.color = color;
+            dayItem.querySelector('.stat-sub').textContent = (change >= 0 ? '+' : '') + '$' + Math.abs(change).toFixed(2);
+        }
+    }
+
+    function startPricePolling(ticker) {
+        stopPricePolling();
+        pollPrice(ticker);
+        priceInterval = setInterval(function() { pollPrice(ticker); }, 15000);
     }
     async function analyze(ticker) {
         stopPricePolling();
@@ -1808,7 +1844,7 @@
             '<div class="company-meta"><span class="sector-tag">' + (SECTOR_BENCHMARKS[sector] ? SECTOR_BENCHMARKS[sector].label : sector) + '</span>' +
             (prof.industry ? ' <span>' + escapeHtml(prof.industry) + '</span>' : '') +
             '</div></div></div>' +
-            (currentPrice ? '<div class="price-box"><div class="price">$' + currentPrice.toFixed(2) + '</div><div class="price-label">Current Price</div></div>' : '') +
+            (currentPrice ? '<div class="price-box"><div class="price">$' + currentPrice.toFixed(2) + '</div><div class="price-label">' + getMarketSession().label + '</div></div>' : '') +
             '<button class="save-btn' + (saved ? ' saved' : '') + '" id="saveBtn" onclick="toggleWatchlist(\'' + ticker + '\',\'' + escapeHtml(companyName).replace(/'/g, "\\'") + '\')">' +
             '<span class="star">' + (saved ? '★' : '☆') + '</span>' + (saved ? 'Saved' : 'Watch') + '</button>';
 
