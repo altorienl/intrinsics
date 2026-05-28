@@ -1163,8 +1163,8 @@
 
     function renderMovers() {
         if (!moversData) return;
-        var gainers = filterMovers(moversData.gainers).slice(0, 3);
-        var losers = filterMovers(moversData.losers).slice(0, 3);
+        var gainers = filterMovers(moversData.gainers).slice(0, 8);
+        var losers = filterMovers(moversData.losers).slice(0, 8);
         var combined = gainers.map(function(s) { return { s: s, dir: 'up' }; })
             .concat(losers.map(function(s) { return { s: s, dir: 'down' }; }));
         document.getElementById('moversGrid').innerHTML = combined.map(function(item) {
@@ -1178,7 +1178,7 @@
         var t = s.symbol || '';
         var letters = t.slice(0, 2);
         return '<div class="mover-card" onclick="selectTicker(\'' + t + '\')">' +
-            '<img src="' + FMP_IMG + t + '.png" alt="" class="mover-card-logo" onerror="this.outerHTML=\'<div class=qp-fallback style=width:36px;height:36px;font-size:12px>' + letters + '</div>\'">' +
+            '<img src="' + FMP_IMG + t + '.png" alt="" class="mover-card-logo" onerror="this.closest(\'.mover-card\').style.display=\'none\'">' +
             '<div class="mover-card-info"><div class="mover-card-ticker">' + t + '</div>' +
             '<div class="mover-card-name">' + escapeHtml((s.name || '').replace(/\s*(Common Stock|Class [A-C]( Common Stock)?|,?\s*Inc\.?|,?\s*Corp\.?)\s*$/gi, '').trim()) + '</div></div>' +
             '<div class="mover-card-price"><div class="mover-price">$' + price.toFixed(2) + '</div>' +
