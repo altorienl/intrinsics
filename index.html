@@ -344,6 +344,17 @@
         .ratio-components { font-size: 12px; color: #5a7a5a; margin-top: 4px; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
         .ratio-forward-pe { font-size: 12px; color: #00ff41; margin-top: 4px; font-family: 'JetBrains Mono', monospace; }
 
+        .filings-card { background: #111a11; border: 1px solid #1a2a1a; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+        .filings-header { cursor: pointer; display: flex; align-items: center; }
+        .filings-header h3 { font-size: 15px; color: #c0d0c0; font-weight: 600; margin: 0; }
+        .filing-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #1a2a1a; cursor: pointer; transition: background 0.15s; }
+        .filing-row:last-child { border-bottom: none; }
+        .filing-row:hover { background: #1a2a1a; margin: 0 -8px; padding: 10px 8px; border-radius: 6px; }
+        .filing-type { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 14px; color: #00ff41; }
+        .filing-date { font-size: 12px; color: #5a7a5a; font-family: 'JetBrains Mono', monospace; }
+        .filing-period { font-size: 12px; color: #8a9a8a; }
+        .filing-open { font-size: 11px; color: #3a5a3a; text-transform: uppercase; letter-spacing: 0.5px; }
+
         .chart-card {
             background: #111a11;
             border: 1px solid #1a2e1a;
@@ -865,6 +876,12 @@
             </div>
             <div class="summary-card" id="summaryCard"></div>
             <div class="ratio-grid" id="ratioGrid"></div>
+            <div class="filings-card hidden" id="filingsCard">
+                <div class="filings-header" onclick="var el=document.getElementById('filingsList');var arr=document.getElementById('filingsArrow');if(el.style.display==='none'){el.style.display='';arr.textContent='▾';}else{el.style.display='none';arr.textContent='▸';}">
+                    <h3>SEC Filings <span id="filingsArrow" style="font-size:12px">▾</span></h3>
+                </div>
+                <div id="filingsList"></div>
+            </div>
             <div class="disclaimer">
                 Data from Financial Modeling Prep. Not financial advice. Balance sheet from latest quarter, income metrics trailing twelve months (TTM).
             </div>
@@ -1486,6 +1503,7 @@
 
             processData(bs, ttm, prof, ticker, ratiosTtm, forwardEps);
             fetchChartData(ticker);
+            fetchFilings(prof.cik);
         } catch (err) {
             showError(err.message || 'Failed to fetch data');
         } finally {
@@ -1835,6 +1853,48 @@
             '<div class="ratio-components">' + ratio.components + '</div>' +
             (ratio.forwardPE ? '<div class="ratio-forward-pe">Forward P/E: ' + ratio.forwardPE.toFixed(1) + 'x <span style="color:#4a6a4a">(Est. EPS: $' + ratio.forwardEps.toFixed(2) + ')</span></div>' : '') +
             '<div class="ratio-formula">' + def.formula + ' &mdash; ' + (ratio.period || 'N/A') + '</div></div>';
+    }
+
+    // ---- SEC Filings ----
+    async function fetchFilings(cik) {
+        var card = document.getElementById('filingsCard');
+        var list = document.getElementById('filingsList');
+        card.classList.add('hidden');
+        list.innerHTML = '';
+        if (!cik) return;
+        var padded = String(cik).replace(/^0+/, '');
+        padded = '0'.repeat(Math.max(0, 10 - padded.length)) + padded;
+        try {
+            var resp = await fetch('https://data.sec.gov/submissions/CIK' + padded + '.json');
+            var data = await resp.json();
+            var recent = data.filings && data.filings.recent ? data.filings.recent : {};
+            var forms = recent.form || [];
+            var dates = recent.filingDate || [];
+            var accessions = recent.accessionNumber || [];
+            var primary = recent.primaryDocument || [];
+            var descriptions = recent.primaryDocDescription || [];
+            var cikNum = String(data.cik || '').replace(/^0+/, '');
+            var rows = [];
+            var counts = { '10-Q': 0, '10-K': 0, '8-K': 0 };
+            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            for (var i = 0; i < forms.length && rows.length < 8; i++) {
+                var f = forms[i];
+                if (f !== '10-Q' && f !== '10-K' && f !== '8-K') continue;
+                if (counts[f] >= (f === '10-Q' ? 4 : f === '10-K' ? 2 : 2)) continue;
+                counts[f]++;
+                var acc = accessions[i].replace(/-/g, '');
+                var url = 'https://www.sec.gov/Archives/edgar/data/' + cikNum + '/' + acc + '/' + primary[i];
+                var d = new Date(dates[i]);
+                var dateStr = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+                rows.push('<div class="filing-row" onclick="window.open(\'' + url + '\',\'_blank\')">' +
+                    '<div><span class="filing-type">' + f + '</span> <span class="filing-period">' + (descriptions[i] || '') + '</span></div>' +
+                    '<div style="text-align:right"><div class="filing-date">' + dateStr + '</div><div class="filing-open">View →</div></div></div>');
+            }
+            if (rows.length > 0) {
+                list.innerHTML = rows.join('');
+                card.classList.remove('hidden');
+            }
+        } catch(e) {}
     }
 
     // ---- Price Chart ----
