@@ -475,7 +475,6 @@
         .tab-btn:hover { color: #6a8a6a; }
         .tab-btn.active { color: #00ff41; border-bottom-color: #00ff41; }
 
-        .movers-view { position: relative; z-index: 1; }
         .movers-section { margin-bottom: 24px; }
         .movers-title { font-size: 16px; color: #00ff41; font-weight: 600; margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; }
         .movers-title-down { color: #ff3344; }
@@ -491,8 +490,6 @@
         .mover-card-pct { font-size: 13px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
         .mover-card-pct.up { color: #00ff41; }
         .mover-card-pct.down { color: #ff3344; }
-        .movers-loading { text-align: center; color: #3a5a3a; padding: 40px 0; font-family: 'JetBrains Mono', monospace; }
-
         .screener-view { position: relative; z-index: 1; }
         .screener-header {
             text-align: center;
@@ -841,7 +838,6 @@
 
     <div class="tab-bar">
         <button class="tab-btn active" id="tabAnalyze" onclick="switchTab('analyze')">Analyze</button>
-        <button class="tab-btn" id="tabMovers" onclick="switchTab('movers')">Movers</button>
         <button class="tab-btn" id="tabScreener" onclick="switchTab('screener')">Screen</button>
         <button class="tab-btn" id="tabWatchlist" onclick="switchTab('watchlist')">Watch</button>
     </div>
@@ -858,6 +854,16 @@
                 <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-top:20px;">Browse by sector</div>
                 <div class="sector-pills" id="sectorPills"></div>
                 <div class="quick-picks" id="quickPicks"></div>
+                <div id="moversSection" style="margin-top:24px;">
+                    <div class="movers-section">
+                        <h2 class="movers-title">Top Gainers</h2>
+                        <div class="movers-grid" id="gainersGrid"></div>
+                    </div>
+                    <div class="movers-section">
+                        <h2 class="movers-title movers-title-down">Top Losers</h2>
+                        <div class="movers-grid" id="losersGrid"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -909,18 +915,6 @@
                 <div class="quick-picks" id="resultsPicks"></div>
             </div>
         </div>
-    </div>
-
-    <div class="container movers-view hidden" id="moversView">
-        <div class="movers-section">
-            <h2 class="movers-title">Top Gainers</h2>
-            <div class="movers-grid" id="gainersGrid"></div>
-        </div>
-        <div class="movers-section">
-            <h2 class="movers-title movers-title-down">Top Losers</h2>
-            <div class="movers-grid" id="losersGrid"></div>
-        </div>
-        <div class="movers-loading hidden" id="moversLoading">Loading movers...</div>
     </div>
 
     <div class="container screener-view hidden" id="screenerView">
@@ -1035,6 +1029,7 @@
     }
     renderSectorPills();
     renderQuickPicks();
+    loadMovers();
 
     // ---- Help Bubble Touch Toggle ----
     document.addEventListener('click', function(e) {
@@ -1048,14 +1043,11 @@
     // ---- Tab Switching ----
     function switchTab(tab) {
         document.getElementById('tabAnalyze').classList.toggle('active', tab === 'analyze');
-        document.getElementById('tabMovers').classList.toggle('active', tab === 'movers');
         document.getElementById('tabScreener').classList.toggle('active', tab === 'screener');
         document.getElementById('tabWatchlist').classList.toggle('active', tab === 'watchlist');
         document.getElementById('analyzeView').classList.toggle('hidden', tab !== 'analyze');
-        document.getElementById('moversView').classList.toggle('hidden', tab !== 'movers');
         document.getElementById('screenerView').classList.toggle('hidden', tab !== 'screener');
         document.getElementById('watchlistView').classList.toggle('hidden', tab !== 'watchlist');
-        if (tab === 'movers') loadMovers();
         if (tab === 'watchlist') renderWatchlist();
         if (tab === 'screener') loadScreener();
     }
@@ -1154,19 +1146,13 @@
 
     function loadMovers() {
         if (moversData) { renderMovers(); return; }
-        document.getElementById('moversLoading').classList.remove('hidden');
-        document.getElementById('gainersGrid').innerHTML = '';
-        document.getElementById('losersGrid').innerHTML = '';
         Promise.all([
             fetch(API + '/biggest-gainers?apikey=' + API_KEY).then(function(r) { return r.json(); }),
             fetch(API + '/biggest-losers?apikey=' + API_KEY).then(function(r) { return r.json(); })
         ]).then(function(results) {
             moversData = { gainers: results[0] || [], losers: results[1] || [] };
-            document.getElementById('moversLoading').classList.add('hidden');
             renderMovers();
-        }).catch(function() {
-            document.getElementById('moversLoading').textContent = 'Failed to load movers.';
-        });
+        }).catch(function() {});
     }
 
     function filterMovers(list) {
@@ -1194,7 +1180,7 @@
             return '<div class="mover-card" onclick="switchTab(\'analyze\');selectTicker(\'' + t + '\')">' +
                 '<img src="' + FMP_IMG + t + '.png" alt="" class="mover-card-logo" onerror="this.outerHTML=\'<div class=qp-fallback style=width:36px;height:36px;font-size:12px>' + letters + '</div>\'">' +
                 '<div class="mover-card-info"><div class="mover-card-ticker">' + t + '</div>' +
-                '<div class="mover-card-name">' + escapeHtml(s.name || '') + '</div></div>' +
+                '<div class="mover-card-name">' + escapeHtml((s.name || '').replace(/\s*(Common Stock|Class [A-C]( Common Stock)?|,?\s*Inc\.?|,?\s*Corp\.?)\s*$/gi, '').trim()) + '</div></div>' +
                 '<div class="mover-card-price"><div class="mover-price">$' + price.toFixed(2) + '</div>' +
                 '<div class="mover-card-pct ' + dir + '">' + (pct >= 0 ? '+' : '') + pct.toFixed(2) + '%</div></div></div>';
         }).join('');
