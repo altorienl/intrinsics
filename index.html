@@ -1875,12 +1875,12 @@
             var descriptions = recent.primaryDocDescription || [];
             var cikNum = String(data.cik || '').replace(/^0+/, '');
             var rows = [];
-            var counts = { '10-Q': 0, '10-K': 0, '8-K': 0 };
+            var counts = { '10-Q': 0, '10-K': 0 };
             var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-            for (var i = 0; i < forms.length && rows.length < 8; i++) {
+            for (var i = 0; i < forms.length && rows.length < 2; i++) {
                 var f = forms[i];
-                if (f !== '10-Q' && f !== '10-K' && f !== '8-K') continue;
-                if (counts[f] >= (f === '10-Q' ? 4 : f === '10-K' ? 2 : 2)) continue;
+                if (f !== '10-Q' && f !== '10-K') continue;
+                if (counts[f] >= 1) continue;
                 counts[f]++;
                 var acc = accessions[i].replace(/-/g, '');
                 var url = 'https://www.sec.gov/Archives/edgar/data/' + cikNum + '/' + acc + '/' + primary[i];
