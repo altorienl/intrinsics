@@ -1141,22 +1141,25 @@
 
     function loadMovers() {
         if (moversData) { renderMovers(); return; }
-        Promise.all([
+        var moversPromise = Promise.all([
             fetch(API + '/biggest-gainers?apikey=' + API_KEY).then(function(r) { return r.json(); }),
             fetch(API + '/biggest-losers?apikey=' + API_KEY).then(function(r) { return r.json(); })
-        ]).then(function(results) {
-            moversData = { gainers: results[0] || [], losers: results[1] || [] };
+        ]);
+        var gradesPromise = screenerData ? Promise.resolve(screenerData) :
+            fetch('grades.json?t=' + Date.now()).then(function(r) { return r.json(); }).then(function(d) { screenerData = d; return d; });
+        Promise.all([moversPromise, gradesPromise]).then(function(res) {
+            moversData = { gainers: res[0][0] || [], losers: res[0][1] || [] };
             renderMovers();
         }).catch(function() {});
     }
 
     function filterMovers(list) {
-        var junk = /etf|fund|trust|bond|treasury|proshares|ishares|vanguard|spdr/i;
+        var known = {};
+        if (screenerData && screenerData.stocks) {
+            screenerData.stocks.forEach(function(s) { known[s.ticker] = true; });
+        }
         return list.filter(function(s) {
-            if (s.price < 10) return false;
-            if (['NYSE','NASDAQ','AMEX'].indexOf(s.exchange) === -1) return false;
-            if (junk.test(s.name || '')) return false;
-            return true;
+            return !!known[s.symbol];
         });
     }
 
