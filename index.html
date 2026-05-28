@@ -476,8 +476,7 @@
         .tab-btn.active { color: #00ff41; border-bottom-color: #00ff41; }
 
         .movers-section { margin-bottom: 24px; }
-        .movers-toggle { font-size: 14px; color: #c0d0c0; font-weight: 600; margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; cursor: pointer; user-select: none; }
-        .movers-toggle:hover { opacity: 0.8; }
+        .movers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-family: 'JetBrains Mono', monospace; margin-bottom: 8px; grid-column: 1 / -1; }
         .movers-arrow { font-size: 12px; color: #4a6a4a; }
         .movers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
         .mover-card { background: #111a11; border: 1px solid #1a2a1a; border-radius: 10px; padding: 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; transition: border-color 0.2s; }
@@ -856,7 +855,7 @@
                 <div class="sector-pills" id="sectorPills"></div>
                 <div class="quick-picks" id="quickPicks"></div>
                 <div id="moversSection" style="margin-top:24px;">
-                    <div class="movers-toggle" onclick="var g=document.getElementById('moversGrid');var a=this.querySelector('.movers-arrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}"><span style="color:#00ff41">Movers</span> <span class="movers-arrow">▸</span></div>
+                    <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;cursor:pointer;user-select:none;" onclick="var g=document.getElementById('moversGrid');var a=document.getElementById('moversArrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}">Today's movers <span id="moversArrow">▸</span></div>
                     <div class="movers-grid" id="moversGrid" style="display:none"></div>
                 </div>
             </div>
@@ -1163,13 +1162,13 @@
 
     function renderMovers() {
         if (!moversData) return;
-        var gainers = filterMovers(moversData.gainers).slice(0, 8);
-        var losers = filterMovers(moversData.losers).slice(0, 8);
-        var combined = gainers.map(function(s) { return { s: s, dir: 'up' }; })
-            .concat(losers.map(function(s) { return { s: s, dir: 'down' }; }));
-        document.getElementById('moversGrid').innerHTML = combined.map(function(item) {
-            return renderMoverCard(item.s, item.dir);
-        }).join('');
+        var gainers = filterMovers(moversData.gainers).slice(0, 6);
+        var losers = filterMovers(moversData.losers).slice(0, 6);
+        var html = '<div class="movers-label" style="color:#00ff41">Gaining</div>';
+        html += gainers.map(function(s) { return renderMoverCard(s, 'up'); }).join('');
+        html += '<div class="movers-label" style="color:#ff3344;margin-top:12px">Losing</div>';
+        html += losers.map(function(s) { return renderMoverCard(s, 'down'); }).join('');
+        document.getElementById('moversGrid').innerHTML = html;
     }
 
     function renderMoverCard(s, dir) {
