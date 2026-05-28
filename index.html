@@ -1044,6 +1044,18 @@
         document.getElementById('analyzeView').classList.toggle('hidden', tab !== 'analyze');
         document.getElementById('screenerView').classList.toggle('hidden', tab !== 'screener');
         document.getElementById('watchlistView').classList.toggle('hidden', tab !== 'watchlist');
+        if (tab === 'analyze') {
+            document.getElementById('results').classList.add('hidden');
+            document.getElementById('chartCard').classList.add('hidden');
+            document.getElementById('errorMsg').classList.add('hidden');
+            document.getElementById('tickerInput').value = '';
+            document.getElementById('tickerInput').blur();
+            document.getElementById('binaryBg').classList.remove('fade-out');
+            document.getElementById('popularSection').style.display = '';
+            activeSector = null;
+            renderSectorPills();
+            renderQuickPicks();
+        }
         if (tab === 'watchlist') renderWatchlist();
         if (tab === 'screener') loadScreener();
     }
