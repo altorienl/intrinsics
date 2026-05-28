@@ -1170,15 +1170,31 @@
     }
 
     function filterMovers(list) {
+        var knownTickers = null;
+        if (screenerData && screenerData.stocks) {
+            knownTickers = {};
+            screenerData.stocks.forEach(function(s) { knownTickers[s.ticker] = true; });
+        }
         return list.filter(function(s) {
-            return s.price >= 5 && ['NYSE','NASDAQ','AMEX'].indexOf(s.exchange) !== -1;
+            if (s.price < 5) return false;
+            if (['NYSE','NASDAQ','AMEX'].indexOf(s.exchange) === -1) return false;
+            if (knownTickers) return !!knownTickers[s.symbol];
+            return true;
         });
     }
 
     function renderMovers() {
         if (!moversData) return;
-        document.getElementById('gainersGrid').innerHTML = renderMoverCards(filterMovers(moversData.gainers).slice(0, 10), 'up');
-        document.getElementById('losersGrid').innerHTML = renderMoverCards(filterMovers(moversData.losers).slice(0, 10), 'down');
+        var render = function() {
+            document.getElementById('gainersGrid').innerHTML = renderMoverCards(filterMovers(moversData.gainers).slice(0, 10), 'up');
+            document.getElementById('losersGrid').innerHTML = renderMoverCards(filterMovers(moversData.losers).slice(0, 10), 'down');
+        };
+        if (!screenerData) {
+            fetch('grades.json?t=' + Date.now()).then(function(r) { return r.json(); }).then(function(data) {
+                screenerData = data;
+                render();
+            }).catch(function() { render(); });
+        } else { render(); }
     }
 
     function renderMoverCards(stocks, dir) {
