@@ -476,9 +476,11 @@
         .tab-btn.active { color: #00ff41; border-bottom-color: #00ff41; }
 
         .movers-section { margin-bottom: 24px; }
-        .movers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-family: 'JetBrains Mono', monospace; margin-bottom: 8px; grid-column: 1 / -1; }
+        .movers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-family: 'JetBrains Mono', monospace; color: #3a5a3a; writing-mode: vertical-lr; transform: rotate(180deg); display: flex; align-items: center; padding: 0 2px; }
+        .movers-row { display: flex; gap: 10px; margin-bottom: 12px; }
+        .movers-cards { flex: 1; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
         .movers-arrow { font-size: 12px; color: #4a6a4a; }
-        .movers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+        .movers-grid { }
         .mover-card { background: #111a11; border: 1px solid #1a2a1a; border-radius: 10px; padding: 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; transition: border-color 0.2s; }
         .mover-card:hover { border-color: #2a4a2a; }
         .mover-card-logo { width: 36px; height: 36px; border-radius: 8px; object-fit: contain; background: #0a0f0a; flex-shrink: 0; }
@@ -1162,22 +1164,32 @@
 
     function renderMovers() {
         if (!moversData) return;
-        var gainers = filterMovers(moversData.gainers).slice(0, 6);
-        var losers = filterMovers(moversData.losers).slice(0, 6);
-        var html = '<div class="movers-label" style="color:#00ff41">Gaining</div>';
+        var gainers = filterMovers(moversData.gainers).slice(0, 10);
+        var losers = filterMovers(moversData.losers).slice(0, 10);
+        var html = '<div class="movers-row"><div class="movers-label">Gainers</div><div class="movers-cards" id="moversGainers">';
         html += gainers.map(function(s) { return renderMoverCard(s, 'up'); }).join('');
-        html += '<div class="movers-label" style="color:#ff3344;margin-top:12px">Losing</div>';
+        html += '</div></div>';
+        html += '<div class="movers-row"><div class="movers-label">Losers</div><div class="movers-cards" id="moversLosers">';
         html += losers.map(function(s) { return renderMoverCard(s, 'down'); }).join('');
+        html += '</div></div>';
         document.getElementById('moversGrid').innerHTML = html;
+    }
+
+    function capMovers(card) {
+        var container = card.closest('.movers-cards');
+        if (!container) return;
+        var visible = container.querySelectorAll('.mover-card:not([style*="display: none"])');
+        if (visible.length > 3) {
+            for (var i = 3; i < visible.length; i++) visible[i].style.display = 'none';
+        }
     }
 
     function renderMoverCard(s, dir) {
         var pct = (s.changesPercentage || s.changePercentage || 0);
         var price = s.price || 0;
         var t = s.symbol || '';
-        var letters = t.slice(0, 2);
         return '<div class="mover-card" onclick="selectTicker(\'' + t + '\')">' +
-            '<img src="' + FMP_IMG + t + '.png" alt="" class="mover-card-logo" onerror="this.closest(\'.mover-card\').style.display=\'none\'">' +
+            '<img src="' + FMP_IMG + t + '.png" alt="" class="mover-card-logo" onerror="this.closest(\'.mover-card\').style.display=\'none\'" onload="capMovers(this.closest(\'.mover-card\'))">' +
             '<div class="mover-card-info"><div class="mover-card-ticker">' + t + '</div>' +
             '<div class="mover-card-name">' + escapeHtml((s.name || '').replace(/\s*(Common Stock|Class [A-C]( Common Stock)?|,?\s*Inc\.?|,?\s*Corp\.?)\s*$/gi, '').trim()) + '</div></div>' +
             '<div class="mover-card-price"><div class="mover-price">$' + price.toFixed(2) + '</div>' +
