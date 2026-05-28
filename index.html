@@ -547,13 +547,16 @@
         .ecal-card img { width: 32px; height: 32px; border-radius: 8px; object-fit: contain; background: #0a0f0a; flex-shrink: 0; }
         .ecal-ticker { font-weight: 700; font-size: 13px; color: #c0d0c0; font-family: 'JetBrains Mono', monospace; }
         .ecal-date { font-size: 10px; color: #4a6a4a; font-family: 'JetBrains Mono', monospace; }
-        .heatmap-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; }
-        .heatmap-block { border-radius: 10px; padding: 18px 14px; text-align: center; cursor: default; transition: transform 0.15s; }
-        .heatmap-block:hover { transform: scale(1.03); }
-        .heatmap-sector { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.95); font-family: 'JetBrains Mono', monospace; margin-bottom: 6px; }
-        .heatmap-pct { font-size: 22px; font-weight: 800; color: rgba(255,255,255,0.95); font-family: 'JetBrains Mono', monospace; }
-        .heatmap-name { font-size: 9px; color: rgba(255,255,255,0.5); margin-top: 4px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.5px; }
-        .heatmap-header { font-size: 11px; color: #3a5a3a; text-transform: uppercase; letter-spacing: 1px; font-family: 'JetBrains Mono', monospace; margin-bottom: 16px; }
+        .market-idx-card {
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 12px;
+            padding: 14px 12px;
+            text-align: center;
+        }
+        .market-idx-card .stat-label { margin-bottom: 6px; }
+        .market-idx-card .idx-price { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: #c0d0c0; }
+        .market-idx-card .idx-change { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; margin-top: 2px; }
         .screener-view { position: relative; z-index: 1; }
         .screener-header {
             text-align: center;
@@ -904,7 +907,6 @@
         <button class="tab-btn active" id="tabAnalyze" onclick="switchTab('analyze')">Analyze</button>
         <button class="tab-btn" id="tabScreener" onclick="switchTab('screener')">Screen</button>
         <button class="tab-btn" id="tabWatchlist" onclick="switchTab('watchlist')">Watch</button>
-        <button class="tab-btn" id="tabSectors" onclick="switchTab('sectors')">Sectors</button>
     </div>
 
     <div class="container" id="analyzeView">
@@ -923,6 +925,14 @@
                 <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-top:20px;">Browse by sector</div>
                 <div class="sector-pills" id="sectorPills"></div>
                 <div class="quick-picks" id="quickPicks"></div>
+                <div id="marketOverview" style="margin-top:24px;">
+                    <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-bottom:10px;">Today's Performance</div>
+                    <div id="marketOverviewGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+                        <div class="market-idx-card" id="idxSPY"><div class="stat-label">S&P 500</div><div class="stat-value" style="color:#3a5a3a">—</div></div>
+                        <div class="market-idx-card" id="idxNDX"><div class="stat-label">Nasdaq</div><div class="stat-value" style="color:#3a5a3a">—</div></div>
+                        <div class="market-idx-card" id="idxDJI"><div class="stat-label">Dow Jones</div><div class="stat-value" style="color:#3a5a3a">—</div></div>
+                    </div>
+                </div>
                 <div id="moversSection" style="margin-top:24px;">
                     <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;cursor:pointer;user-select:none;" onclick="var g=document.getElementById('moversGrid');var a=document.getElementById('moversArrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}">Today's movers <span id="moversArrow">▸</span></div>
                     <div class="movers-grid" id="moversGrid" style="display:none"></div>
@@ -999,10 +1009,6 @@
 
     <div class="container watchlist-view hidden" id="watchlistView">
         <div id="watchlistContent"></div>
-    </div>
-
-    <div class="container hidden" id="sectorsView">
-        <div id="sectorHeatmap"></div>
     </div>
 
     <footer style="text-align:center;padding:24px 16px 32px;font-size:12px;color:#2a3a2a;font-family:'JetBrains Mono',monospace;letter-spacing:0.5px;">
@@ -1103,6 +1109,7 @@
     renderQuickPicks();
     loadMovers();
     loadEarningsCal();
+    loadMarketOverview();
     initMarketStatus();
 
     function initMarketStatus() {
@@ -1138,11 +1145,9 @@
         document.getElementById('tabAnalyze').classList.toggle('active', tab === 'analyze');
         document.getElementById('tabScreener').classList.toggle('active', tab === 'screener');
         document.getElementById('tabWatchlist').classList.toggle('active', tab === 'watchlist');
-        document.getElementById('tabSectors').classList.toggle('active', tab === 'sectors');
         document.getElementById('analyzeView').classList.toggle('hidden', tab !== 'analyze');
         document.getElementById('screenerView').classList.toggle('hidden', tab !== 'screener');
         document.getElementById('watchlistView').classList.toggle('hidden', tab !== 'watchlist');
-        document.getElementById('sectorsView').classList.toggle('hidden', tab !== 'sectors');
         if (tab === 'analyze') {
             document.getElementById('results').classList.add('hidden');
             document.getElementById('chartCard').classList.add('hidden');
@@ -1160,7 +1165,6 @@
         }
         if (tab === 'watchlist') renderWatchlist();
         if (tab === 'screener') loadScreener();
-        if (tab === 'sectors') loadSectorHeatmap();
     }
 
     // ---- Screener ----
@@ -1668,70 +1672,32 @@
         analyze(ticker);
     }
 
-    // ---- Sector Heatmap ----
-    var sectorData = null;
-    var SECTOR_ETFS = [
-        { symbol: 'XLK', name: 'Technology' },
-        { symbol: 'XLV', name: 'Healthcare' },
-        { symbol: 'XLF', name: 'Financials' },
-        { symbol: 'XLY', name: 'Consumer Disc.' },
-        { symbol: 'XLP', name: 'Consumer Staples' },
-        { symbol: 'XLE', name: 'Energy' },
-        { symbol: 'XLI', name: 'Industrials' },
-        { symbol: 'XLRE', name: 'Real Estate' },
-        { symbol: 'XLU', name: 'Utilities' },
-        { symbol: 'XLC', name: 'Communication' },
-        { symbol: 'XLB', name: 'Materials' }
+    // ---- Market Overview ----
+    var MARKET_INDICES = [
+        { symbol: '^GSPC', id: 'idxSPY', label: 'S&P 500' },
+        { symbol: '^IXIC', id: 'idxNDX', label: 'Nasdaq' },
+        { symbol: '^DJI', id: 'idxDJI', label: 'Dow Jones' }
     ];
 
-    function loadSectorHeatmap() {
-        if (sectorData) { renderSectorHeatmap(); return; }
-        var el = document.getElementById('sectorHeatmap');
-        el.innerHTML = '<div style="text-align:center;color:#3a5a3a;padding:40px">Loading sectors...</div>';
-        Promise.all(SECTOR_ETFS.map(function(s) {
-            return fetch(API + '/quote?symbol=' + s.symbol + '&apikey=' + API_KEY).then(function(r) { return r.json(); });
-        })).then(function(results) {
-            sectorData = SECTOR_ETFS.map(function(s, i) {
-                var q = (Array.isArray(results[i]) && results[i][0]) ? results[i][0] : {};
-                return {
-                    name: s.name,
-                    symbol: s.symbol,
-                    change: q.changePercentage || 0,
-                    price: q.price || 0
-                };
-            });
-            sectorData.sort(function(a, b) { return b.change - a.change; });
-            renderSectorHeatmap();
-        }).catch(function() {
-            el.innerHTML = '<div style="text-align:center;color:#4a6a4a;padding:40px">Failed to load sector data.</div>';
+    function loadMarketOverview() {
+        MARKET_INDICES.forEach(function(idx) {
+            fetch(API + '/quote?symbol=' + encodeURIComponent(idx.symbol) + '&apikey=' + API_KEY)
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    var q = (Array.isArray(data) && data[0]) ? data[0] : null;
+                    if (!q) return;
+                    var card = document.getElementById(idx.id);
+                    var pct = q.changePercentage || 0;
+                    var chg = q.change || 0;
+                    var price = q.price || 0;
+                    var color = pct >= 0 ? '#00ff41' : '#ff3344';
+                    var sign = pct >= 0 ? '+' : '';
+                    card.innerHTML =
+                        '<div class="stat-label">' + idx.label + '</div>' +
+                        '<div class="idx-price">' + price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + '</div>' +
+                        '<div class="idx-change" style="color:' + color + '">' + sign + chg.toFixed(2) + ' (' + sign + pct.toFixed(2) + '%)</div>';
+                }).catch(function() {});
         });
-    }
-
-    function heatmapColor(pct) {
-        if (pct >= 2) return '#006b21';
-        if (pct >= 1) return '#00802a';
-        if (pct >= 0.5) return '#1a8a3a';
-        if (pct >= 0) return '#2a6a3a';
-        if (pct >= -0.5) return '#6a3a2a';
-        if (pct >= -1) return '#8a2a1a';
-        if (pct >= -2) return '#a02010';
-        return '#b01508';
-    }
-
-    function renderSectorHeatmap() {
-        if (!sectorData) return;
-        var gainers = sectorData.filter(function(s) { return s.change >= 0; }).length;
-        var html = '<div class="heatmap-header">Sector Performance — ' + gainers + ' of ' + sectorData.length + ' sectors green today</div>';
-        html += '<div class="heatmap-grid">';
-        sectorData.forEach(function(s) {
-            var bg = heatmapColor(s.change);
-            html += '<div class="heatmap-block" style="background:' + bg + '">' +
-                '<div class="heatmap-sector">' + s.name + '</div>' +
-                '<div class="heatmap-pct">' + (s.change >= 0 ? '+' : '') + s.change.toFixed(2) + '%</div>' +
-                '<div class="heatmap-name">' + s.symbol + ' · $' + s.price.toFixed(2) + '</div></div>';
-        });
-        html += '</div>';
-        document.getElementById('sectorHeatmap').innerHTML = html;
     }
 
     // ---- Analyze ----
