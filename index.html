@@ -856,14 +856,8 @@
                 <div class="sector-pills" id="sectorPills"></div>
                 <div class="quick-picks" id="quickPicks"></div>
                 <div id="moversSection" style="margin-top:24px;">
-                    <div class="movers-section">
-                        <div class="movers-toggle" onclick="var g=document.getElementById('gainersGrid');var a=this.querySelector('.movers-arrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}"><span style="color:#00ff41">Top Gainers</span> <span class="movers-arrow">▸</span></div>
-                        <div class="movers-grid" id="gainersGrid" style="display:none"></div>
-                    </div>
-                    <div class="movers-section">
-                        <div class="movers-toggle" onclick="var g=document.getElementById('losersGrid');var a=this.querySelector('.movers-arrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}"><span style="color:#ff3344">Top Losers</span> <span class="movers-arrow">▸</span></div>
-                        <div class="movers-grid" id="losersGrid" style="display:none"></div>
-                    </div>
+                    <div class="movers-toggle" onclick="var g=document.getElementById('moversGrid');var a=this.querySelector('.movers-arrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}"><span style="color:#00ff41">Movers</span> <span class="movers-arrow">▸</span></div>
+                    <div class="movers-grid" id="moversGrid" style="display:none"></div>
                 </div>
             </div>
         </div>
@@ -1168,23 +1162,26 @@
 
     function renderMovers() {
         if (!moversData) return;
-        document.getElementById('gainersGrid').innerHTML = renderMoverCards(filterMovers(moversData.gainers).slice(0, 10), 'up');
-        document.getElementById('losersGrid').innerHTML = renderMoverCards(filterMovers(moversData.losers).slice(0, 10), 'down');
+        var gainers = filterMovers(moversData.gainers).slice(0, 3);
+        var losers = filterMovers(moversData.losers).slice(0, 3);
+        var combined = gainers.map(function(s) { return { s: s, dir: 'up' }; })
+            .concat(losers.map(function(s) { return { s: s, dir: 'down' }; }));
+        document.getElementById('moversGrid').innerHTML = combined.map(function(item) {
+            return renderMoverCard(item.s, item.dir);
+        }).join('');
     }
 
-    function renderMoverCards(stocks, dir) {
-        return stocks.map(function(s) {
-            var pct = (s.changesPercentage || s.changePercentage || 0);
-            var price = s.price || 0;
-            var t = s.symbol || '';
-            var letters = t.slice(0, 2);
-            return '<div class="mover-card" onclick="switchTab(\'analyze\');selectTicker(\'' + t + '\')">' +
-                '<img src="' + FMP_IMG + t + '.png" alt="" class="mover-card-logo" onerror="this.outerHTML=\'<div class=qp-fallback style=width:36px;height:36px;font-size:12px>' + letters + '</div>\'">' +
-                '<div class="mover-card-info"><div class="mover-card-ticker">' + t + '</div>' +
-                '<div class="mover-card-name">' + escapeHtml((s.name || '').replace(/\s*(Common Stock|Class [A-C]( Common Stock)?|,?\s*Inc\.?|,?\s*Corp\.?)\s*$/gi, '').trim()) + '</div></div>' +
-                '<div class="mover-card-price"><div class="mover-price">$' + price.toFixed(2) + '</div>' +
-                '<div class="mover-card-pct ' + dir + '">' + (pct >= 0 ? '+' : '') + pct.toFixed(2) + '%</div></div></div>';
-        }).join('');
+    function renderMoverCard(s, dir) {
+        var pct = (s.changesPercentage || s.changePercentage || 0);
+        var price = s.price || 0;
+        var t = s.symbol || '';
+        var letters = t.slice(0, 2);
+        return '<div class="mover-card" onclick="selectTicker(\'' + t + '\')">' +
+            '<img src="' + FMP_IMG + t + '.png" alt="" class="mover-card-logo" onerror="this.outerHTML=\'<div class=qp-fallback style=width:36px;height:36px;font-size:12px>' + letters + '</div>\'">' +
+            '<div class="mover-card-info"><div class="mover-card-ticker">' + t + '</div>' +
+            '<div class="mover-card-name">' + escapeHtml((s.name || '').replace(/\s*(Common Stock|Class [A-C]( Common Stock)?|,?\s*Inc\.?|,?\s*Corp\.?)\s*$/gi, '').trim()) + '</div></div>' +
+            '<div class="mover-card-price"><div class="mover-price">$' + price.toFixed(2) + '</div>' +
+            '<div class="mover-card-pct ' + dir + '">' + (pct >= 0 ? '+' : '') + pct.toFixed(2) + '%</div></div></div>';
     }
 
     // ---- Watchlist (localStorage) ----
