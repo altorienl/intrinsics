@@ -476,8 +476,9 @@
         .tab-btn.active { color: #00ff41; border-bottom-color: #00ff41; }
 
         .movers-section { margin-bottom: 24px; }
-        .movers-title { font-size: 16px; color: #00ff41; font-weight: 600; margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; }
-        .movers-title-down { color: #ff3344; }
+        .movers-toggle { font-size: 14px; color: #c0d0c0; font-weight: 600; margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; cursor: pointer; user-select: none; }
+        .movers-toggle:hover { opacity: 0.8; }
+        .movers-arrow { font-size: 12px; color: #4a6a4a; }
         .movers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
         .mover-card { background: #111a11; border: 1px solid #1a2a1a; border-radius: 10px; padding: 14px; display: flex; align-items: center; gap: 12px; cursor: pointer; transition: border-color 0.2s; }
         .mover-card:hover { border-color: #2a4a2a; }
@@ -856,12 +857,12 @@
                 <div class="quick-picks" id="quickPicks"></div>
                 <div id="moversSection" style="margin-top:24px;">
                     <div class="movers-section">
-                        <h2 class="movers-title">Top Gainers</h2>
-                        <div class="movers-grid" id="gainersGrid"></div>
+                        <h2 class="movers-toggle" onclick="var g=document.getElementById('gainersGrid');var a=this.querySelector('.movers-arrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}"><span style="color:#00ff41">Top Gainers</span> <span class="movers-arrow">▸</span></h2>
+                        <div class="movers-grid" id="gainersGrid" style="display:none"></div>
                     </div>
                     <div class="movers-section">
-                        <h2 class="movers-title movers-title-down">Top Losers</h2>
-                        <div class="movers-grid" id="losersGrid"></div>
+                        <h2 class="movers-toggle" onclick="var g=document.getElementById('losersGrid');var a=this.querySelector('.movers-arrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}"><span style="color:#ff3344">Top Losers</span> <span class="movers-arrow">▸</span></h2>
+                        <div class="movers-grid" id="losersGrid" style="display:none"></div>
                     </div>
                 </div>
             </div>
