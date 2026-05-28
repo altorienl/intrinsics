@@ -547,6 +547,16 @@
         .ecal-card img { width: 32px; height: 32px; border-radius: 8px; object-fit: contain; background: #0a0f0a; flex-shrink: 0; }
         .ecal-ticker { font-weight: 700; font-size: 13px; color: #c0d0c0; font-family: 'JetBrains Mono', monospace; }
         .ecal-date { font-size: 10px; color: #4a6a4a; font-family: 'JetBrains Mono', monospace; }
+        .market-idx-card {
+            background: #111a11;
+            border: 1px solid #1a2e1a;
+            border-radius: 12px;
+            padding: 14px 12px;
+            text-align: center;
+        }
+        .market-idx-card .stat-label { margin-bottom: 6px; }
+        .market-idx-card .idx-price { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: #c0d0c0; }
+        .market-idx-card .idx-change { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; margin-top: 2px; }
         .screener-view { position: relative; z-index: 1; }
         .screener-header {
             text-align: center;
@@ -915,6 +925,14 @@
                 <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-top:20px;">Browse by sector</div>
                 <div class="sector-pills" id="sectorPills"></div>
                 <div class="quick-picks" id="quickPicks"></div>
+                <div id="marketOverview" style="margin-top:24px;">
+                    <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-bottom:10px;">Today's Performance</div>
+                    <div id="marketOverviewGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+                        <div class="market-idx-card" id="idxSPY"><div class="stat-label">S&P 500</div><div class="stat-value" style="color:#3a5a3a">—</div></div>
+                        <div class="market-idx-card" id="idxNDX"><div class="stat-label">Nasdaq</div><div class="stat-value" style="color:#3a5a3a">—</div></div>
+                        <div class="market-idx-card" id="idxDJI"><div class="stat-label">Dow Jones</div><div class="stat-value" style="color:#3a5a3a">—</div></div>
+                    </div>
+                </div>
                 <div id="moversSection" style="margin-top:24px;">
                     <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;cursor:pointer;user-select:none;" onclick="var g=document.getElementById('moversGrid');var a=document.getElementById('moversArrow');if(g.style.display==='none'){g.style.display='';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}">Today's movers <span id="moversArrow">▸</span></div>
                     <div class="movers-grid" id="moversGrid" style="display:none"></div>
@@ -1091,6 +1109,7 @@
     renderQuickPicks();
     loadMovers();
     loadEarningsCal();
+    loadMarketOverview();
     initMarketStatus();
 
     function initMarketStatus() {
@@ -1651,6 +1670,38 @@
         tickerInput.value = ticker;
         acList.classList.add('hidden');
         analyze(ticker);
+    }
+
+    // ---- Market Overview ----
+    function loadMarketOverview() {
+        try {
+            var indices = [
+                { symbol: 'SPY', id: 'idxSPY', label: 'S&P 500' },
+                { symbol: 'QQQ', id: 'idxNDX', label: 'Nasdaq' },
+                { symbol: 'DIA', id: 'idxDJI', label: 'Dow Jones' }
+            ];
+            indices.forEach(function(idx) {
+                fetch(API + '/quote?symbol=' + idx.symbol + '&apikey=' + API_KEY)
+                    .then(function(r) { return r.json(); })
+                    .then(function(data) {
+                        try {
+                            var q = (Array.isArray(data) && data[0]) ? data[0] : null;
+                            if (!q || !q.price) return;
+                            var card = document.getElementById(idx.id);
+                            if (!card) return;
+                            var pct = q.changePercentage || 0;
+                            var chg = q.change || 0;
+                            var price = q.price;
+                            var color = pct >= 0 ? '#00ff41' : '#ff3344';
+                            var sign = pct >= 0 ? '+' : '';
+                            card.innerHTML =
+                                '<div class="stat-label">' + idx.label + '</div>' +
+                                '<div class="idx-price">' + price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + '</div>' +
+                                '<div class="idx-change" style="color:' + color + '">' + sign + chg.toFixed(2) + ' (' + sign + pct.toFixed(2) + '%)</div>';
+                        } catch (e) {}
+                    }).catch(function() {});
+            });
+        } catch (e) {}
     }
 
     // ---- Analyze ----
