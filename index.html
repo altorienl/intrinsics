@@ -2673,7 +2673,8 @@
         var isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
         var isAndroid = /Android/.test(navigator.userAgent);
         var isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
-        if ((isIOS || isAndroid) && !isStandalone && !localStorage.getItem('installDismissed')) {
+        var today = new Date().toISOString().slice(0, 10);
+        if ((isIOS || isAndroid) && !isStandalone && localStorage.getItem('installDismissed') !== today) {
             var steps = document.getElementById('installSteps');
             if (isIOS) {
                 steps.innerHTML =
@@ -2696,7 +2697,7 @@
         }
         document.getElementById('installDismiss').addEventListener('click', function() {
             document.getElementById('installBanner').classList.add('hidden');
-            localStorage.setItem('installDismissed', '1');
+            localStorage.setItem('installDismissed', new Date().toISOString().slice(0, 10));
         });
     })();
     </script>
