@@ -1141,25 +1141,23 @@
 
     function loadMovers() {
         if (moversData) { renderMovers(); return; }
-        var moversPromise = Promise.all([
+        Promise.all([
             fetch(API + '/biggest-gainers?apikey=' + API_KEY).then(function(r) { return r.json(); }),
             fetch(API + '/biggest-losers?apikey=' + API_KEY).then(function(r) { return r.json(); })
-        ]);
-        var gradesPromise = screenerData ? Promise.resolve(screenerData) :
-            fetch('grades.json?t=' + Date.now()).then(function(r) { return r.json(); }).then(function(d) { screenerData = d; return d; });
-        Promise.all([moversPromise, gradesPromise]).then(function(res) {
-            moversData = { gainers: res[0][0] || [], losers: res[0][1] || [] };
+        ]).then(function(results) {
+            moversData = { gainers: results[0] || [], losers: results[1] || [] };
             renderMovers();
         }).catch(function() {});
     }
 
     function filterMovers(list) {
-        var known = {};
-        if (screenerData && screenerData.stocks) {
-            screenerData.stocks.forEach(function(s) { known[s.ticker] = true; });
-        }
+        var junk = /etf|fund|trust|bond|treasury|proshares|ishares|vanguard|spdr|warrant|right|unit|preferred/i;
         return list.filter(function(s) {
-            return !!known[s.symbol];
+            if (s.price < 10) return false;
+            if (['NYSE','NASDAQ','AMEX'].indexOf(s.exchange) === -1) return false;
+            if (junk.test(s.name || '')) return false;
+            if ((s.symbol || '').length > 5) return false;
+            return true;
         });
     }
 
@@ -1519,7 +1517,7 @@
             if (!Array.isArray(estimates)) estimates = [];
 
             if (myId !== analyzeId) return;
-            if (!Array.isArray(bs) || bs.length === 0) throw new Error('No financial data found for ' + ticker + '. Make sure it\'s a US-listed stock.');
+            if (!Array.isArray(bs) || bs.length === 0) throw new Error('Financial data not yet available for ' + ticker + '. Try a different stock.');
             bs = bs[0];
             isArr = Array.isArray(isArr) ? isArr : [];
             prof = Array.isArray(prof) && prof.length > 0 ? prof[0] : {};
