@@ -926,8 +926,8 @@
                 <div class="sector-pills" id="sectorPills"></div>
                 <div class="quick-picks" id="quickPicks"></div>
                 <div id="marketOverview" style="margin-top:24px;">
-                    <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-bottom:10px;">Today's Performance</div>
-                    <div id="marketOverviewGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+                    <div style="font-size:11px;color:#3a5a3a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;cursor:pointer;user-select:none;" onclick="var g=document.getElementById('marketOverviewGrid');var a=document.getElementById('perfArrow');if(g.style.display==='none'){g.style.display='grid';a.textContent='▾';}else{g.style.display='none';a.textContent='▸';}">Today's Performance <span id="perfArrow">▸</span></div>
+                    <div id="marketOverviewGrid" style="display:none;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px;">
                         <div class="market-idx-card" id="idxSPY"><div class="stat-label">S&P 500</div><div class="stat-value" style="color:#3a5a3a">—</div></div>
                         <div class="market-idx-card" id="idxNDX"><div class="stat-label">Nasdaq</div><div class="stat-value" style="color:#3a5a3a">—</div></div>
                         <div class="market-idx-card" id="idxDJI"><div class="stat-label">Dow Jones</div><div class="stat-value" style="color:#3a5a3a">—</div></div>
@@ -1159,8 +1159,12 @@
             activeSector = null;
             renderSectorPills();
             renderQuickPicks();
+            document.getElementById('marketOverviewGrid').style.display = 'none';
+            document.getElementById('perfArrow').textContent = '▸';
             document.getElementById('moversGrid').style.display = 'none';
             document.getElementById('moversArrow').textContent = '▸';
+            document.getElementById('earningsCalGrid').style.display = 'none';
+            document.getElementById('earningsCalArrow').textContent = '▸';
             stopPricePolling();
         }
         if (tab === 'watchlist') renderWatchlist();
