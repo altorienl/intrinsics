@@ -1154,15 +1154,13 @@
     // ---- Movers ----
     var moversData = null;
 
-    function loadMovers() {
-        if (moversData) { renderMovers(); return; }
-        Promise.all([
-            fetch(API + '/biggest-gainers?apikey=' + API_KEY).then(function(r) { return r.json(); }),
-            fetch(API + '/biggest-losers?apikey=' + API_KEY).then(function(r) { return r.json(); })
-        ]).then(function(results) {
-            moversData = { gainers: results[0] || [], losers: results[1] || [] };
-            renderMovers();
-        }).catch(function() {});
+    function checkLogo(symbol) {
+        return new Promise(function(resolve) {
+            var img = new Image();
+            img.onload = function() { resolve(true); };
+            img.onerror = function() { resolve(false); };
+            img.src = FMP_IMG + symbol + '.png';
+        });
     }
 
     function filterMovers(list) {
@@ -1176,29 +1174,39 @@
         });
     }
 
-    function renderMovers() {
-        if (!moversData) return;
-        var gainers = filterMovers(moversData.gainers).slice(0, 15);
-        var losers = filterMovers(moversData.losers).slice(0, 15);
-        var html = '<div class="movers-row"><div class="movers-label">Gainers</div><div class="movers-cards" id="moversGainers">';
-        html += gainers.map(function(s) { return renderMoverCard(s, 'up'); }).join('');
-        html += '</div></div>';
-        html += '<div class="movers-row"><div class="movers-label">Losers</div><div class="movers-cards" id="moversLosers">';
-        html += losers.map(function(s) { return renderMoverCard(s, 'down'); }).join('');
-        html += '</div></div>';
-        document.getElementById('moversGrid').innerHTML = html;
+    function loadMovers() {
+        if (moversData) { renderMovers(); return; }
+        Promise.all([
+            fetch(API + '/biggest-gainers?apikey=' + API_KEY).then(function(r) { return r.json(); }),
+            fetch(API + '/biggest-losers?apikey=' + API_KEY).then(function(r) { return r.json(); })
+        ]).then(function(results) {
+            var rawGainers = filterMovers(results[0] || []).slice(0, 20);
+            var rawLosers = filterMovers(results[1] || []).slice(0, 20);
+            var allStocks = rawGainers.concat(rawLosers);
+            Promise.all(allStocks.map(function(s) { return checkLogo(s.symbol); })).then(function(logos) {
+                var validGainers = [];
+                var validLosers = [];
+                for (var i = 0; i < rawGainers.length; i++) {
+                    if (logos[i] && validGainers.length < 4) validGainers.push(rawGainers[i]);
+                }
+                for (var j = 0; j < rawLosers.length; j++) {
+                    if (logos[rawGainers.length + j] && validLosers.length < 4) validLosers.push(rawLosers[j]);
+                }
+                moversData = { gainers: validGainers, losers: validLosers };
+                renderMovers();
+            });
+        }).catch(function() {});
     }
 
-    function capMovers(card) {
-        var container = card.closest('.movers-cards');
-        if (!container) return;
-        var all = container.querySelectorAll('.mover-card');
-        var count = 0;
-        for (var i = 0; i < all.length; i++) {
-            if (all[i].style.display === 'none') continue;
-            count++;
-            if (count > 4) all[i].style.display = 'none';
-        }
+    function renderMovers() {
+        if (!moversData) return;
+        var html = '<div class="movers-row"><div class="movers-label">Gainers</div><div class="movers-cards">';
+        html += moversData.gainers.map(function(s) { return renderMoverCard(s, 'up'); }).join('');
+        html += '</div></div>';
+        html += '<div class="movers-row"><div class="movers-label">Losers</div><div class="movers-cards">';
+        html += moversData.losers.map(function(s) { return renderMoverCard(s, 'down'); }).join('');
+        html += '</div></div>';
+        document.getElementById('moversGrid').innerHTML = html;
     }
 
     function renderMoverCard(s, dir) {
@@ -1206,7 +1214,7 @@
         var price = s.price || 0;
         var t = s.symbol || '';
         return '<div class="mover-card" onclick="selectTicker(\'' + t + '\')">' +
-            '<img src="' + FMP_IMG + t + '.png" alt="" class="mover-card-logo" onerror="this.closest(\'.mover-card\').style.display=\'none\'" onload="capMovers(this.closest(\'.mover-card\'))">' +
+            '<img src="' + FMP_IMG + t + '.png" alt="" class="mover-card-logo">' +
             '<div class="mover-card-info"><div class="mover-card-ticker">' + t + '</div>' +
             '<div class="mover-card-name">' + escapeHtml((s.name || '').replace(/\s*(Common Stock|Class [A-C]( Common Stock)?|,?\s*Inc\.?|,?\s*Corp\.?)\s*$/gi, '').trim()) + '</div></div>' +
             '<div class="mover-card-price"><div class="mover-price">$' + price.toFixed(2) + '</div>' +
