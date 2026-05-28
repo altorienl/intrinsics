@@ -886,7 +886,7 @@
                 Data from Financial Modeling Prep. Not financial advice. Balance sheet from latest quarter, income metrics trailing twelve months (TTM).
             </div>
             <div style="text-align:center;margin-top:20px;">
-                <div style="font-size:12px;color:#4a6a4a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-bottom:12px;" id="resultsPicksLabel">Explore more</div>
+                <div style="font-size:12px;color:#4a6a4a;text-transform:uppercase;letter-spacing:1px;font-family:'JetBrains Mono',monospace;margin-bottom:12px;" id="resultsPicksLabel">Stock Peers</div>
                 <div class="quick-picks" id="resultsPicks"></div>
             </div>
         </div>
@@ -1000,28 +1000,7 @@
         document.getElementById('quickPicks').innerHTML = landingHtml;
 
         var rp = document.getElementById('resultsPicks');
-        var rpLabel = document.getElementById('resultsPicksLabel');
-        if (rp) {
-            if (rpLabel) rpLabel.textContent = sector && SECTOR_STOCKS[sector] ? 'Compare · ' + sector : 'Explore more';
-            var resultsPicks;
-            if (sector && SECTOR_STOCKS[sector]) {
-                var sectorPool = SECTOR_STOCKS[sector].filter(function(t) { return t !== ex; });
-                var otherPool = F500.filter(function(t) { return t !== ex && sectorPool.indexOf(t) === -1; });
-                resultsPicks = pickRandom(sectorPool, 6);
-                if (resultsPicks.length < 6) {
-                    var otherPool = F500.filter(function(t) { return t !== ex && sectorPool.indexOf(t) === -1; });
-                    resultsPicks = resultsPicks.concat(pickRandom(otherPool, 6 - resultsPicks.length));
-                }
-            } else {
-                resultsPicks = pickRandom(F500.filter(function(t) { return t !== ex; }), 6);
-            }
-            rp.innerHTML = resultsPicks.map(function(t) {
-                var letters = t.slice(0, 2);
-                return '<div class="quick-pick" onclick="selectTicker(\'' + t + '\')">' +
-                    '<img src="' + FMP_IMG + t + '.png" alt="" onerror="this.outerHTML=\'<div class=qp-fallback>' + letters + '</div>\'">' +
-                    '<span>' + t + '</span></div>';
-            }).join('');
-        }
+        if (rp) rp.innerHTML = '';
     }
     renderSectorPills();
     renderQuickPicks();
@@ -1504,6 +1483,7 @@
             processData(bs, ttm, prof, ticker, ratiosTtm, forwardEps);
             fetchChartData(ticker);
             fetchFilings(prof.cik);
+            fetchPeers(ticker);
         } catch (err) {
             showError(err.message || 'Failed to fetch data');
         } finally {
@@ -1894,6 +1874,28 @@
                 list.innerHTML = rows.join('');
                 card.classList.remove('hidden');
             }
+        } catch(e) {}
+    }
+
+    // ---- Stock Peers ----
+    async function fetchPeers(ticker) {
+        var rp = document.getElementById('resultsPicks');
+        var rpLabel = document.getElementById('resultsPicksLabel');
+        if (!rp) return;
+        rp.innerHTML = '';
+        if (rpLabel) rpLabel.textContent = 'Stock Peers';
+        try {
+            var resp = await fetch(API + '/stock-peers?symbol=' + encodeURIComponent(ticker) + '&apikey=' + API_KEY);
+            var data = await resp.json();
+            if (!Array.isArray(data) || data.length === 0) return;
+            var peers = data.slice(0, 6);
+            rp.innerHTML = peers.map(function(p) {
+                var t = p.symbol;
+                var letters = t.slice(0, 2);
+                return '<div class="quick-pick" onclick="selectTicker(\'' + t + '\')">' +
+                    '<img src="' + FMP_IMG + t + '.png" alt="" onerror="this.outerHTML=\'<div class=qp-fallback>' + letters + '</div>\'">' +
+                    '<span>' + t + '</span></div>';
+            }).join('');
         } catch(e) {}
     }
 
