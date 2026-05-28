@@ -1318,7 +1318,7 @@
                 var candidates = data.filter(function(e) {
                     return e.symbol && e.symbol.length <= 5 && e.epsEstimated !== null;
                 });
-                candidates.sort(function(a, b) { return a.symbol < b.symbol ? -1 : 1; });
+                candidates.sort(function(a, b) { return (b.revenueEstimated || 0) - (a.revenueEstimated || 0); });
                 var toCheck = candidates.slice(0, 40);
                 Promise.all(toCheck.map(function(e) { return checkLogo(e.symbol); })).then(function(logos) {
                     var valid = [];
