@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-python@v5
         with:
-          node-version: '20'
+          python-version: '3.12'
       - name: Run stock scanner
         env:
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
-        run: node .github/scripts/scan.js
+        run: python .github/scripts/scan.py
       - name: Commit grades.json
         run: |
           git config user.name "github-actions[bot]"
