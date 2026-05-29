@@ -139,9 +139,9 @@ def main():
     tickers = sorted(set(discovered))
     print(f"Total unique tickers to scan: {len(tickers)}")
 
-    # Phase 1: profile check only (1 call per ticker) to find qualifying stocks
+    # Phase 1: profile check only (1 call per ticker, 300/min limit)
     print("\n--- Phase 1: Screening by market cap & exchange ---")
-    BATCH = 200
+    BATCH = 290
     qualified = []
     total_batches = (len(tickers) + BATCH - 1) // BATCH
 
@@ -155,15 +155,15 @@ def main():
                     qualified.append((t, prof))
             except:
                 pass
+        print(f"  {len(qualified)} qualified so far.")
         if b < total_batches - 1:
-            print(f"  {len(qualified)} qualified so far. Waiting 30s...")
-            time.sleep(30)
+            time.sleep(62)
 
     print(f"\nPhase 1 done: {len(qualified)} stocks pass $2B+ US filter out of {len(tickers)} checked")
 
-    # Phase 2: full grading (3 calls per ticker) for qualified stocks only
+    # Phase 2: full grading (3 calls per ticker, 300/min limit → 100 stocks/min)
     print("\n--- Phase 2: Grading qualified stocks ---")
-    BATCH2 = 100
+    BATCH2 = 95
     results = []
     total_batches2 = (len(qualified) + BATCH2 - 1) // BATCH2
 
@@ -180,8 +180,7 @@ def main():
                 print(f"  WARNING: {t} failed — {e}"); failed += 1
         print(f"  Batch {b+1} complete: {graded} graded, {failed} failed")
         if b < total_batches2 - 1:
-            print("  Waiting 30s...")
-            time.sleep(30)
+            time.sleep(62)
 
     results.sort(key=lambda x: x['ticker'])
     out = {'updated': __import__('datetime').datetime.utcnow().isoformat() + 'Z', 'stocks': results}
