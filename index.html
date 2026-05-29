@@ -2226,8 +2226,7 @@
                     for (var j = 0; j < iStmts.length; j++) {
                         var diff = Math.abs((iStmts[j].revenue || 0) - earningsEntry.revenueActual);
                         if (diff / earningsEntry.revenueActual < 0.005 && iStmts[j].period && iStmts[j].fiscalYear) {
-                            var lbl = iStmts[j].period + " FY'" + String(iStmts[j].fiscalYear).slice(2);
-                            return lbl;
+                            return iStmts[j].period + '<br><span style="font-size:10px;color:#4a6a4a">FY\'' + String(iStmts[j].fiscalYear).slice(2) + '</span>';
                         }
                     }
                 }
@@ -2236,11 +2235,12 @@
                     var fy = parseInt(iStmts[0].fiscalYear, 10);
                     var nextQ = qNum + 1;
                     if (nextQ > 4) { nextQ = 1; fy++; }
-                    return 'Q' + nextQ + " FY'" + String(fy).slice(2) + ' Est.';
+                    return 'Q' + nextQ + '<br><span style="font-size:10px;color:#4a6a4a">FY\'' + String(fy).slice(2) + ' Est.</span>';
                 }
                 var d = new Date(earningsEntry.date + 'T12:00:00');
                 var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-                return months[d.getMonth()] + " '" + String(d.getFullYear()).slice(2) + (isEst ? ' Est.' : '');
+                var mLabel = months[d.getMonth()] + " '" + String(d.getFullYear()).slice(2);
+                return isEst ? mLabel + '<br><span style="font-size:10px;color:#4a6a4a">Est.</span>' : mLabel;
             }
 
             var html = '<h3>Recent Earnings</h3>';
