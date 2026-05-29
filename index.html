@@ -2262,15 +2262,6 @@
                 } else { html += '<td>—</td>'; }
             });
             html += '</tr></tbody></table>';
-            if (upcoming && upcoming.date) {
-                var ud = new Date(upcoming.date + 'T12:00:00');
-                var now = new Date();
-                var diff = Math.ceil((ud - now) / (1000 * 60 * 60 * 24));
-                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-                var dateStr = months[ud.getMonth()] + ' ' + ud.getDate() + ', ' + ud.getFullYear();
-                var countdown = diff > 0 ? ' · ~' + diff + ' day' + (diff !== 1 ? 's' : '') + ' away' : diff === 0 ? ' · Today' : '';
-                html += '<div style="margin-top:12px;font-size:11px;color:#4a6a4a;font-family:JetBrains Mono,monospace">Est. next earnings: ' + dateStr + countdown + '</div>';
-            }
             card.innerHTML = html;
             card.classList.remove('hidden');
         } catch (err) {}
