@@ -1849,7 +1849,7 @@
 
             processData(bs, ttm, prof, ticker, ratiosTtm, forwardEps);
             fetchChartData(ticker);
-            fetchEarnings(ticker);
+            fetchEarnings(ticker, isArr);
             fetchFilings(prof.cik);
             fetchPeers(ticker);
             startPricePolling(ticker);
@@ -2206,7 +2206,7 @@
     }
 
     // ---- Earnings Table ----
-    async function fetchEarnings(ticker) {
+    async function fetchEarnings(ticker, incomeStmts) {
         var card = document.getElementById('earningsCard');
         card.classList.add('hidden');
         try {
@@ -2219,14 +2219,35 @@
             reported.reverse();
             var columns = reported.slice();
             if (upcoming) columns.push(upcoming);
+
+            var iStmts = Array.isArray(incomeStmts) ? incomeStmts : [];
+            function fiscalLabel(earningsEntry, isEst) {
+                if (earningsEntry.revenueActual) {
+                    for (var j = 0; j < iStmts.length; j++) {
+                        var diff = Math.abs((iStmts[j].revenue || 0) - earningsEntry.revenueActual);
+                        if (diff / earningsEntry.revenueActual < 0.005 && iStmts[j].period && iStmts[j].fiscalYear) {
+                            var lbl = iStmts[j].period + " FY'" + String(iStmts[j].fiscalYear).slice(2);
+                            return lbl;
+                        }
+                    }
+                }
+                if (isEst && iStmts.length > 0 && iStmts[0].period && iStmts[0].fiscalYear) {
+                    var qNum = parseInt(iStmts[0].period.replace('Q',''), 10);
+                    var fy = parseInt(iStmts[0].fiscalYear, 10);
+                    var nextQ = qNum + 1;
+                    if (nextQ > 4) { nextQ = 1; fy++; }
+                    return 'Q' + nextQ + " FY'" + String(fy).slice(2) + ' Est.';
+                }
+                var d = new Date(earningsEntry.date + 'T12:00:00');
+                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                return months[d.getMonth()] + " '" + String(d.getFullYear()).slice(2) + (isEst ? ' Est.' : '');
+            }
+
             var html = '<h3>Recent Earnings</h3>';
             html += '<table class="earnings-table"><thead><tr><th></th>';
-            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
             columns.forEach(function(e, i) {
-                var d = new Date(e.date + 'T12:00:00');
-                var label = months[d.getMonth()] + " '" + String(d.getFullYear()).slice(2);
-                if (i === columns.length - 1 && e.revenueActual === null) label += ' Est.';
-                html += '<th>' + label + '</th>';
+                var isEst = (i === columns.length - 1 && e.revenueActual === null);
+                html += '<th>' + fiscalLabel(e, isEst) + '</th>';
             });
             html += '</tr></thead><tbody>';
             html += '<tr><td>Revenue</td>';
