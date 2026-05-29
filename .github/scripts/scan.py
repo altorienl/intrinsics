@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """Scan US stocks with $2B+ market cap via FMP API, grade them, write grades.json"""
-import json, os, sys, time, urllib.request, urllib.error, urllib.parse
+import json, os, re, sys, time, urllib.request, urllib.error, urllib.parse
 from pathlib import Path
 
 API_KEY = os.environ.get('FMP_API_KEY', '')
 BASE = 'https://financialmodelingprep.com/stable'
 MIN_MARKET_CAP = 2_000_000_000
+US_EXCHANGES = {
+    'NYSE', 'NASDAQ', 'AMEX', 'New York Stock Exchange',
+    'NASDAQ Global Select Market', 'NASDAQ Global Market',
+    'NASDAQ Capital Market', 'NYSE American'
+}
 
 BENCHMARKS = {
   'Technology':              {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.5,'ok':1.5},'assetTurnover':{'good':0.6,'ok':0.3},'operatingMargin':{'good':0.20,'ok':0.10},'peRatio':{'good':25,'ok':40},'revenueGrowth':{'good':0.20,'ok':0.10}},
@@ -28,7 +33,6 @@ def fetch(url):
         return json.loads(r.read())
 
 def discover_tickers():
-    """Fetch FMP stock-list and return unique ticker symbols."""
     try:
         data = fetch(f"{BASE}/stock-list?apikey={API_KEY}")
         if isinstance(data, list):
@@ -45,32 +49,30 @@ def grade_lower(v, t):
     if v is None: return None
     return 'good' if v <= t['good'] else 'ok' if v <= t['ok'] else 'bad'
 
-def process_stock(ticker):
+def check_profile(ticker):
+    """Fetch profile first to check market cap + exchange before expensive calls."""
     sym = urllib.parse.quote(ticker)
-    urls = [
-        f"{BASE}/balance-sheet-statement?symbol={sym}&period=quarter&limit=1&apikey={API_KEY}",
-        f"{BASE}/income-statement?symbol={sym}&period=quarter&limit=8&apikey={API_KEY}",
-        f"{BASE}/profile?symbol={sym}&apikey={API_KEY}",
-        f"{BASE}/ratios-ttm?symbol={sym}&apikey={API_KEY}",
-    ]
-    bs_arr, is_arr, prof_arr, rt_arr = [fetch(u) for u in urls]
-
-    bs = bs_arr[0] if isinstance(bs_arr, list) and bs_arr else {}
-    incomes = is_arr if isinstance(is_arr, list) else []
+    prof_arr = fetch(f"{BASE}/profile?symbol={sym}&apikey={API_KEY}")
     prof = prof_arr[0] if isinstance(prof_arr, list) and prof_arr else {}
-    rt = rt_arr[0] if isinstance(rt_arr, list) and rt_arr else {}
-
     if not prof.get('companyName'):
         return None
-
     mc = prof.get('marketCap') or 0
     if mc < MIN_MARKET_CAP:
         return None
-
-    exchange = prof.get('exchange', '')
-    if exchange not in ('NYSE', 'NASDAQ', 'AMEX', 'New York Stock Exchange', 'NASDAQ Global Select Market',
-                        'NASDAQ Global Market', 'NASDAQ Capital Market', 'NYSE American'):
+    if prof.get('exchange', '') not in US_EXCHANGES:
         return None
+    return prof
+
+def grade_stock(ticker, prof):
+    """Fetch remaining data and grade a stock that already passed profile check."""
+    sym = urllib.parse.quote(ticker)
+    bs_arr = fetch(f"{BASE}/balance-sheet-statement?symbol={sym}&period=quarter&limit=1&apikey={API_KEY}")
+    is_arr = fetch(f"{BASE}/income-statement?symbol={sym}&period=quarter&limit=8&apikey={API_KEY}")
+    rt_arr = fetch(f"{BASE}/ratios-ttm?symbol={sym}&apikey={API_KEY}")
+
+    bs = bs_arr[0] if isinstance(bs_arr, list) and bs_arr else {}
+    incomes = is_arr if isinstance(is_arr, list) else []
+    rt = rt_arr[0] if isinstance(rt_arr, list) and rt_arr else {}
 
     sector = prof.get('sector', 'Default')
     bench = BENCHMARKS.get(sector, BENCHMARKS['Default'])
@@ -96,9 +98,8 @@ def process_stock(ticker):
         'peRatio': grade_lower(pe, bench['peRatio']) if pe and pe > 0 else None,
         'revenueGrowth': grade_higher(rg, bench['revenueGrowth']),
     }
-    grades = list(ratio_grades.values())
 
-    scored = [g for g in grades if g is not None]
+    scored = [g for g in ratio_grades.values() if g is not None]
     total = len(scored)
     good = scored.count('good')
     bad = scored.count('bad')
@@ -111,6 +112,7 @@ def process_stock(ticker):
     elif bad <= 2: overall = 'C'
     else: overall = 'D'
 
+    mc = prof.get('marketCap') or 0
     return {
         'ticker': ticker,
         'name': prof.get('companyName', ticker),
@@ -130,39 +132,56 @@ def main():
 
     print("Discovering tickers from FMP stock-list...")
     discovered = discover_tickers()
-    junk = r'etf|fund|trust|bond|treasury|proshares|ishares|vanguard|spdr|warrant|right|unit|preferred'
-    import re
-    junk_re = re.compile(junk, re.IGNORECASE)
+    junk_re = re.compile(r'etf|fund|trust|bond|treasury|proshares|ishares|vanguard|spdr|warrant|right|unit|preferred', re.IGNORECASE)
     discovered = [t for t in discovered if len(t) <= 5 and not junk_re.search(t)]
     print(f"Found {len(discovered)} candidates from stock-list")
 
     tickers = sorted(set(discovered))
     print(f"Total unique tickers to scan: {len(tickers)}")
 
-    BATCH = 70
-    results = []
-    skipped = 0
+    # Phase 1: profile check only (1 call per ticker) to find qualifying stocks
+    print("\n--- Phase 1: Screening by market cap & exchange ---")
+    BATCH = 200
+    qualified = []
     total_batches = (len(tickers) + BATCH - 1) // BATCH
 
     for b in range(total_batches):
         batch = tickers[b*BATCH:(b+1)*BATCH]
-        print(f"Batch {b+1}/{total_batches}: scanning {len(batch)} stocks...")
-
-        graded = 0; failed = 0
+        print(f"Screen batch {b+1}/{total_batches}: checking {len(batch)} profiles...")
         for t in batch:
             try:
-                r = process_stock(t)
+                prof = check_profile(t)
+                if prof:
+                    qualified.append((t, prof))
+            except:
+                pass
+        if b < total_batches - 1:
+            print(f"  {len(qualified)} qualified so far. Waiting 30s...")
+            time.sleep(30)
+
+    print(f"\nPhase 1 done: {len(qualified)} stocks pass $2B+ US filter out of {len(tickers)} checked")
+
+    # Phase 2: full grading (3 calls per ticker) for qualified stocks only
+    print("\n--- Phase 2: Grading qualified stocks ---")
+    BATCH2 = 100
+    results = []
+    total_batches2 = (len(qualified) + BATCH2 - 1) // BATCH2
+
+    for b in range(total_batches2):
+        batch = qualified[b*BATCH2:(b+1)*BATCH2]
+        print(f"Grade batch {b+1}/{total_batches2}: grading {len(batch)} stocks...")
+        graded = 0; failed = 0
+        for t, prof in batch:
+            try:
+                r = grade_stock(t, prof)
                 if r:
                     results.append(r); graded += 1
-                else:
-                    skipped += 1
             except Exception as e:
                 print(f"  WARNING: {t} failed — {e}"); failed += 1
-
-        print(f"Batch {b+1} complete: {graded} graded, {skipped} skipped (small cap/foreign), {failed} failed")
-        if b < total_batches - 1:
-            print("Waiting 60s (rate limit)...")
-            time.sleep(60)
+        print(f"  Batch {b+1} complete: {graded} graded, {failed} failed")
+        if b < total_batches2 - 1:
+            print("  Waiting 30s...")
+            time.sleep(30)
 
     results.sort(key=lambda x: x['ticker'])
     out = {'updated': __import__('datetime').datetime.utcnow().isoformat() + 'Z', 'stocks': results}
