@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-28T18:29:23.728Z",
+  "updated": "2026-05-30T00:35:10.152933Z",
   "stocks": [
     {
       "ticker": "AAPL",
@@ -3555,7 +3555,7 @@
     },
     {
       "ticker": "EL",
-      "name": "The Estée Lauder Companies Inc.",
+      "name": "The Est\u00e9e Lauder Companies Inc.",
       "sector": "Consumer Defensive",
       "grade": "C",
       "price": 92.09,
@@ -5119,7 +5119,7 @@
       "sector": "Healthcare",
       "grade": "B",
       "price": 76.01,
-      "change": 0.000002,
+      "change": 2e-06,
       "changePct": 0,
       "marketCap": 16968845229,
       "scores": {
