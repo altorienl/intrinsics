@@ -76,6 +76,12 @@ def check_profile(ticker):
         return None
     if prof.get('exchange', '') not in US_EXCHANGES:
         return None
+    if prof.get('isFund') or prof.get('isEtf'):
+        return None
+    name = (prof.get('companyName') or '').lower()
+    junk_names = re.compile(r'trust|fund|etf|acquisition corp|blank check|spac|closed.end|royalty', re.IGNORECASE)
+    if junk_names.search(name):
+        return None
     return prof
 
 def grade_stock(ticker, prof):
