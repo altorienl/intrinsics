@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Scan US stocks with $2B+ market cap via FMP API, grade them, write grades.json"""
 import json, os, re, sys, time, urllib.request, urllib.error, urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from threading import Lock
 
 API_KEY = os.environ.get('FMP_API_KEY', '')
 BASE = 'https://financialmodelingprep.com/stable'
@@ -27,14 +29,28 @@ BENCHMARKS = {
   'Default':                 {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.8,'ok':2.0},'assetTurnover':{'good':0.7,'ok':0.3},'operatingMargin':{'good':0.15,'ok':0.05},'peRatio':{'good':20,'ok':35},'revenueGrowth':{'good':0.10,'ok':0.05}},
 }
 
-def fetch(url):
+# Rate limiter: 300 calls/min
+call_times = []
+call_lock = Lock()
+
+def rate_limited_fetch(url):
+    with call_lock:
+        now = time.time()
+        # Remove calls older than 60s
+        while call_times and call_times[0] < now - 60:
+            call_times.pop(0)
+        if len(call_times) >= 295:
+            wait = 60 - (now - call_times[0]) + 0.5
+            if wait > 0:
+                time.sleep(wait)
+        call_times.append(time.time())
     req = urllib.request.Request(url, headers={'User-Agent': 'Intrinsics/1.0'})
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.loads(r.read())
 
 def discover_tickers():
     try:
-        data = fetch(f"{BASE}/stock-list?apikey={API_KEY}")
+        data = rate_limited_fetch(f"{BASE}/stock-list?apikey={API_KEY}")
         if isinstance(data, list):
             return [s['symbol'] for s in data if 'symbol' in s]
     except Exception as e:
@@ -50,9 +66,8 @@ def grade_lower(v, t):
     return 'good' if v <= t['good'] else 'ok' if v <= t['ok'] else 'bad'
 
 def check_profile(ticker):
-    """Fetch profile first to check market cap + exchange before expensive calls."""
     sym = urllib.parse.quote(ticker)
-    prof_arr = fetch(f"{BASE}/profile?symbol={sym}&apikey={API_KEY}")
+    prof_arr = rate_limited_fetch(f"{BASE}/profile?symbol={sym}&apikey={API_KEY}")
     prof = prof_arr[0] if isinstance(prof_arr, list) and prof_arr else {}
     if not prof.get('companyName'):
         return None
@@ -64,11 +79,10 @@ def check_profile(ticker):
     return prof
 
 def grade_stock(ticker, prof):
-    """Fetch remaining data and grade a stock that already passed profile check."""
     sym = urllib.parse.quote(ticker)
-    bs_arr = fetch(f"{BASE}/balance-sheet-statement?symbol={sym}&period=quarter&limit=1&apikey={API_KEY}")
-    is_arr = fetch(f"{BASE}/income-statement?symbol={sym}&period=quarter&limit=8&apikey={API_KEY}")
-    rt_arr = fetch(f"{BASE}/ratios-ttm?symbol={sym}&apikey={API_KEY}")
+    bs_arr = rate_limited_fetch(f"{BASE}/balance-sheet-statement?symbol={sym}&period=quarter&limit=1&apikey={API_KEY}")
+    is_arr = rate_limited_fetch(f"{BASE}/income-statement?symbol={sym}&period=quarter&limit=8&apikey={API_KEY}")
+    rt_arr = rate_limited_fetch(f"{BASE}/ratios-ttm?symbol={sym}&apikey={API_KEY}")
 
     bs = bs_arr[0] if isinstance(bs_arr, list) and bs_arr else {}
     incomes = is_arr if isinstance(is_arr, list) else []
@@ -139,48 +153,44 @@ def main():
     tickers = sorted(set(discovered))
     print(f"Total unique tickers to scan: {len(tickers)}")
 
-    # Phase 1: profile check only (1 call per ticker, 300/min limit)
+    # Phase 1: parallel profile checks (1 call per ticker)
     print("\n--- Phase 1: Screening by market cap & exchange ---")
-    BATCH = 290
     qualified = []
-    total_batches = (len(tickers) + BATCH - 1) // BATCH
-
-    for b in range(total_batches):
-        batch = tickers[b*BATCH:(b+1)*BATCH]
-        print(f"Screen batch {b+1}/{total_batches}: checking {len(batch)} profiles...")
-        for t in batch:
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        futures = {pool.submit(check_profile, t): t for t in tickers}
+        done = 0
+        for f in as_completed(futures):
+            done += 1
+            if done % 200 == 0:
+                print(f"  Screened {done}/{len(tickers)}...")
             try:
-                prof = check_profile(t)
+                prof = f.result()
                 if prof:
-                    qualified.append((t, prof))
+                    qualified.append((futures[f], prof))
             except:
                 pass
-        print(f"  {len(qualified)} qualified so far.")
-        if b < total_batches - 1:
-            time.sleep(62)
 
     print(f"\nPhase 1 done: {len(qualified)} stocks pass $2B+ US filter out of {len(tickers)} checked")
 
-    # Phase 2: full grading (3 calls per ticker, 300/min limit → 100 stocks/min)
+    # Phase 2: parallel grading (3 calls per ticker)
     print("\n--- Phase 2: Grading qualified stocks ---")
-    BATCH2 = 95
     results = []
-    total_batches2 = (len(qualified) + BATCH2 - 1) // BATCH2
-
-    for b in range(total_batches2):
-        batch = qualified[b*BATCH2:(b+1)*BATCH2]
-        print(f"Grade batch {b+1}/{total_batches2}: grading {len(batch)} stocks...")
-        graded = 0; failed = 0
-        for t, prof in batch:
+    failed = 0
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        futures = {pool.submit(grade_stock, t, p): t for t, p in qualified}
+        done = 0
+        for f in as_completed(futures):
+            done += 1
+            if done % 100 == 0:
+                print(f"  Graded {done}/{len(qualified)}...")
             try:
-                r = grade_stock(t, prof)
+                r = f.result()
                 if r:
-                    results.append(r); graded += 1
+                    results.append(r)
             except Exception as e:
-                print(f"  WARNING: {t} failed — {e}"); failed += 1
-        print(f"  Batch {b+1} complete: {graded} graded, {failed} failed")
-        if b < total_batches2 - 1:
-            time.sleep(62)
+                failed += 1
+
+    print(f"Phase 2 done: {len(results)} graded, {failed} failed")
 
     results.sort(key=lambda x: x['ticker'])
     out = {'updated': __import__('datetime').datetime.utcnow().isoformat() + 'Z', 'stocks': results}
