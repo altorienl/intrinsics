@@ -1110,9 +1110,15 @@
     }
     renderSectorPills();
     renderQuickPicks();
-    loadMovers();
-    loadEarningsCal();
-    loadMarketOverview();
+    if (isMarketDay()) {
+        loadMovers();
+        loadEarningsCal();
+        loadMarketOverview();
+    } else {
+        document.getElementById('marketOverview').style.display = 'none';
+        document.getElementById('moversSection').style.display = 'none';
+        document.getElementById('earningsCalSection').style.display = 'none';
+    }
     initMarketStatus();
 
     function initMarketStatus() {
@@ -1717,12 +1723,30 @@
         if (priceInterval) { clearInterval(priceInterval); priceInterval = null; }
     }
 
+    var US_MARKET_HOLIDAYS = [
+        '2026-01-01','2026-01-19','2026-02-16','2026-04-03','2026-05-25',
+        '2026-06-19','2026-07-03','2026-09-07','2026-11-26','2026-12-25',
+        '2027-01-01','2027-01-18','2027-02-15','2027-04-02','2027-05-31',
+        '2027-06-18','2027-07-05','2027-09-06','2027-11-25','2027-12-24'
+    ];
+
+    function isMarketDay() {
+        var now = new Date();
+        var et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+        var day = et.getDay();
+        if (day === 0 || day === 6) return false;
+        var yyyy = et.getFullYear();
+        var mm = String(et.getMonth() + 1).padStart(2, '0');
+        var dd = String(et.getDate()).padStart(2, '0');
+        if (US_MARKET_HOLIDAYS.indexOf(yyyy + '-' + mm + '-' + dd) !== -1) return false;
+        return true;
+    }
+
     function getMarketSession() {
         var now = new Date();
         var et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
         var h = et.getHours(), m = et.getMinutes(), t = h * 60 + m;
-        var day = et.getDay();
-        if (day === 0 || day === 6) return { session: 'closed', label: 'After Hours' };
+        if (!isMarketDay()) return { session: 'closed', label: 'After Hours' };
         if (t >= 570 && t < 960) return { session: 'market', label: 'Current Price' };
         if (t >= 480 && t < 570) return { session: 'pre', label: 'Pre-Market' };
         if (t >= 960 && t < 1200) return { session: 'after', label: 'After Hours' };
