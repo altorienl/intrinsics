@@ -1224,7 +1224,8 @@
             { key: 'assetTurnover', label: 'Efficiency' },
             { key: 'operatingMargin', label: 'Margins' },
             { key: 'peRatio', label: 'P/E' },
-            { key: 'revenueGrowth', label: 'Growth' }
+            { key: 'revenueGrowth', label: 'Growth' },
+            { key: 'fcfYield', label: 'FCF' }
         ];
         var ratioHtml = document.getElementById('ratioPills');
         ratioHtml.innerHTML = ratioFilters.map(function(rf) {
@@ -1538,18 +1539,18 @@
 
     // ---- Sector Benchmarks ----
     var SECTOR_BENCHMARKS = {
-        'Technology': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.6, ok: 0.3 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 25, ok: 40 }, revenueGrowth: { good: 0.20, ok: 0.10 }, label: 'Technology' },
-        'Healthcare': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.6, ok: 1.5 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.15, ok: 0.07 }, label: 'Healthcare' },
-        'Financial Services': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 2.0, ok: 5.0 }, assetTurnover: { good: 0.08, ok: 0.03 }, operatingMargin: { good: 0.30, ok: 0.15 }, peRatio: { good: 15, ok: 25 }, revenueGrowth: { good: 0.10, ok: 0.05 }, label: 'Financial Services' },
-        'Consumer Cyclical': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 1.2, ok: 0.6 }, operatingMargin: { good: 0.12, ok: 0.05 }, peRatio: { good: 20, ok: 30 }, revenueGrowth: { good: 0.12, ok: 0.05 }, label: 'Consumer Cyclical' },
-        'Consumer Defensive': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 1.0, ok: 0.5 }, operatingMargin: { good: 0.15, ok: 0.08 }, peRatio: { good: 22, ok: 30 }, revenueGrowth: { good: 0.08, ok: 0.03 }, label: 'Consumer Defensive' },
-        'Energy': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 12, ok: 20 }, revenueGrowth: { good: 0.10, ok: 0.03 }, label: 'Energy' },
-        'Industrials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.7, ok: 1.8 }, assetTurnover: { good: 0.8, ok: 0.4 }, operatingMargin: { good: 0.12, ok: 0.06 }, peRatio: { good: 18, ok: 28 }, revenueGrowth: { good: 0.10, ok: 0.04 }, label: 'Industrials' },
-        'Real Estate': { currentRatio: { good: 1.0, ok: 0.5 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 0.15, ok: 0.06 }, operatingMargin: { good: 0.30, ok: 0.15 }, peRatio: { good: 30, ok: 50 }, revenueGrowth: { good: 0.08, ok: 0.03 }, label: 'Real Estate' },
-        'Utilities': { currentRatio: { good: 1.0, ok: 0.7 }, debtToEquity: { good: 1.2, ok: 2.5 }, assetTurnover: { good: 0.35, ok: 0.15 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 18, ok: 25 }, revenueGrowth: { good: 0.06, ok: 0.02 }, label: 'Utilities' },
-        'Communication Services': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.12, ok: 0.05 }, label: 'Communication Services' },
-        'Basic Materials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.35 }, operatingMargin: { good: 0.15, ok: 0.07 }, peRatio: { good: 15, ok: 25 }, revenueGrowth: { good: 0.10, ok: 0.04 }, label: 'Basic Materials' },
-        'Default': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.10, ok: 0.05 }, label: 'General' }
+        'Technology': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.6, ok: 0.3 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 25, ok: 40 }, revenueGrowth: { good: 0.20, ok: 0.10 }, fcfYield: { good: 0.04, ok: 0.02 }, label: 'Technology' },
+        'Healthcare': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.6, ok: 1.5 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.15, ok: 0.07 }, fcfYield: { good: 0.05, ok: 0.02 }, label: 'Healthcare' },
+        'Financial Services': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 2.0, ok: 5.0 }, assetTurnover: { good: 0.08, ok: 0.03 }, operatingMargin: { good: 0.30, ok: 0.15 }, peRatio: { good: 15, ok: 25 }, revenueGrowth: { good: 0.10, ok: 0.05 }, fcfYield: { good: 0.06, ok: 0.03 }, label: 'Financial Services' },
+        'Consumer Cyclical': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 1.2, ok: 0.6 }, operatingMargin: { good: 0.12, ok: 0.05 }, peRatio: { good: 20, ok: 30 }, revenueGrowth: { good: 0.12, ok: 0.05 }, fcfYield: { good: 0.05, ok: 0.02 }, label: 'Consumer Cyclical' },
+        'Consumer Defensive': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 1.0, ok: 0.5 }, operatingMargin: { good: 0.15, ok: 0.08 }, peRatio: { good: 22, ok: 30 }, revenueGrowth: { good: 0.08, ok: 0.03 }, fcfYield: { good: 0.05, ok: 0.02 }, label: 'Consumer Defensive' },
+        'Energy': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 12, ok: 20 }, revenueGrowth: { good: 0.10, ok: 0.03 }, fcfYield: { good: 0.08, ok: 0.04 }, label: 'Energy' },
+        'Industrials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.7, ok: 1.8 }, assetTurnover: { good: 0.8, ok: 0.4 }, operatingMargin: { good: 0.12, ok: 0.06 }, peRatio: { good: 18, ok: 28 }, revenueGrowth: { good: 0.10, ok: 0.04 }, fcfYield: { good: 0.05, ok: 0.02 }, label: 'Industrials' },
+        'Real Estate': { currentRatio: { good: 1.0, ok: 0.5 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 0.15, ok: 0.06 }, operatingMargin: { good: 0.30, ok: 0.15 }, peRatio: { good: 30, ok: 50 }, revenueGrowth: { good: 0.08, ok: 0.03 }, fcfYield: { good: 0.04, ok: 0.01 }, label: 'Real Estate' },
+        'Utilities': { currentRatio: { good: 1.0, ok: 0.7 }, debtToEquity: { good: 1.2, ok: 2.5 }, assetTurnover: { good: 0.35, ok: 0.15 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 18, ok: 25 }, revenueGrowth: { good: 0.06, ok: 0.02 }, fcfYield: { good: 0.04, ok: 0.01 }, label: 'Utilities' },
+        'Communication Services': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.12, ok: 0.05 }, fcfYield: { good: 0.05, ok: 0.02 }, label: 'Communication Services' },
+        'Basic Materials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.35 }, operatingMargin: { good: 0.15, ok: 0.07 }, peRatio: { good: 15, ok: 25 }, revenueGrowth: { good: 0.10, ok: 0.04 }, fcfYield: { good: 0.06, ok: 0.03 }, label: 'Basic Materials' },
+        'Default': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.10, ok: 0.05 }, fcfYield: { good: 0.05, ok: 0.02 }, label: 'General' }
     };
 
     function fmpSectorMap(sector) {
@@ -1813,12 +1814,13 @@
 
         try {
             var sym = encodeURIComponent(ticker);
-            var [bsResp, isResp, profResp, ratiosResp, estResp] = await Promise.all([
+            var [bsResp, isResp, profResp, ratiosResp, estResp, kmResp] = await Promise.all([
                 fetch(API + '/balance-sheet-statement?symbol=' + sym + '&period=quarter&limit=1&apikey=' + API_KEY),
                 fetch(API + '/income-statement?symbol=' + sym + '&period=quarter&limit=8&apikey=' + API_KEY),
                 fetch(API + '/profile?symbol=' + sym + '&apikey=' + API_KEY),
                 fetch(API + '/ratios-ttm?symbol=' + sym + '&apikey=' + API_KEY),
-                fetch(API + '/analyst-estimates?symbol=' + sym + '&period=annual&limit=5&apikey=' + API_KEY)
+                fetch(API + '/analyst-estimates?symbol=' + sym + '&period=annual&limit=5&apikey=' + API_KEY),
+                fetch(API + '/key-metrics-ttm?symbol=' + sym + '&apikey=' + API_KEY)
             ]);
 
             var bsText = await bsResp.text();
@@ -1826,16 +1828,18 @@
             var profText = await profResp.text();
             var ratiosText = await ratiosResp.text();
             var estText = await estResp.text();
+            var kmText = await kmResp.text();
 
             if (bsText.startsWith('Premium') || isText.startsWith('Premium') || profText.startsWith('Premium')) {
                 throw new Error(ticker + ' is not available on the free FMP plan. Upgrade at financialmodelingprep.com to unlock all stocks.');
             }
 
-            var bs, isArr, prof, ratiosTtm;
+            var bs, isArr, prof, ratiosTtm, keyMetrics;
             try { bs = JSON.parse(bsText); } catch(e) { throw new Error('Unexpected response for ' + ticker + '. Try a different stock.'); }
             try { isArr = JSON.parse(isText); } catch(e) { isArr = []; }
             try { prof = JSON.parse(profText); } catch(e) { prof = []; }
             try { ratiosTtm = JSON.parse(ratiosText); } catch(e) { ratiosTtm = []; }
+            try { keyMetrics = JSON.parse(kmText); } catch(e) { keyMetrics = []; }
             var estimates = [];
             try { estimates = JSON.parse(estText); } catch(e) { estimates = []; }
             if (!Array.isArray(estimates)) estimates = [];
@@ -1846,6 +1850,7 @@
             isArr = Array.isArray(isArr) ? isArr : [];
             prof = Array.isArray(prof) && prof.length > 0 ? prof[0] : {};
             ratiosTtm = Array.isArray(ratiosTtm) && ratiosTtm.length > 0 ? ratiosTtm[0] : {};
+            keyMetrics = Array.isArray(keyMetrics) && keyMetrics.length > 0 ? keyMetrics[0] : {};
 
             var recent4 = isArr.slice(0, 4);
             var prior4 = isArr.slice(4, 8);
@@ -1874,7 +1879,7 @@
                 }
             }
 
-            processData(bs, ttm, prof, ticker, ratiosTtm, forwardEps);
+            processData(bs, ttm, prof, ticker, ratiosTtm, forwardEps, keyMetrics);
             fetchChartData(ticker);
             fetchEarnings(ticker, isArr);
             fetchFilings(prof.cik);
@@ -1894,7 +1899,7 @@
         el.classList.remove('hidden');
     }
 
-    function processData(bs, ttm, prof, ticker, ratiosTtm, forwardEps) {
+    function processData(bs, ttm, prof, ticker, ratiosTtm, forwardEps, keyMetrics) {
         var ratios = {};
         var bsPeriod = bs.period ? (bs.period + ' ' + (bs.fiscalYear || '')) : 'Latest Quarter';
         var ttmLabel = 'Trailing 12 Months';
@@ -1983,6 +1988,16 @@
             };
         }
 
+        var km = keyMetrics || {};
+        var fcfy = km.freeCashFlowYieldTTM;
+        if (typeof fcfy === 'number') {
+            ratios.fcfYield = {
+                value: fcfy,
+                components: 'Free Cash Flow / Market Cap',
+                period: ttmLabel
+            };
+        }
+
         var sector = fmpSectorMap(prof.sector);
         var benchmarks = SECTOR_BENCHMARKS[sector] || SECTOR_BENCHMARKS['Default'];
 
@@ -2011,6 +2026,7 @@
         var profitability = g('operatingMargin');
         var valuation = g('peRatio');
         var growth = g('revenueGrowth');
+        var cashFlow = g('fcfYield');
 
         var strengths = [];
         var weaknesses = [];
@@ -2034,6 +2050,12 @@
         else if (growth === 'bad') {
             var rv = ratios.revenueGrowth;
             weaknesses.push(rv && rv.value < 0 ? 'shrinking revenue' : 'slowing growth');
+        }
+
+        if (cashFlow === 'good') strengths.push('strong cash generation');
+        else if (cashFlow === 'bad') {
+            var fcf = ratios.fcfYield;
+            weaknesses.push(fcf && fcf.value < 0 ? 'burning cash' : 'weak cash flow');
         }
 
         if (strengths.length === 0 && weaknesses.length === 0) {
@@ -2139,7 +2161,11 @@
             { key: 'revenueGrowth', category: 'Growth', name: 'Revenue Growth', formula: '(Recent TTM Revenue − Prior TTM Revenue) / Prior TTM Revenue',
               tip: 'Year-over-year revenue growth comparing the last 4 quarters to the 4 quarters before that. Shows whether the company is expanding its top line. Crucial for evaluating growth stocks.',
               explain: function(v, g) { return v >= g.good ? 'Strong revenue growth. The business is scaling well and gaining market share.' : v >= g.ok ? 'Moderate growth. Keeping pace but not accelerating.' : v < 0 ? 'Revenue is shrinking. The company is losing ground — could be cyclical or a deeper issue.' : 'Slow growth. May be a mature business, or facing headwinds.'; },
-              format: function(v) { return (v * 100).toFixed(1) + '%'; }, barMax: 0.5, higherBetter: true }
+              format: function(v) { return (v * 100).toFixed(1) + '%'; }, barMax: 0.5, higherBetter: true },
+            { key: 'fcfYield', category: 'Cash Flow', name: 'FCF Yield', formula: 'Free Cash Flow / Market Cap',
+              tip: 'How much free cash flow a company generates relative to its market value. Higher yield means more cash per dollar invested. Catches companies that look profitable on paper but burn cash on capex.',
+              explain: function(v, g) { return v >= g.good ? 'Strong cash generation relative to valuation. The business is producing real, spendable cash.' : v >= g.ok ? 'Moderate cash flow yield. The company generates cash but isn\'t a standout.' : v < 0 ? 'Negative free cash flow. The company is burning cash — spending more than it earns.' : 'Low cash flow yield. May be reinvesting heavily or overvalued relative to cash generation.'; },
+              format: function(v) { return (v * 100).toFixed(1) + '%'; }, barMax: 0.15, higherBetter: true }
         ];
 
         var scores = [];
@@ -2169,10 +2195,10 @@
         var overallGrade, overallClass, overallText;
         var sectorLabel = SECTOR_BENCHMARKS[sector] ? SECTOR_BENCHMARKS[sector].label : '';
 
-        if (total < 4) { overallGrade = '?'; overallClass = 'ok'; overallText = 'Not enough data to grade — only ' + total + ' of 6 ratios available.'; }
+        if (total < 4) { overallGrade = '?'; overallClass = 'ok'; overallText = 'Not enough data to grade — only ' + total + ' of 7 ratios available.'; }
         else if (goodCount === total) { overallGrade = 'A+'; overallClass = 'good'; overallText = 'Exceptional. All ' + total + ' metrics at healthy levels vs. ' + sectorLabel + ' benchmarks.'; }
-        else if (goodCount >= 5) { overallGrade = 'A'; overallClass = 'good'; overallText = 'Strong financial health across ' + goodCount + ' of ' + total + ' metrics vs. ' + sectorLabel + ' benchmarks.'; }
-        else if (goodCount >= 4 && badCount === 0) { overallGrade = 'B+'; overallClass = 'good'; overallText = 'Above average. ' + goodCount + ' strong metrics with no red flags.'; }
+        else if (goodCount >= 6) { overallGrade = 'A'; overallClass = 'good'; overallText = 'Strong financial health across ' + goodCount + ' of ' + total + ' metrics vs. ' + sectorLabel + ' benchmarks.'; }
+        else if (goodCount >= 5 && badCount === 0) { overallGrade = 'B+'; overallClass = 'good'; overallText = 'Above average. ' + goodCount + ' strong metrics with no red flags.'; }
         else if (badCount <= 1) { overallGrade = 'B'; overallClass = 'ok'; overallText = 'Decent fundamentals with some areas to watch. ' + goodCount + ' of ' + total + ' metrics look healthy.'; }
         else if (badCount <= 2) { overallGrade = 'C'; overallClass = 'ok'; overallText = 'Mixed signals. ' + badCount + ' metrics below ' + sectorLabel + ' benchmarks. Worth digging deeper.'; }
         else { overallGrade = 'D'; overallClass = 'bad'; overallText = 'Multiple warning signs. ' + badCount + ' of ' + total + ' metrics are below healthy levels. Proceed with caution.'; }

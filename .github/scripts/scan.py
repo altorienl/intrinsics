@@ -15,18 +15,18 @@ US_EXCHANGES = {
 }
 
 BENCHMARKS = {
-  'Technology':              {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.5,'ok':1.5},'assetTurnover':{'good':0.6,'ok':0.3},'operatingMargin':{'good':0.20,'ok':0.10},'peRatio':{'good':25,'ok':40},'revenueGrowth':{'good':0.20,'ok':0.10}},
-  'Healthcare':              {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.6,'ok':1.5},'assetTurnover':{'good':0.5,'ok':0.25},'operatingMargin':{'good':0.15,'ok':0.05},'peRatio':{'good':20,'ok':35},'revenueGrowth':{'good':0.15,'ok':0.07}},
-  'Financial Services':      {'currentRatio':{'good':1.2,'ok':0.8},'debtToEquity':{'good':2.0,'ok':5.0},'assetTurnover':{'good':0.08,'ok':0.03},'operatingMargin':{'good':0.30,'ok':0.15},'peRatio':{'good':15,'ok':25},'revenueGrowth':{'good':0.10,'ok':0.05}},
-  'Consumer Cyclical':       {'currentRatio':{'good':1.3,'ok':0.9},'debtToEquity':{'good':0.8,'ok':2.0},'assetTurnover':{'good':1.2,'ok':0.6},'operatingMargin':{'good':0.12,'ok':0.05},'peRatio':{'good':20,'ok':30},'revenueGrowth':{'good':0.12,'ok':0.05}},
-  'Consumer Defensive':      {'currentRatio':{'good':1.2,'ok':0.8},'debtToEquity':{'good':1.0,'ok':2.5},'assetTurnover':{'good':1.0,'ok':0.5},'operatingMargin':{'good':0.15,'ok':0.08},'peRatio':{'good':22,'ok':30},'revenueGrowth':{'good':0.08,'ok':0.03}},
-  'Energy':                  {'currentRatio':{'good':1.3,'ok':0.9},'debtToEquity':{'good':0.5,'ok':1.5},'assetTurnover':{'good':0.7,'ok':0.3},'operatingMargin':{'good':0.15,'ok':0.05},'peRatio':{'good':12,'ok':20},'revenueGrowth':{'good':0.10,'ok':0.03}},
-  'Industrials':             {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.7,'ok':1.8},'assetTurnover':{'good':0.8,'ok':0.4},'operatingMargin':{'good':0.12,'ok':0.06},'peRatio':{'good':18,'ok':28},'revenueGrowth':{'good':0.10,'ok':0.04}},
-  'Real Estate':             {'currentRatio':{'good':1.0,'ok':0.5},'debtToEquity':{'good':1.0,'ok':2.5},'assetTurnover':{'good':0.15,'ok':0.06},'operatingMargin':{'good':0.30,'ok':0.15},'peRatio':{'good':30,'ok':50},'revenueGrowth':{'good':0.08,'ok':0.03}},
-  'Utilities':               {'currentRatio':{'good':1.0,'ok':0.7},'debtToEquity':{'good':1.2,'ok':2.5},'assetTurnover':{'good':0.35,'ok':0.15},'operatingMargin':{'good':0.20,'ok':0.10},'peRatio':{'good':18,'ok':25},'revenueGrowth':{'good':0.06,'ok':0.02}},
-  'Communication Services':  {'currentRatio':{'good':1.2,'ok':0.8},'debtToEquity':{'good':0.8,'ok':2.0},'assetTurnover':{'good':0.5,'ok':0.25},'operatingMargin':{'good':0.20,'ok':0.10},'peRatio':{'good':20,'ok':35},'revenueGrowth':{'good':0.12,'ok':0.05}},
-  'Basic Materials':         {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.5,'ok':1.5},'assetTurnover':{'good':0.7,'ok':0.35},'operatingMargin':{'good':0.15,'ok':0.07},'peRatio':{'good':15,'ok':25},'revenueGrowth':{'good':0.10,'ok':0.04}},
-  'Default':                 {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.8,'ok':2.0},'assetTurnover':{'good':0.7,'ok':0.3},'operatingMargin':{'good':0.15,'ok':0.05},'peRatio':{'good':20,'ok':35},'revenueGrowth':{'good':0.10,'ok':0.05}},
+  'Technology':              {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.5,'ok':1.5},'assetTurnover':{'good':0.6,'ok':0.3},'operatingMargin':{'good':0.20,'ok':0.10},'peRatio':{'good':25,'ok':40},'revenueGrowth':{'good':0.20,'ok':0.10},'fcfYield':{'good':0.04,'ok':0.02}},
+  'Healthcare':              {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.6,'ok':1.5},'assetTurnover':{'good':0.5,'ok':0.25},'operatingMargin':{'good':0.15,'ok':0.05},'peRatio':{'good':20,'ok':35},'revenueGrowth':{'good':0.15,'ok':0.07},'fcfYield':{'good':0.05,'ok':0.02}},
+  'Financial Services':      {'currentRatio':{'good':1.2,'ok':0.8},'debtToEquity':{'good':2.0,'ok':5.0},'assetTurnover':{'good':0.08,'ok':0.03},'operatingMargin':{'good':0.30,'ok':0.15},'peRatio':{'good':15,'ok':25},'revenueGrowth':{'good':0.10,'ok':0.05},'fcfYield':{'good':0.06,'ok':0.03}},
+  'Consumer Cyclical':       {'currentRatio':{'good':1.3,'ok':0.9},'debtToEquity':{'good':0.8,'ok':2.0},'assetTurnover':{'good':1.2,'ok':0.6},'operatingMargin':{'good':0.12,'ok':0.05},'peRatio':{'good':20,'ok':30},'revenueGrowth':{'good':0.12,'ok':0.05},'fcfYield':{'good':0.05,'ok':0.02}},
+  'Consumer Defensive':      {'currentRatio':{'good':1.2,'ok':0.8},'debtToEquity':{'good':1.0,'ok':2.5},'assetTurnover':{'good':1.0,'ok':0.5},'operatingMargin':{'good':0.15,'ok':0.08},'peRatio':{'good':22,'ok':30},'revenueGrowth':{'good':0.08,'ok':0.03},'fcfYield':{'good':0.05,'ok':0.02}},
+  'Energy':                  {'currentRatio':{'good':1.3,'ok':0.9},'debtToEquity':{'good':0.5,'ok':1.5},'assetTurnover':{'good':0.7,'ok':0.3},'operatingMargin':{'good':0.15,'ok':0.05},'peRatio':{'good':12,'ok':20},'revenueGrowth':{'good':0.10,'ok':0.03},'fcfYield':{'good':0.08,'ok':0.04}},
+  'Industrials':             {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.7,'ok':1.8},'assetTurnover':{'good':0.8,'ok':0.4},'operatingMargin':{'good':0.12,'ok':0.06},'peRatio':{'good':18,'ok':28},'revenueGrowth':{'good':0.10,'ok':0.04},'fcfYield':{'good':0.05,'ok':0.02}},
+  'Real Estate':             {'currentRatio':{'good':1.0,'ok':0.5},'debtToEquity':{'good':1.0,'ok':2.5},'assetTurnover':{'good':0.15,'ok':0.06},'operatingMargin':{'good':0.30,'ok':0.15},'peRatio':{'good':30,'ok':50},'revenueGrowth':{'good':0.08,'ok':0.03},'fcfYield':{'good':0.04,'ok':0.01}},
+  'Utilities':               {'currentRatio':{'good':1.0,'ok':0.7},'debtToEquity':{'good':1.2,'ok':2.5},'assetTurnover':{'good':0.35,'ok':0.15},'operatingMargin':{'good':0.20,'ok':0.10},'peRatio':{'good':18,'ok':25},'revenueGrowth':{'good':0.06,'ok':0.02},'fcfYield':{'good':0.04,'ok':0.01}},
+  'Communication Services':  {'currentRatio':{'good':1.2,'ok':0.8},'debtToEquity':{'good':0.8,'ok':2.0},'assetTurnover':{'good':0.5,'ok':0.25},'operatingMargin':{'good':0.20,'ok':0.10},'peRatio':{'good':20,'ok':35},'revenueGrowth':{'good':0.12,'ok':0.05},'fcfYield':{'good':0.05,'ok':0.02}},
+  'Basic Materials':         {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.5,'ok':1.5},'assetTurnover':{'good':0.7,'ok':0.35},'operatingMargin':{'good':0.15,'ok':0.07},'peRatio':{'good':15,'ok':25},'revenueGrowth':{'good':0.10,'ok':0.04},'fcfYield':{'good':0.06,'ok':0.03}},
+  'Default':                 {'currentRatio':{'good':1.5,'ok':1.0},'debtToEquity':{'good':0.8,'ok':2.0},'assetTurnover':{'good':0.7,'ok':0.3},'operatingMargin':{'good':0.15,'ok':0.05},'peRatio':{'good':20,'ok':35},'revenueGrowth':{'good':0.10,'ok':0.05},'fcfYield':{'good':0.05,'ok':0.02}},
 }
 
 # Rate limiter: 300 calls/min
@@ -89,10 +89,12 @@ def grade_stock(ticker, prof):
     bs_arr = rate_limited_fetch(f"{BASE}/balance-sheet-statement?symbol={sym}&period=quarter&limit=1&apikey={API_KEY}")
     is_arr = rate_limited_fetch(f"{BASE}/income-statement?symbol={sym}&period=quarter&limit=8&apikey={API_KEY}")
     rt_arr = rate_limited_fetch(f"{BASE}/ratios-ttm?symbol={sym}&apikey={API_KEY}")
+    km_arr = rate_limited_fetch(f"{BASE}/key-metrics-ttm?symbol={sym}&apikey={API_KEY}")
 
     bs = bs_arr[0] if isinstance(bs_arr, list) and bs_arr else {}
     incomes = is_arr if isinstance(is_arr, list) else []
     rt = rt_arr[0] if isinstance(rt_arr, list) and rt_arr else {}
+    km = km_arr[0] if isinstance(km_arr, list) and km_arr else {}
 
     sector = prof.get('sector', 'Default')
     bench = BENCHMARKS.get(sector, BENCHMARKS['Default'])
@@ -102,6 +104,8 @@ def grade_stock(ticker, prof):
     at = rt.get('assetTurnoverTTM')
     om = rt.get('operatingProfitMarginTTM')
     pe = rt.get('priceToEarningsRatioTTM')
+
+    fcfy = km.get('freeCashFlowYieldTTM')
 
     rg = None
     if len(incomes) >= 8:
@@ -117,6 +121,7 @@ def grade_stock(ticker, prof):
         'operatingMargin': grade_higher(om, bench['operatingMargin']),
         'peRatio': grade_lower(pe, bench['peRatio']) if pe and pe > 0 else None,
         'revenueGrowth': grade_higher(rg, bench['revenueGrowth']),
+        'fcfYield': grade_higher(fcfy, bench['fcfYield']),
     }
 
     scored = [g for g in ratio_grades.values() if g is not None]
@@ -126,8 +131,8 @@ def grade_stock(ticker, prof):
 
     if total < 4: overall = '?'
     elif good == total: overall = 'A+'
-    elif good >= 5: overall = 'A'
-    elif good >= 4 and bad == 0: overall = 'B+'
+    elif good >= 6: overall = 'A'
+    elif good >= 5 and bad == 0: overall = 'B+'
     elif bad <= 1: overall = 'B'
     elif bad <= 2: overall = 'C'
     else: overall = 'D'
@@ -178,7 +183,7 @@ def main():
 
     print(f"\nPhase 1 done: {len(qualified)} stocks pass $2B+ US filter out of {len(tickers)} checked")
 
-    # Phase 2: parallel grading (3 calls per ticker)
+    # Phase 2: parallel grading (4 calls per ticker)
     print("\n--- Phase 2: Grading qualified stocks ---")
     results = []
     failed = 0
