@@ -1958,17 +1958,19 @@
             };
         }
 
+        var sector = fmpSectorMap(prof.sector);
+
         var price = prof.price || null;
         var epsVal = ttm.epsDiluted || null;
         var fmpPE = rt.priceToEarningsRatioTTM;
-        if (fmpPE && fmpPE > 0) {
+        if (sector !== 'Real Estate' && fmpPE && fmpPE > 0) {
             var peEps = price && fmpPE ? (price / fmpPE) : null;
             ratios.peRatio = {
                 value: fmpPE,
                 components: 'Price: $' + (price ? price.toFixed(2) : '—') + ' / TTM EPS: $' + (peEps ? peEps.toFixed(2) : '—'),
                 period: ttmLabel
             };
-        } else if (price && epsVal && epsVal > 0 && cur === 'USD') {
+        } else if (sector !== 'Real Estate' && price && epsVal && epsVal > 0 && cur === 'USD') {
             ratios.peRatio = {
                 value: price / epsVal,
                 components: 'Price: $' + price.toFixed(2) + ' / TTM EPS: $' + epsVal.toFixed(2),
@@ -1990,15 +1992,13 @@
 
         var km = keyMetrics || {};
         var fcfy = km.freeCashFlowYieldTTM;
-        if (typeof fcfy === 'number') {
+        if (typeof fcfy === 'number' && sector !== 'Financial Services') {
             ratios.fcfYield = {
                 value: fcfy,
                 components: 'Free Cash Flow / Market Cap',
                 period: ttmLabel
             };
         }
-
-        var sector = fmpSectorMap(prof.sector);
         var benchmarks = SECTOR_BENCHMARKS[sector] || SECTOR_BENCHMARKS['Default'];
 
         var filingInfo = { period: bs.period || '', year: bs.fiscalYear || '', filed: bs.filingDate || '' };
@@ -2197,7 +2197,7 @@
 
         if (total < 4) { overallGrade = '?'; overallClass = 'ok'; overallText = 'Not enough data to grade — only ' + total + ' of 7 ratios available.'; }
         else if (goodCount === total) { overallGrade = 'A+'; overallClass = 'good'; overallText = 'Exceptional. All ' + total + ' metrics at healthy levels vs. ' + sectorLabel + ' benchmarks.'; }
-        else if (goodCount >= 6) { overallGrade = 'A'; overallClass = 'good'; overallText = 'Strong financial health across ' + goodCount + ' of ' + total + ' metrics vs. ' + sectorLabel + ' benchmarks.'; }
+        else if (goodCount >= 6 && badCount === 0) { overallGrade = 'A'; overallClass = 'good'; overallText = 'Strong financial health across ' + goodCount + ' of ' + total + ' metrics vs. ' + sectorLabel + ' benchmarks.'; }
         else if (goodCount >= 5 && badCount === 0) { overallGrade = 'B+'; overallClass = 'good'; overallText = 'Above average. ' + goodCount + ' strong metrics with no red flags.'; }
         else if (badCount <= 1) { overallGrade = 'B'; overallClass = 'ok'; overallText = 'Decent fundamentals with some areas to watch. ' + goodCount + ' of ' + total + ' metrics look healthy.'; }
         else if (badCount <= 2) { overallGrade = 'C'; overallClass = 'ok'; overallText = 'Mixed signals. ' + badCount + ' metrics below ' + sectorLabel + ' benchmarks. Worth digging deeper.'; }

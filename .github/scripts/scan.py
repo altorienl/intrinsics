@@ -119,9 +119,9 @@ def grade_stock(ticker, prof):
         'debtToEquity': 'bad' if (de is not None and de < 0) else grade_lower(de, bench['debtToEquity']),
         'assetTurnover': grade_higher(at, bench['assetTurnover']),
         'operatingMargin': grade_higher(om, bench['operatingMargin']),
-        'peRatio': grade_lower(pe, bench['peRatio']) if pe and pe > 0 else None,
+        'peRatio': None if sector == 'Real Estate' else (grade_lower(pe, bench['peRatio']) if pe and pe > 0 else None),
         'revenueGrowth': grade_higher(rg, bench['revenueGrowth']),
-        'fcfYield': grade_higher(fcfy, bench['fcfYield']),
+        'fcfYield': None if sector == 'Financial Services' else grade_higher(fcfy, bench['fcfYield']),
     }
 
     scored = [g for g in ratio_grades.values() if g is not None]
@@ -131,7 +131,7 @@ def grade_stock(ticker, prof):
 
     if total < 4: overall = '?'
     elif good == total: overall = 'A+'
-    elif good >= 6: overall = 'A'
+    elif good >= 6 and bad == 0: overall = 'A'
     elif good >= 5 and bad == 0: overall = 'B+'
     elif bad <= 1: overall = 'B'
     elif bad <= 2: overall = 'C'
