@@ -2001,6 +2001,10 @@
         }
         var benchmarks = SECTOR_BENCHMARKS[sector] || SECTOR_BENCHMARKS['Default'];
 
+        if (ratios.operatingMargin && typeof km.returnOnInvestedCapitalTTM === 'number') {
+            ratios.operatingMargin.roic = km.returnOnInvestedCapitalTTM;
+        }
+
         var filingInfo = { period: bs.period || '', year: bs.fiscalYear || '', filed: bs.filingDate || '' };
         renderResults(ticker, prof, sector, benchmarks, ratios, price, filingInfo);
         renderQuickPicks(ticker, sector);
@@ -2255,6 +2259,7 @@
             '<div class="ratio-explain">' + def.explain(ratio.value, bench) + '</div>' +
             '<div class="ratio-components">' + ratio.components + '</div>' +
             (ratio.forwardPE ? '<div class="ratio-forward-pe">Forward P/E: ' + ratio.forwardPE.toFixed(1) + 'x <span style="color:#4a6a4a">(Est. EPS: $' + ratio.forwardEps.toFixed(2) + ')</span></div>' : '') +
+            (ratio.roic != null ? '<div class="ratio-forward-pe">ROIC: ' + (function(r) { var p = (r * 100).toFixed(1); var c = r >= 0.15 ? '#00ff41' : r >= 0.10 ? '#88cc88' : r >= 0.05 ? '#c0d0c0' : '#ff3344'; var l = r >= 0.15 ? 'Elite' : r >= 0.10 ? 'Strong' : r >= 0.05 ? 'Average' : 'Weak'; return '<span style="color:' + c + ';font-weight:600">' + p + '%</span> <span style="color:#4a6a4a">(' + l + ')</span>'; })(ratio.roic) + '</div>' : '') +
             '<div class="ratio-formula">' + def.formula + ' &mdash; ' + (ratio.period || 'N/A') + '</div></div>';
     }
 
