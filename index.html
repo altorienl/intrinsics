@@ -1027,6 +1027,25 @@
     var API = 'https://financialmodelingprep.com/stable';
     var FMP_IMG = 'https://financialmodelingprep.com/image-stock/';
 
+    var US_MARKET_HOLIDAYS = [
+        '2026-01-01','2026-01-19','2026-02-16','2026-04-03','2026-05-25',
+        '2026-06-19','2026-07-03','2026-09-07','2026-11-26','2026-12-25',
+        '2027-01-01','2027-01-18','2027-02-15','2027-04-02','2027-05-31',
+        '2027-06-18','2027-07-05','2027-09-06','2027-11-25','2027-12-24'
+    ];
+
+    function isMarketDay() {
+        var now = new Date();
+        var et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+        var day = et.getDay();
+        if (day === 0 || day === 6) return false;
+        var yyyy = et.getFullYear();
+        var mm = String(et.getMonth() + 1).padStart(2, '0');
+        var dd = String(et.getDate()).padStart(2, '0');
+        if (US_MARKET_HOLIDAYS.indexOf(yyyy + '-' + mm + '-' + dd) !== -1) return false;
+        return true;
+    }
+
     // ---- Stock Pools by Sector ----
     var SECTOR_STOCKS = {
         'Technology': ['AAPL','MSFT','GOOGL','NVDA','META','CRM','AMD','INTC','SNOW','PLTR','CRWD','ZS','NET','SHOP'],
@@ -1724,25 +1743,6 @@
         if (priceInterval) { clearInterval(priceInterval); priceInterval = null; }
     }
 
-    var US_MARKET_HOLIDAYS = [
-        '2026-01-01','2026-01-19','2026-02-16','2026-04-03','2026-05-25',
-        '2026-06-19','2026-07-03','2026-09-07','2026-11-26','2026-12-25',
-        '2027-01-01','2027-01-18','2027-02-15','2027-04-02','2027-05-31',
-        '2027-06-18','2027-07-05','2027-09-06','2027-11-25','2027-12-24'
-    ];
-
-    function isMarketDay() {
-        var now = new Date();
-        var et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-        var day = et.getDay();
-        if (day === 0 || day === 6) return false;
-        var yyyy = et.getFullYear();
-        var mm = String(et.getMonth() + 1).padStart(2, '0');
-        var dd = String(et.getDate()).padStart(2, '0');
-        if (US_MARKET_HOLIDAYS.indexOf(yyyy + '-' + mm + '-' + dd) !== -1) return false;
-        return true;
-    }
-
     function getMarketSession() {
         var now = new Date();
         var et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
@@ -2235,6 +2235,13 @@
         return '<span class="ratio-help">?<span class="ratio-help-tip">' + tip + '</span></span>';
     }
 
+    function formatRoic(r) {
+        var p = (r * 100).toFixed(1);
+        var c = r >= 0.15 ? '#00ff41' : r >= 0.10 ? '#88cc88' : r >= 0.05 ? '#c0d0c0' : '#ff3344';
+        var l = r >= 0.15 ? 'Elite' : r >= 0.10 ? 'Strong' : r >= 0.05 ? 'Average' : 'Weak';
+        return '<span style="color:' + c + ';font-weight:600">' + p + '%</span> <span style="color:#4a6a4a">(' + l + ')</span>';
+    }
+
     function renderCard(def, ratio, bench, grade) {
         var hb = helpBubble(def.tip);
         if (!ratio) {
@@ -2259,7 +2266,7 @@
             '<div class="ratio-explain">' + def.explain(ratio.value, bench) + '</div>' +
             '<div class="ratio-components">' + ratio.components + '</div>' +
             (ratio.forwardPE ? '<div class="ratio-forward-pe">Forward P/E: ' + ratio.forwardPE.toFixed(1) + 'x <span style="color:#4a6a4a">(Est. EPS: $' + ratio.forwardEps.toFixed(2) + ')</span></div>' : '') +
-            (ratio.roic != null ? '<div class="ratio-forward-pe">ROIC: ' + (function(r) { var p = (r * 100).toFixed(1); var c = r >= 0.15 ? '#00ff41' : r >= 0.10 ? '#88cc88' : r >= 0.05 ? '#c0d0c0' : '#ff3344'; var l = r >= 0.15 ? 'Elite' : r >= 0.10 ? 'Strong' : r >= 0.05 ? 'Average' : 'Weak'; return '<span style="color:' + c + ';font-weight:600">' + p + '%</span> <span style="color:#4a6a4a">(' + l + ')</span>'; })(ratio.roic) + '</div>' : '') +
+            (ratio.roic != null ? '<div class="ratio-forward-pe">ROIC: ' + formatRoic(ratio.roic) + '</div>' : '') +
             '<div class="ratio-formula">' + def.formula + ' &mdash; ' + (ratio.period || 'N/A') + '</div></div>';
     }
 
