@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-31T14:46:45.443352Z",
+  "updated": "2026-06-01T13:16:04.951408Z",
   "stocks": [
     {
       "ticker": "A",
@@ -1409,7 +1409,7 @@
       "price": 8.41,
       "change": -0.02,
       "changePct": -0.23725,
-      "marketCap": 12720339438,
+      "marketCap": 12720338942,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -1784,7 +1784,7 @@
       "price": 73.65,
       "change": 0.65,
       "changePct": 0.89041,
-      "marketCap": 24665278649,
+      "marketCap": 24665278428,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -2209,7 +2209,7 @@
       "price": 48.89,
       "change": -0.57,
       "changePct": -1.15245,
-      "marketCap": 9422193638,
+      "marketCap": 10106653247,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -4377,106 +4377,6 @@
       }
     },
     {
-      "ticker": "AQN",
-      "name": "Algonquin Power & Utilities Corp.",
-      "sector": "Utilities",
-      "grade": "C",
-      "price": 5.89,
-      "change": -0.04,
-      "changePct": -0.67454,
-      "marketCap": 4527595880,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "AQNA",
-      "name": "Algonquin Power & Utilities Cor",
-      "sector": "Utilities",
-      "grade": "C",
-      "price": 25.1,
-      "change": -0.03,
-      "changePct": -0.1194,
-      "marketCap": 4488361518,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "AQNB",
-      "name": "Algonquin Power & Utilities Cor",
-      "sector": "Utilities",
-      "grade": "D",
-      "price": 25.95,
-      "change": -0.09,
-      "changePct": -0.34562,
-      "marketCap": 19048578271,
-      "scores": {
-        "good": 1,
-        "ok": 3,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "AQNU",
-      "name": "Algonquin Power & Utilities Corp.",
-      "sector": "Utilities",
-      "grade": "C",
-      "price": 19.34,
-      "change": 0.38,
-      "changePct": 2.0042,
-      "marketCap": 13338805059,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad"
-      }
-    },
-    {
       "ticker": "AQUA",
       "name": "Evoqua Water Technologies Corp.",
       "sector": "Industrials",
@@ -4984,7 +4884,7 @@
       "price": 15.95,
       "change": -0.32,
       "changePct": -1.96681,
-      "marketCap": 3480311628,
+      "marketCap": 3480311293,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -6809,7 +6709,7 @@
       "price": 19.22,
       "change": 0.29,
       "changePct": 1.53196,
-      "marketCap": 2963764708,
+      "marketCap": 2963764477,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -6834,7 +6734,7 @@
       "price": 64.97,
       "change": 7.31,
       "changePct": 12.67777,
-      "marketCap": 2080164501,
+      "marketCap": 2080164436,
       "scores": {
         "good": 1,
         "ok": 2,
@@ -8584,7 +8484,7 @@
       "price": 85.28,
       "change": -0.72,
       "changePct": -0.83721,
-      "marketCap": 10889610260,
+      "marketCap": 10889742273,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -10436,8 +10336,8 @@
       "changePct": -2.42742,
       "marketCap": 154845560765,
       "scores": {
-        "good": 4,
-        "ok": 0,
+        "good": 3,
+        "ok": 1,
         "bad": 3,
         "total": 7
       },
@@ -10446,7 +10346,7 @@
         "debtToEquity": "good",
         "assetTurnover": "bad",
         "operatingMargin": "good",
-        "peRatio": "good",
+        "peRatio": "ok",
         "revenueGrowth": "bad",
         "fcfYield": "good"
       }
@@ -10459,7 +10359,7 @@
       "price": 6.4,
       "change": 0.07,
       "changePct": 1.10585,
-      "marketCap": 3403639334,
+      "marketCap": 3403639552,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -10480,20 +10380,20 @@
       "ticker": "BURL",
       "name": "Burlington Stores, Inc.",
       "sector": "Consumer Cyclical",
-      "grade": "B",
+      "grade": "C",
       "price": 323.83,
       "change": 23.31,
       "changePct": 7.75656,
       "marketCap": 20382572626,
       "scores": {
         "good": 1,
-        "ok": 5,
-        "bad": 1,
+        "ok": 4,
+        "bad": 2,
         "total": 7
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "ok",
+        "debtToEquity": "bad",
         "assetTurnover": "good",
         "operatingMargin": "ok",
         "peRatio": "bad",
@@ -10974,81 +10874,6 @@
         "peRatio": "good",
         "revenueGrowth": "ok",
         "fcfYield": null
-      }
-    },
-    {
-      "ticker": "CACI",
-      "name": "CACI International Inc",
-      "sector": "Technology",
-      "grade": "C",
-      "price": 513.51,
-      "change": -9.34,
-      "changePct": -1.78636,
-      "marketCap": 11344106031,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "CADE",
-      "name": "Cadence Bank",
-      "sector": "Financial Services",
-      "grade": "C",
-      "price": 42.11,
-      "change": -0.71,
-      "changePct": -1.6581,
-      "marketCap": 7845388444,
-      "scores": {
-        "good": 2,
-        "ok": 2,
-        "bad": 2,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null
-      }
-    },
-    {
-      "ticker": "CAE",
-      "name": "CAE Inc.",
-      "sector": "Industrials",
-      "grade": "C",
-      "price": 25.81,
-      "change": 0.15,
-      "changePct": 0.58457,
-      "marketCap": 8305787050,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "ok",
-        "fcfYield": "ok"
       }
     },
     {
@@ -11609,7 +11434,7 @@
       "price": 236.99,
       "change": -5.6,
       "changePct": -2.30842,
-      "marketCap": 52045457083,
+      "marketCap": 52045459453,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -13259,7 +13084,7 @@
       "price": 68.59,
       "change": -0.6,
       "changePct": -0.86718,
-      "marketCap": 16274021851,
+      "marketCap": 16274021371,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -15361,8 +15186,8 @@
       "changePct": -6.231,
       "marketCap": 2132063910,
       "scores": {
-        "good": 1,
-        "ok": 2,
+        "good": 0,
+        "ok": 3,
         "bad": 4,
         "total": 7
       },
@@ -15371,7 +15196,7 @@
         "debtToEquity": "bad",
         "assetTurnover": "ok",
         "operatingMargin": "bad",
-        "peRatio": "good",
+        "peRatio": "ok",
         "revenueGrowth": "bad",
         "fcfYield": "bad"
       }
@@ -15384,7 +15209,7 @@
       "price": 32.77,
       "change": -0.51,
       "changePct": -1.53245,
-      "marketCap": 31567615875,
+      "marketCap": 31567603160,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -15711,14 +15536,14 @@
       "changePct": 8.47477,
       "marketCap": 156510900000,
       "scores": {
-        "good": 4,
-        "ok": 2,
+        "good": 3,
+        "ok": 3,
         "bad": 1,
         "total": 7
       },
       "ratioGrades": {
         "currentRatio": "bad",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "good",
         "peRatio": "good",
@@ -15909,7 +15734,7 @@
       "price": 109.53,
       "change": 2.67,
       "changePct": 2.4986,
-      "marketCap": 59756325364,
+      "marketCap": 59756322736,
       "scores": {
         "good": 1,
         "ok": 0,
@@ -17609,7 +17434,7 @@
       "price": 247.35,
       "change": 22.11,
       "changePct": 9.8162,
-      "marketCap": 88046751512,
+      "marketCap": 88046755717,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -18336,14 +18161,14 @@
       "changePct": 3.04425,
       "marketCap": 22376857000,
       "scores": {
-        "good": 4,
-        "ok": 2,
+        "good": 3,
+        "ok": 3,
         "bad": 1,
         "total": 7
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "good",
         "operatingMargin": "ok",
         "peRatio": "good",
@@ -19259,7 +19084,7 @@
       "price": 111.36,
       "change": 2.69,
       "changePct": 2.47538,
-      "marketCap": 5188609286,
+      "marketCap": 5188609509,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -20234,7 +20059,7 @@
       "price": 11.4,
       "change": -0.07,
       "changePct": -0.61029,
-      "marketCap": 2115824393,
+      "marketCap": 2115824245,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -21009,7 +20834,7 @@
       "price": 20.84,
       "change": -2.02,
       "changePct": -8.8364,
-      "marketCap": 5259497126,
+      "marketCap": 5259496959,
       "scores": {
         "good": 1,
         "ok": 2,
@@ -21159,7 +20984,7 @@
       "price": 13.06,
       "change": 0.32,
       "changePct": 2.51177,
-      "marketCap": 43406020936,
+      "marketCap": 43406024697,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -23234,7 +23059,7 @@
       "price": 56.06,
       "change": 0.59,
       "changePct": 1.06364,
-      "marketCap": 4255663439,
+      "marketCap": 4255663607,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -25034,7 +24859,7 @@
       "price": 90.79,
       "change": -0.27,
       "changePct": -0.29651,
-      "marketCap": 22752491775,
+      "marketCap": 22752493500,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -26177,331 +26002,6 @@
       }
     },
     {
-      "ticker": "GMTL",
-      "name": "Guardian Metal Resources PLC Sponsored ADR",
-      "sector": "Basic Materials",
-      "grade": "D",
-      "price": 15.8,
-      "change": -0.53,
-      "changePct": -3.24556,
-      "marketCap": 2648882529,
-      "scores": {
-        "good": 2,
-        "ok": 0,
-        "bad": 3,
-        "total": 5
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "GNRC",
-      "name": "Generac Holdings Inc.",
-      "sector": "Industrials",
-      "grade": "C",
-      "price": 277.91,
-      "change": -1.54,
-      "changePct": -0.55108,
-      "marketCap": 16360195137,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok"
-      }
-    },
-    {
-      "ticker": "GNTX",
-      "name": "Gentex Corporation",
-      "sector": "Consumer Cyclical",
-      "grade": "A",
-      "price": 24.16,
-      "change": 0.08,
-      "changePct": 0.33223,
-      "marketCap": 5144920320,
-      "scores": {
-        "good": 6,
-        "ok": 1,
-        "bad": 0,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "GNW",
-      "name": "Genworth Financial, Inc.",
-      "sector": "Financial Services",
-      "grade": "D",
-      "price": 8.56,
-      "change": -0.06,
-      "changePct": -0.69606,
-      "marketCap": 3278559231,
-      "scores": {
-        "good": 1,
-        "ok": 2,
-        "bad": 3,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": "ok",
-        "revenueGrowth": "bad",
-        "fcfYield": null
-      }
-    },
-    {
-      "ticker": "GOL",
-      "name": "Gol Linhas A\u00e9reas Inteligentes S.A.",
-      "sector": "Industrials",
-      "grade": "D",
-      "price": 2.715,
-      "change": 0.085,
-      "changePct": 3.2319,
-      "marketCap": 4345520400,
-      "scores": {
-        "good": 1,
-        "ok": 2,
-        "bad": 3,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "ok"
-      }
-    },
-    {
-      "ticker": "GOLF",
-      "name": "Acushnet Holdings Corp.",
-      "sector": "Consumer Cyclical",
-      "grade": "C",
-      "price": 88.78,
-      "change": -0.25,
-      "changePct": -0.2808,
-      "marketCap": 5198428825,
-      "scores": {
-        "good": 1,
-        "ok": 4,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "ok",
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "GOOG",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "grade": "B",
-      "price": 376.43,
-      "change": -9.69,
-      "changePct": -2.50958,
-      "marketCap": 4552872024394,
-      "scores": {
-        "good": 5,
-        "ok": 1,
-        "bad": 1,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "grade": "B",
-      "price": 380.34,
-      "change": -9.79,
-      "changePct": -2.50942,
-      "marketCap": 4600162967240,
-      "scores": {
-        "good": 5,
-        "ok": 1,
-        "bad": 1,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "GPC",
-      "name": "Genuine Parts Company",
-      "sector": "Consumer Cyclical",
-      "grade": "D",
-      "price": 98.7,
-      "change": -0.56,
-      "changePct": -0.56417,
-      "marketCap": 13731351467,
-      "scores": {
-        "good": 0,
-        "ok": 4,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok"
-      }
-    },
-    {
-      "ticker": "GPCR",
-      "name": "Structure Therapeutics Inc.",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 39.34,
-      "change": -0.83,
-      "changePct": -2.06622,
-      "marketCap": 2264672640,
-      "scores": {
-        "good": 2,
-        "ok": 0,
-        "bad": 3,
-        "total": 5
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "GPGI",
-      "name": "GPGI, Inc.",
-      "sector": "Industrials",
-      "grade": "D",
-      "price": 12.16,
-      "change": 0.17,
-      "changePct": 1.41785,
-      "marketCap": 3524709760,
-      "scores": {
-        "good": 1,
-        "ok": 0,
-        "bad": 5,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "GPI",
-      "name": "Group 1 Automotive, Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 316.34,
-      "change": -10.09999,
-      "changePct": -3.09398,
-      "marketCap": 3763874374,
-      "scores": {
-        "good": 3,
-        "ok": 3,
-        "bad": 1,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "GPK",
-      "name": "Graphic Packaging Holding Company",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 11.26,
-      "change": -0.26,
-      "changePct": -2.25694,
-      "marketCap": 3331687620,
-      "scores": {
-        "good": 2,
-        "ok": 4,
-        "bad": 1,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok"
-      }
-    },
-    {
       "ticker": "GPN",
       "name": "Global Payments Inc.",
       "sector": "Financial Services",
@@ -26959,7 +26459,7 @@
       "price": 84.21,
       "change": -0.22,
       "changePct": -0.26057,
-      "marketCap": 10845315543,
+      "marketCap": 10845315880,
       "scores": {
         "good": 1,
         "ok": 2,
@@ -27934,7 +27434,7 @@
       "price": 37.5,
       "change": -0.84,
       "changePct": -2.19092,
-      "marketCap": 7748781450,
+      "marketCap": 7748781563,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -29009,7 +28509,7 @@
       "price": 194.03,
       "change": -3.01,
       "changePct": -1.52761,
-      "marketCap": 39357697335,
+      "marketCap": 39357697917,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -29484,7 +28984,7 @@
       "price": 44.89,
       "change": -0.05,
       "changePct": -0.11126,
-      "marketCap": 3338920849,
+      "marketCap": 3338920669,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -29734,7 +29234,7 @@
       "price": 147.85,
       "change": -0.45,
       "changePct": -0.30344,
-      "marketCap": 83611029187,
+      "marketCap": 83611025343,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -30384,7 +29884,7 @@
       "price": 70.26,
       "change": 3.27,
       "changePct": 4.88133,
-      "marketCap": 2463417618,
+      "marketCap": 2459040279,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -33634,7 +33134,7 @@
       "price": 152.46,
       "change": 0.34,
       "changePct": 0.22351,
-      "marketCap": 15470893898,
+      "marketCap": 15470894966,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -34852,31 +34352,6 @@
       }
     },
     {
-      "ticker": "LMHA",
-      "name": "Legg Mason, Inc.",
-      "sector": "Financial Services",
-      "grade": "?",
-      "price": 25.7,
-      "change": -0.1291,
-      "changePct": -0.4998,
-      "marketCap": 3105228277,
-      "scores": {
-        "good": 0,
-        "ok": 0,
-        "bad": 0,
-        "total": 0
-      },
-      "ratioGrades": {
-        "currentRatio": null,
-        "debtToEquity": null,
-        "assetTurnover": null,
-        "operatingMargin": null,
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": null
-      }
-    },
-    {
       "ticker": "LMND",
       "name": "Lemonade, Inc.",
       "sector": "Financial Services",
@@ -35086,8 +34561,8 @@
       "changePct": 9.04617,
       "marketCap": 17488601414,
       "scores": {
-        "good": 5,
-        "ok": 1,
+        "good": 4,
+        "ok": 2,
         "bad": 1,
         "total": 7
       },
@@ -35096,7 +34571,7 @@
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "ok",
-        "peRatio": "good",
+        "peRatio": "ok",
         "revenueGrowth": "bad",
         "fcfYield": "good"
       }
@@ -35834,7 +35309,7 @@
       "price": 493.98,
       "change": 0.23,
       "changePct": 0.04658228,
-      "marketCap": 436472771464,
+      "marketCap": 436472774428,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -36424,31 +35899,6 @@
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "MCK",
-      "name": "McKesson Corporation",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 742.44,
-      "change": -14.54,
-      "changePct": -1.92079,
-      "marketCap": 89244295624,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": "good"
       }
     },
     {
@@ -37259,7 +36709,7 @@
       "price": 131.62,
       "change": -0.9,
       "changePct": -0.67914,
-      "marketCap": 3391546122,
+      "marketCap": 3391545727,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -37534,7 +36984,7 @@
       "price": 5.56,
       "change": 0.02,
       "changePct": 0.36101,
-      "marketCap": 2158901062,
+      "marketCap": 2158901024,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -38884,7 +38334,7 @@
       "price": 70.53,
       "change": 0.88,
       "changePct": 1.26346,
-      "marketCap": 3336438154,
+      "marketCap": 3336438013,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -39159,7 +38609,7 @@
       "price": 65.24,
       "change": -0.38,
       "changePct": -0.57909,
-      "marketCap": 4358075450,
+      "marketCap": 4358075385,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -40809,7 +40259,7 @@
       "price": 130.57,
       "change": 0.45,
       "changePct": 0.34583,
-      "marketCap": 4691905775,
+      "marketCap": 4691905514,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -42034,7 +41484,7 @@
       "price": 178.43,
       "change": -7.51,
       "changePct": -4.03894,
-      "marketCap": 5449067168,
+      "marketCap": 5449066990,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -42536,15 +41986,15 @@
       "changePct": 30.14147,
       "marketCap": 20667324930,
       "scores": {
-        "good": 2,
-        "ok": 3,
+        "good": 1,
+        "ok": 4,
         "bad": 2,
         "total": 7
       },
       "ratioGrades": {
         "currentRatio": "ok",
         "debtToEquity": "good",
-        "assetTurnover": "good",
+        "assetTurnover": "ok",
         "operatingMargin": "bad",
         "peRatio": "bad",
         "revenueGrowth": "ok",
@@ -43655,19 +43105,19 @@
       "ticker": "OXLCG",
       "name": "Oxford Lane Capital Corp. 7.95% Notes due 2032",
       "sector": "Financial Services",
-      "grade": "C",
+      "grade": "B",
       "price": 25.31,
       "change": 0.09,
       "changePct": 0.35686,
       "marketCap": 8539694557,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 0,
-        "bad": 2,
+        "bad": 1,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -43680,19 +43130,19 @@
       "ticker": "OXLCI",
       "name": "Oxford Lane Capital Corp.",
       "sector": "Financial Services",
-      "grade": "C",
+      "grade": "B",
       "price": 25.705,
       "change": -0.095,
       "changePct": -0.36822,
       "marketCap": 12379528000,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 0,
-        "bad": 2,
+        "bad": 1,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -43705,19 +43155,19 @@
       "ticker": "OXLCL",
       "name": "Oxford Lane Capital Corp. 6.75% Notes due 2031",
       "sector": "Financial Services",
-      "grade": "C",
+      "grade": "B",
       "price": 24.58,
       "change": 0,
       "changePct": 0,
       "marketCap": 11837728000,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 0,
-        "bad": 2,
+        "bad": 1,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -43730,19 +43180,19 @@
       "ticker": "OXLCN",
       "name": "Oxford Lane Capital Corp.",
       "sector": "Financial Services",
-      "grade": "C",
+      "grade": "B",
       "price": 24.89,
       "change": 0.08,
       "changePct": 0.32245,
       "marketCap": 11987024000,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 0,
-        "bad": 2,
+        "bad": 1,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -43755,19 +43205,19 @@
       "ticker": "OXLCO",
       "name": "Oxford Lane Capital Corp.",
       "sector": "Financial Services",
-      "grade": "C",
+      "grade": "B",
       "price": 24.225,
       "change": 0.14,
       "changePct": 0.58127,
       "marketCap": 2364360000,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 0,
-        "bad": 2,
+        "bad": 1,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -43780,19 +43230,19 @@
       "ticker": "OXLCP",
       "name": "Oxford Lane Capital Corp.",
       "sector": "Financial Services",
-      "grade": "C",
+      "grade": "B",
       "price": 25.01,
       "change": 0.0178,
       "changePct": 0.07122222,
       "marketCap": 12044816000,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 0,
-        "bad": 2,
+        "bad": 1,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -43805,19 +43255,19 @@
       "ticker": "OXLCZ",
       "name": "Oxford Lane Capital Corp. 5.00% Notes due 2027",
       "sector": "Financial Services",
-      "grade": "C",
+      "grade": "B",
       "price": 24.86,
       "change": 0.01,
       "changePct": 0.04024145,
       "marketCap": 11972576000,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 0,
-        "bad": 2,
+        "bad": 1,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -44534,7 +43984,7 @@
       "price": 18.77,
       "change": -0.06,
       "changePct": -0.31864,
-      "marketCap": 120960754081,
+      "marketCap": 120960761852,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -45309,7 +44759,7 @@
       "price": 18.19,
       "change": -0.26,
       "changePct": -1.40921,
-      "marketCap": 3935511547,
+      "marketCap": 3935511802,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -45809,7 +45259,7 @@
       "price": 53.51,
       "change": 0.61,
       "changePct": 1.15312,
-      "marketCap": 4250982944,
+      "marketCap": 4250982890,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -45880,15 +45330,15 @@
       "ticker": "PLUS",
       "name": "ePlus inc.",
       "sector": "Technology",
-      "grade": "D",
+      "grade": "C",
       "price": 82.09,
       "change": -6.56,
       "changePct": -7.39989,
       "marketCap": 2146783448,
       "scores": {
         "good": 4,
-        "ok": 0,
-        "bad": 3,
+        "ok": 1,
+        "bad": 2,
         "total": 7
       },
       "ratioGrades": {
@@ -45897,7 +45347,7 @@
         "assetTurnover": "good",
         "operatingMargin": "bad",
         "peRatio": "good",
-        "revenueGrowth": "bad",
+        "revenueGrowth": "ok",
         "fcfYield": "bad"
       }
     },
@@ -47477,31 +46927,6 @@
       }
     },
     {
-      "ticker": "QGEN",
-      "name": "Qiagen N.V.",
-      "sector": "Healthcare",
-      "grade": "B",
-      "price": 36.59,
-      "change": -0.05,
-      "changePct": -0.13646,
-      "marketCap": 7540284250,
-      "scores": {
-        "good": 5,
-        "ok": 1,
-        "bad": 1,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good"
-      }
-    },
-    {
       "ticker": "QLYS",
       "name": "Qualys, Inc.",
       "sector": "Technology",
@@ -47584,7 +47009,7 @@
       "price": 8.98,
       "change": -0.15,
       "changePct": -1.64294,
-      "marketCap": 5524002378,
+      "marketCap": 5524002809,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -48059,7 +47484,7 @@
       "price": 38.55,
       "change": 0.3,
       "changePct": 0.78431,
-      "marketCap": 20825685122,
+      "marketCap": 20825683966,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -49084,7 +48509,7 @@
       "price": 143.41,
       "change": 1.41,
       "changePct": 0.99296,
-      "marketCap": 27948178487,
+      "marketCap": 27948177340,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -49559,7 +48984,7 @@
       "price": 130.18,
       "change": -0.91,
       "changePct": -0.69418,
-      "marketCap": 19226771984,
+      "marketCap": 19226771334,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -50605,20 +50030,20 @@
       "ticker": "SAIC",
       "name": "Science Applications International Corporation",
       "sector": "Technology",
-      "grade": "D",
+      "grade": "C",
       "price": 104.2,
       "change": 0.5,
       "changePct": 0.48216,
       "marketCap": 4491270080,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 1,
-        "bad": 3,
+        "bad": 2,
         "total": 7
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "bad",
+        "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
         "peRatio": "good",
@@ -50736,8 +50161,8 @@
       "changePct": 3.60766,
       "marketCap": 211828100464,
       "scores": {
-        "good": 4,
-        "ok": 2,
+        "good": 3,
+        "ok": 3,
         "bad": 1,
         "total": 7
       },
@@ -50746,7 +50171,7 @@
         "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "good",
-        "peRatio": "good",
+        "peRatio": "ok",
         "revenueGrowth": "bad",
         "fcfYield": "good"
       }
@@ -51761,8 +51186,8 @@
       "changePct": 0.34594,
       "marketCap": 237146597439,
       "scores": {
-        "good": 2,
-        "ok": 4,
+        "good": 1,
+        "ok": 5,
         "bad": 1,
         "total": 7
       },
@@ -51773,7 +51198,7 @@
         "operatingMargin": "ok",
         "peRatio": "ok",
         "revenueGrowth": "bad",
-        "fcfYield": "good"
+        "fcfYield": "ok"
       }
     },
     {
@@ -53584,7 +53009,7 @@
       "price": 9,
       "change": 0.44,
       "changePct": 5.14019,
-      "marketCap": 3894926769,
+      "marketCap": 3894926589,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -53930,15 +53355,15 @@
       "ticker": "SQM",
       "name": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
       "sector": "Basic Materials",
-      "grade": "D",
+      "grade": "C",
       "price": 85.87,
       "change": 1.82,
       "changePct": 2.16538,
       "marketCap": 24527616130,
       "scores": {
         "good": 3,
-        "ok": 1,
-        "bad": 3,
+        "ok": 2,
+        "bad": 2,
         "total": 7
       },
       "ratioGrades": {
@@ -53948,7 +53373,7 @@
         "operatingMargin": "good",
         "peRatio": "bad",
         "revenueGrowth": "good",
-        "fcfYield": "bad"
+        "fcfYield": "ok"
       }
     },
     {
@@ -54334,7 +53759,7 @@
       "price": 212.73,
       "change": -2.67,
       "changePct": -1.23955,
-      "marketCap": 20878812374,
+      "marketCap": 20878813012,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -54355,19 +53780,19 @@
       "ticker": "STEP",
       "name": "StepStone Group Inc.",
       "sector": "Financial Services",
-      "grade": "D",
+      "grade": "C",
       "price": 49.31,
       "change": -0.78,
       "changePct": -1.5572,
       "marketCap": 6166877684,
       "scores": {
-        "good": 2,
+        "good": 3,
         "ok": 0,
-        "bad": 3,
+        "bad": 2,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "bad",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -54827,56 +54252,6 @@
       }
     },
     {
-      "ticker": "SUI",
-      "name": "Sun Communities, Inc.",
-      "sector": "Real Estate",
-      "grade": "B",
-      "price": 123.66,
-      "change": -1.34,
-      "changePct": -1.072,
-      "marketCap": 15238715411,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "SUM",
-      "name": "Summit Materials, Inc.",
-      "sector": "Basic Materials",
-      "grade": "B",
-      "price": 52.49,
-      "change": 0.04,
-      "changePct": 0.07626311,
-      "marketCap": 9228476860,
-      "scores": {
-        "good": 2,
-        "ok": 4,
-        "bad": 1,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "bad"
-      }
-    },
-    {
       "ticker": "SUN",
       "name": "Sunoco LP",
       "sector": "Energy",
@@ -55034,7 +54409,7 @@
       "price": 12.67,
       "change": 0.25,
       "changePct": 2.01288,
-      "marketCap": 2802636004,
+      "marketCap": 2802636030,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -55709,7 +55084,7 @@
       "price": 39.53,
       "change": -1.04,
       "changePct": -2.56347,
-      "marketCap": 7413905024,
+      "marketCap": 7413904866,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -55874,31 +55249,6 @@
         "peRatio": "good",
         "revenueGrowth": "bad",
         "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "TCBI",
-      "name": "Texas Capital Bancshares, Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 99.49,
-      "change": -0.24,
-      "changePct": -0.24065,
-      "marketCap": 4344821721,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": null
       }
     },
     {
@@ -57384,7 +56734,7 @@
       "price": 70.35,
       "change": 0.06,
       "changePct": 0.08536065,
-      "marketCap": 2437195129,
+      "marketCap": 2437195199,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -57459,7 +56809,7 @@
       "price": 26.03,
       "change": 1.075,
       "changePct": 4.30775,
-      "marketCap": 15097400052,
+      "marketCap": 15097400312,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -57684,7 +57034,7 @@
       "price": 37.71,
       "change": -0.15,
       "changePct": -0.3962,
-      "marketCap": 2834705273,
+      "marketCap": 2834705122,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -58284,7 +57634,7 @@
       "price": 21.56,
       "change": 0.41,
       "changePct": 1.93853,
-      "marketCap": 10135536479,
+      "marketCap": 10135535595,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -58634,7 +57984,7 @@
       "price": 28.305,
       "change": 0.315,
       "changePct": 1.1254,
-      "marketCap": 3593494845,
+      "marketCap": 3593495015,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -59261,14 +58611,14 @@
       "changePct": -1.96444,
       "marketCap": 10997819357,
       "scores": {
-        "good": 2,
-        "ok": 1,
+        "good": 1,
+        "ok": 2,
         "bad": 4,
         "total": 7
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "bad",
         "operatingMargin": "ok",
         "peRatio": "bad",
@@ -59384,7 +58734,7 @@
       "price": 508.85,
       "change": -11.3,
       "changePct": -2.17245,
-      "marketCap": 22255385702,
+      "marketCap": 22255384176,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -60359,7 +59709,7 @@
       "price": 13.35,
       "change": 0.71,
       "changePct": 5.61709,
-      "marketCap": 2160256029,
+      "marketCap": 2160255989,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -60449,56 +59799,6 @@
         "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "VGNT",
-      "name": "Versigent PLC",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 44.12,
-      "change": -0.18,
-      "changePct": -0.40632,
-      "marketCap": 3127828279,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": null,
-        "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "VGR",
-      "name": "Vector Group Ltd.",
-      "sector": "Consumer Defensive",
-      "grade": "C",
-      "price": 14.99,
-      "change": 0.03,
-      "changePct": 0.2005,
-      "marketCap": 2359066240,
-      "scores": {
-        "good": 5,
-        "ok": 0,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good"
       }
     },
     {
@@ -61034,7 +60334,7 @@
       "price": 45.5,
       "change": 0.5,
       "changePct": 1.11111,
-      "marketCap": 16334259578,
+      "marketCap": 16334260215,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -62884,7 +62184,7 @@
       "price": 56.77,
       "change": 0.48,
       "changePct": 0.85273,
-      "marketCap": 2812759460,
+      "marketCap": 2812759517,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -63009,7 +62309,7 @@
       "price": 24.52,
       "change": -1.2,
       "changePct": -4.66563,
-      "marketCap": 3008977489,
+      "marketCap": 3008977660,
       "scores": {
         "good": 2,
         "ok": 2,
