@@ -1467,7 +1467,7 @@
                         var p = data[0];
                         renderWatchlistPrice(w.ticker, p.price, p.change, info.label);
                     }).catch(function() {});
-            } else if (info.session === 'pre' || info.session === 'after') {
+            } else {
                 Promise.all([
                     fetch(API + '/aftermarket-trade?symbol=' + sym + '&apikey=' + API_KEY).then(function(r) { return r.json(); }),
                     fetch(API + '/quote?symbol=' + sym + '&apikey=' + API_KEY).then(function(r) { return r.json(); })
@@ -1478,14 +1478,6 @@
                     var change = q ? q.change : 0;
                     if (price) renderWatchlistPrice(w.ticker, price, change, info.label);
                 }).catch(function() {});
-            } else {
-                fetch(API + '/quote?symbol=' + sym + '&apikey=' + API_KEY)
-                    .then(function(r) { return r.json(); })
-                    .then(function(data) {
-                        if (!Array.isArray(data) || !data[0]) return;
-                        var p = data[0];
-                        renderWatchlistPrice(w.ticker, p.price, p.change, info.label);
-                    }).catch(function() {});
             }
         });
     }
