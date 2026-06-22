@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T11:37:28.504286Z",
+  "updated": "2026-06-22T13:16:01.062170Z",
   "stocks": [
     {
       "ticker": "A",
@@ -5527,6 +5527,31 @@
       }
     },
     {
+      "ticker": "ATHS",
+      "name": "Athene Holding Ltd. 7.250% Fixe",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 24.69,
+      "change": 0.07,
+      "changePct": 0.28432,
+      "marketCap": 5031822000,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": null
+      }
+    },
+    {
       "ticker": "ATI",
       "name": "ATI Inc.",
       "sector": "Industrials",
@@ -10159,7 +10184,7 @@
       "price": 11.31,
       "change": 0.21,
       "changePct": 1.89189,
-      "marketCap": 2091523782,
+      "marketCap": 2080943480,
       "scores": {
         "good": 1,
         "ok": 1,
@@ -10584,7 +10609,7 @@
       "price": 80.74,
       "change": 0.06,
       "changePct": 0.07436787,
-      "marketCap": 156212215749,
+      "marketCap": 156169207731,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -12559,7 +12584,7 @@
       "price": 37.78,
       "change": 0.83,
       "changePct": 2.24628,
-      "marketCap": 2701806249,
+      "marketCap": 2701806287,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -15509,7 +15534,7 @@
       "price": 20.32,
       "change": 0.59,
       "changePct": 2.99037,
-      "marketCap": 2340547740,
+      "marketCap": 2332656894,
       "scores": {
         "good": 1,
         "ok": 2,
@@ -19534,7 +19559,7 @@
       "price": 48.95,
       "change": -0.79,
       "changePct": -1.58826,
-      "marketCap": 71711055840,
+      "marketCap": 71606730712,
       "scores": {
         "good": 0,
         "ok": 5,
@@ -19730,19 +19755,19 @@
       "ticker": "ECCC",
       "name": "Eagle Point Credit Company Inc.",
       "sector": "Financial Services",
-      "grade": "B",
+      "grade": "C",
       "price": 24.99,
       "change": 0.14,
       "changePct": 0.56338,
       "marketCap": 3304882543,
       "scores": {
-        "good": 4,
+        "good": 3,
         "ok": 0,
-        "bad": 1,
+        "bad": 2,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "good",
+        "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -19755,19 +19780,19 @@
       "ticker": "ECCF",
       "name": "Eagle Point Credit Company Inc.",
       "sector": "Financial Services",
-      "grade": "B",
+      "grade": "C",
       "price": 24.99,
       "change": -0.01,
       "changePct": -0.04,
       "marketCap": 3270492305,
       "scores": {
-        "good": 4,
+        "good": 3,
         "ok": 0,
-        "bad": 1,
+        "bad": 2,
         "total": 5
       },
       "ratioGrades": {
-        "currentRatio": "good",
+        "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -25277,156 +25302,6 @@
       }
     },
     {
-      "ticker": "GBCI",
-      "name": "Glacier Bancorp, Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 48.43,
-      "change": 0.28,
-      "changePct": 0.58152,
-      "marketCap": 6302808733,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": null
-      }
-    },
-    {
-      "ticker": "GBDC",
-      "name": "Golub Capital BDC, Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 12.35,
-      "change": 0,
-      "changePct": 0,
-      "marketCap": 3217115485,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": null
-      }
-    },
-    {
-      "ticker": "GBTG",
-      "name": "Global Business Travel Group, Inc.",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 9.36,
-      "change": 0,
-      "changePct": 0,
-      "marketCap": 4880828160,
-      "scores": {
-        "good": 1,
-        "ok": 3,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "GCMG",
-      "name": "GCM Grosvenor Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 12.05,
-      "change": 0.4,
-      "changePct": 3.43348,
-      "marketCap": 2251904000,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": null
-      }
-    },
-    {
-      "ticker": "GD",
-      "name": "General Dynamics Corporation",
-      "sector": "Industrials",
-      "grade": "B",
-      "price": 350.01,
-      "change": -12.82,
-      "changePct": -3.53334,
-      "marketCap": 94653269752,
-      "scores": {
-        "good": 3,
-        "ok": 4,
-        "bad": 0,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "ok",
-        "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "GDDY",
-      "name": "GoDaddy Inc.",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 77.04,
-      "change": 0.93,
-      "changePct": 1.22192,
-      "marketCap": 10200854613,
-      "scores": {
-        "good": 4,
-        "ok": 0,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good"
-      }
-    },
-    {
       "ticker": "GDS",
       "name": "GDS Holdings Limited",
       "sector": "Technology",
@@ -25924,206 +25799,6 @@
         "peRatio": null,
         "revenueGrowth": null,
         "fcfYield": null
-      }
-    },
-    {
-      "ticker": "GIB",
-      "name": "CGI Inc.",
-      "sector": "Technology",
-      "grade": "C",
-      "price": 61.28,
-      "change": -4.79,
-      "changePct": -7.24989,
-      "marketCap": 13313465880,
-      "scores": {
-        "good": 5,
-        "ok": 0,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "GIL",
-      "name": "Gildan Activewear Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "C",
-      "price": 51.89,
-      "change": -1.24,
-      "changePct": -2.3339,
-      "marketCap": 7939551910,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "ok"
-      }
-    },
-    {
-      "ticker": "GILD",
-      "name": "Gilead Sciences, Inc.",
-      "sector": "Healthcare",
-      "grade": "B",
-      "price": 123.76,
-      "change": -1.69,
-      "changePct": -1.34715,
-      "marketCap": 153656687606,
-      "scores": {
-        "good": 5,
-        "ok": 1,
-        "bad": 1,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "GIS",
-      "name": "General Mills, Inc.",
-      "sector": "Consumer Defensive",
-      "grade": "C",
-      "price": 33.42,
-      "change": 0.06,
-      "changePct": 0.17986,
-      "marketCap": 17835619020,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good"
-      }
-    },
-    {
-      "ticker": "GKOS",
-      "name": "Glaukos Corporation",
-      "sector": "Healthcare",
-      "grade": "C",
-      "price": 130.68,
-      "change": 3.27,
-      "changePct": 2.56652,
-      "marketCap": 7675346052,
-      "scores": {
-        "good": 4,
-        "ok": 0,
-        "bad": 2,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad"
-      }
-    },
-    {
-      "ticker": "GL",
-      "name": "Globe Life Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 170.76,
-      "change": -0.49,
-      "changePct": -0.28613,
-      "marketCap": 13258626048,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null
-      }
-    },
-    {
-      "ticker": "GL-PD",
-      "name": "Globe Life Inc. 4.25% Junior Su",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 15.55,
-      "change": 0,
-      "changePct": 0,
-      "marketCap": 13258626034,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null
-      }
-    },
-    {
-      "ticker": "GLBE",
-      "name": "Global-e Online Ltd.",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 32.84,
-      "change": 0.86,
-      "changePct": 2.68918,
-      "marketCap": 5564245400,
-      "scores": {
-        "good": 5,
-        "ok": 1,
-        "bad": 1,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "good"
       }
     },
     {
@@ -32609,7 +32284,7 @@
       "price": 11,
       "change": -0.45,
       "changePct": -3.93013,
-      "marketCap": 2419100156,
+      "marketCap": 2419100200,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -34761,8 +34436,8 @@
       "changePct": 4.20918,
       "marketCap": 3972173493,
       "scores": {
-        "good": 2,
-        "ok": 4,
+        "good": 3,
+        "ok": 3,
         "bad": 1,
         "total": 7
       },
@@ -34771,7 +34446,7 @@
         "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "bad",
-        "peRatio": "ok",
+        "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "ok"
       }
@@ -37059,7 +36734,7 @@
       "price": 79.34,
       "change": 1.2,
       "changePct": 1.53571,
-      "marketCap": 101863433044,
+      "marketCap": 101863832600,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -40884,7 +40559,7 @@
       "price": 8.97,
       "change": -0.13,
       "changePct": -1.42857,
-      "marketCap": 26215655416,
+      "marketCap": 26219048955,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -44555,23 +44230,23 @@
       "ticker": "PAYP",
       "name": "PayPay Corporation",
       "sector": "Technology",
-      "grade": "D",
+      "grade": "B",
       "price": 12.37,
       "change": -0.43,
       "changePct": -3.35938,
       "marketCap": 8372925628,
       "scores": {
-        "good": 2,
-        "ok": 1,
-        "bad": 3,
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
         "total": 6
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "bad",
+        "debtToEquity": "ok",
         "assetTurnover": "bad",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
+        "operatingMargin": "good",
+        "peRatio": "ok",
         "revenueGrowth": null,
         "fcfYield": "good"
       }
@@ -52984,7 +52659,7 @@
       "price": 30.66,
       "change": 2.88,
       "changePct": 10.36717,
-      "marketCap": 18439490658,
+      "marketCap": 19833126180,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -53309,7 +52984,7 @@
       "price": 30.08,
       "change": 0.01,
       "changePct": 0.03325574,
-      "marketCap": 12742585315,
+      "marketCap": 12742579840,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -55909,7 +55584,7 @@
       "price": 15.63,
       "change": 0.21,
       "changePct": 1.36187,
-      "marketCap": 49385697274,
+      "marketCap": 49386673680,
       "scores": {
         "good": 1,
         "ok": 4,
@@ -59609,7 +59284,7 @@
       "price": 4.8,
       "change": 0.1,
       "changePct": 2.12766,
-      "marketCap": 5140534272,
+      "marketCap": 5133058560,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -63109,7 +62784,7 @@
       "price": 46.7,
       "change": 1.28,
       "changePct": 2.81814,
-      "marketCap": 2479852846,
+      "marketCap": 2450128529,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -64149,6 +63824,181 @@
         "peRatio": null,
         "revenueGrowth": "bad",
         "fcfYield": "bad"
+      }
+    },
+    {
+      "ticker": "XM",
+      "name": "Qualtrics International Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 18.15,
+      "change": 0.01,
+      "changePct": 0.0551,
+      "marketCap": 11006014256,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad"
+      }
+    },
+    {
+      "ticker": "XMTR",
+      "name": "Xometry, Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 93.28,
+      "change": 4.42,
+      "changePct": 4.97412,
+      "marketCap": 5015712240,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad"
+      }
+    },
+    {
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "sector": "Energy",
+      "grade": "D",
+      "price": 137.81,
+      "change": -2.93,
+      "changePct": -2.08185,
+      "marketCap": 571215559500,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad"
+      }
+    },
+    {
+      "ticker": "XP",
+      "name": "XP Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 15.3,
+      "change": -0.12,
+      "changePct": -0.77821,
+      "marketCap": 8003934074,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": null
+      }
+    },
+    {
+      "ticker": "XPEV",
+      "name": "XPeng Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 13.21,
+      "change": -0.22,
+      "changePct": -1.63812,
+      "marketCap": 12549597595,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad"
+      }
+    },
+    {
+      "ticker": "XPO",
+      "name": "XPO Logistics, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 199.5,
+      "change": -2.29,
+      "changePct": -1.13484,
+      "marketCap": 23423291210,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 5,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad"
+      }
+    },
+    {
+      "ticker": "XRAY",
+      "name": "DENTSPLY SIRONA Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 10.33,
+      "change": 0.3,
+      "changePct": 2.99103,
+      "marketCap": 2069374635,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "good"
       }
     },
     {
