@@ -1256,11 +1256,11 @@
 
         var capFilters = [
             { key: 'all', label: 'All Caps' },
-            { key: 'mega', label: 'Mega $200B+' },
-            { key: 'large', label: 'Large $10B–200B' },
-            { key: 'mid', label: 'Mid $2B–10B' },
-            { key: 'small', label: 'Small $300M–2B' },
-            { key: 'micro', label: 'Micro <$300M' }
+            { key: 'cap2_5', label: '$2B–5B' },
+            { key: 'cap5_10', label: '$5B–10B' },
+            { key: 'cap10_25', label: '$10B–25B' },
+            { key: 'cap25_500', label: '$25B–500B' },
+            { key: 'cap500', label: '$500B+' }
         ];
         var capHtml = document.getElementById('capPills');
         capHtml.innerHTML = capFilters.map(function(cf) {
@@ -1283,11 +1283,11 @@
         if (screenerCap !== 'all') {
             filtered = filtered.filter(function(s) {
                 var mc = s.marketCap || 0;
-                if (screenerCap === 'mega') return mc >= 200e9;
-                if (screenerCap === 'large') return mc >= 10e9 && mc < 200e9;
-                if (screenerCap === 'mid') return mc >= 2e9 && mc < 10e9;
-                if (screenerCap === 'small') return mc >= 300e6 && mc < 2e9;
-                if (screenerCap === 'micro') return mc < 300e6;
+                if (screenerCap === 'cap2_5') return mc >= 2e9 && mc < 5e9;
+                if (screenerCap === 'cap5_10') return mc >= 5e9 && mc < 10e9;
+                if (screenerCap === 'cap10_25') return mc >= 10e9 && mc < 25e9;
+                if (screenerCap === 'cap25_500') return mc >= 25e9 && mc < 500e9;
+                if (screenerCap === 'cap500') return mc >= 500e9;
                 return true;
             });
         }
