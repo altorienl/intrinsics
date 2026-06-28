@@ -1005,6 +1005,7 @@
         </div>
         <div class="grade-pills" id="gradePills"></div>
         <div class="grade-pills" id="ratioPills" style="margin-bottom:12px;"></div>
+        <div class="grade-pills" id="capPills" style="margin-bottom:12px;"></div>
         <div class="screener-count" id="screenerCount"></div>
         <div class="screener-grid" id="screenerGrid"></div>
         <div class="screener-loading hidden" id="screenerLoading">Loading grades...</div>
@@ -1201,6 +1202,7 @@
     var screenerData = null;
     var screenerGrade = 'All';
     var screenerRatio = 'all';
+    var screenerCap = 'all';
 
     function loadScreener() {
         if (screenerData) { renderScreener(); return; }
@@ -1220,6 +1222,7 @@
 
     function setScreenerGrade(g) { screenerGrade = g; renderScreener(); }
     function setScreenerRatio(r) { screenerRatio = r; renderScreener(); }
+    function setScreenerCap(c) { screenerCap = c; renderScreener(); }
 
     function renderScreener() {
         if (!screenerData) return;
@@ -1251,6 +1254,19 @@
             return '<button class="grade-pill' + (screenerRatio === rf.key ? ' active' : '') + '" onclick="setScreenerRatio(\'' + rf.key + '\')">' + rf.label + '</button>';
         }).join('');
 
+        var capFilters = [
+            { key: 'all', label: 'All Caps' },
+            { key: 'mega', label: 'Mega $200B+' },
+            { key: 'large', label: 'Large $10B–200B' },
+            { key: 'mid', label: 'Mid $2B–10B' },
+            { key: 'small', label: 'Small $300M–2B' },
+            { key: 'micro', label: 'Micro <$300M' }
+        ];
+        var capHtml = document.getElementById('capPills');
+        capHtml.innerHTML = capFilters.map(function(cf) {
+            return '<button class="grade-pill' + (screenerCap === cf.key ? ' active' : '') + '" onclick="setScreenerCap(\'' + cf.key + '\')">' + cf.label + '</button>';
+        }).join('');
+
         var stocks = screenerData.stocks || [];
         var filtered = stocks;
 
@@ -1264,11 +1280,27 @@
             });
         }
 
+        if (screenerCap !== 'all') {
+            filtered = filtered.filter(function(s) {
+                var mc = s.marketCap || 0;
+                if (screenerCap === 'mega') return mc >= 200e9;
+                if (screenerCap === 'large') return mc >= 10e9 && mc < 200e9;
+                if (screenerCap === 'mid') return mc >= 2e9 && mc < 10e9;
+                if (screenerCap === 'small') return mc >= 300e6 && mc < 2e9;
+                if (screenerCap === 'micro') return mc < 300e6;
+                return true;
+            });
+        }
+
         var countLabel = filtered.length + ' stock' + (filtered.length !== 1 ? 's' : '') + ' screened';
         if (screenerGrade !== 'All') countLabel += ' · rated ' + screenerGrade;
         if (screenerRatio !== 'all') {
             var rl = ratioFilters.find(function(r) { return r.key === screenerRatio; });
             countLabel += (screenerGrade !== 'All' ? ' with' : ' with') + ' healthy ' + (rl ? rl.label : screenerRatio);
+        }
+        if (screenerCap !== 'all') {
+            var cl = capFilters.find(function(c) { return c.key === screenerCap; });
+            countLabel += ' · ' + (cl ? cl.label : screenerCap);
         }
         document.getElementById('screenerCount').textContent = countLabel;
 
