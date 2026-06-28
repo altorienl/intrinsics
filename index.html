@@ -1006,6 +1006,7 @@
         <div class="grade-pills" id="gradePills"></div>
         <div class="grade-pills" id="ratioPills" style="margin-bottom:12px;"></div>
         <div class="grade-pills" id="capPills" style="margin-bottom:12px;"></div>
+        <div class="grade-pills" id="sectorPills" style="margin-bottom:12px;"></div>
         <div class="screener-count" id="screenerCount"></div>
         <div class="screener-grid" id="screenerGrid"></div>
         <div class="screener-loading hidden" id="screenerLoading">Loading grades...</div>
@@ -1203,6 +1204,7 @@
     var screenerGrade = 'All';
     var screenerRatio = 'all';
     var screenerCap = 'all';
+    var screenerSector = 'All';
 
     function loadScreener() {
         if (screenerData) { renderScreener(); return; }
@@ -1223,6 +1225,7 @@
     function setScreenerGrade(g) { screenerGrade = g; renderScreener(); }
     function setScreenerRatio(r) { screenerRatio = r; renderScreener(); }
     function setScreenerCap(c) { screenerCap = c; renderScreener(); }
+    function setScreenerSector(s) { screenerSector = s; renderScreener(); }
 
     function renderScreener() {
         if (!screenerData) return;
@@ -1267,8 +1270,23 @@
             return '<button class="grade-pill' + (screenerCap === cf.key ? ' active' : '') + '" onclick="setScreenerCap(\'' + cf.key + '\')">' + cf.label + '</button>';
         }).join('');
 
+        var sectorList = ['All'];
+        var sectorSet = {};
+        (screenerData.stocks || []).forEach(function(s) {
+            if (s.sector && !sectorSet[s.sector]) { sectorSet[s.sector] = true; sectorList.push(s.sector); }
+        });
+        sectorList.sort(function(a, b) { return a === 'All' ? -1 : b === 'All' ? 1 : a.localeCompare(b); });
+        var sectorHtml = document.getElementById('sectorPills');
+        sectorHtml.innerHTML = sectorList.map(function(s) {
+            return '<button class="grade-pill' + (screenerSector === s ? ' active' : '') + '" onclick="setScreenerSector(\'' + s.replace(/'/g, "\\'") + '\')">' + s + '</button>';
+        }).join('');
+
         var stocks = screenerData.stocks || [];
         var filtered = stocks;
+
+        if (screenerSector !== 'All') {
+            filtered = filtered.filter(function(s) { return s.sector === screenerSector; });
+        }
 
         if (screenerGrade !== 'All') {
             filtered = filtered.filter(function(s) { return s.grade === screenerGrade; });
@@ -1293,6 +1311,7 @@
         }
 
         var countLabel = filtered.length + ' stock' + (filtered.length !== 1 ? 's' : '') + ' screened';
+        if (screenerSector !== 'All') countLabel += ' · ' + screenerSector;
         if (screenerGrade !== 'All') countLabel += ' · rated ' + screenerGrade;
         if (screenerRatio !== 'all') {
             var rl = ratioFilters.find(function(r) { return r.key === screenerRatio; });
