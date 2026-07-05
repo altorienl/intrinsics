@@ -464,7 +464,7 @@
         .outlook-bar { position: relative; height: 8px; background: #1a2a1a; border-radius: 4px; }
         .outlook-bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, #ff3344, #ffaa00, #00ff41); }
         .outlook-bar-marker { position: absolute; top: -4px; width: 3px; height: 16px; background: #fff; border-radius: 2px; transform: translateX(-50%); z-index: 2; }
-        .outlook-bar-label { position: absolute; top: 20px; font-size: 10px; color: #8a9a8a; font-family: 'JetBrains Mono', monospace; white-space: nowrap; transform: translateX(-50%); }
+        .outlook-bar-label { position: absolute; top: 22px; left: 50%; font-size: 10px; color: #8a9a8a; font-family: 'JetBrains Mono', monospace; white-space: nowrap; transform: translateX(-50%); }
         .outlook-estimates { width: 100%; border-collapse: collapse; font-family: 'JetBrains Mono', monospace; font-size: 12px; }
         .outlook-estimates th { text-align: center; color: #4a6a4a; font-weight: 600; padding: 6px 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
         .outlook-estimates th:first-child { text-align: left; }
@@ -2469,9 +2469,6 @@
         if (markerEl && pt.targetLow && pt.targetHigh && pt.targetHigh > pt.targetLow) {
             var pricePct = Math.max(0, Math.min(100, (price - pt.targetLow) / (pt.targetHigh - pt.targetLow) * 100));
             markerEl.style.left = pricePct + '%';
-            markerEl.title = 'Current: $' + price.toFixed(2);
-            var labelEl2 = document.getElementById('outlookMarkerLabel');
-            if (labelEl2) { labelEl2.style.left = pricePct + '%'; }
         }
     }
 
@@ -2514,7 +2511,7 @@
                     var pricePct = Math.max(0, Math.min(100, (curPrice - pt.targetLow) / range * 100));
                     html += '<div class="outlook-bar-wrap">';
                     html += '<div class="outlook-bar-labels"><span>$' + pt.targetLow.toFixed(0) + ' Low</span><span>$' + pt.targetMedian.toFixed(0) + ' Median</span><span>$' + pt.targetHigh.toFixed(0) + ' High</span></div>';
-                    html += '<div class="outlook-bar"><div class="outlook-bar-fill" style="width:100%"></div><div class="outlook-bar-marker" id="outlookMarker" style="left:' + pricePct + '%"></div><div class="outlook-bar-label" id="outlookMarkerLabel" style="left:' + pricePct + '%">▲ Current Price</div></div>';
+                    html += '<div class="outlook-bar"><div class="outlook-bar-fill" style="width:100%"></div><div class="outlook-bar-marker" id="outlookMarker" style="left:' + pricePct + '%"><div class="outlook-bar-label">▲ Current Price</div></div></div>';
                     html += '</div>';
                 }
             }
