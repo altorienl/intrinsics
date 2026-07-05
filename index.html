@@ -1961,7 +1961,7 @@
         var debtVal = (bs.longTermDebt || 0) + (bs.shortTermDebt || 0);
         var equity = bs.totalStockholdersEquity || 0;
         var deApi = rt.debtToEquityRatioTTM;
-        if (typeof deApi === 'number') {
+        if (typeof deApi === 'number' && deApi !== 0) {
             ratios.debtToEquity = deApi < 0 ? {
                 value: Math.abs(deApi),
                 components: 'Negative equity — total liabilities exceed shareholders\' equity',
