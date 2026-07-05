@@ -2458,10 +2458,8 @@
     function updateOutlookPrice(price) {
         if (!price || !outlookTarget) return;
         var pt = outlookTarget;
-        var el = document.getElementById('outlookPriceVal');
         var upEl = document.getElementById('outlookUpside');
         var markerEl = document.getElementById('outlookMarker');
-        if (el) el.textContent = '$' + price.toFixed(2);
         if (upEl && pt.targetConsensus) {
             var upside = ((pt.targetConsensus - price) / price * 100);
             upEl.style.color = upside >= 0 ? '#00ff41' : '#ff3344';
@@ -2471,6 +2469,8 @@
             var pricePct = Math.max(0, Math.min(100, (price - pt.targetLow) / (pt.targetHigh - pt.targetLow) * 100));
             markerEl.style.left = pricePct + '%';
             markerEl.title = 'Current: $' + price.toFixed(2);
+            var labelEl2 = document.getElementById('outlookMarkerLabel');
+            if (labelEl2) { labelEl2.style.left = pricePct + '%'; labelEl2.textContent = '▲ $' + price.toFixed(0); }
         }
     }
 
@@ -2505,7 +2505,6 @@
                 var upsideSign = upside >= 0 ? '+' : '';
                 html += '<div class="outlook-target">';
                 html += '<div><div class="outlook-target-label">Consensus Target</div><div class="outlook-target-price">$' + pt.targetConsensus.toFixed(0) + '</div></div>';
-                html += '<div><div class="outlook-target-label">Current Price</div><div id="outlookPriceVal" style="font-size:20px;color:#8a9a8a;font-family:\'JetBrains Mono\',monospace;">$' + curPrice.toFixed(2) + '</div></div>';
                 html += '<div><div class="outlook-target-label">Implied Move</div><div class="outlook-target-upside" id="outlookUpside" style="color:' + upsideColor + '">' + upsideSign + upside.toFixed(1) + '%</div></div>';
                 html += '</div>';
 
@@ -2514,8 +2513,7 @@
                     var pricePct = Math.max(0, Math.min(100, (curPrice - pt.targetLow) / range * 100));
                     html += '<div class="outlook-bar-wrap">';
                     html += '<div class="outlook-bar-labels"><span>$' + pt.targetLow.toFixed(0) + ' Low</span><span>$' + pt.targetMedian.toFixed(0) + ' Median</span><span>$' + pt.targetHigh.toFixed(0) + ' High</span></div>';
-                    html += '<div class="outlook-bar"><div class="outlook-bar-fill" style="width:100%"></div><div class="outlook-bar-marker" id="outlookMarker" style="left:' + pricePct + '%" title="Current: $' + curPrice.toFixed(2) + '"></div></div>';
-                    html += '<div style="font-size:10px;color:#3a5a3a;margin-top:4px;font-family:\'JetBrains Mono\',monospace;">▲ Current price</div>';
+                    html += '<div class="outlook-bar"><div class="outlook-bar-fill" style="width:100%"></div><div class="outlook-bar-marker" id="outlookMarker" style="left:' + pricePct + '%" title="Current: $' + curPrice.toFixed(2) + '"></div><div id="outlookMarkerLabel" style="position:absolute;top:18px;left:' + pricePct + '%;transform:translateX(-50%);font-size:10px;color:#8a9a8a;font-family:\'JetBrains Mono\',monospace;white-space:nowrap;">▲ $' + curPrice.toFixed(0) + '</div></div>';
                     html += '</div>';
                 }
             }
