@@ -459,10 +459,11 @@
         .outlook-target-price { font-size: 28px; font-weight: 700; color: #00ff41; font-family: 'JetBrains Mono', monospace; }
         .outlook-target-label { font-size: 11px; color: #4a6a4a; text-transform: uppercase; letter-spacing: 0.5px; }
         .outlook-target-upside { font-size: 14px; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
-        .outlook-bar-wrap { margin-bottom: 20px; padding-top: 24px; padding-bottom: 22px; }
-        .outlook-bar { position: relative; height: 8px; background: #1a2a1a; border-radius: 4px; overflow: visible; }
-        .outlook-bar-marker { position: absolute; top: -4px; width: 3px; height: 16px; background: #fff; border-radius: 2px; transform: translateX(-50%); z-index: 2; }
-        .outlook-bar-label { position: absolute; top: 22px; left: 50%; font-size: 10px; color: #8a9a8a; font-family: 'JetBrains Mono', monospace; white-space: nowrap; transform: translateX(-50%); }
+        .outlook-range { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding: 12px 16px; background: #0a140a; border-radius: 8px; font-family: 'JetBrains Mono', monospace; }
+        .outlook-range-item { text-align: center; }
+        .outlook-range-val { font-size: 14px; color: #8a9a8a; font-weight: 600; }
+        .outlook-range-val.current { color: #fff; }
+        .outlook-range-lbl { font-size: 9px; color: #3a5a3a; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
         .outlook-estimates { width: 100%; border-collapse: collapse; font-family: 'JetBrains Mono', monospace; font-size: 12px; }
         .outlook-estimates th { text-align: center; color: #4a6a4a; font-weight: 600; padding: 6px 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
         .outlook-estimates th:first-child { text-align: left; }
@@ -2458,17 +2459,13 @@
         if (!price || !outlookTarget) return;
         var pt = outlookTarget;
         var upEl = document.getElementById('outlookUpside');
-        var markerEl = document.getElementById('outlookMarker');
+        var priceEl = document.getElementById('outlookPriceVal');
         if (upEl && pt.targetConsensus) {
             var upside = ((pt.targetConsensus - price) / price * 100);
             upEl.style.color = upside >= 0 ? '#00ff41' : '#ff3344';
             upEl.textContent = (upside >= 0 ? '+' : '') + upside.toFixed(1) + '%';
         }
-        if (markerEl && pt.targetLow && pt.targetHigh && pt.targetHigh > pt.targetLow) {
-            var barMin = Math.min(price, pt.targetLow) * 0.97;
-            var barMax = Math.max(price, pt.targetHigh) * 1.03;
-            markerEl.style.left = ((price - barMin) / (barMax - barMin) * 100) + '%';
-        }
+        if (priceEl) priceEl.textContent = '$' + price.toFixed(0);
     }
 
     async function fetchOutlook(ticker, estimates, price) {
@@ -2505,22 +2502,15 @@
                 html += '<div><div class="outlook-target-label">Implied Move</div><div class="outlook-target-upside" id="outlookUpside" style="color:' + upsideColor + '">' + upsideSign + upside.toFixed(1) + '%</div></div>';
                 html += '</div>';
 
-                if (pt.targetLow && pt.targetHigh && pt.targetHigh > pt.targetLow) {
-                    var barMin = Math.min(curPrice, pt.targetLow) * 0.97;
-                    var barMax = Math.max(curPrice, pt.targetHigh) * 1.03;
-                    var barRange = barMax - barMin;
-                    var pricePct = ((curPrice - barMin) / barRange * 100);
-                    var lowPct = ((pt.targetLow - barMin) / barRange * 100);
-                    var medPct = ((pt.targetMedian - barMin) / barRange * 100);
-                    var highPct = ((pt.targetHigh - barMin) / barRange * 100);
-                    html += '<div class="outlook-bar-wrap">';
-                    html += '<div class="outlook-bar" style="overflow:visible">';
-                    html += '<div class="outlook-bar-fill" style="position:absolute;left:' + lowPct + '%;width:' + (highPct - lowPct) + '%;height:100%;border-radius:4px;background:linear-gradient(90deg,#ff3344,#ffaa00,#00ff41)"></div>';
-                    html += '<div class="outlook-bar-marker" id="outlookMarker" style="left:' + pricePct + '%"><div class="outlook-bar-label">▲ Current Price</div></div>';
-                    html += '<div style="position:absolute;top:-18px;left:' + lowPct + '%;transform:translateX(-50%);font-size:10px;color:#4a6a4a;font-family:\'JetBrains Mono\',monospace;white-space:nowrap">$' + pt.targetLow.toFixed(0) + ' Low</div>';
-                    html += '<div style="position:absolute;top:-18px;left:' + medPct + '%;transform:translateX(-50%);font-size:10px;color:#4a6a4a;font-family:\'JetBrains Mono\',monospace;white-space:nowrap">$' + pt.targetMedian.toFixed(0) + ' Median</div>';
-                    html += '<div style="position:absolute;top:-18px;left:' + highPct + '%;transform:translateX(-50%);font-size:10px;color:#4a6a4a;font-family:\'JetBrains Mono\',monospace;white-space:nowrap">$' + pt.targetHigh.toFixed(0) + ' High</div>';
-                    html += '</div>';
+                if (pt.targetLow && pt.targetHigh) {
+                    html += '<div class="outlook-range">';
+                    html += '<div class="outlook-range-item"><div class="outlook-range-val current" id="outlookPriceVal">$' + curPrice.toFixed(0) + '</div><div class="outlook-range-lbl">Current</div></div>';
+                    html += '<div style="color:#2a4a2a">→</div>';
+                    html += '<div class="outlook-range-item"><div class="outlook-range-val">$' + pt.targetLow.toFixed(0) + '</div><div class="outlook-range-lbl">Low</div></div>';
+                    html += '<div style="color:#2a4a2a">→</div>';
+                    html += '<div class="outlook-range-item"><div class="outlook-range-val" style="color:#00ff41">$' + pt.targetMedian.toFixed(0) + '</div><div class="outlook-range-lbl">Median</div></div>';
+                    html += '<div style="color:#2a4a2a">→</div>';
+                    html += '<div class="outlook-range-item"><div class="outlook-range-val">$' + pt.targetHigh.toFixed(0) + '</div><div class="outlook-range-lbl">High</div></div>';
                     html += '</div>';
                 }
             }
