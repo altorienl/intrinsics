@@ -453,6 +453,23 @@
         .earnings-table td:first-child { text-align: left; color: #5a7a5a; font-size: 11px; }
         .earnings-table .surprise-pos { color: #00ff41; }
         .earnings-table .surprise-neg { color: #ff3344; }
+        .outlook-card { background: #111a11; border: 1px solid #1a2a1a; border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; }
+        .outlook-card h3 { font-size: 16px; margin-bottom: 16px; color: #c0d0c0; }
+        .outlook-target { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+        .outlook-target-price { font-size: 28px; font-weight: 700; color: #00ff41; font-family: 'JetBrains Mono', monospace; }
+        .outlook-target-label { font-size: 11px; color: #4a6a4a; text-transform: uppercase; letter-spacing: 0.5px; }
+        .outlook-target-upside { font-size: 14px; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+        .outlook-bar-wrap { margin-bottom: 20px; }
+        .outlook-bar-labels { display: flex; justify-content: space-between; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #4a6a4a; margin-bottom: 6px; }
+        .outlook-bar { position: relative; height: 8px; background: #1a2a1a; border-radius: 4px; }
+        .outlook-bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, #ff3344, #ffaa00, #00ff41); }
+        .outlook-bar-marker { position: absolute; top: -4px; width: 3px; height: 16px; background: #fff; border-radius: 2px; transform: translateX(-50%); }
+        .outlook-estimates { width: 100%; border-collapse: collapse; font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+        .outlook-estimates th { text-align: center; color: #4a6a4a; font-weight: 600; padding: 6px 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .outlook-estimates th:first-child { text-align: left; }
+        .outlook-estimates td { padding: 10px 8px; text-align: center; color: #8a9a8a; border-top: 1px solid #1a2a1a; }
+        .outlook-estimates td:first-child { text-align: left; color: #5a7a5a; font-size: 11px; }
+        .outlook-estimates .est-growth { color: #00ff41; font-size: 11px; }
         .summary-card {
             background: #111a11;
             border: 1px solid #1a2e1a;
@@ -982,6 +999,7 @@
             <div class="earnings-card hidden" id="earningsCard"></div>
             <div class="summary-card" id="summaryCard"></div>
             <div class="ratio-grid" id="ratioGrid"></div>
+            <div class="outlook-card hidden" id="outlookCard"></div>
             <div class="filings-card hidden" id="filingsCard">
                 <div class="filings-header" onclick="var el=document.getElementById('filingsList');var arr=document.getElementById('filingsArrow');if(el.style.display==='none'){el.style.display='';arr.textContent='▾';}else{el.style.display='none';arr.textContent='▸';}">
                     <h3>SEC Filings <span id="filingsArrow" style="font-size:12px">▾</span></h3>
@@ -1927,6 +1945,7 @@
             fetchEarnings(ticker, isArr);
             fetchFilings(prof.cik);
             fetchPeers(ticker);
+            fetchOutlook(ticker, estimates, prof.price);
             startPricePolling(ticker);
         } catch (err) {
             showError(err.message || 'Failed to fetch data');
@@ -2423,6 +2442,74 @@
                 list.innerHTML = rows.join('');
                 card.classList.remove('hidden');
             }
+        } catch(e) {}
+    }
+
+    // ---- Analyst Outlook ----
+    async function fetchOutlook(ticker, estimates, price) {
+        var card = document.getElementById('outlookCard');
+        card.classList.add('hidden');
+        card.innerHTML = '';
+        try {
+            var sym = encodeURIComponent(ticker);
+            var ptResp = await fetch(API + '/price-target-consensus?symbol=' + sym + '&apikey=' + API_KEY);
+            var ptData = await ptResp.json();
+            var pt = Array.isArray(ptData) && ptData.length > 0 ? ptData[0] : null;
+
+            var now = new Date();
+            var futureEst = (estimates || []).filter(function(e) {
+                return e.date && new Date(e.date) > now && e.epsAvg;
+            }).sort(function(a, b) { return new Date(a.date) - new Date(b.date); }).slice(0, 3);
+
+            if (!pt && futureEst.length === 0) return;
+
+            var html = '<h3>Analyst Outlook</h3>';
+
+            if (pt && pt.targetConsensus && price) {
+                var upside = ((pt.targetConsensus - price) / price * 100);
+                var upsideColor = upside >= 0 ? '#00ff41' : '#ff3344';
+                var upsideSign = upside >= 0 ? '+' : '';
+                html += '<div class="outlook-target">';
+                html += '<div><div class="outlook-target-label">Consensus Target</div><div class="outlook-target-price">$' + pt.targetConsensus.toFixed(0) + '</div></div>';
+                html += '<div><div class="outlook-target-label">Current Price</div><div style="font-size:20px;color:#8a9a8a;font-family:\'JetBrains Mono\',monospace;">$' + price.toFixed(2) + '</div></div>';
+                html += '<div><div class="outlook-target-label">Implied Move</div><div class="outlook-target-upside" style="color:' + upsideColor + '">' + upsideSign + upside.toFixed(1) + '%</div></div>';
+                html += '</div>';
+
+                if (pt.targetLow && pt.targetHigh && pt.targetHigh > pt.targetLow) {
+                    var range = pt.targetHigh - pt.targetLow;
+                    var pricePct = Math.max(0, Math.min(100, (price - pt.targetLow) / range * 100));
+                    html += '<div class="outlook-bar-wrap">';
+                    html += '<div class="outlook-bar-labels"><span>$' + pt.targetLow.toFixed(0) + ' Low</span><span>$' + pt.targetMedian.toFixed(0) + ' Median</span><span>$' + pt.targetHigh.toFixed(0) + ' High</span></div>';
+                    html += '<div class="outlook-bar"><div class="outlook-bar-fill" style="width:100%"></div><div class="outlook-bar-marker" style="left:' + pricePct + '%" title="Current: $' + price.toFixed(2) + '"></div></div>';
+                    html += '<div style="font-size:10px;color:#3a5a3a;margin-top:4px;font-family:\'JetBrains Mono\',monospace;">▲ Current price</div>';
+                    html += '</div>';
+                }
+            }
+
+            if (futureEst.length > 0) {
+                html += '<table class="outlook-estimates"><thead><tr><th>Fiscal Year</th><th>EPS Est.</th><th>Revenue Est.</th><th>Analysts</th></tr></thead><tbody>';
+                var prevEps = null;
+                for (var i = 0; i < futureEst.length; i++) {
+                    var e = futureEst[i];
+                    var yr = e.date.substring(0, 4);
+                    var epsGrowth = '';
+                    if (prevEps && prevEps > 0) {
+                        var g = ((e.epsAvg - prevEps) / prevEps * 100);
+                        epsGrowth = ' <span class="est-growth">' + (g >= 0 ? '+' : '') + g.toFixed(0) + '%</span>';
+                    }
+                    html += '<tr>';
+                    html += '<td>FY ' + yr + '</td>';
+                    html += '<td>$' + e.epsAvg.toFixed(2) + epsGrowth + '</td>';
+                    html += '<td>' + (e.revenueAvg ? '$' + fmt(e.revenueAvg) : '—') + '</td>';
+                    html += '<td style="color:#3a5a3a">' + (e.numAnalystsEps || e.numAnalystsRevenue || '—') + '</td>';
+                    html += '</tr>';
+                    prevEps = e.epsAvg;
+                }
+                html += '</tbody></table>';
+            }
+
+            card.innerHTML = html;
+            card.classList.remove('hidden');
         } catch(e) {}
     }
 
