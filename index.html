@@ -11,11 +11,11 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://intrinsics.app">
     <meta property="og:title" content="Intrinsics — Stock Financial Health Analyzer">
-    <meta property="og:description" content="9 key financial ratios, sector benchmarks, price charts, and plain-English grades for any US stock. Built for curious investors.">
+    <meta property="og:description" content="8 key financial ratios, sector benchmarks, price charts, and plain-English grades for any US stock. Built for curious investors.">
     <meta property="og:image" content="https://intrinsics.app/og.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Intrinsics — Stock Financial Health Analyzer">
-    <meta name="twitter:description" content="9 key financial ratios, sector benchmarks, price charts, and plain-English grades for any US stock.">
+    <meta name="twitter:description" content="8 key financial ratios, sector benchmarks, price charts, and plain-English grades for any US stock.">
     <meta name="twitter:image" content="https://intrinsics.app/og.png">
     <meta name="theme-color" content="#0a0f0a">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -1269,8 +1269,7 @@
             { key: 'peRatio', label: 'P/E' },
             { key: 'revenueGrowth', label: 'Growth' },
             { key: 'fcfYield', label: 'FCF' },
-            { key: 'evToSales', label: 'EV/Rev' },
-            { key: 'evToFCF', label: 'EV/FCF' }
+            { key: 'evToSales', label: 'EV/Rev' }
         ];
         var ratioHtml = document.getElementById('ratioPills');
         ratioHtml.innerHTML = ratioFilters.map(function(rf) {
@@ -1621,18 +1620,18 @@
 
     // ---- Sector Benchmarks ----
     var SECTOR_BENCHMARKS = {
-        'Technology': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.6, ok: 0.3 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 25, ok: 40 }, revenueGrowth: { good: 0.20, ok: 0.10 }, fcfYield: { good: 0.04, ok: 0.02 }, evToSales: { good: 5, ok: 10 }, evToFCF: { good: 25, ok: 40 }, label: 'Technology' },
-        'Healthcare': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.6, ok: 1.5 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.15, ok: 0.07 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 4, ok: 8 }, evToFCF: { good: 20, ok: 35 }, label: 'Healthcare' },
+        'Technology': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.6, ok: 0.3 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 25, ok: 40 }, revenueGrowth: { good: 0.20, ok: 0.10 }, fcfYield: { good: 0.04, ok: 0.02 }, evToSales: { good: 5, ok: 10 }, label: 'Technology' },
+        'Healthcare': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.6, ok: 1.5 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.15, ok: 0.07 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 4, ok: 8 }, label: 'Healthcare' },
         'Financial Services': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 2.0, ok: 5.0 }, assetTurnover: { good: 0.08, ok: 0.03 }, operatingMargin: { good: 0.30, ok: 0.15 }, peRatio: { good: 15, ok: 25 }, revenueGrowth: { good: 0.10, ok: 0.05 }, fcfYield: { good: 0.06, ok: 0.03 }, label: 'Financial Services' },
-        'Consumer Cyclical': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 1.2, ok: 0.6 }, operatingMargin: { good: 0.12, ok: 0.05 }, peRatio: { good: 20, ok: 30 }, revenueGrowth: { good: 0.12, ok: 0.05 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 1.5, ok: 3 }, evToFCF: { good: 18, ok: 30 }, label: 'Consumer Cyclical' },
-        'Consumer Defensive': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 1.0, ok: 0.5 }, operatingMargin: { good: 0.15, ok: 0.08 }, peRatio: { good: 22, ok: 30 }, revenueGrowth: { good: 0.08, ok: 0.03 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 2, ok: 4 }, evToFCF: { good: 18, ok: 28 }, label: 'Consumer Defensive' },
-        'Energy': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 12, ok: 20 }, revenueGrowth: { good: 0.10, ok: 0.03 }, fcfYield: { good: 0.08, ok: 0.04 }, evToSales: { good: 1.5, ok: 3 }, evToFCF: { good: 12, ok: 20 }, label: 'Energy' },
-        'Industrials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.7, ok: 1.8 }, assetTurnover: { good: 0.8, ok: 0.4 }, operatingMargin: { good: 0.12, ok: 0.06 }, peRatio: { good: 18, ok: 28 }, revenueGrowth: { good: 0.10, ok: 0.04 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 2, ok: 4 }, evToFCF: { good: 18, ok: 30 }, label: 'Industrials' },
-        'Real Estate': { currentRatio: { good: 1.0, ok: 0.5 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 0.15, ok: 0.06 }, operatingMargin: { good: 0.30, ok: 0.15 }, peRatio: { good: 30, ok: 50 }, revenueGrowth: { good: 0.08, ok: 0.03 }, fcfYield: { good: 0.04, ok: 0.01 }, evToSales: { good: 6, ok: 12 }, evToFCF: { good: 20, ok: 35 }, label: 'Real Estate' },
-        'Utilities': { currentRatio: { good: 1.0, ok: 0.7 }, debtToEquity: { good: 1.2, ok: 2.5 }, assetTurnover: { good: 0.35, ok: 0.15 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 18, ok: 25 }, revenueGrowth: { good: 0.06, ok: 0.02 }, fcfYield: { good: 0.04, ok: 0.01 }, evToSales: { good: 3, ok: 5 }, evToFCF: { good: 15, ok: 25 }, label: 'Utilities' },
-        'Communication Services': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.12, ok: 0.05 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 3, ok: 6 }, evToFCF: { good: 18, ok: 30 }, label: 'Communication Services' },
-        'Basic Materials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.35 }, operatingMargin: { good: 0.15, ok: 0.07 }, peRatio: { good: 15, ok: 25 }, revenueGrowth: { good: 0.10, ok: 0.04 }, fcfYield: { good: 0.06, ok: 0.03 }, evToSales: { good: 1.5, ok: 3 }, evToFCF: { good: 15, ok: 25 }, label: 'Basic Materials' },
-        'Default': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.10, ok: 0.05 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 3, ok: 8 }, evToFCF: { good: 20, ok: 35 }, label: 'General' }
+        'Consumer Cyclical': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 1.2, ok: 0.6 }, operatingMargin: { good: 0.12, ok: 0.05 }, peRatio: { good: 20, ok: 30 }, revenueGrowth: { good: 0.12, ok: 0.05 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 1.5, ok: 3 }, label: 'Consumer Cyclical' },
+        'Consumer Defensive': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 1.0, ok: 0.5 }, operatingMargin: { good: 0.15, ok: 0.08 }, peRatio: { good: 22, ok: 30 }, revenueGrowth: { good: 0.08, ok: 0.03 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 2, ok: 4 }, label: 'Consumer Defensive' },
+        'Energy': { currentRatio: { good: 1.3, ok: 0.9 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 12, ok: 20 }, revenueGrowth: { good: 0.10, ok: 0.03 }, fcfYield: { good: 0.08, ok: 0.04 }, evToSales: { good: 1.5, ok: 3 }, label: 'Energy' },
+        'Industrials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.7, ok: 1.8 }, assetTurnover: { good: 0.8, ok: 0.4 }, operatingMargin: { good: 0.12, ok: 0.06 }, peRatio: { good: 18, ok: 28 }, revenueGrowth: { good: 0.10, ok: 0.04 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 2, ok: 4 }, label: 'Industrials' },
+        'Real Estate': { currentRatio: { good: 1.0, ok: 0.5 }, debtToEquity: { good: 1.0, ok: 2.5 }, assetTurnover: { good: 0.15, ok: 0.06 }, operatingMargin: { good: 0.30, ok: 0.15 }, peRatio: { good: 30, ok: 50 }, revenueGrowth: { good: 0.08, ok: 0.03 }, fcfYield: { good: 0.04, ok: 0.01 }, evToSales: { good: 6, ok: 12 }, label: 'Real Estate' },
+        'Utilities': { currentRatio: { good: 1.0, ok: 0.7 }, debtToEquity: { good: 1.2, ok: 2.5 }, assetTurnover: { good: 0.35, ok: 0.15 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 18, ok: 25 }, revenueGrowth: { good: 0.06, ok: 0.02 }, fcfYield: { good: 0.04, ok: 0.01 }, evToSales: { good: 3, ok: 5 }, label: 'Utilities' },
+        'Communication Services': { currentRatio: { good: 1.2, ok: 0.8 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.5, ok: 0.25 }, operatingMargin: { good: 0.20, ok: 0.10 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.12, ok: 0.05 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 3, ok: 6 }, label: 'Communication Services' },
+        'Basic Materials': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.5, ok: 1.5 }, assetTurnover: { good: 0.7, ok: 0.35 }, operatingMargin: { good: 0.15, ok: 0.07 }, peRatio: { good: 15, ok: 25 }, revenueGrowth: { good: 0.10, ok: 0.04 }, fcfYield: { good: 0.06, ok: 0.03 }, evToSales: { good: 1.5, ok: 3 }, label: 'Basic Materials' },
+        'Default': { currentRatio: { good: 1.5, ok: 1.0 }, debtToEquity: { good: 0.8, ok: 2.0 }, assetTurnover: { good: 0.7, ok: 0.3 }, operatingMargin: { good: 0.15, ok: 0.05 }, peRatio: { good: 20, ok: 35 }, revenueGrowth: { good: 0.10, ok: 0.05 }, fcfYield: { good: 0.05, ok: 0.02 }, evToSales: { good: 3, ok: 8 }, label: 'General' }
     };
 
     function fmpSectorMap(sector) {
@@ -2079,15 +2078,6 @@
             };
         }
 
-        var evFcf = km.evToFreeCashFlowTTM;
-        if (typeof evFcf === 'number' && evFcf > 0 && sector !== 'Financial Services') {
-            ratios.evToFCF = {
-                value: evFcf,
-                components: 'Enterprise Value: ' + cs + fmt(km.enterpriseValueTTM || 0) + ' / TTM Free Cash Flow',
-                period: ttmLabel
-            };
-        }
-
         var benchmarks = SECTOR_BENCHMARKS[sector] || SECTOR_BENCHMARKS['Default'];
 
         if (ratios.operatingMargin && typeof km.returnOnInvestedCapitalTTM === 'number') {
@@ -2121,8 +2111,6 @@
         var growth = g('revenueGrowth');
         var cashFlow = g('fcfYield');
         var evSales = g('evToSales');
-        var evFcf = g('evToFCF');
-
         var strengths = [];
         var weaknesses = [];
 
@@ -2155,9 +2143,6 @@
 
         if (evSales === 'good') strengths.push('cheap on EV/Revenue');
         else if (evSales === 'bad') weaknesses.push('rich revenue multiple');
-
-        if (evFcf === 'good') strengths.push('cheap on EV/FCF');
-        else if (evFcf === 'bad') weaknesses.push('expensive on cash flow');
 
         if (strengths.length === 0 && weaknesses.length === 0) {
             return ticker + ' shows a mixed financial profile — no major red flags but no clear strengths either.';
@@ -2270,11 +2255,7 @@
             { key: 'evToSales', category: 'Enterprise Value', name: 'EV / Revenue', formula: 'Enterprise Value / TTM Revenue',
               tip: 'Enterprise value (market cap + debt − cash) divided by revenue. Unlike P/E, this works for unprofitable companies and accounts for debt. The go-to valuation metric for comparing software and growth companies.',
               explain: function(v, g) { return v <= g.good ? 'Attractively valued relative to revenue. The market may be underpricing this business.' : v <= g.ok ? 'Moderate revenue multiple. Priced for steady growth — needs to deliver.' : 'Premium revenue multiple. Priced for strong, sustained growth. Any deceleration could compress the multiple.'; },
-              format: function(v) { return v.toFixed(1) + 'x'; }, barMax: 20, higherBetter: false },
-            { key: 'evToFCF', category: 'Enterprise Value', name: 'EV / FCF', formula: 'Enterprise Value / TTM Free Cash Flow',
-              tip: 'Enterprise value divided by free cash flow. Like P/E but debt-adjusted and uses real cash instead of accounting earnings. Lower means you\'re paying less per dollar of actual cash the business generates.',
-              explain: function(v, g) { return v <= g.good ? 'Cheap relative to cash generation. Strong free cash flow at a reasonable enterprise valuation.' : v <= g.ok ? 'Moderate valuation on a cash flow basis. Not a bargain but not stretched.' : 'Expensive on a cash flow basis. Either the company is reinvesting heavily or the market expects significant FCF growth.'; },
-              format: function(v) { return v.toFixed(1) + 'x'; }, barMax: 60, higherBetter: false }
+              format: function(v) { return v.toFixed(1) + 'x'; }, barMax: 20, higherBetter: false }
         ];
 
         var scores = [];
@@ -2304,10 +2285,10 @@
         var overallGrade, overallClass, overallText;
         var sectorLabel = SECTOR_BENCHMARKS[sector] ? SECTOR_BENCHMARKS[sector].label : '';
 
-        if (total < 4) { overallGrade = '?'; overallClass = 'ok'; overallText = 'Not enough data to grade — only ' + total + ' of 9 ratios available.'; }
+        if (total < 4) { overallGrade = '?'; overallClass = 'ok'; overallText = 'Not enough data to grade — only ' + total + ' of 8 ratios available.'; }
         else if (goodCount === total) { overallGrade = 'A+'; overallClass = 'good'; overallText = 'Exceptional. All ' + total + ' metrics at healthy levels vs. ' + sectorLabel + ' benchmarks.'; }
-        else if (goodCount >= 7 && badCount === 0) { overallGrade = 'A'; overallClass = 'good'; overallText = 'Strong financial health across ' + goodCount + ' of ' + total + ' metrics vs. ' + sectorLabel + ' benchmarks.'; }
-        else if (goodCount >= 6 && badCount === 0) { overallGrade = 'B+'; overallClass = 'good'; overallText = 'Above average. ' + goodCount + ' strong metrics with no red flags.'; }
+        else if (goodCount >= 6 && badCount === 0) { overallGrade = 'A'; overallClass = 'good'; overallText = 'Strong financial health across ' + goodCount + ' of ' + total + ' metrics vs. ' + sectorLabel + ' benchmarks.'; }
+        else if (goodCount >= 5 && badCount === 0) { overallGrade = 'B+'; overallClass = 'good'; overallText = 'Above average. ' + goodCount + ' strong metrics with no red flags.'; }
         else if (badCount <= 1) { overallGrade = 'B'; overallClass = 'ok'; overallText = 'Decent fundamentals with some areas to watch. ' + goodCount + ' of ' + total + ' metrics look healthy.'; }
         else if (badCount <= 2) { overallGrade = 'C'; overallClass = 'ok'; overallText = 'Mixed signals. ' + badCount + ' metrics below ' + sectorLabel + ' benchmarks. Worth digging deeper.'; }
         else { overallGrade = 'D'; overallClass = 'bad'; overallText = 'Multiple warning signs. ' + badCount + ' of ' + total + ' metrics are below healthy levels. Proceed with caution.'; }
