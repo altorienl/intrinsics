@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T09:40:17.646176Z",
+  "updated": "2026-07-19T10:06:51.432373Z",
   "stocks": [
     {
       "ticker": "A",
@@ -659,7 +659,7 @@
       "price": 145.01,
       "change": 0.01,
       "changePct": 0.00689655,
-      "marketCap": 7120978228,
+      "marketCap": 7120977793,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -737,7 +737,7 @@
       "price": 16.45,
       "change": 0.08,
       "changePct": 0.4887,
-      "marketCap": 35026932196,
+      "marketCap": 35410634729,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -1361,7 +1361,7 @@
       "price": 7,
       "change": -0.05999989,
       "changePct": -0.84986,
-      "marketCap": 5132731177,
+      "marketCap": 5496208403,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -1881,7 +1881,7 @@
       "price": 76.07,
       "change": -3.77,
       "changePct": -4.72194,
-      "marketCap": 25475733003,
+      "marketCap": 25475733459,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -2349,7 +2349,7 @@
       "price": 106.68,
       "change": -3.35,
       "changePct": -3.04462,
-      "marketCap": 3004815982,
+      "marketCap": 3004812888,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -2609,7 +2609,7 @@
       "price": 19.52,
       "change": -0.11,
       "changePct": -0.56037,
-      "marketCap": 13482298822,
+      "marketCap": 13716767811,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -4975,7 +4975,7 @@
       "price": 860.55,
       "change": 2.58,
       "changePct": 0.30071,
-      "marketCap": 53836859084,
+      "marketCap": 53515685474,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -5521,7 +5521,7 @@
       "price": 279.71,
       "change": -1.23,
       "changePct": -0.43782,
-      "marketCap": 8400269461,
+      "marketCap": 8391299441,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -5599,7 +5599,7 @@
       "price": 7.22,
       "change": 0.07,
       "changePct": 0.97902,
-      "marketCap": 2658163386,
+      "marketCap": 2658165740,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -6187,6 +6187,214 @@
         "revenueGrowth": null,
         "fcfYield": "bad",
         "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "AUY",
+      "name": "Yamana Gold Inc.",
+      "sector": "Basic Materials",
+      "grade": "D",
+      "price": 5.85,
+      "change": -0.04,
+      "changePct": -0.6791,
+      "marketCap": 5628852403,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "AVA",
+      "name": "Avista Corporation",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 41.8,
+      "change": -0.51,
+      "changePct": -1.20539,
+      "marketCap": 3454286374,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "AVAH",
+      "name": "Aveanna Healthcare Holdings Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 9.69,
+      "change": -0.21,
+      "changePct": -2.12121,
+      "marketCap": 2110047917,
+      "scores": {
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "AVAL",
+      "name": "Grupo Aval Acciones y Valores S.A.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 4.92,
+      "change": -0.05000004,
+      "changePct": -1.00604,
+      "marketCap": 5840894973,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "AVAV",
+      "name": "AeroVironment, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 142.2,
+      "change": -7.09,
+      "changePct": -4.74915,
+      "marketCap": 7196457600,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "AVB",
+      "name": "AvalonBay Communities, Inc.",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 192.53,
+      "change": -2.97,
+      "changePct": -1.51918,
+      "marketCap": 27351521658,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 1,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "AVDL",
+      "name": "Avadel Pharmaceuticals plc",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 21.64,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 2123997811,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 4,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "AVDX",
+      "name": "AvidXchange Holdings, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 10,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 2076987520,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "ok"
       }
     },
     {
@@ -7081,7 +7289,7 @@
       "price": 48.33,
       "change": -1.24,
       "changePct": -2.50151,
-      "marketCap": 77172687244,
+      "marketCap": 77172695025,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -7523,7 +7731,7 @@
       "price": 25.14,
       "change": -0.56,
       "changePct": -2.17899,
-      "marketCap": 139189261421,
+      "marketCap": 139189259058,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -7783,7 +7991,7 @@
       "price": 40.14,
       "change": 0.22,
       "changePct": 0.5511,
-      "marketCap": 20274128197,
+      "marketCap": 20274128879,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -7861,7 +8069,7 @@
       "price": 27.82,
       "change": -0.41,
       "changePct": -1.45236,
-      "marketCap": 93800084631,
+      "marketCap": 93800079623,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -8329,7 +8537,7 @@
       "price": 26.13,
       "change": -0.25,
       "changePct": -0.94769,
-      "marketCap": 11994150008,
+      "marketCap": 11929032402,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -8589,7 +8797,7 @@
       "price": 15.91,
       "change": -0.07,
       "changePct": -0.43805,
-      "marketCap": 3752655743,
+      "marketCap": 3769017953,
       "scores": {
         "good": 1,
         "ok": 1,
@@ -8667,7 +8875,7 @@
       "price": 14.97,
       "change": -0.03,
       "changePct": -0.2,
-      "marketCap": 3750524025,
+      "marketCap": 3769017948,
       "scores": {
         "good": 1,
         "ok": 1,
@@ -8719,7 +8927,7 @@
       "price": 80.64,
       "change": -0.07,
       "changePct": -0.08673027,
-      "marketCap": 204853432009,
+      "marketCap": 204853428219,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -9707,7 +9915,7 @@
       "price": 43.63,
       "change": -0.67,
       "changePct": -1.51242,
-      "marketCap": 97451779606,
+      "marketCap": 97451778035,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -9889,7 +10097,7 @@
       "price": 91.48,
       "change": -0.08,
       "changePct": -0.0873744,
-      "marketCap": 23133851373,
+      "marketCap": 23133851647,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -10019,7 +10227,7 @@
       "price": 152.47,
       "change": -1.33,
       "changePct": -0.86476,
-      "marketCap": 4627079208,
+      "marketCap": 4627083325,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -10279,7 +10487,7 @@
       "price": 93.69,
       "change": 0.14,
       "changePct": 0.14965,
-      "marketCap": 4413997482,
+      "marketCap": 4413893299,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -10981,7 +11189,7 @@
       "price": 7.23,
       "change": -0.29,
       "changePct": -3.85638,
-      "marketCap": 3845048919,
+      "marketCap": 3845048825,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -12697,7 +12905,7 @@
       "price": 23.21,
       "change": -0.2,
       "changePct": -0.85434,
-      "marketCap": 2239092351,
+      "marketCap": 2239092212,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -13919,7 +14127,7 @@
       "price": 22.33,
       "change": 0.4,
       "changePct": 1.82399,
-      "marketCap": 8508157374,
+      "marketCap": 8508157419,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -13971,7 +14179,7 @@
       "price": 80.41,
       "change": 0.94,
       "changePct": 1.18284,
-      "marketCap": 19078497305,
+      "marketCap": 19078498270,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -14465,7 +14673,7 @@
       "price": 0.3225,
       "change": 0.0474,
       "changePct": 17.2301,
-      "marketCap": 3726701952,
+      "marketCap": 3343610136,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -14621,7 +14829,7 @@
       "price": 23.79,
       "change": -0.31,
       "changePct": -1.28631,
-      "marketCap": 84983315777,
+      "marketCap": 84983324651,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -14881,7 +15089,7 @@
       "price": 21.15,
       "change": -0.06,
       "changePct": -0.28289,
-      "marketCap": 22836925332,
+      "marketCap": 22751928685,
       "scores": {
         "good": 1,
         "ok": 6,
@@ -16129,7 +16337,7 @@
       "price": 16.62,
       "change": -0.24,
       "changePct": -1.42349,
-      "marketCap": 29833967669,
+      "marketCap": 29833967602,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -16701,7 +16909,7 @@
       "price": 73.21,
       "change": 0.3,
       "changePct": 0.41147,
-      "marketCap": 39941206275,
+      "marketCap": 39941205982,
       "scores": {
         "good": 1,
         "ok": 0,
@@ -16873,6 +17081,32 @@
         "revenueGrowth": "bad",
         "fcfYield": "good",
         "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "CSQR",
+      "name": "Csquare Inc.",
+      "sector": "Technology",
+      "grade": "?",
+      "price": 20.4,
+      "change": -0.27,
+      "changePct": -1.30624,
+      "marketCap": 3162422321,
+      "scores": {
+        "good": 0,
+        "ok": 0,
+        "bad": 0,
+        "total": 0
+      },
+      "ratioGrades": {
+        "currentRatio": null,
+        "debtToEquity": null,
+        "assetTurnover": null,
+        "operatingMargin": null,
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": null,
+        "evToSales": null
       }
     },
     {
@@ -17221,7 +17455,7 @@
       "price": 41.89,
       "change": -0.18,
       "changePct": -0.42786,
-      "marketCap": 9534512567,
+      "marketCap": 9501175625,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -18443,7 +18677,7 @@
       "price": 258.69,
       "change": -3.63,
       "changePct": -1.38381,
-      "marketCap": 92083344914,
+      "marketCap": 92083339223,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -18469,7 +18703,7 @@
       "price": 550.93,
       "change": 6.01,
       "changePct": 1.10291,
-      "marketCap": 8603901357,
+      "marketCap": 8603316820,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -20055,7 +20289,7 @@
       "price": 20.31,
       "change": 0,
       "changePct": 0,
-      "marketCap": 30434848201,
+      "marketCap": 30827669313,
       "scores": {
         "good": 1,
         "ok": 6,
@@ -20159,7 +20393,7 @@
       "price": 133.85,
       "change": 4.91,
       "changePct": 3.80798,
-      "marketCap": 6236488443,
+      "marketCap": 6236488577,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -20731,7 +20965,7 @@
       "price": 49.15,
       "change": -0.28,
       "changePct": -0.56646,
-      "marketCap": 7822013465,
+      "marketCap": 7792147468,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -21095,7 +21329,7 @@
       "price": 20,
       "change": 0,
       "changePct": 0,
-      "marketCap": 52230664880,
+      "marketCap": 51851123880,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -21615,7 +21849,7 @@
       "price": 90.81,
       "change": 1.77,
       "changePct": 1.98787,
-      "marketCap": 12695922163,
+      "marketCap": 12695921618,
       "scores": {
         "good": 1,
         "ok": 1,
@@ -22707,7 +22941,7 @@
       "price": 11.52,
       "change": -0.1,
       "changePct": -0.86059,
-      "marketCap": 68099681053,
+      "marketCap": 69924356502,
       "scores": {
         "good": 0,
         "ok": 7,
@@ -22931,32 +23165,6 @@
         "revenueGrowth": "bad",
         "fcfYield": "ok",
         "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "EVLVW",
-      "name": "Evolv Technologies Holdings, Inc.",
-      "sector": "Technology",
-      "grade": "C",
-      "price": 0.0042,
-      "change": 0,
-      "changePct": 0,
-      "marketCap": 3417003340,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "ok"
       }
     },
     {
@@ -23955,7 +24163,7 @@
       "price": 2122.13,
       "change": -34.32,
       "changePct": -1.5915,
-      "marketCap": 24589065135,
+      "marketCap": 24589063012,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -24007,7 +24215,7 @@
       "price": 20.6201,
       "change": -0.0709,
       "changePct": -0.34266,
-      "marketCap": 23951681309,
+      "marketCap": 24589065117,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -24033,7 +24241,7 @@
       "price": 20.44,
       "change": 0.12,
       "changePct": 0.59055,
-      "marketCap": 24151734982,
+      "marketCap": 24589065134,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -25125,7 +25333,7 @@
       "price": 24.11,
       "change": 0.02,
       "changePct": 0.083022,
-      "marketCap": 12950187013,
+      "marketCap": 12950186989,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -25541,7 +25749,7 @@
       "price": 25.61,
       "change": 0.005,
       "changePct": 0.01952744,
-      "marketCap": 2757783322,
+      "marketCap": 2810184020,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -25671,7 +25879,7 @@
       "price": 10.89,
       "change": -0.06,
       "changePct": -0.54795,
-      "marketCap": 3010368057,
+      "marketCap": 3010368253,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -26191,7 +26399,7 @@
       "price": 18,
       "change": -0.1,
       "changePct": -0.55249,
-      "marketCap": 4623822828,
+      "marketCap": 4738211856,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -26243,7 +26451,7 @@
       "price": 93.88,
       "change": 1.62,
       "changePct": 1.75591,
-      "marketCap": 23526863022,
+      "marketCap": 23526862834,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -26269,7 +26477,7 @@
       "price": 102.2,
       "change": 2.46,
       "changePct": 2.46641,
-      "marketCap": 25611903460,
+      "marketCap": 25611902949,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -26607,7 +26815,7 @@
       "price": 93.2,
       "change": 0.16,
       "changePct": 0.17197,
-      "marketCap": 3510761052,
+      "marketCap": 3521230674,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -27855,7 +28063,7 @@
       "price": 77.82,
       "change": -2.67,
       "changePct": -3.31718,
-      "marketCap": 18419613771,
+      "marketCap": 19319173283,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -28505,7 +28713,7 @@
       "price": 32.72,
       "change": 0.965,
       "changePct": 3.03889,
-      "marketCap": 5526408131,
+      "marketCap": 5526408164,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -28973,7 +29181,7 @@
       "price": 25.07,
       "change": 0.06999954,
       "changePct": 0.28,
-      "marketCap": 36863935212,
+      "marketCap": 36995122486,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -28999,7 +29207,7 @@
       "price": 20.73,
       "change": -0.07000015,
       "changePct": -0.33654,
-      "marketCap": 36546483152,
+      "marketCap": 36995122496,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -29025,7 +29233,7 @@
       "price": 16.38,
       "change": 0.04000053,
       "changePct": 0.2448,
-      "marketCap": 36754033958,
+      "marketCap": 36995122497,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -29467,7 +29675,7 @@
       "price": 40.34,
       "change": 0.24,
       "changePct": 0.5985,
-      "marketCap": 8335622821,
+      "marketCap": 8335622620,
       "scores": {
         "good": 1,
         "ok": 5,
@@ -29545,7 +29753,7 @@
       "price": 12.02,
       "change": 0.07,
       "changePct": 0.58577,
-      "marketCap": 4127120140,
+      "marketCap": 4127120116,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -30039,7 +30247,7 @@
       "price": 14.65,
       "change": -0.13,
       "changePct": -0.87957,
-      "marketCap": 9249792477,
+      "marketCap": 9153914966,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -30637,7 +30845,7 @@
       "price": 171.42,
       "change": -3.3,
       "changePct": -1.88874,
-      "marketCap": 34771413400,
+      "marketCap": 34771410828,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -32015,7 +32223,7 @@
       "price": 122.52,
       "change": 2.75,
       "changePct": 2.29607,
-      "marketCap": 60921596207,
+      "marketCap": 60825238270,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -32223,7 +32431,7 @@
       "price": 32.33,
       "change": -0.5,
       "changePct": -1.523,
-      "marketCap": 92450687793,
+      "marketCap": 95187875656,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -33575,7 +33783,7 @@
       "price": 29.62,
       "change": -0.06,
       "changePct": -0.20216,
-      "marketCap": 40001810000,
+      "marketCap": 41582032616,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -33601,7 +33809,7 @@
       "price": 54.87,
       "change": -0.93,
       "changePct": -1.66667,
-      "marketCap": 11160118766,
+      "marketCap": 11160119259,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -34069,7 +34277,7 @@
       "price": 119.37,
       "change": -0.88,
       "changePct": -0.73181,
-      "marketCap": 42339074808,
+      "marketCap": 41911537664,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -35473,7 +35681,7 @@
       "price": 162.32,
       "change": -0.06,
       "changePct": -0.03695036,
-      "marketCap": 16471438557,
+      "marketCap": 16471439206,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -35733,7 +35941,7 @@
       "price": 30.87,
       "change": -0.47,
       "changePct": -1.49968,
-      "marketCap": 4433406534,
+      "marketCap": 4433408417,
       "scores": {
         "good": 1,
         "ok": 1,
@@ -35811,7 +36019,7 @@
       "price": 10.41,
       "change": -0.32,
       "changePct": -2.98229,
-      "marketCap": 3403350679,
+      "marketCap": 3411403335,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -35837,7 +36045,7 @@
       "price": 12,
       "change": -0.51,
       "changePct": -4.07674,
-      "marketCap": 3340825140,
+      "marketCap": 3411403332,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -35863,7 +36071,7 @@
       "price": 10.09,
       "change": -0.32,
       "changePct": -3.07397,
-      "marketCap": 3411403341,
+      "marketCap": 3411403260,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -36565,7 +36773,7 @@
       "price": 7.33,
       "change": -0.13,
       "changePct": -1.74263,
-      "marketCap": 2163028545,
+      "marketCap": 2163087640,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -37605,7 +37813,7 @@
       "price": 52.56,
       "change": -0.62,
       "changePct": -1.16585,
-      "marketCap": 15386620751,
+      "marketCap": 15158702983,
       "scores": {
         "good": 6,
         "ok": 0,
@@ -37631,7 +37839,7 @@
       "price": 116.33,
       "change": -2.46,
       "changePct": -2.07088,
-      "marketCap": 13209727048,
+      "marketCap": 13209727979,
       "scores": {
         "good": 7,
         "ok": 0,
@@ -37943,7 +38151,7 @@
       "price": 543.6,
       "change": -7.94,
       "changePct": -1.43961,
-      "marketCap": 480316195537,
+      "marketCap": 480310502414,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -39191,7 +39399,7 @@
       "price": 17.32,
       "change": -0.54,
       "changePct": -3.02352,
-      "marketCap": 2239173835,
+      "marketCap": 2243066020,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -39477,7 +39685,7 @@
       "price": 16.96,
       "change": -0.0182,
       "changePct": -0.1072,
-      "marketCap": 9908918584,
+      "marketCap": 9767986937,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -39529,7 +39737,7 @@
       "price": 15.145,
       "change": -0.015,
       "changePct": -0.09894459,
-      "marketCap": 9904779643,
+      "marketCap": 9767986928,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -39555,7 +39763,7 @@
       "price": 23,
       "change": 0.02,
       "changePct": 0.0870322,
-      "marketCap": 9762549272,
+      "marketCap": 9767986932,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -39633,7 +39841,7 @@
       "price": 149.53,
       "change": -3.39,
       "changePct": -2.21685,
-      "marketCap": 3853045377,
+      "marketCap": 3853045676,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -39815,7 +40023,7 @@
       "price": 51.7,
       "change": -1.2,
       "changePct": -2.26843,
-      "marketCap": 13899624670,
+      "marketCap": 13899625445,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -39945,7 +40153,7 @@
       "price": 5.45,
       "change": 0.03000011,
       "changePct": 0.55351,
-      "marketCap": 2116188969,
+      "marketCap": 2116188953,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -40439,7 +40647,7 @@
       "price": 393.31,
       "change": 10.83,
       "changePct": 2.83152,
-      "marketCap": 12461065707,
+      "marketCap": 12461066100,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -41349,7 +41557,7 @@
       "price": 75.25,
       "change": 1.23,
       "changePct": 1.66172,
-      "marketCap": 3559718859,
+      "marketCap": 3559718633,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -41427,7 +41635,7 @@
       "price": 124.77,
       "change": -0.86,
       "changePct": -0.68455,
-      "marketCap": 6967942102,
+      "marketCap": 6967942601,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -43247,7 +43455,7 @@
       "price": 134.28,
       "change": -1.03,
       "changePct": -0.76122,
-      "marketCap": 4825221011,
+      "marketCap": 4825220474,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -44417,7 +44625,7 @@
       "price": 17.92,
       "change": 0.09000053,
       "changePct": 0.50477,
-      "marketCap": 35659008000,
+      "marketCap": 35648883200,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -44703,7 +44911,7 @@
       "price": 75.93,
       "change": -0.78,
       "changePct": -1.01681,
-      "marketCap": 12290235418,
+      "marketCap": 12290261842,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -45249,7 +45457,7 @@
       "price": 21.99,
       "change": 0.01000031,
       "changePct": 0.04549729,
-      "marketCap": 2506376220,
+      "marketCap": 2506464180,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -45275,7 +45483,7 @@
       "price": 105.31,
       "change": -1.9,
       "changePct": -1.77222,
-      "marketCap": 5083437334,
+      "marketCap": 5083437545,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -45431,7 +45639,7 @@
       "price": 25.0999,
       "change": 0.1899,
       "changePct": 0.76234,
-      "marketCap": 10216901996,
+      "marketCap": 10331614011,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -45457,7 +45665,7 @@
       "price": 25.055,
       "change": 0.005,
       "changePct": 0.01996008,
-      "marketCap": 10171045029,
+      "marketCap": 10331614006,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -45561,7 +45769,7 @@
       "price": 37.2,
       "change": -1,
       "changePct": -2.6178,
-      "marketCap": 12399865324,
+      "marketCap": 12399865844,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -46443,8 +46651,8 @@
       "sector": "Financial Services",
       "grade": "B",
       "price": 24.735,
-      "change": 0.005,
-      "changePct": 0.02021836,
+      "change": 0,
+      "changePct": 0,
       "marketCap": 11912376000,
       "scores": {
         "good": 4,
@@ -47069,7 +47277,7 @@
       "price": 15.63,
       "change": 0.19,
       "changePct": 1.23057,
-      "marketCap": 10583746841,
+      "marketCap": 10583746559,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -47277,7 +47485,7 @@
       "price": 17.97,
       "change": 0.5,
       "changePct": 2.86205,
-      "marketCap": 115805259446,
+      "marketCap": 115805257721,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -47849,7 +48057,7 @@
       "price": 16.3,
       "change": 0,
       "changePct": 0,
-      "marketCap": 39834089846,
+      "marketCap": 41356000487,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -48109,7 +48317,7 @@
       "price": 19.71,
       "change": 0.21,
       "changePct": 1.07692,
-      "marketCap": 4258463760,
+      "marketCap": 4258465061,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -48629,7 +48837,7 @@
       "price": 52.36,
       "change": -0.52,
       "changePct": -0.98336,
-      "marketCap": 4159623908,
+      "marketCap": 4159623647,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -49799,7 +50007,7 @@
       "price": 16.92,
       "change": 0.03,
       "changePct": 0.17762,
-      "marketCap": 10159030158,
+      "marketCap": 10159030260,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -50449,7 +50657,7 @@
       "price": 5.86,
       "change": -0.045,
       "changePct": -0.76207,
-      "marketCap": 3604750093,
+      "marketCap": 3604750333,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -50891,7 +51099,7 @@
       "price": 34.66,
       "change": -0.14,
       "changePct": -0.4023,
-      "marketCap": 18724207581,
+      "marketCap": 18724208621,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -51307,7 +51515,7 @@
       "price": 33.7,
       "change": -0.32,
       "changePct": -0.94062,
-      "marketCap": 58956112363,
+      "marketCap": 58909923716,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -51411,7 +51619,7 @@
       "price": 37.46,
       "change": -0.12,
       "changePct": -0.31932,
-      "marketCap": 8666912971,
+      "marketCap": 8666912747,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -51723,7 +51931,7 @@
       "price": 5.44,
       "change": -0.11,
       "changePct": -1.98198,
-      "marketCap": 4299898482,
+      "marketCap": 4690147163,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -51827,7 +52035,7 @@
       "price": 5.14,
       "change": 0.02,
       "changePct": 0.39062,
-      "marketCap": 4642657805,
+      "marketCap": 5224551926,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -51976,370 +52184,6 @@
       }
     },
     {
-      "ticker": "RKLB",
-      "name": "Rocket Lab USA, Inc.",
-      "sector": "Industrials",
-      "grade": "D",
-      "price": 67.62,
-      "change": 0.27,
-      "changePct": 0.40089,
-      "marketCap": 39143018660,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "RKT",
-      "name": "Rocket Companies, Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 14.54,
-      "change": -0.36,
-      "changePct": -2.41611,
-      "marketCap": 41061166235,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "RL",
-      "name": "Ralph Lauren Corporation",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 380.45,
-      "change": -7.66,
-      "changePct": -1.97367,
-      "marketCap": 23207378475,
-      "scores": {
-        "good": 4,
-        "ok": 4,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "RLAY",
-      "name": "Relay Therapeutics, Inc.",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 19.91,
-      "change": 0.54,
-      "changePct": 2.78782,
-      "marketCap": 3484576385,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "RLI",
-      "name": "RLI Corp.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 61.57,
-      "change": 1.99,
-      "changePct": 3.34005,
-      "marketCap": 5660641131,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "RLX",
-      "name": "RLX Technology Inc.",
-      "sector": "Consumer Defensive",
-      "grade": "B",
-      "price": 2.05,
-      "change": 0.01999991,
-      "changePct": 0.98522,
-      "marketCap": 2505621830,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "RMBS",
-      "name": "Rambus Inc.",
-      "sector": "Technology",
-      "grade": "C",
-      "price": 101.44,
-      "change": 0.02000244,
-      "changePct": 0.01972238,
-      "marketCap": 10969417280,
-      "scores": {
-        "good": 3,
-        "ok": 3,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "ok",
-        "fcfYield": "ok",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "RMD",
-      "name": "ResMed Inc.",
-      "sector": "Healthcare",
-      "grade": "A",
-      "price": 198.99,
-      "change": -3.77,
-      "changePct": -1.85934,
-      "marketCap": 28864769852,
-      "scores": {
-        "good": 6,
-        "ok": 2,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "RNAM",
-      "name": "Avidity Biosciences Inc",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 72.86,
-      "change": 0.04,
-      "changePct": 0.05492996,
-      "marketCap": 11255330104,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "RNG",
-      "name": "RingCentral, Inc.",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 41.32,
-      "change": -0.45,
-      "changePct": -1.07733,
-      "marketCap": 3631696076,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 5,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "RNR",
-      "name": "RenaissanceRe Holdings Ltd.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 323.06,
-      "change": 7.8,
-      "changePct": 2.47415,
-      "marketCap": 13773030225,
-      "scores": {
-        "good": 5,
-        "ok": 0,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "RNST",
-      "name": "Renasant Corporation",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 43.7,
-      "change": -0.55,
-      "changePct": -1.24294,
-      "marketCap": 4032291644,
-      "scores": {
-        "good": 3,
-        "ok": 3,
-        "bad": 0,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "RNW",
-      "name": "ReNew Energy Global Plc",
-      "sector": "Utilities",
-      "grade": "D",
-      "price": 6.29,
-      "change": 0.09999996,
-      "changePct": 1.61551,
-      "marketCap": 2287499245,
-      "scores": {
-        "good": 2,
-        "ok": 1,
-        "bad": 5,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "ROAD",
-      "name": "Construction Partners, Inc.",
-      "sector": "Industrials",
-      "grade": "C",
-      "price": 104.47,
-      "change": 2.06,
-      "changePct": 2.01152,
-      "marketCap": 5904091231,
-      "scores": {
-        "good": 3,
-        "ok": 3,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
       "ticker": "ROG",
       "name": "Rogers Corporation",
       "sector": "Technology",
@@ -52451,7 +52295,7 @@
       "price": 144.43,
       "change": 0.61,
       "changePct": 0.42414,
-      "marketCap": 21425058313,
+      "marketCap": 21425057736,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -52912,214 +52756,6 @@
       }
     },
     {
-      "ticker": "RTPY",
-      "name": "Reinvent Technology Partners Y",
-      "sector": "Financial Services",
-      "grade": "C",
-      "price": 9.91,
-      "change": -0.02999973,
-      "changePct": -0.30180818,
-      "marketCap": 11618780438,
-      "scores": {
-        "good": 2,
-        "ok": 0,
-        "bad": 2,
-        "total": 4
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "RTX",
-      "name": "RTX Corporation",
-      "sector": "Industrials",
-      "grade": "B",
-      "price": 193.51,
-      "change": -0.85,
-      "changePct": -0.43733,
-      "marketCap": 260596046800,
-      "scores": {
-        "good": 2,
-        "ok": 5,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "RUM",
-      "name": "Rumble Inc.",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 5.76,
-      "change": 0.0400001,
-      "changePct": 0.6993,
-      "marketCap": 2502279510,
-      "scores": {
-        "good": 2,
-        "ok": 1,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "RUMBW",
-      "name": "Rumble Inc.",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 1.61,
-      "change": -0.08,
-      "changePct": -4.73373,
-      "marketCap": 2367274044,
-      "scores": {
-        "good": 2,
-        "ok": 1,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "RUN",
-      "name": "Sunrun Inc.",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 11.85,
-      "change": -0.29,
-      "changePct": -2.3888,
-      "marketCap": 2826805650,
-      "scores": {
-        "good": 2,
-        "ok": 2,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "RUSHA",
-      "name": "Rush Enterprises, Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 76.89,
-      "change": -2.77,
-      "changePct": -3.47728,
-      "marketCap": 5975031093,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "RUSHB",
-      "name": "Rush Enterprises, Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 75.74,
-      "change": -2.51,
-      "changePct": -3.20767,
-      "marketCap": 5995834553,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "RVMD",
-      "name": "Revolution Medicines, Inc.",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 186.16,
-      "change": 6.98,
-      "changePct": 3.89552,
-      "marketCap": 39576871360,
-      "scores": {
-        "good": 2,
-        "ok": 0,
-        "bad": 3,
-        "total": 5
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": "bad",
-        "evToSales": null
-      }
-    },
-    {
       "ticker": "RVMDW",
       "name": "Revolution Medicines, Inc. Warrant",
       "sector": "Healthcare",
@@ -53309,7 +52945,7 @@
       "price": 62.57,
       "change": -3.79,
       "changePct": -5.71127,
-      "marketCap": 32494950003,
+      "marketCap": 32494950378,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -54193,7 +53829,7 @@
       "price": 104.05,
       "change": -2.17,
       "changePct": -2.04293,
-      "marketCap": 63729018468,
+      "marketCap": 62466343208,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -54973,7 +54609,7 @@
       "price": 123.56,
       "change": -1.5,
       "changePct": -1.19942,
-      "marketCap": 160338215226,
+      "marketCap": 160338198422,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -55103,7 +54739,7 @@
       "price": 15.95,
       "change": 0.0353,
       "changePct": 0.22181,
-      "marketCap": 5638597075,
+      "marketCap": 5775013884,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -55545,7 +55181,7 @@
       "price": 30.62,
       "change": -1.14,
       "changePct": -3.58942,
-      "marketCap": 11754654479,
+      "marketCap": 11754654694,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -56377,7 +56013,7 @@
       "price": 30.59,
       "change": -0.82,
       "changePct": -2.61063,
-      "marketCap": 12894360397,
+      "marketCap": 12894360550,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -56741,7 +56377,7 @@
       "price": 16.68,
       "change": -0.02,
       "changePct": -0.11976,
-      "marketCap": 106376208174,
+      "marketCap": 107431689984,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -56923,7 +56559,7 @@
       "price": 6.27,
       "change": -0.04000004,
       "changePct": -0.63392,
-      "marketCap": 2731677171,
+      "marketCap": 2731677184,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -56949,7 +56585,7 @@
       "price": 1.645,
       "change": -0.045,
       "changePct": -2.66272,
-      "marketCap": 2708398997,
+      "marketCap": 2731677183,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -57417,7 +57053,7 @@
       "price": 14.38,
       "change": -0.46,
       "changePct": -3.09973,
-      "marketCap": 4255784943,
+      "marketCap": 4255784698,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -58015,7 +57651,7 @@
       "price": 11.15,
       "change": -0.05,
       "changePct": -0.44643,
-      "marketCap": 2711994530,
+      "marketCap": 2711994620,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -58093,7 +57729,7 @@
       "price": 85.29,
       "change": -0.13,
       "changePct": -0.15219,
-      "marketCap": 28134307474,
+      "marketCap": 28177344381,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -58275,7 +57911,7 @@
       "price": 19.17,
       "change": -0.93,
       "changePct": -4.62687,
-      "marketCap": 5233480584,
+      "marketCap": 5233480699,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -58327,7 +57963,7 @@
       "price": 132.87,
       "change": -2.85,
       "changePct": -2.09991,
-      "marketCap": 22694773320,
+      "marketCap": 22694772656,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -59107,7 +58743,7 @@
       "price": 18.61,
       "change": 0.04,
       "changePct": 0.2154,
-      "marketCap": 149234394957,
+      "marketCap": 151446713458,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -59133,7 +58769,7 @@
       "price": 17.54,
       "change": 0.09999924,
       "changePct": 0.57339,
-      "marketCap": 148512881082,
+      "marketCap": 151446713462,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -59263,7 +58899,7 @@
       "price": 40.93,
       "change": -0.85,
       "changePct": -2.03447,
-      "marketCap": 7676477369,
+      "marketCap": 7676477410,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -59341,7 +58977,7 @@
       "price": 20.3,
       "change": -0.3356,
       "changePct": -1.62632,
-      "marketCap": 146098592297,
+      "marketCap": 151446713471,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -59471,7 +59107,7 @@
       "price": 20.74,
       "change": 0.05999952,
       "changePct": 0.29013,
-      "marketCap": 4540910133,
+      "marketCap": 4588505550,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -59549,7 +59185,7 @@
       "price": 42.45,
       "change": -1.3,
       "changePct": -2.97143,
-      "marketCap": 26730986674,
+      "marketCap": 26730987480,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -59861,7 +59497,7 @@
       "price": 203.31,
       "change": 0.74,
       "changePct": 0.36531,
-      "marketCap": 59345335505,
+      "marketCap": 59345334895,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -59939,7 +59575,7 @@
       "price": 13.12,
       "change": -0.19,
       "changePct": -1.4275,
-      "marketCap": 5651276971,
+      "marketCap": 5651277942,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -60641,7 +60277,7 @@
       "price": 5.72,
       "change": -0.25,
       "changePct": -4.1876,
-      "marketCap": 4979700566,
+      "marketCap": 4979700223,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -60797,7 +60433,7 @@
       "price": 177.61,
       "change": -2.15,
       "changePct": -1.19604,
-      "marketCap": 210320201741,
+      "marketCap": 210320211865,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -61005,7 +60641,7 @@
       "price": 70.07,
       "change": -1.765,
       "changePct": -2.45702,
-      "marketCap": 2427494990,
+      "marketCap": 2427494850,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -61083,7 +60719,7 @@
       "price": 30.08,
       "change": -0.25,
       "changePct": -0.82427,
-      "marketCap": 17446400060,
+      "marketCap": 17446400000,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -61135,7 +60771,7 @@
       "price": 78.62,
       "change": -0.27,
       "changePct": -0.34225,
-      "marketCap": 4150463956,
+      "marketCap": 4146623684,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -61317,7 +60953,7 @@
       "price": 39.08,
       "change": -0.37,
       "changePct": -0.9379,
-      "marketCap": 2937689949,
+      "marketCap": 2933731809,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -61941,7 +61577,7 @@
       "price": 18.59,
       "change": -0.53,
       "changePct": -2.77197,
-      "marketCap": 8739314319,
+      "marketCap": 8739314673,
       "scores": {
         "good": 7,
         "ok": 1,
@@ -62305,7 +61941,7 @@
       "price": 43.74,
       "change": -0.735,
       "changePct": -1.65261,
-      "marketCap": 5553063794,
+      "marketCap": 5553063926,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -63267,7 +62903,7 @@
       "price": 21.61,
       "change": -0.06,
       "changePct": -0.27688,
-      "marketCap": 14292115262,
+      "marketCap": 14228073725,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -63709,7 +63345,7 @@
       "price": 16.93,
       "change": 0.06,
       "changePct": 0.35566,
-      "marketCap": 3018580010,
+      "marketCap": 3018171862,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -64099,7 +63735,7 @@
       "price": 12.8,
       "change": -0.36,
       "changePct": -2.73556,
-      "marketCap": 2071256742,
+      "marketCap": 2071256704,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -64827,7 +64463,7 @@
       "price": 44.38,
       "change": 0.32,
       "changePct": 0.72628,
-      "marketCap": 15977947977,
+      "marketCap": 15977949176,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -66517,7 +66153,7 @@
       "price": 57.18,
       "change": 0.21,
       "changePct": 0.36862,
-      "marketCap": 3208903690,
+      "marketCap": 3208903632,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -66803,7 +66439,7 @@
       "price": 55.77,
       "change": -0.9,
       "changePct": -1.58814,
-      "marketCap": 2763212990,
+      "marketCap": 2763213045,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -66933,7 +66569,7 @@
       "price": 26.41,
       "change": -1.18,
       "changePct": -4.27691,
-      "marketCap": 3240909436,
+      "marketCap": 3240909304,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -67167,7 +66803,7 @@
       "price": 371.91,
       "change": -13.25001,
       "changePct": -3.44013,
-      "marketCap": 15318332843,
+      "marketCap": 15318333215,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -67869,7 +67505,7 @@
       "price": 79.94,
       "change": -1.58,
       "changePct": -1.93817,
-      "marketCap": 47578768580,
+      "marketCap": 47578771378,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -68467,7 +68103,7 @@
       "price": 20.2,
       "change": -0.55,
       "changePct": -2.6506,
-      "marketCap": 2281035308,
+      "marketCap": 2281035429,
       "scores": {
         "good": 3,
         "ok": 2,
