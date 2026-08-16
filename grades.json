@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15T08:03:35.849770Z",
+  "updated": "2026-08-16T08:06:30.957724Z",
   "stocks": [
     {
       "ticker": "A",
@@ -4067,14 +4067,14 @@
       "changePct": -0.92293,
       "marketCap": 5240619686,
       "scores": {
-        "good": 5,
-        "ok": 1,
+        "good": 4,
+        "ok": 2,
         "bad": 2,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "good",
         "operatingMargin": "bad",
         "peRatio": "ok",
@@ -7863,14 +7863,14 @@
       "changePct": 0.17452,
       "marketCap": 158575697983,
       "scores": {
-        "good": 3,
-        "ok": 2,
+        "good": 2,
+        "ok": 3,
         "bad": 1,
         "total": 6
       },
       "ratioGrades": {
         "currentRatio": "bad",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "good",
         "peRatio": "good",
@@ -8897,22 +8897,22 @@
       "ticker": "BGSI",
       "name": "Boyd Group Services Inc.",
       "sector": "Consumer Cyclical",
-      "grade": "C",
+      "grade": "D",
       "price": 95.05,
       "change": 3.07,
       "changePct": 3.33768,
       "marketCap": 2645241500,
       "scores": {
         "good": 3,
-        "ok": 3,
-        "bad": 2,
+        "ok": 2,
+        "bad": 3,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "bad",
         "debtToEquity": "ok",
         "assetTurnover": "ok",
-        "operatingMargin": "ok",
+        "operatingMargin": "bad",
         "peRatio": "bad",
         "revenueGrowth": "good",
         "fcfYield": "good",
@@ -13559,8 +13559,8 @@
       "scores": {
         "good": 1,
         "ok": 0,
-        "bad": 5,
-        "total": 6
+        "bad": 4,
+        "total": 5
       },
       "ratioGrades": {
         "currentRatio": "good",
@@ -13570,7 +13570,7 @@
         "peRatio": null,
         "revenueGrowth": null,
         "fcfYield": "bad",
-        "evToSales": "bad"
+        "evToSales": null
       }
     },
     {
@@ -14597,13 +14597,13 @@
       "changePct": -1.02564,
       "marketCap": 5520962871,
       "scores": {
-        "good": 5,
-        "ok": 2,
+        "good": 6,
+        "ok": 1,
         "bad": 1,
         "total": 8
       },
       "ratioGrades": {
-        "currentRatio": "ok",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "ok",
@@ -14623,13 +14623,13 @@
       "changePct": 1.06762,
       "marketCap": 8124337050,
       "scores": {
-        "good": 6,
-        "ok": 2,
+        "good": 7,
+        "ok": 1,
         "bad": 0,
         "total": 8
       },
       "ratioGrades": {
-        "currentRatio": "ok",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "ok",
@@ -24783,16 +24783,16 @@
       "ticker": "FDXF",
       "name": "FedEx Freight Holding Company, Inc.",
       "sector": "Industrials",
-      "grade": "C",
+      "grade": "D",
       "price": 150.29,
       "change": -1.7,
       "changePct": -1.11849,
       "marketCap": 22469143722,
       "scores": {
         "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
+        "ok": 2,
+        "bad": 4,
+        "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
@@ -24800,8 +24800,8 @@
         "assetTurnover": "good",
         "operatingMargin": "ok",
         "peRatio": "bad",
-        "revenueGrowth": null,
-        "fcfYield": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
         "evToSales": "ok"
       }
     },
@@ -25641,26 +25641,26 @@
       "ticker": "FLOC",
       "name": "Flowco Holdings Inc.",
       "sector": "Energy",
-      "grade": "B+",
+      "grade": "B",
       "price": 23.73,
       "change": 0.97,
       "changePct": 4.26186,
       "marketCap": 2208948625,
       "scores": {
-        "good": 5,
+        "good": 4,
         "ok": 3,
-        "bad": 0,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "good",
         "peRatio": "ok",
         "revenueGrowth": "good",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "bad"
       }
     },
     {
@@ -25712,6 +25712,32 @@
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "FLT",
+      "name": "FLEETCOR Technologies, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 303.26,
+      "change": -2.54,
+      "changePct": -0.8306,
+      "marketCap": 21790322736,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
         "evToSales": "ok"
       }
     },
@@ -26141,8 +26167,8 @@
       "changePct": -0.08868877,
       "marketCap": 8976301270,
       "scores": {
-        "good": 2,
-        "ok": 1,
+        "good": 3,
+        "ok": 0,
         "bad": 3,
         "total": 6
       },
@@ -26150,7 +26176,7 @@
         "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "good",
-        "operatingMargin": "ok",
+        "operatingMargin": "good",
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": null,
@@ -28319,19 +28345,19 @@
       "ticker": "GNW",
       "name": "Genworth Financial, Inc.",
       "sector": "Financial Services",
-      "grade": "D",
+      "grade": "C",
       "price": 10.16,
       "change": 0.17,
       "changePct": 1.7017,
       "marketCap": 3891374041,
       "scores": {
-        "good": 2,
+        "good": 3,
         "ok": 1,
-        "bad": 3,
+        "bad": 2,
         "total": 6
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
@@ -32684,162 +32710,6 @@
       }
     },
     {
-      "ticker": "ILMN",
-      "name": "Illumina, Inc.",
-      "sector": "Healthcare",
-      "grade": "C",
-      "price": 190.89,
-      "change": -1.75001,
-      "changePct": -0.90843,
-      "marketCap": 28881657000,
-      "scores": {
-        "good": 3,
-        "ok": 3,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "ILMNV",
-      "name": "Illumina, Inc. Common Stock Ex-distribution When-Issued",
-      "sector": "Healthcare",
-      "grade": "?",
-      "price": 107,
-      "change": 1.75,
-      "changePct": 1.6627,
-      "marketCap": 16989388203,
-      "scores": {
-        "good": 0,
-        "ok": 0,
-        "bad": 0,
-        "total": 0
-      },
-      "ratioGrades": {
-        "currentRatio": null,
-        "debtToEquity": null,
-        "assetTurnover": null,
-        "operatingMargin": null,
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "IMAX",
-      "name": "IMAX Corporation",
-      "sector": "Communication Services",
-      "grade": "C",
-      "price": 52.88,
-      "change": -0.38,
-      "changePct": -0.71348,
-      "marketCap": 2900050988,
-      "scores": {
-        "good": 4,
-        "ok": 2,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "IMGN",
-      "name": "ImmunoGen, Inc.",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 31.235,
-      "change": 0.005,
-      "changePct": 0.016,
-      "marketCap": 8725621690,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "IMNM",
-      "name": "Immunome, Inc.",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 27.2,
-      "change": 0.78,
-      "changePct": 2.95231,
-      "marketCap": 2600190474,
-      "scores": {
-        "good": 2,
-        "ok": 0,
-        "bad": 4,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "IMO",
-      "name": "Imperial Oil Limited",
-      "sector": "Energy",
-      "grade": "B",
-      "price": 133.28,
-      "change": 0.93,
-      "changePct": 0.70268,
-      "marketCap": 65294362337,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
       "ticker": "IMOS",
       "name": "ChipMOS TECHNOLOGIES Inc.",
       "sector": "Technology",
@@ -32889,32 +32759,6 @@
         "revenueGrowth": null,
         "fcfYield": "bad",
         "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "INCY",
-      "name": "Incyte Corporation",
-      "sector": "Healthcare",
-      "grade": "A+",
-      "price": 120.16,
-      "change": -0.36,
-      "changePct": -0.29871,
-      "marketCap": 24356161159,
-      "scores": {
-        "good": 8,
-        "ok": 0,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": "good",
-        "evToSales": "good"
       }
     },
     {
@@ -38283,9 +38127,9 @@
       "changePct": 3.85757,
       "marketCap": 3500000000,
       "scores": {
-        "good": 2,
+        "good": 3,
         "ok": 0,
-        "bad": 5,
+        "bad": 4,
         "total": 7
       },
       "ratioGrades": {
@@ -38295,7 +38139,7 @@
         "operatingMargin": "bad",
         "peRatio": null,
         "revenueGrowth": "bad",
-        "fcfYield": "bad",
+        "fcfYield": "good",
         "evToSales": "good"
       }
     },
@@ -38482,84 +38326,6 @@
       }
     },
     {
-      "ticker": "LSTR",
-      "name": "Landstar System, Inc.",
-      "sector": "Industrials",
-      "grade": "D",
-      "price": 190.19,
-      "change": 1.55,
-      "changePct": 0.82167,
-      "marketCap": 6454459011,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 3,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LSXMA",
-      "name": "The Liberty SiriusXM Group",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 22.29,
-      "change": -0.27,
-      "changePct": -1.1968,
-      "marketCap": 7284082676,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 5,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LSXMB",
-      "name": "The Liberty SiriusXM Group",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 22.51,
-      "change": -1.09,
-      "changePct": -4.6186,
-      "marketCap": 7284078070,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 5,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "bad"
-      }
-    },
-    {
       "ticker": "LSXMK",
       "name": "The Liberty SiriusXM Group",
       "sector": "Communication Services",
@@ -38609,136 +38375,6 @@
         "revenueGrowth": "good",
         "fcfYield": "bad",
         "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LTH",
-      "name": "Life Time Group Holdings, Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "D",
-      "price": 45.26,
-      "change": 0.95,
-      "changePct": 2.14399,
-      "marketCap": 10113887133,
-      "scores": {
-        "good": 2,
-        "ok": 2,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "ok",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LTHM",
-      "name": "Livent Corporation",
-      "sector": "Basic Materials",
-      "grade": "B",
-      "price": 16.51,
-      "change": -1.54,
-      "changePct": -8.5318,
-      "marketCap": 2970495578,
-      "scores": {
-        "good": 5,
-        "ok": 2,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LTM",
-      "name": "LATAM Airlines Group S.A.",
-      "sector": "Industrials",
-      "grade": "C",
-      "price": 52.26,
-      "change": -0.16,
-      "changePct": -0.30523,
-      "marketCap": 15009077435,
-      "scores": {
-        "good": 6,
-        "ok": 0,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LULU",
-      "name": "Lululemon Athletica Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 119.55,
-      "change": -0.01,
-      "changePct": -0.008364,
-      "marketCap": 13575370658,
-      "scores": {
-        "good": 7,
-        "ok": 0,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LUMN",
-      "name": "Lumen Technologies, Inc.",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 6.72,
-      "change": 0.32,
-      "changePct": 5,
-      "marketCap": 6923683200,
-      "scores": {
-        "good": 2,
-        "ok": 2,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
       }
     },
     {
@@ -40900,6 +40536,32 @@
       }
     },
     {
+      "ticker": "MIRM",
+      "name": "Mirum Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 100.64,
+      "change": 1.87,
+      "changePct": 1.89329,
+      "marketCap": 6137147968,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
       "ticker": "MKC",
       "name": "McCormick & Company, Incorporated",
       "sector": "Consumer Defensive",
@@ -41365,6 +41027,32 @@
         "revenueGrowth": "ok",
         "fcfYield": "bad",
         "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "MNDY",
+      "name": "monday.com Ltd.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 87.52,
+      "change": -6.77,
+      "changePct": -7.17998,
+      "marketCap": 3699830895,
+      "scores": {
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "good"
       }
     },
     {
@@ -42798,6 +42486,32 @@
       }
     },
     {
+      "ticker": "MTSI",
+      "name": "MACOM Technology Solutions Holdings, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 316.44,
+      "change": 9.38,
+      "changePct": 3.05478,
+      "marketCap": 24143034725,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
       "ticker": "MTSR",
       "name": "Metsera, Inc.",
       "sector": "Healthcare",
@@ -43133,6 +42847,84 @@
         "revenueGrowth": "bad",
         "fcfYield": "good",
         "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "NAMS",
+      "name": "NewAmsterdam Pharma Company N.V.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 26.98,
+      "change": 0.31,
+      "changePct": 1.16235,
+      "marketCap": 3154069353,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 5,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "NAMSW",
+      "name": "NewAmsterdam Pharma Company N.V.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 16.72,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 3582193538,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 5,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "NARI",
+      "name": "Inari Medical, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 79.97,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 4683331092,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
       }
     },
     {
@@ -43627,6 +43419,32 @@
         "revenueGrowth": "bad",
         "fcfYield": "ok",
         "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "NEWR",
+      "name": "New Relic, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 86.99,
+      "change": 0.02,
+      "changePct": 0.023,
+      "marketCap": 6178351315,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "bad",
+        "evToSales": "ok"
       }
     },
     {
@@ -45096,12 +44914,12 @@
       "marketCap": 73760717600,
       "scores": {
         "good": 3,
-        "ok": 3,
-        "bad": 0,
+        "ok": 2,
+        "bad": 1,
         "total": 6
       },
       "ratioGrades": {
-        "currentRatio": "ok",
+        "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "ok",
@@ -45797,8 +45615,8 @@
       "changePct": -0.3336,
       "marketCap": 58504610820,
       "scores": {
-        "good": 4,
-        "ok": 3,
+        "good": 3,
+        "ok": 4,
         "bad": 0,
         "total": 7
       },
@@ -45806,7 +45624,7 @@
         "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "good",
+        "operatingMargin": "ok",
         "peRatio": null,
         "revenueGrowth": "good",
         "fcfYield": "ok",
@@ -49662,6 +49480,32 @@
       }
     },
     {
+      "ticker": "PLGO",
+      "name": "Pelagos Insurance Capital Limit",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 23.84,
+      "change": 1.09,
+      "changePct": 4.79121,
+      "marketCap": 2038242687,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
       "ticker": "PLMR",
       "name": "Palomar Holdings, Inc.",
       "sector": "Financial Services",
@@ -50725,6 +50569,32 @@
         "revenueGrowth": "bad",
         "fcfYield": "good",
         "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PRS",
+      "name": "Prudential Financial, Inc. 5.62",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 20.86,
+      "change": -0.06,
+      "changePct": -0.28681,
+      "marketCap": 7259280000,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": null,
+        "evToSales": null
       }
     },
     {
@@ -54741,17 +54611,17 @@
       "changePct": 4.19646,
       "marketCap": 3607520915,
       "scores": {
-        "good": 2,
-        "ok": 0,
-        "bad": 3,
-        "total": 5
+        "good": 1,
+        "ok": 1,
+        "bad": 4,
+        "total": 6
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "bad",
         "operatingMargin": "bad",
-        "peRatio": null,
+        "peRatio": "bad",
         "revenueGrowth": null,
         "fcfYield": "bad",
         "evToSales": null
@@ -55613,6 +55483,318 @@
         "revenueGrowth": "good",
         "fcfYield": "good",
         "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "SEZL",
+      "name": "Sezzle Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 128.96,
+      "change": -0.91,
+      "changePct": -0.7007,
+      "marketCap": 4336540241,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "SF",
+      "name": "Stifel Financial Corp",
+      "sector": "Financial Services",
+      "grade": "B+",
+      "price": 85.62,
+      "change": -0.06,
+      "changePct": -0.07002801,
+      "marketCap": 12979050180,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "SF-PB",
+      "name": "Stifel Financial Corp.",
+      "sector": "Financial Services",
+      "grade": "B+",
+      "price": 21.91,
+      "change": -0.24,
+      "changePct": -1.08352,
+      "marketCap": 10822393055,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "SF-PC",
+      "name": "Stifel Financial Corp.",
+      "sector": "Financial Services",
+      "grade": "B+",
+      "price": 21.63,
+      "change": -0.00070038147,
+      "changePct": -0.0032379,
+      "marketCap": 2202539640,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "SFBS",
+      "name": "ServisFirst Bancshares, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 91.33,
+      "change": -0.2,
+      "changePct": -0.21851,
+      "marketCap": 4992353524,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "SFD",
+      "name": "Smithfield Foods, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "A",
+      "price": 22.76,
+      "change": 0.29,
+      "changePct": 1.29061,
+      "marketCap": 8955542506,
+      "scores": {
+        "good": 6,
+        "ok": 2,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "SFM",
+      "name": "Sprouts Farmers Market, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 82.5,
+      "change": -0.18,
+      "changePct": -0.21771,
+      "marketCap": 7692929063,
+      "scores": {
+        "good": 3,
+        "ok": 4,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "SFNC",
+      "name": "Simmons First National Corporation",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 24.075,
+      "change": 0.135,
+      "changePct": 0.56391,
+      "marketCap": 3492415800,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "SGEN",
+      "name": "Seagen Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 228.74,
+      "change": -0.16,
+      "changePct": -0.0699,
+      "marketCap": 43154776450,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "SGFY",
+      "name": "Signify Health, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 30.49,
+      "change": 0.02,
+      "changePct": 0.0656,
+      "marketCap": 8933386237,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "SGHC",
+      "name": "Super Group (SGHC) Limited",
+      "sector": "Consumer Cyclical",
+      "grade": "A",
+      "price": 13.3,
+      "change": 0.21,
+      "changePct": 1.60428,
+      "marketCap": 6757421280,
+      "scores": {
+        "good": 6,
+        "ok": 2,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "SGI",
+      "name": "Somnigroup International Inc",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 66.06,
+      "change": -0.28,
+      "changePct": -0.42207,
+      "marketCap": 13896744335,
+      "scores": {
+        "good": 3,
+        "ok": 4,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "ok"
       }
     },
     {
@@ -60225,7 +60407,7 @@
       "price": 41.75,
       "change": 0,
       "changePct": 0,
-      "marketCap": 7931546639,
+      "marketCap": 8165206735,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -61599,15 +61781,15 @@
       "ticker": "TKC",
       "name": "Turkcell Iletisim Hizmetleri A.S.",
       "sector": "Communication Services",
-      "grade": "B",
+      "grade": "B+",
       "price": 5.46,
       "change": 0.04,
       "changePct": 0.73801,
       "marketCap": 4753350447,
       "scores": {
         "good": 5,
-        "ok": 2,
-        "bad": 1,
+        "ok": 3,
+        "bad": 0,
         "total": 8
       },
       "ratioGrades": {
@@ -61616,7 +61798,7 @@
         "assetTurnover": "ok",
         "operatingMargin": "ok",
         "peRatio": "good",
-        "revenueGrowth": "bad",
+        "revenueGrowth": "ok",
         "fcfYield": "good",
         "evToSales": "good"
       }
@@ -62896,32 +63078,6 @@
       }
     },
     {
-      "ticker": "TTD",
-      "name": "The Trade Desk, Inc.",
-      "sector": "Technology",
-      "grade": "B+",
-      "price": 14.14,
-      "change": -0.42,
-      "changePct": -2.88462,
-      "marketCap": 6647331871,
-      "scores": {
-        "good": 5,
-        "ok": 3,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
       "ticker": "TTE",
       "name": "TotalEnergies SE",
       "sector": "Energy",
@@ -62974,188 +63130,6 @@
       }
     },
     {
-      "ticker": "TTMI",
-      "name": "TTM Technologies, Inc.",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 140,
-      "change": 1.12,
-      "changePct": 0.80645,
-      "marketCap": 14539000000,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 3,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "TTWO",
-      "name": "Take-Two Interactive Software, Inc.",
-      "sector": "Technology",
-      "grade": "C",
-      "price": 246.95,
-      "change": 5.04,
-      "changePct": 2.08342,
-      "marketCap": 46174711000,
-      "scores": {
-        "good": 1,
-        "ok": 4,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "ok",
-        "fcfYield": "bad",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "TU",
-      "name": "Telus Corp",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 9.76,
-      "change": 0.08,
-      "changePct": 0.82645,
-      "marketCap": 15238765108,
-      "scores": {
-        "good": 2,
-        "ok": 2,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "TVTX",
-      "name": "Travere Therapeutics, Inc.",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 62.14,
-      "change": 0.71,
-      "changePct": 1.15579,
-      "marketCap": 5778578806,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "TW",
-      "name": "Tradeweb Markets Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 106.29,
-      "change": 0.76,
-      "changePct": 0.72017,
-      "marketCap": 22627678131,
-      "scores": {
-        "good": 5,
-        "ok": 0,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "TWLO",
-      "name": "Twilio Inc.",
-      "sector": "Technology",
-      "grade": "B",
-      "price": 238.2,
-      "change": -11.22,
-      "changePct": -4.49844,
-      "marketCap": 36152533452,
-      "scores": {
-        "good": 2,
-        "ok": 5,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": "ok",
-        "revenueGrowth": "ok",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "TWNK",
-      "name": "Hostess Brands, Inc.",
-      "sector": "Consumer Defensive",
-      "grade": "B",
-      "price": 33.3,
-      "change": -0.05,
-      "changePct": -0.1499,
-      "marketCap": 4424304600,
-      "scores": {
-        "good": 3,
-        "ok": 4,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "ok",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
       "ticker": "TWNKW",
       "name": "Hostess Brands, Inc.",
       "sector": "Consumer Defensive",
@@ -63179,32 +63153,6 @@
         "revenueGrowth": "ok",
         "fcfYield": "ok",
         "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "TWOD",
-      "name": "Two Harbors Investment Corp.",
-      "sector": "Real Estate",
-      "grade": "?",
-      "price": 25.38,
-      "change": 0.04999998,
-      "changePct": 0.19739,
-      "marketCap": 2668326300,
-      "scores": {
-        "good": 0,
-        "ok": 0,
-        "bad": 0,
-        "total": 0
-      },
-      "ratioGrades": {
-        "currentRatio": null,
-        "debtToEquity": null,
-        "assetTurnover": null,
-        "operatingMargin": null,
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": null,
-        "evToSales": null
       }
     },
     {
@@ -63913,14 +63861,14 @@
       "ticker": "UGP",
       "name": "Ultrapar Participa\u00e7\u00f5es S.A.",
       "sector": "Energy",
-      "grade": "B+",
+      "grade": "A",
       "price": 6.16,
       "change": -1.9073e-08,
       "changePct": -3.09635e-07,
       "marketCap": 6583607467,
       "scores": {
-        "good": 5,
-        "ok": 3,
+        "good": 6,
+        "ok": 2,
         "bad": 0,
         "total": 8
       },
@@ -63930,7 +63878,7 @@
         "assetTurnover": "good",
         "operatingMargin": "ok",
         "peRatio": "good",
-        "revenueGrowth": "ok",
+        "revenueGrowth": "good",
         "fcfYield": "good",
         "evToSales": "good"
       }
@@ -69171,15 +69119,15 @@
       "changePct": 1.21335,
       "marketCap": 19623356553,
       "scores": {
-        "good": 1,
-        "ok": 5,
+        "good": 3,
+        "ok": 3,
         "bad": 1,
         "total": 7
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
         "operatingMargin": "ok",
         "peRatio": null,
         "revenueGrowth": "good",
