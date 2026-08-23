@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T08:05:25.595659Z",
+  "updated": "2026-08-23T08:07:22.978057Z",
   "stocks": [
     {
       "ticker": "A",
@@ -727,604 +727,6 @@
         "revenueGrowth": "ok",
         "fcfYield": "ok",
         "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "ACGL",
-      "name": "Arch Capital Group Ltd.",
-      "sector": "Financial Services",
-      "grade": "C",
-      "price": 99.39,
-      "change": 0.08,
-      "changePct": 0.08055584,
-      "marketCap": 34725872100,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 2,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "ACGLN",
-      "name": "Arch Capital Group Ltd.",
-      "sector": "Financial Services",
-      "grade": "C",
-      "price": 16.03,
-      "change": -0.29,
-      "changePct": -1.77697,
-      "marketCap": 34049103453,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 2,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "ACGLO",
-      "name": "Arch Capital Group Ltd.",
-      "sector": "Financial Services",
-      "grade": "C",
-      "price": 19.06,
-      "change": -0.21,
-      "changePct": -1.08978,
-      "marketCap": 34073691284,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 2,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "ACGLP",
-      "name": "Arch Capital Group Ltd.",
-      "sector": "Financial Services",
-      "grade": "C",
-      "price": 24.99,
-      "change": 0.01,
-      "changePct": 0.04,
-      "marketCap": 15165357055,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 2,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "ACHC",
-      "name": "Acadia Healthcare Company, Inc.",
-      "sector": "Healthcare",
-      "grade": "C",
-      "price": 27.82,
-      "change": 0.85,
-      "changePct": 3.15165,
-      "marketCap": 2590049651,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "ACHR",
-      "name": "Archer Aviation Inc.",
-      "sector": "Industrials",
-      "grade": "D",
-      "price": 6.3,
-      "change": 0.21,
-      "changePct": 3.44828,
-      "marketCap": 4785467400,
-      "scores": {
-        "good": 2,
-        "ok": 0,
-        "bad": 4,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "ACI",
-      "name": "Albertsons Companies, Inc.",
-      "sector": "Consumer Defensive",
-      "grade": "D",
-      "price": 12.38,
-      "change": 0.4,
-      "changePct": 3.3389,
-      "marketCap": 6008335880,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "ACIW",
-      "name": "ACI Worldwide, Inc.",
-      "sector": "Technology",
-      "grade": "B",
-      "price": 51.86,
-      "change": 0.29,
-      "changePct": 0.56234,
-      "marketCap": 5272169020,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "ACLS",
-      "name": "Axcelis Technologies, Inc.",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 127.07,
-      "change": 2.1,
-      "changePct": 1.6804,
-      "marketCap": 3905356292,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 3,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "ACLX",
-      "name": "Arcellx, Inc.",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 115.07,
-      "change": 0.02,
-      "changePct": 0.01738375,
-      "marketCap": 6732325464,
-      "scores": {
-        "good": 2,
-        "ok": 0,
-        "bad": 5,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "ACM",
-      "name": "Aecom",
-      "sector": "Industrials",
-      "grade": "D",
-      "price": 64.79,
-      "change": -0.39,
-      "changePct": -0.59834,
-      "marketCap": 8327005170,
-      "scores": {
-        "good": 1,
-        "ok": 3,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "ACMR",
-      "name": "ACM Research, Inc.",
-      "sector": "Technology",
-      "grade": "B",
-      "price": 79.41,
-      "change": 0.89,
-      "changePct": 1.13347,
-      "marketCap": 5091584889,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "sector": "Technology",
-      "grade": "B",
-      "price": 185.28,
-      "change": 3.93,
-      "changePct": 2.16708,
-      "marketCap": 113380633956,
-      "scores": {
-        "good": 5,
-        "ok": 2,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "ACT",
-      "name": "Enact Holdings Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 49.19,
-      "change": 0.07,
-      "changePct": 0.14251,
-      "marketCap": 6866973190,
-      "scores": {
-        "good": 5,
-        "ok": 0,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "AD",
-      "name": "Array Digital Infrastructure Inc",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 35.66,
-      "change": 0.12,
-      "changePct": 0.33765,
-      "marketCap": 3075085968,
-      "scores": {
-        "good": 2,
-        "ok": 2,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "ADBE",
-      "name": "Adobe Inc.",
-      "sector": "Technology",
-      "grade": "B",
-      "price": 275.3,
-      "change": 3.08,
-      "changePct": 1.13144,
-      "marketCap": 109431750000,
-      "scores": {
-        "good": 5,
-        "ok": 2,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "ADC",
-      "name": "Agree Realty Corporation",
-      "sector": "Real Estate",
-      "grade": "C",
-      "price": 73.88,
-      "change": -0.57,
-      "changePct": -0.76561,
-      "marketCap": 8873199223,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "good",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "ADEA",
-      "name": "Adeia Inc.",
-      "sector": "Technology",
-      "grade": "B+",
-      "price": 26.25,
-      "change": -0.71,
-      "changePct": -2.63353,
-      "marketCap": 2895217500,
-      "scores": {
-        "good": 5,
-        "ok": 3,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "ADI",
-      "name": "Analog Devices, Inc.",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 373.09,
-      "change": 2.85,
-      "changePct": 0.76977,
-      "marketCap": 181727288830,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 3,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "ADM",
-      "name": "Archer-Daniels-Midland Company",
-      "sector": "Consumer Defensive",
-      "grade": "C",
-      "price": 80.3,
-      "change": -1.4,
-      "changePct": -1.71359,
-      "marketCap": 38701147100,
-      "scores": {
-        "good": 5,
-        "ok": 1,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "ADMA",
-      "name": "ADMA Biologics, Inc.",
-      "sector": "Healthcare",
-      "grade": "A",
-      "price": 9.84,
-      "change": 0.08,
-      "changePct": 0.81967,
-      "marketCap": 2280643516,
-      "scores": {
-        "good": 6,
-        "ok": 2,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "ADP",
-      "name": "Automatic Data Processing, Inc.",
-      "sector": "Technology",
-      "grade": "C",
-      "price": 280.81,
-      "change": 1.6,
-      "changePct": 0.57305,
-      "marketCap": 112249304540,
-      "scores": {
-        "good": 1,
-        "ok": 5,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "ADPT",
-      "name": "Adaptive Biotechnologies Corporation",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 25.99,
-      "change": 0.55,
-      "changePct": 2.16195,
-      "marketCap": 4159543560,
-      "scores": {
-        "good": 2,
-        "ok": 1,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
       }
     },
     {
@@ -3021,15 +2423,15 @@
       "ticker": "ALH",
       "name": "Alliance Laundry Holdings Inc.",
       "sector": "Industrials",
-      "grade": "C",
+      "grade": "B",
       "price": 23.47,
       "change": 0.29,
       "changePct": 1.25108,
       "marketCap": 4661345250,
       "scores": {
-        "good": 2,
+        "good": 3,
         "ok": 4,
-        "bad": 2,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -3037,9 +2439,9 @@
         "debtToEquity": "bad",
         "assetTurnover": "ok",
         "operatingMargin": "good",
-        "peRatio": "bad",
+        "peRatio": "ok",
         "revenueGrowth": "good",
-        "fcfYield": "ok",
+        "fcfYield": "good",
         "evToSales": "ok"
       }
     },
@@ -9267,14 +8669,14 @@
       "changePct": 0.88608,
       "marketCap": 4762714194,
       "scores": {
-        "good": 4,
-        "ok": 1,
+        "good": 3,
+        "ok": 2,
         "bad": 2,
         "total": 7
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "bad",
         "operatingMargin": "bad",
         "peRatio": null,
@@ -9469,15 +8871,15 @@
       "ticker": "BJ",
       "name": "BJ's Wholesale Club Holdings, Inc.",
       "sector": "Consumer Defensive",
-      "grade": "D",
+      "grade": "C",
       "price": 96.42,
       "change": 5.12,
       "changePct": 5.60789,
       "marketCap": 12312254227,
       "scores": {
         "good": 4,
-        "ok": 1,
-        "bad": 3,
+        "ok": 2,
+        "bad": 2,
         "total": 8
       },
       "ratioGrades": {
@@ -9487,7 +8889,7 @@
         "operatingMargin": "bad",
         "peRatio": "good",
         "revenueGrowth": "good",
-        "fcfYield": "bad",
+        "fcfYield": "ok",
         "evToSales": "good"
       }
     },
@@ -10307,8 +9709,8 @@
       "changePct": 0.79556,
       "marketCap": 13907391542,
       "scores": {
-        "good": 2,
-        "ok": 1,
+        "good": 1,
+        "ok": 2,
         "bad": 3,
         "total": 6
       },
@@ -10316,7 +9718,7 @@
         "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "good",
+        "operatingMargin": "ok",
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": null,
@@ -10815,6 +10217,84 @@
         "revenueGrowth": "bad",
         "fcfYield": null,
         "evToSales": null
+      }
+    },
+    {
+      "ticker": "BRKR",
+      "name": "Bruker Corporation",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 59.56,
+      "change": -0.36,
+      "changePct": -0.6008,
+      "marketCap": 9066558165,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "BRKRP",
+      "name": "Bruker Corporation",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 439.4,
+      "change": -1.21,
+      "changePct": -0.27462,
+      "marketCap": 8814889522,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "BRKS",
+      "name": "Brooks Automation, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 113.1,
+      "change": -3.1800003,
+      "changePct": -2.7347784,
+      "marketCap": 7815594540,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "good"
       }
     },
     {
@@ -16365,14 +15845,14 @@
       "changePct": -0.36364,
       "marketCap": 2412476840,
       "scores": {
-        "good": 3,
-        "ok": 1,
+        "good": 2,
+        "ok": 2,
         "bad": 3,
         "total": 7
       },
       "ratioGrades": {
         "currentRatio": "bad",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "bad",
         "peRatio": null,
@@ -32034,6 +31514,110 @@
       }
     },
     {
+      "ticker": "IBN",
+      "name": "ICICI Bank Limited",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 29.91,
+      "change": 0.24,
+      "changePct": 0.8089,
+      "marketCap": 106970446849,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "IBOC",
+      "name": "International Bancshares Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 71.49,
+      "change": -0.21,
+      "changePct": -0.29289,
+      "marketCap": 4445333988,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "IBP",
+      "name": "Installed Building Products, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 246.81,
+      "change": 2.2,
+      "changePct": 0.89939,
+      "marketCap": 6649234167,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "IBRX",
+      "name": "ImmunityBio, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 7.79,
+      "change": -0.05,
+      "changePct": -0.63776,
+      "marketCap": 8158856492,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
       "ticker": "IBTX",
       "name": "Independent Bank Group, Inc.",
       "sector": "Financial Services",
@@ -35398,15 +34982,15 @@
       "marketCap": 5409688207,
       "scores": {
         "good": 3,
-        "ok": 2,
-        "bad": 0,
+        "ok": 1,
+        "bad": 1,
         "total": 5
       },
       "ratioGrades": {
         "currentRatio": "ok",
         "debtToEquity": "good",
         "assetTurnover": "good",
-        "operatingMargin": "ok",
+        "operatingMargin": "bad",
         "peRatio": null,
         "revenueGrowth": "good",
         "fcfYield": null,
@@ -51742,6 +51326,32 @@
       }
     },
     {
+      "ticker": "QSR",
+      "name": "Restaurant Brands International Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 80.86,
+      "change": 1.31,
+      "changePct": 1.64676,
+      "marketCap": 28055719114,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "bad",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "bad"
+      }
+    },
+    {
       "ticker": "QTWO",
       "name": "Q2 Holdings, Inc.",
       "sector": "Technology",
@@ -52233,6 +51843,32 @@
         "revenueGrowth": "ok",
         "fcfYield": "bad",
         "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "RCM",
+      "name": "R1 RCM Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 14.31,
+      "change": null,
+      "changePct": null,
+      "marketCap": 6044457911,
+      "scores": {
+        "good": 2,
+        "ok": 5,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "good"
       }
     },
     {
@@ -52856,6 +52492,32 @@
         "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "RGC",
+      "name": "Regencell Bioscience Holdings Limited",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 5.3,
+      "change": -0.14,
+      "changePct": -2.57353,
+      "marketCap": 2626012200,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 3,
+        "total": 5
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
         "evToSales": null
       }
     },
@@ -55795,6 +55457,58 @@
         "revenueGrowth": "bad",
         "fcfYield": null,
         "evToSales": null
+      }
+    },
+    {
+      "ticker": "SGEN",
+      "name": "Seagen Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 228.74,
+      "change": -0.16,
+      "changePct": -0.0699,
+      "marketCap": 43154776450,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "SGFY",
+      "name": "Signify Health, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 30.49,
+      "change": 0.02,
+      "changePct": 0.0656,
+      "marketCap": 8933386237,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "bad"
       }
     },
     {
@@ -61813,14 +61527,14 @@
       "changePct": -0.12794,
       "marketCap": 155222021707,
       "scores": {
-        "good": 3,
-        "ok": 5,
+        "good": 2,
+        "ok": 6,
         "bad": 0,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "good",
         "operatingMargin": "good",
         "peRatio": "ok",
@@ -67035,8 +66749,8 @@
       "sector": "Financial Services",
       "grade": "B",
       "price": 36.38,
-      "change": -0.27,
-      "changePct": -0.7367,
+      "change": 0,
+      "changePct": 0,
       "marketCap": 2690450158,
       "scores": {
         "good": 3,
