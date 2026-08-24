@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-23T08:07:22.978057Z",
+  "updated": "2026-08-24T08:16:35.900959Z",
   "stocks": [
     {
       "ticker": "A",
@@ -727,6 +727,266 @@
         "revenueGrowth": "ok",
         "fcfYield": "ok",
         "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "ACT",
+      "name": "Enact Holdings Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 49.19,
+      "change": 0.07,
+      "changePct": 0.14251,
+      "marketCap": 6866973190,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "AD",
+      "name": "Array Digital Infrastructure Inc",
+      "sector": "Communication Services",
+      "grade": "D",
+      "price": 35.66,
+      "change": 0.12,
+      "changePct": 0.33765,
+      "marketCap": 3075085968,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 4,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 275.3,
+      "change": 3.08,
+      "changePct": 1.13144,
+      "marketCap": 109431750000,
+      "scores": {
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "ADC",
+      "name": "Agree Realty Corporation",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 73.88,
+      "change": -0.57,
+      "changePct": -0.76561,
+      "marketCap": 8873199223,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 2,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "ADEA",
+      "name": "Adeia Inc.",
+      "sector": "Technology",
+      "grade": "B+",
+      "price": 26.25,
+      "change": -0.71,
+      "changePct": -2.63353,
+      "marketCap": 2895217500,
+      "scores": {
+        "good": 5,
+        "ok": 3,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 373.09,
+      "change": 2.85,
+      "changePct": 0.76977,
+      "marketCap": 181727288830,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "ADM",
+      "name": "Archer-Daniels-Midland Company",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 80.3,
+      "change": -1.4,
+      "changePct": -1.71359,
+      "marketCap": 38701147100,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "ADMA",
+      "name": "ADMA Biologics, Inc.",
+      "sector": "Healthcare",
+      "grade": "A",
+      "price": 9.84,
+      "change": 0.08,
+      "changePct": 0.81967,
+      "marketCap": 2280643516,
+      "scores": {
+        "good": 6,
+        "ok": 2,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 280.81,
+      "change": 1.6,
+      "changePct": 0.57305,
+      "marketCap": 112249304540,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "ADPT",
+      "name": "Adaptive Biotechnologies Corporation",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 25.99,
+      "change": 0.55,
+      "changePct": 2.16195,
+      "marketCap": 4159543560,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
       }
     },
     {
@@ -6200,12 +6460,12 @@
       "marketCap": 5498465436,
       "scores": {
         "good": 3,
-        "ok": 3,
-        "bad": 0,
+        "ok": 2,
+        "bad": 1,
         "total": 6
       },
       "ratioGrades": {
-        "currentRatio": "ok",
+        "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "ok",
@@ -15762,10 +16022,10 @@
       "name": "Core Scientific, Inc.",
       "sector": "Technology",
       "grade": "D",
-      "price": 11.125,
-      "change": -0.565,
-      "changePct": -4.83319,
-      "marketCap": 5091406746,
+      "price": 11.12,
+      "change": -0.57,
+      "changePct": -4.87596,
+      "marketCap": 5089118474,
       "scores": {
         "good": 1,
         "ok": 0,
@@ -17861,84 +18121,6 @@
         "revenueGrowth": "bad",
         "fcfYield": "bad",
         "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "CZR",
-      "name": "Caesars Entertainment, Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "D",
-      "price": 29.76,
-      "change": 0.12,
-      "changePct": 0.40486,
-      "marketCap": 6062718003,
-      "scores": {
-        "good": 2,
-        "ok": 1,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "D",
-      "name": "Dominion Energy, Inc.",
-      "sector": "Utilities",
-      "grade": "C",
-      "price": 66.59,
-      "change": -0.88,
-      "changePct": -1.30428,
-      "marketCap": 58567632944,
-      "scores": {
-        "good": 2,
-        "ok": 4,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "DAC",
-      "name": "Danaos Corporation",
-      "sector": "Industrials",
-      "grade": "C",
-      "price": 149.75,
-      "change": 1.05,
-      "changePct": 0.70612,
-      "marketCap": 2725989100,
-      "scores": {
-        "good": 5,
-        "ok": 1,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "ok"
       }
     },
     {
@@ -26992,26 +27174,26 @@
     {
       "ticker": "GEV",
       "name": "GE Vernova Inc.",
-      "sector": "Utilities",
+      "sector": "Industrials",
       "grade": "D",
       "price": 956.85,
       "change": -9.16,
       "changePct": -0.94823,
       "marketCap": 254841305160,
       "scores": {
-        "good": 4,
-        "ok": 1,
+        "good": 2,
+        "ok": 3,
         "bad": 3,
         "total": 8
       },
       "ratioGrades": {
-        "currentRatio": "ok",
+        "currentRatio": "bad",
         "debtToEquity": "good",
-        "assetTurnover": "good",
+        "assetTurnover": "ok",
         "operatingMargin": "bad",
-        "peRatio": "bad",
+        "peRatio": "ok",
         "revenueGrowth": "good",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "bad"
       }
     },
@@ -29774,27 +29956,27 @@
     {
       "ticker": "HGV",
       "name": "Hilton Grand Vacations Inc.",
-      "sector": "Consumer Cyclical",
+      "sector": "Real Estate",
       "grade": "C",
       "price": 45.11,
       "change": 0.29,
       "changePct": 0.64703,
       "marketCap": 3541829694,
       "scores": {
-        "good": 2,
-        "ok": 4,
+        "good": 5,
+        "ok": 0,
         "bad": 2,
-        "total": 8
+        "total": 7
       },
       "ratioGrades": {
         "currentRatio": "good",
         "debtToEquity": "bad",
-        "assetTurnover": "bad",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -31907,15 +32089,15 @@
       "ticker": "IESC",
       "name": "IES Holdings, Inc.",
       "sector": "Industrials",
-      "grade": "C",
-      "price": 685.04,
-      "change": 1.77,
-      "changePct": 0.25905,
-      "marketCap": 13648668456,
+      "grade": "A",
+      "price": 342.52,
+      "change": -340.75,
+      "changePct": -49.87048,
+      "marketCap": 6824334228,
       "scores": {
-        "good": 5,
+        "good": 7,
         "ok": 1,
-        "bad": 2,
+        "bad": 0,
         "total": 8
       },
       "ratioGrades": {
@@ -31923,10 +32105,10 @@
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "good",
-        "peRatio": "bad",
+        "peRatio": "good",
         "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "ok"
+        "fcfYield": "ok",
+        "evToSales": "good"
       }
     },
     {
@@ -36168,58 +36350,6 @@
       }
     },
     {
-      "ticker": "LBTYA",
-      "name": "Liberty Global plc",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 10.65,
-      "change": 0.01,
-      "changePct": 0.09398496,
-      "marketCap": 3499418418,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LBTYB",
-      "name": "Liberty Global plc",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 13.045,
-      "change": -0.005,
-      "changePct": -0.03831418,
-      "marketCap": 3979269394,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "good"
-      }
-    },
-    {
       "ticker": "LBTYK",
       "name": "Liberty Global plc",
       "sector": "Communication Services",
@@ -36269,1670 +36399,6 @@
         "revenueGrowth": "good",
         "fcfYield": null,
         "evToSales": null
-      }
-    },
-    {
-      "ticker": "LC",
-      "name": "LendingClub Corporation",
-      "sector": "Financial Services",
-      "grade": "C",
-      "price": 19.21,
-      "change": 0.4,
-      "changePct": 2.12653,
-      "marketCap": 2215891269,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 2,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "LCII",
-      "name": "LCI Industries",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 101.98,
-      "change": -3.46,
-      "changePct": -3.28149,
-      "marketCap": 2479287484,
-      "scores": {
-        "good": 5,
-        "ok": 2,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LCY",
-      "name": "Landcadia Holdings III, Inc",
-      "sector": "Financial Services",
-      "grade": "D",
-      "price": 12.17,
-      "change": 0.23999977,
-      "changePct": 2.011733,
-      "marketCap": 2367649160,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 3,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "LCYAU",
-      "name": "Landcadia Holdings III, Inc",
-      "sector": "Financial Services",
-      "grade": "D",
-      "price": 13.14,
-      "change": 0,
-      "changePct": 0,
-      "marketCap": 2556360720,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 3,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "LDOS",
-      "name": "Leidos Holdings, Inc.",
-      "sector": "Technology",
-      "grade": "B",
-      "price": 141.39,
-      "change": 0.02,
-      "changePct": 0.01414727,
-      "marketCap": 17784741150,
-      "scores": {
-        "good": 5,
-        "ok": 2,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LEA",
-      "name": "Lear Corporation",
-      "sector": "Consumer Cyclical",
-      "grade": "C",
-      "price": 128.54,
-      "change": 3.11,
-      "changePct": 2.47947,
-      "marketCap": 6439224154,
-      "scores": {
-        "good": 6,
-        "ok": 0,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LECO",
-      "name": "Lincoln Electric Holdings, Inc.",
-      "sector": "Industrials",
-      "grade": "B",
-      "price": 281.82,
-      "change": 4.94,
-      "changePct": 1.78417,
-      "marketCap": 15360824556,
-      "scores": {
-        "good": 3,
-        "ok": 5,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "ok",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LEGN",
-      "name": "Legend Biotech Corporation",
-      "sector": "Healthcare",
-      "grade": "C",
-      "price": 21.82,
-      "change": 0.56,
-      "changePct": 2.63405,
-      "marketCap": 4035460275,
-      "scores": {
-        "good": 5,
-        "ok": 0,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LEN",
-      "name": "Lennar Corporation",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 87.02,
-      "change": 1.6,
-      "changePct": 1.8731,
-      "marketCap": 21606654482,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LEN-B",
-      "name": "Lennar Corporation",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 85.49,
-      "change": 1.65,
-      "changePct": 1.96803,
-      "marketCap": 21660767151,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LEU",
-      "name": "Centrus Energy Corp.",
-      "sector": "Energy",
-      "grade": "D",
-      "price": 186.26,
-      "change": 10.13,
-      "changePct": 5.75143,
-      "marketCap": 3530296418,
-      "scores": {
-        "good": 1,
-        "ok": 2,
-        "bad": 5,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "ok",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LEVI",
-      "name": "Levi Strauss & Co.",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 21.495,
-      "change": 0.265,
-      "changePct": 1.24823,
-      "marketCap": 8410429127,
-      "scores": {
-        "good": 5,
-        "ok": 2,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LFST",
-      "name": "LifeStance Health Group, Inc.",
-      "sector": "Healthcare",
-      "grade": "C",
-      "price": 12.47,
-      "change": -0.18,
-      "changePct": -1.42293,
-      "marketCap": 4836289980,
-      "scores": {
-        "good": 4,
-        "ok": 2,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LFTO",
-      "name": "Liftoff Mobile, Inc. Common Stock",
-      "sector": "Communication Services",
-      "grade": "C",
-      "price": 18.97,
-      "change": 0.61,
-      "changePct": 3.32244,
-      "marketCap": 3158135578,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": null,
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LFUS",
-      "name": "Littelfuse, Inc.",
-      "sector": "Technology",
-      "grade": "B",
-      "price": 412.26,
-      "change": 0.29,
-      "changePct": 0.07039348,
-      "marketCap": 10470868062,
-      "scores": {
-        "good": 5,
-        "ok": 1,
-        "bad": 1,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LGN",
-      "name": "Legence Corp. Class A Common stock",
-      "sector": "Industrials",
-      "grade": "C",
-      "price": 59.37,
-      "change": -0.71,
-      "changePct": -1.18176,
-      "marketCap": 7185627687,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LGND",
-      "name": "Ligand Pharmaceuticals Incorporated",
-      "sector": "Healthcare",
-      "grade": "C",
-      "price": 286.29,
-      "change": -1.1,
-      "changePct": -0.38276,
-      "marketCap": 5737555354,
-      "scores": {
-        "good": 3,
-        "ok": 3,
-        "bad": 2,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LH",
-      "name": "Labcorp Holdings Inc.",
-      "sector": "Healthcare",
-      "grade": "B",
-      "price": 336.34,
-      "change": 3.53,
-      "changePct": 1.06067,
-      "marketCap": 27579880000,
-      "scores": {
-        "good": 3,
-        "ok": 4,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LHCG",
-      "name": "LHC Group, Inc.",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 169.81,
-      "change": 0,
-      "changePct": 0,
-      "marketCap": 5289360747,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LHX",
-      "name": "L3Harris Technologies, Inc.",
-      "sector": "Industrials",
-      "grade": "B",
-      "price": 266.73,
-      "change": -3.71,
-      "changePct": -1.37184,
-      "marketCap": 49669126950,
-      "scores": {
-        "good": 2,
-        "ok": 6,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LI",
-      "name": "Li Auto Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "D",
-      "price": 13.05,
-      "change": 0.13,
-      "changePct": 1.00619,
-      "marketCap": 13179982607,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 3,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LIF",
-      "name": "Life360, Inc.",
-      "sector": "Technology",
-      "grade": "B",
-      "price": 44.66,
-      "change": -1.16,
-      "changePct": -2.53165,
-      "marketCap": 3618875320,
-      "scores": {
-        "good": 3,
-        "ok": 4,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": "ok",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LIFE",
-      "name": "Ethos Technologies Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 34.16,
-      "change": 0.64,
-      "changePct": 1.90931,
-      "marketCap": 2168090963,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 1,
-        "total": 4
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "LII",
-      "name": "Lennox International Inc.",
-      "sector": "Industrials",
-      "grade": "B",
-      "price": 402.87,
-      "change": -3.18001,
-      "changePct": -0.78316,
-      "marketCap": 13923469209,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LILA",
-      "name": "Liberty Latin America Ltd.",
-      "sector": "Communication Services",
-      "grade": "C",
-      "price": 8.47,
-      "change": 0.3,
-      "changePct": 3.67197,
-      "marketCap": 2496097049,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LILAK",
-      "name": "Liberty Latin America Ltd.",
-      "sector": "Communication Services",
-      "grade": "C",
-      "price": 8.39,
-      "change": 0.18,
-      "changePct": 2.19245,
-      "marketCap": 2505054335,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LILAP",
-      "name": "Liberty Latin America Ltd. 9% Cum Perp Red Pfd Shs Series A When-issued",
-      "sector": "Communication Services",
-      "grade": "B",
-      "price": 20.93,
-      "change": 0.82,
-      "changePct": 4.07757,
-      "marketCap": 3371823000,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LILKV",
-      "name": "Liberty Latin America Ltd Class C Common Stock Ex-Distribution When Issued",
-      "sector": "Communication Services",
-      "grade": "B",
-      "price": 5.25,
-      "change": 0,
-      "changePct": 0,
-      "marketCap": 2459999997,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LIME",
-      "name": "Neutron Holdings, Inc.",
-      "sector": "Industrials",
-      "grade": "D",
-      "price": 41.06,
-      "change": -0.97,
-      "changePct": -2.30788,
-      "marketCap": 2628904932,
-      "scores": {
-        "good": 1,
-        "ok": 2,
-        "bad": 3,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LIN",
-      "name": "Linde plc",
-      "sector": "Basic Materials",
-      "grade": "D",
-      "price": 487.57,
-      "change": 6.28,
-      "changePct": 1.30483,
-      "marketCap": 225549882000,
-      "scores": {
-        "good": 1,
-        "ok": 3,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "ok",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LIND",
-      "name": "Lindblad Expeditions Holdings, Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "C",
-      "price": 31.09,
-      "change": -0.23,
-      "changePct": -0.73436,
-      "marketCap": 2040116131,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LINE",
-      "name": "Lineage, Inc.",
-      "sector": "Real Estate",
-      "grade": "C",
-      "price": 41.61,
-      "change": 0.15,
-      "changePct": 0.36179,
-      "marketCap": 9473530328,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LION",
-      "name": "Lionsgate Studios Corp.",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 11.51,
-      "change": 0.05,
-      "changePct": 0.4363,
-      "marketCap": 3424120719,
-      "scores": {
-        "good": 1,
-        "ok": 2,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LITE",
-      "name": "Lumentum Holdings Inc.",
-      "sector": "Technology",
-      "grade": "C",
-      "price": 866.71,
-      "change": -12.57,
-      "changePct": -1.42958,
-      "marketCap": 67430038000,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LIVN",
-      "name": "LivaNova PLC",
-      "sector": "Healthcare",
-      "grade": "B",
-      "price": 78.74,
-      "change": 0.53,
-      "changePct": 0.67766,
-      "marketCap": 4325466782,
-      "scores": {
-        "good": 3,
-        "ok": 5,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "ok",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LKQ",
-      "name": "LKQ Corporation",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 25.77,
-      "change": -0.21,
-      "changePct": -0.80831,
-      "marketCap": 6519864040,
-      "scores": {
-        "good": 4,
-        "ok": 3,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 1254.77,
-      "change": 10.37,
-      "changePct": 0.83333,
-      "marketCap": 1181668354570,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LLYVA",
-      "name": "Liberty Live Group",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 101.7,
-      "change": -0.2,
-      "changePct": -0.19627,
-      "marketCap": 9676937348,
-      "scores": {
-        "good": 2,
-        "ok": 1,
-        "bad": 3,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LLYVK",
-      "name": "Liberty Live Group",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 105.42,
-      "change": -0.03,
-      "changePct": -0.0284495,
-      "marketCap": 9699107011,
-      "scores": {
-        "good": 2,
-        "ok": 1,
-        "bad": 3,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LMHA",
-      "name": "Legg Mason, Inc.",
-      "sector": "Financial Services",
-      "grade": "?",
-      "price": 25.7,
-      "change": -0.1291,
-      "changePct": -0.4998,
-      "marketCap": 3105228277,
-      "scores": {
-        "good": 0,
-        "ok": 0,
-        "bad": 0,
-        "total": 0
-      },
-      "ratioGrades": {
-        "currentRatio": null,
-        "debtToEquity": null,
-        "assetTurnover": null,
-        "operatingMargin": null,
-        "peRatio": null,
-        "revenueGrowth": null,
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "LMND",
-      "name": "Lemonade, Inc.",
-      "sector": "Financial Services",
-      "grade": "C",
-      "price": 53.37,
-      "change": 2.66,
-      "changePct": 5.24551,
-      "marketCap": 4099926096,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 2,
-        "total": 5
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "LMT",
-      "name": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "grade": "B",
-      "price": 563.57,
-      "change": -7.91,
-      "changePct": -1.38413,
-      "marketCap": 130066883870,
-      "scores": {
-        "good": 3,
-        "ok": 4,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "ok",
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LNC",
-      "name": "Lincoln National Corporation",
-      "sector": "Financial Services",
-      "grade": "B",
-      "price": 42.15,
-      "change": 0.17,
-      "changePct": 0.40495,
-      "marketCap": 8069491050,
-      "scores": {
-        "good": 3,
-        "ok": 2,
-        "bad": 1,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "bad",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "LNG",
-      "name": "Cheniere Energy, Inc.",
-      "sector": "Energy",
-      "grade": "D",
-      "price": 277.51,
-      "change": -1.66,
-      "changePct": -0.59462,
-      "marketCap": 58152775520,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "good",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LNT",
-      "name": "Alliant Energy Corporation",
-      "sector": "Utilities",
-      "grade": "D",
-      "price": 67.86,
-      "change": -1.6,
-      "changePct": -2.30348,
-      "marketCap": 17526677220,
-      "scores": {
-        "good": 2,
-        "ok": 3,
-        "bad": 3,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LNTH",
-      "name": "Lantheus Holdings, Inc.",
-      "sector": "Healthcare",
-      "grade": "B",
-      "price": 99.97,
-      "change": -0.27,
-      "changePct": -0.26935,
-      "marketCap": 6508655018,
-      "scores": {
-        "good": 5,
-        "ok": 2,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "ok",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LNW",
-      "name": "Light & Wonder, Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "D",
-      "price": 99.75,
-      "change": 0.25,
-      "changePct": 0.25126,
-      "marketCap": 8428950710,
-      "scores": {
-        "good": 4,
-        "ok": 0,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "bad",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LOAR",
-      "name": "Loar Holdings Inc.",
-      "sector": "Industrials",
-      "grade": "D",
-      "price": 75,
-      "change": 0.63,
-      "changePct": 0.84712,
-      "marketCap": 7021835250,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "bad",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LOGI",
-      "name": "Logitech International S.A.",
-      "sector": "Technology",
-      "grade": "B",
-      "price": 96.03,
-      "change": 0.69,
-      "changePct": 0.72373,
-      "marketCap": 13786622910,
-      "scores": {
-        "good": 6,
-        "ok": 1,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LOPE",
-      "name": "Grand Canyon Education, Inc.",
-      "sector": "Consumer Defensive",
-      "grade": "A",
-      "price": 147.46,
-      "change": 1.19,
-      "changePct": 0.81356,
-      "marketCap": 3843550356,
-      "scores": {
-        "good": 6,
-        "ok": 2,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LOW",
-      "name": "Lowe's Companies, Inc.",
-      "sector": "Consumer Cyclical",
-      "grade": "B",
-      "price": 216.09,
-      "change": -1.25,
-      "changePct": -0.57514,
-      "marketCap": 121163175630,
-      "scores": {
-        "good": 3,
-        "ok": 4,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "ok",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LPG",
-      "name": "Dorian LPG Ltd.",
-      "sector": "Energy",
-      "grade": "B",
-      "price": 51.13,
-      "change": 1.48,
-      "changePct": 2.98087,
-      "marketCap": 2187478480,
-      "scores": {
-        "good": 5,
-        "ok": 2,
-        "bad": 1,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "good",
-        "fcfYield": "good",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LPL",
-      "name": "LG Display Co., Ltd.",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 3.28,
-      "change": -0.05,
-      "changePct": -1.5015,
-      "marketCap": 3280000000,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "bad",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LPLA",
-      "name": "LPL Financial Holdings Inc.",
-      "sector": "Financial Services",
-      "grade": "C",
-      "price": 361.35,
-      "change": 7.33,
-      "changePct": 2.0705,
-      "marketCap": 28901806822,
-      "scores": {
-        "good": 4,
-        "ok": 0,
-        "bad": 2,
-        "total": 6
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": null,
-        "evToSales": null
-      }
-    },
-    {
-      "ticker": "LPX",
-      "name": "Louisiana-Pacific Corporation",
-      "sector": "Basic Materials",
-      "grade": "D",
-      "price": 73.18,
-      "change": -0.57,
-      "changePct": -0.77288,
-      "marketCap": 5112711918,
-      "scores": {
-        "good": 3,
-        "ok": 1,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "bad",
-        "evToSales": "ok"
-      }
-    },
-    {
-      "ticker": "LQDA",
-      "name": "Liquidia Corporation",
-      "sector": "Healthcare",
-      "grade": "D",
-      "price": 68.62,
-      "change": -2.43,
-      "changePct": -3.42013,
-      "marketCap": 6102246153,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 3,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "ok",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 314,
-      "change": 3.47,
-      "changePct": 1.11744,
-      "marketCap": 392678980000,
-      "scores": {
-        "good": 5,
-        "ok": 0,
-        "bad": 3,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LRN",
-      "name": "Stride, Inc.",
-      "sector": "Consumer Defensive",
-      "grade": "A",
-      "price": 84.36,
-      "change": 0.29,
-      "changePct": 0.34495,
-      "marketCap": 3587392128,
-      "scores": {
-        "good": 7,
-        "ok": 1,
-        "bad": 0,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "good",
-        "peRatio": "good",
-        "revenueGrowth": "ok",
-        "fcfYield": "good",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LSCC",
-      "name": "Lattice Semiconductor Corporation",
-      "sector": "Technology",
-      "grade": "D",
-      "price": 117.69,
-      "change": 0.13,
-      "changePct": 0.11058,
-      "marketCap": 16124471520,
-      "scores": {
-        "good": 4,
-        "ok": 0,
-        "bad": 4,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LSI",
-      "name": "Life Storage, Inc.",
-      "sector": "Real Estate",
-      "grade": "C",
-      "price": 133.1,
-      "change": -1.02,
-      "changePct": -0.7605,
-      "marketCap": 11325984780,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 2,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "bad",
-        "debtToEquity": "good",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
-        "peRatio": null,
-        "revenueGrowth": "good",
-        "fcfYield": "good",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LSTR",
-      "name": "Landstar System, Inc.",
-      "sector": "Industrials",
-      "grade": "D",
-      "price": 186.58,
-      "change": 4.16,
-      "changePct": 2.28045,
-      "marketCap": 6331946802,
-      "scores": {
-        "good": 4,
-        "ok": 1,
-        "bad": 3,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "good"
-      }
-    },
-    {
-      "ticker": "LSXMA",
-      "name": "The Liberty SiriusXM Group",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 22.29,
-      "change": -0.27,
-      "changePct": -1.1968,
-      "marketCap": 7284082676,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 5,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LSXMB",
-      "name": "The Liberty SiriusXM Group",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 22.51,
-      "change": -1.09,
-      "changePct": -4.6186,
-      "marketCap": 7284078070,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 5,
-        "total": 8
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "bad"
-      }
-    },
-    {
-      "ticker": "LSXMK",
-      "name": "The Liberty SiriusXM Group",
-      "sector": "Communication Services",
-      "grade": "D",
-      "price": 22.29,
-      "change": -0.26,
-      "changePct": -1.153,
-      "marketCap": 7284082676,
-      "scores": {
-        "good": 3,
-        "ok": 0,
-        "bad": 4,
-        "total": 7
-      },
-      "ratioGrades": {
-        "currentRatio": "good",
-        "debtToEquity": "good",
-        "assetTurnover": "bad",
-        "operatingMargin": "bad",
-        "peRatio": null,
-        "revenueGrowth": "bad",
-        "fcfYield": "good",
-        "evToSales": "bad"
       }
     },
     {
@@ -38406,27 +36872,27 @@
     {
       "ticker": "MAAS",
       "name": "Maase Inc.",
-      "sector": "Financial Services",
-      "grade": "B",
+      "sector": "Technology",
+      "grade": "D",
       "price": 15.625,
       "change": -0.005,
       "changePct": -0.03198976,
       "marketCap": 6804826719,
       "scores": {
-        "good": 3,
+        "good": 2,
         "ok": 0,
-        "bad": 1,
-        "total": 4
+        "bad": 4,
+        "total": 6
       },
       "ratioGrades": {
         "currentRatio": "good",
         "debtToEquity": "good",
-        "assetTurnover": "good",
+        "assetTurnover": "bad",
         "operatingMargin": "bad",
         "peRatio": null,
         "revenueGrowth": null,
-        "fcfYield": null,
-        "evToSales": null
+        "fcfYield": "bad",
+        "evToSales": "bad"
       }
     },
     {
@@ -64101,8 +62567,8 @@
       "changePct": 1.88889,
       "marketCap": 45746524069,
       "scores": {
-        "good": 4,
-        "ok": 3,
+        "good": 3,
+        "ok": 4,
         "bad": 1,
         "total": 8
       },
@@ -64113,7 +62579,7 @@
         "operatingMargin": "ok",
         "peRatio": "good",
         "revenueGrowth": "bad",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "ok"
       }
     },
@@ -65888,27 +64354,27 @@
     {
       "ticker": "VNT",
       "name": "Vontier Corporation",
-      "sector": "Industrials",
-      "grade": "B",
+      "sector": "Technology",
+      "grade": "C",
       "price": 32.98,
       "change": 0.17,
       "changePct": 0.51813,
       "marketCap": 4643584000,
       "scores": {
-        "good": 3,
-        "ok": 4,
-        "bad": 1,
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "ok",
-        "assetTurnover": "ok",
-        "operatingMargin": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
         "peRatio": "good",
         "revenueGrowth": "bad",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -69171,13 +67637,13 @@
       "changePct": 0.5106,
       "marketCap": 20066401366,
       "scores": {
-        "good": 3,
-        "ok": 4,
+        "good": 4,
+        "ok": 3,
         "bad": 0,
         "total": 7
       },
       "ratioGrades": {
-        "currentRatio": "ok",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "ok",
