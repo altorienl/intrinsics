@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29T14:10:18.364450Z",
+  "updated": "2026-08-30T12:57:56.553000Z",
   "stocks": [
     {
       "ticker": "A",
@@ -1903,23 +1903,23 @@
       "ticker": "AFRM",
       "name": "Affirm Holdings, Inc.",
       "sector": "Financial Services",
-      "grade": "C",
+      "grade": "B+",
       "price": 77.76,
       "change": 0.27,
       "changePct": 0.34843,
       "marketCap": 26041711715,
       "scores": {
-        "good": 3,
+        "good": 5,
         "ok": 1,
-        "bad": 2,
+        "bad": 0,
         "total": 6
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "ok",
+        "debtToEquity": "good",
         "assetTurnover": "good",
-        "operatingMargin": "bad",
-        "peRatio": "bad",
+        "operatingMargin": "ok",
+        "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": null,
         "evToSales": null
@@ -11504,13 +11504,13 @@
       "marketCap": 17180073490,
       "scores": {
         "good": 2,
-        "ok": 6,
-        "bad": 0,
+        "ok": 5,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "ok",
+        "debtToEquity": "bad",
         "assetTurnover": "good",
         "operatingMargin": "ok",
         "peRatio": "ok",
@@ -21735,6 +21735,214 @@
         "revenueGrowth": "bad",
         "fcfYield": null,
         "evToSales": null
+      }
+    },
+    {
+      "ticker": "EGO",
+      "name": "Eldorado Gold Corporation",
+      "sector": "Basic Materials",
+      "grade": "D",
+      "price": 45.48,
+      "change": -2.55,
+      "changePct": -5.30918,
+      "marketCap": 11861653899,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "EGP",
+      "name": "EastGroup Properties, Inc.",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 200,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 10754660000,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 1,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "EHC",
+      "name": "Encompass Health Corporation",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 120.85,
+      "change": 1.28,
+      "changePct": 1.0705,
+      "marketCap": 11988208818,
+      "scores": {
+        "good": 4,
+        "ok": 4,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "EIX",
+      "name": "Edison International",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 70.17,
+      "change": -3.51,
+      "changePct": -4.76384,
+      "marketCap": 27000994980,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "EL",
+      "name": "The Est\u00e9e Lauder Companies Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 103.39,
+      "change": -2.82,
+      "changePct": -2.65512,
+      "marketCap": 37393541236,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "ELAN",
+      "name": "Elanco Animal Health Incorporated",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 24.11,
+      "change": -0.38,
+      "changePct": -1.55165,
+      "marketCap": 12041729446,
+      "scores": {
+        "good": 3,
+        "ok": 4,
+        "bad": 0,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "ELC",
+      "name": "Entergy Louisiana, LLC COLLATERAL TR MT",
+      "sector": "Utilities",
+      "grade": "A",
+      "price": 19.8,
+      "change": -0.23,
+      "changePct": -1.14828,
+      "marketCap": 49904715940,
+      "scores": {
+        "good": 6,
+        "ok": 2,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "ELF",
+      "name": "e.l.f. Beauty, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 104.1,
+      "change": -2.07,
+      "changePct": -1.9497,
+      "marketCap": 6135345968,
+      "scores": {
+        "good": 3,
+        "ok": 4,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "ok"
       }
     },
     {
@@ -33500,16 +33708,16 @@
       "marketCap": 12650596744,
       "scores": {
         "good": 2,
-        "ok": 1,
+        "ok": 0,
         "bad": 5,
-        "total": 8
+        "total": 7
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "ok",
+        "debtToEquity": "bad",
         "assetTurnover": "bad",
         "operatingMargin": "bad",
-        "peRatio": "bad",
+        "peRatio": null,
         "revenueGrowth": "good",
         "fcfYield": "bad",
         "evToSales": "bad"
@@ -41065,14 +41273,14 @@
       "changePct": -4.44033,
       "marketCap": 3152023580,
       "scores": {
-        "good": 5,
-        "ok": 2,
+        "good": 6,
+        "ok": 1,
         "bad": 1,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "ok",
+        "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "good",
         "peRatio": "good",
@@ -47504,6 +47712,58 @@
       }
     },
     {
+      "ticker": "PAA",
+      "name": "Plains All American Pipeline, L.P.",
+      "sector": "Energy",
+      "grade": "B",
+      "price": 25.48,
+      "change": -0.03,
+      "changePct": -0.1176,
+      "marketCap": 17976955360,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PAAS",
+      "name": "Pan American Silver Corp.",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 52.87,
+      "change": -2.02,
+      "changePct": -3.68009,
+      "marketCap": 22276774500,
+      "scores": {
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "bad"
+      }
+    },
+    {
       "ticker": "PAC",
       "name": "Grupo Aeroportuario del Pac\u00edfico, S.A.B. de C.V.",
       "sector": "Industrials",
@@ -47526,6 +47786,4218 @@
         "peRatio": "good",
         "revenueGrowth": "bad",
         "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PACS",
+      "name": "PACS Group, Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 42.75,
+      "change": -1.49,
+      "changePct": -3.36799,
+      "marketCap": 6768847413,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PAG",
+      "name": "Penske Automotive Group, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 217.01,
+      "change": -0.84,
+      "changePct": -0.38559,
+      "marketCap": 14249505712,
+      "scores": {
+        "good": 3,
+        "ok": 4,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PAGP",
+      "name": "Plains GP Holdings LP",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 27.97,
+      "change": -0.06,
+      "changePct": -0.21406,
+      "marketCap": 5535378348,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PAGS",
+      "name": "PagSeguro Digital Ltd.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 8.89,
+      "change": -0.04,
+      "changePct": -0.44793,
+      "marketCap": 2569986373,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 4,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PAM",
+      "name": "Pampa Energ\u00eda S.A.",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 80.45,
+      "change": -0.69,
+      "changePct": -0.85038,
+      "marketCap": 4376064958,
+      "scores": {
+        "good": 6,
+        "ok": 1,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 371.59,
+      "change": -11.26,
+      "changePct": -2.9411,
+      "marketCap": 302845850000,
+      "scores": {
+        "good": 1,
+        "ok": 1,
+        "bad": 6,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PARAA",
+      "name": "Paramount Global",
+      "sector": "Communication Services",
+      "grade": "D",
+      "price": 16.91,
+      "change": -0.96,
+      "changePct": -5.37213,
+      "marketCap": 7682364919,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PARAP",
+      "name": "Paramount Skydance Corporation Class B Common Stock",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 13.74,
+      "change": 0.18,
+      "changePct": 1.3274,
+      "marketCap": 8390831315,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PARR",
+      "name": "Par Pacific Holdings, Inc.",
+      "sector": "Energy",
+      "grade": "A",
+      "price": 78.85,
+      "change": 1.81,
+      "changePct": 2.34943,
+      "marketCap": 3953876241,
+      "scores": {
+        "good": 6,
+        "ok": 2,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PATH",
+      "name": "UiPath Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 18.15,
+      "change": -0.18,
+      "changePct": -0.982,
+      "marketCap": 9654195032,
+      "scores": {
+        "good": 2,
+        "ok": 5,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "ok",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PATK",
+      "name": "Patrick Industries, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 83.47,
+      "change": 0.38,
+      "changePct": 0.45734,
+      "marketCap": 2745987713,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PAY",
+      "name": "Paymentus Holdings, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 35.99,
+      "change": 0.38,
+      "changePct": 1.06712,
+      "marketCap": 4520338566,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PAYC",
+      "name": "Paycom Software, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 238.53,
+      "change": 1.49001,
+      "changePct": 0.62859,
+      "marketCap": 10750933757,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PAYO",
+      "name": "Payoneer Global Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 7.11,
+      "change": -0.02,
+      "changePct": -0.2805,
+      "marketCap": 2404559340,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PAYP",
+      "name": "PayPay Corporation",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 15.28,
+      "change": 0.08,
+      "changePct": 0.52632,
+      "marketCap": 10346747103,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 127.04,
+      "change": 0.56,
+      "changePct": 0.44276,
+      "marketCap": 45185950534,
+      "scores": {
+        "good": 3,
+        "ok": 4,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PB",
+      "name": "Prosperity Bancshares, Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 72.3,
+      "change": -0.39,
+      "changePct": -0.53652,
+      "marketCap": 8688780037,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PBA",
+      "name": "Pembina Pipeline Corporation",
+      "sector": "Energy",
+      "grade": "D",
+      "price": 48.01,
+      "change": -0.38,
+      "changePct": -0.78529,
+      "marketCap": 27914694350,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 5,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PBB",
+      "name": "Prospect Capital Corporation NT 061524",
+      "sector": "Financial Services",
+      "grade": "?",
+      "price": 25.26,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 9095544818,
+      "scores": {
+        "good": 0,
+        "ok": 0,
+        "bad": 0,
+        "total": 0
+      },
+      "ratioGrades": {
+        "currentRatio": null,
+        "debtToEquity": null,
+        "assetTurnover": null,
+        "operatingMargin": null,
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PBF",
+      "name": "PBF Energy Inc.",
+      "sector": "Energy",
+      "grade": "A",
+      "price": 71.28,
+      "change": 2.69,
+      "changePct": 3.92185,
+      "marketCap": 8449305813,
+      "scores": {
+        "good": 7,
+        "ok": 1,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PBH",
+      "name": "Prestige Consumer Healthcare Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 52.47,
+      "change": 1.26,
+      "changePct": 2.46046,
+      "marketCap": 2485619334,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PBI",
+      "name": "Pitney Bowes Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 17.21,
+      "change": -0.06,
+      "changePct": -0.34742,
+      "marketCap": 2359322549,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PBLS",
+      "name": "Parabilis Medicines, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 39.11,
+      "change": -0.18,
+      "changePct": -0.45813,
+      "marketCap": 4558840333,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 4,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PBR",
+      "name": "Petr\u00f3leo Brasileiro S.A. - Petrobras",
+      "sector": "Energy",
+      "grade": "B",
+      "price": 18.53,
+      "change": 0.28,
+      "changePct": 1.53425,
+      "marketCap": 119414104278,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PBR-A",
+      "name": "Petr\u00f3leo Brasileiro S.A. - Petrobras",
+      "sector": "Energy",
+      "grade": "B",
+      "price": 16.77,
+      "change": 0.23,
+      "changePct": 1.39057,
+      "marketCap": 108073309177,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PCAR",
+      "name": "PACCAR Inc",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 125.34,
+      "change": -1.2,
+      "changePct": -0.94832,
+      "marketCap": 65974583209,
+      "scores": {
+        "good": 1,
+        "ok": 6,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PCG",
+      "name": "PG&E Corporation",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 16.6,
+      "change": -1.35,
+      "changePct": -7.52089,
+      "marketCap": 44489834234,
+      "scores": {
+        "good": 2,
+        "ok": 5,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PCH",
+      "name": "PotlatchDeltic Corporation",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 41.73,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 3230610408,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 1,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PCOR",
+      "name": "Procore Technologies, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 63.72,
+      "change": 0.02,
+      "changePct": 0.03139717,
+      "marketCap": 9614710800,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 1,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PCTY",
+      "name": "Paylocity Holding Corporation",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 157.93,
+      "change": -0.22,
+      "changePct": -0.13911,
+      "marketCap": 8456219713,
+      "scores": {
+        "good": 4,
+        "ok": 4,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PCVX",
+      "name": "Vaxcyte, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 59.835,
+      "change": -1.32,
+      "changePct": -2.15845,
+      "marketCap": 8640035302,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PDCO",
+      "name": "Patterson Companies, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 31.33,
+      "change": -0.28,
+      "changePct": -0.89686,
+      "marketCap": 2771884154,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B+",
+      "price": 85.69,
+      "change": 1,
+      "changePct": 1.18078,
+      "marketCap": 121970841715,
+      "scores": {
+        "good": 5,
+        "ok": 3,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PEAK",
+      "name": "Healthpeak Properties, Inc.",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 17.1,
+      "change": 0.35,
+      "changePct": 2.0896,
+      "marketCap": 9356658163,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 2,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PECO",
+      "name": "Phillips Edison & Co.",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 39.07,
+      "change": -0.15,
+      "changePct": -0.38246,
+      "marketCap": 5017564750,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 1,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PEG",
+      "name": "Public Service Enterprise Group Incorporated",
+      "sector": "Utilities",
+      "grade": "B",
+      "price": 73.19,
+      "change": -0.14,
+      "changePct": -0.19092,
+      "marketCap": 36472113990,
+      "scores": {
+        "good": 3,
+        "ok": 5,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PEGA",
+      "name": "Pegasystems Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 36.17,
+      "change": 0.28,
+      "changePct": 0.78016,
+      "marketCap": 5946528850,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PEN",
+      "name": "Penumbra, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 321.68,
+      "change": 0.67999,
+      "changePct": 0.21183,
+      "marketCap": 12670782192,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PENG",
+      "name": "Penguin Solutions, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 49.51,
+      "change": -2.94,
+      "changePct": -5.60534,
+      "marketCap": 2537026077,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "ok",
+        "revenueGrowth": "ok",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PENN",
+      "name": "PENN Entertainment, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 17.36,
+      "change": 0.03,
+      "changePct": 0.17311,
+      "marketCap": 2321803669,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 141.07,
+      "change": 1.35,
+      "changePct": 0.96622,
+      "marketCap": 192701620000,
+      "scores": {
+        "good": 1,
+        "ok": 7,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PFE",
+      "name": "Pfizer Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 27.96,
+      "change": -0.05999992,
+      "changePct": -0.21413,
+      "marketCap": 159356342400,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 111.41,
+      "change": -0.76,
+      "changePct": -0.67754,
+      "marketCap": 23853438050,
+      "scores": {
+        "good": 1,
+        "ok": 2,
+        "bad": 3,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PFGC",
+      "name": "Performance Food Group Co",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 100.85,
+      "change": -1.27,
+      "changePct": -1.24363,
+      "marketCap": 15842526500,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PFH",
+      "name": "Prudential Financial, Inc. 4.125% Junior Subordinated Notes due 2060",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 15.43,
+      "change": -0.155,
+      "changePct": -0.99455,
+      "marketCap": 40284376490,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PFLA",
+      "name": "PennantPark Floating Rate Capital Ltd.",
+      "sector": "Financial Services",
+      "grade": "?",
+      "price": 25.31,
+      "change": 0.035,
+      "changePct": 0.13848,
+      "marketCap": 2511591836,
+      "scores": {
+        "good": 0,
+        "ok": 0,
+        "bad": 0,
+        "total": 0
+      },
+      "ratioGrades": {
+        "currentRatio": null,
+        "debtToEquity": null,
+        "assetTurnover": null,
+        "operatingMargin": null,
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PFS",
+      "name": "Provident Financial Services, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 23.51,
+      "change": -0.05,
+      "changePct": -0.21222,
+      "marketCap": 3063682140,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PFSI",
+      "name": "PennyMac Financial Services, Inc.",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 73.38,
+      "change": -0.21,
+      "changePct": -0.28536,
+      "marketCap": 3810249162,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 3,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PG",
+      "name": "The Procter & Gamble Company",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 143.76,
+      "change": 0.6201,
+      "changePct": 0.43321,
+      "marketCap": 341747556783,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PGEN",
+      "name": "Precigen, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 6.95,
+      "change": -0.24,
+      "changePct": -3.33797,
+      "marketCap": 2477751450,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PGNY",
+      "name": "Progyny, Inc.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 26,
+      "change": 0.14,
+      "changePct": 0.54138,
+      "marketCap": 2036641620,
+      "scores": {
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PGR",
+      "name": "The Progressive Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 218.64,
+      "change": 0.99,
+      "changePct": 0.45486,
+      "marketCap": 127117296000,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PGTI",
+      "name": "PGT Innovations, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 41.995,
+      "change": 0.005,
+      "changePct": 0.0119,
+      "marketCap": 2404705092,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 995.02,
+      "change": -16.18,
+      "changePct": -1.60008,
+      "marketCap": 125458478783,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PHG",
+      "name": "Koninklijke Philips N.V.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 26.72,
+      "change": -0.2,
+      "changePct": -0.74294,
+      "marketCap": 26116859834,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PHI",
+      "name": "PLDT Inc.",
+      "sector": "Communication Services",
+      "grade": "D",
+      "price": 18.15,
+      "change": 0.27,
+      "changePct": 1.51006,
+      "marketCap": 3921417598,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PHIN",
+      "name": "PHINIA Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B+",
+      "price": 68.65,
+      "change": 0.58,
+      "changePct": 0.85206,
+      "marketCap": 2515204879,
+      "scores": {
+        "good": 5,
+        "ok": 3,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PHM",
+      "name": "PulteGroup, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 128.55,
+      "change": 1.8,
+      "changePct": 1.42012,
+      "marketCap": 24811537954,
+      "scores": {
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PHOS",
+      "name": "First Phosphate Corp. Sponsored ADR",
+      "sector": "Basic Materials",
+      "grade": "?",
+      "price": 17.8,
+      "change": 0.4,
+      "changePct": 2.2988,
+      "marketCap": 3203073510,
+      "scores": {
+        "good": 0,
+        "ok": 0,
+        "bad": 0,
+        "total": 0
+      },
+      "ratioGrades": {
+        "currentRatio": null,
+        "debtToEquity": null,
+        "assetTurnover": null,
+        "operatingMargin": null,
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PHVS",
+      "name": "Pharvaris N.V.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 35.32,
+      "change": -1.68,
+      "changePct": -4.54054,
+      "marketCap": 2468151922,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PI",
+      "name": "Impinj, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 170.17,
+      "change": 2.1,
+      "changePct": 1.24948,
+      "marketCap": 5199442248,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PII",
+      "name": "Polaris Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 63.78,
+      "change": -0.07,
+      "changePct": -0.10963,
+      "marketCap": 3629305230,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest, Inc.",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 23.195,
+      "change": 0.315,
+      "changePct": 1.37675,
+      "marketCap": 14756309150,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PIPR",
+      "name": "Piper Sandler Companies",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 75.61,
+      "change": 1.17,
+      "changePct": 1.57174,
+      "marketCap": 5103675000,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PJT",
+      "name": "PJT Partners Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 182.8,
+      "change": 4.14001,
+      "changePct": 2.31725,
+      "marketCap": 4673493134,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PK",
+      "name": "Park Hotels & Resorts Inc.",
+      "sector": "Real Estate",
+      "grade": "D",
+      "price": 15.83,
+      "change": 0.12,
+      "changePct": 0.76384,
+      "marketCap": 3187557848,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PKG",
+      "name": "Packaging Corporation of America",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 240.39,
+      "change": -3.3,
+      "changePct": -1.35418,
+      "marketCap": 21418423752,
+      "scores": {
+        "good": 2,
+        "ok": 5,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PKI",
+      "name": "PerkinElmer, Inc.",
+      "sector": "Healthcare",
+      "grade": "C",
+      "price": 115.24,
+      "change": -1.06,
+      "changePct": -0.9114,
+      "marketCap": 14455820840,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PKX",
+      "name": "POSCO Holdings Inc.",
+      "sector": "Basic Materials",
+      "grade": "D",
+      "price": 60.25,
+      "change": -0.9,
+      "changePct": -1.47179,
+      "marketCap": 18224607739,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PL",
+      "name": "Planet Labs PBC",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 19.98,
+      "change": -1.18,
+      "changePct": -5.57656,
+      "marketCap": 6651516425,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PL-WT",
+      "name": "Planet Labs PBC",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 23.71,
+      "change": -2.98,
+      "changePct": -11.16523,
+      "marketCap": 7650150050,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PLAN",
+      "name": "Anaplan, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 63.73,
+      "change": 0.36999893,
+      "changePct": 0.583963,
+      "marketCap": 9593148165,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PLBL",
+      "name": "Polibeli Group Ltd",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 5.62,
+      "change": -0.31,
+      "changePct": -5.22766,
+      "marketCap": 2059097385,
+      "scores": {
+        "good": 1,
+        "ok": 0,
+        "bad": 5,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PLD",
+      "name": "Prologis, Inc.",
+      "sector": "Real Estate",
+      "grade": "B",
+      "price": 140.74,
+      "change": -1.11,
+      "changePct": -0.78252,
+      "marketCap": 131321116240,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 1,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PLGO",
+      "name": "Pelagos Insurance Capital Limit",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 24.52,
+      "change": 0.09,
+      "changePct": 0.3684,
+      "marketCap": 2096380482,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PLMR",
+      "name": "Palomar Holdings, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 131.63,
+      "change": 2.08,
+      "changePct": 1.60556,
+      "marketCap": 3488708357,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PLNT",
+      "name": "Planet Fitness, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 53.33,
+      "change": 1.63,
+      "changePct": 3.1528,
+      "marketCap": 4236683404,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PLSE",
+      "name": "Pulse Biosciences, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 47.57,
+      "change": -0.99,
+      "changePct": -2.03871,
+      "marketCap": 3292305429,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 4,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 186.29,
+      "change": 0.36,
+      "changePct": 0.19362,
+      "marketCap": 427734880300,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PLUG",
+      "name": "Plug Power Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 2.19,
+      "change": -0.08,
+      "changePct": -3.52423,
+      "marketCap": 3055203300,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PLUS",
+      "name": "ePlus inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 87.28,
+      "change": -0.38,
+      "changePct": -0.43349,
+      "marketCap": 2277171683,
+      "scores": {
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PLXS",
+      "name": "Plexus Corp.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 240.87,
+      "change": -4.56,
+      "changePct": -1.85796,
+      "marketCap": 6444819126,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "ok",
+        "revenueGrowth": "ok",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PM",
+      "name": "Philip Morris International Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 191.89,
+      "change": 1.41,
+      "changePct": 0.74023,
+      "marketCap": 299081672900,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PNC",
+      "name": "The PNC Financial Services Group, Inc.",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 242.22,
+      "change": -1.29,
+      "changePct": -0.52975,
+      "marketCap": 96645780000,
+      "scores": {
+        "good": 2,
+        "ok": 2,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PNFP",
+      "name": "Pinnacle Financial Partners, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 101.09,
+      "change": 0.11,
+      "changePct": 0.10893,
+      "marketCap": 15264590000,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PNM",
+      "name": "PNM Resources, Inc.",
+      "sector": "Utilities",
+      "grade": "D",
+      "price": 41.77,
+      "change": -0.44,
+      "changePct": -1.0424,
+      "marketCap": 3767670708,
+      "scores": {
+        "good": 0,
+        "ok": 2,
+        "bad": 4,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": "ok",
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PNR",
+      "name": "Pentair plc",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 61.67,
+      "change": -0.43,
+      "changePct": -0.69243,
+      "marketCap": 9844875460,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PNW",
+      "name": "Pinnacle West Capital Corporation",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 97.615,
+      "change": -0.275,
+      "changePct": -0.28093,
+      "marketCap": 11829669005,
+      "scores": {
+        "good": 1,
+        "ok": 5,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "ok",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corp.",
+      "sector": "Healthcare",
+      "grade": "B+",
+      "price": 145.13,
+      "change": 1.72,
+      "changePct": 1.19936,
+      "marketCap": 10052382138,
+      "scores": {
+        "good": 5,
+        "ok": 3,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PONY",
+      "name": "Pony AI Inc. American Depositary Shares",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 7.58,
+      "change": 0.06,
+      "changePct": 0.79787,
+      "marketCap": 2678202325,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "POOL",
+      "name": "Pool Corporation",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 188.07,
+      "change": 2.01,
+      "changePct": 1.0803,
+      "marketCap": 6853835010,
+      "scores": {
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "POR",
+      "name": "Portland General Electric Company",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 49.6,
+      "change": -0.24,
+      "changePct": -0.48154,
+      "marketCap": 5740208000,
+      "scores": {
+        "good": 0,
+        "ok": 6,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "POST",
+      "name": "Post Holdings, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 85.35,
+      "change": 3.86,
+      "changePct": 4.73678,
+      "marketCap": 3868282715,
+      "scores": {
+        "good": 4,
+        "ok": 4,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "POWI",
+      "name": "Power Integrations, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 51.51,
+      "change": -3.8,
+      "changePct": -6.87037,
+      "marketCap": 2870136376,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries, Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 182.71,
+      "change": -9.84,
+      "changePct": -5.11036,
+      "marketCap": 6656417636,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PPBI",
+      "name": "Pacific Premier Bancorp, Inc.",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 24.49,
+      "change": 0,
+      "changePct": 0.33,
+      "marketCap": 2375319386,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PPC",
+      "name": "Pilgrim's Pride Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "C",
+      "price": 31.69,
+      "change": 0.58,
+      "changePct": 1.86435,
+      "marketCap": 7539748180,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PPG",
+      "name": "PPG Industries, Inc.",
+      "sector": "Basic Materials",
+      "grade": "B",
+      "price": 114.22,
+      "change": 0.75,
+      "changePct": 0.66097,
+      "marketCap": 25391106343,
+      "scores": {
+        "good": 3,
+        "ok": 5,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PPL",
+      "name": "PPL Corporation",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 34.2,
+      "change": -0.24,
+      "changePct": -0.69686,
+      "marketCap": 25738142976,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PPLC",
+      "name": "PPL Corporation",
+      "sector": "Utilities",
+      "grade": "C",
+      "price": 46.08,
+      "change": -0.24,
+      "changePct": -0.51813,
+      "marketCap": 34223716685,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PPLI",
+      "name": "People Incorporated",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 39.14,
+      "change": -0.18,
+      "changePct": -0.45778,
+      "marketCap": 2911526633,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PPTA",
+      "name": "Perpetua Resources Corp.",
+      "sector": "Basic Materials",
+      "grade": "D",
+      "price": 25.11,
+      "change": -1.07,
+      "changePct": -4.08709,
+      "marketCap": 3141122970,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PR",
+      "name": "Permian Resources Corporation",
+      "sector": "Energy",
+      "grade": "C",
+      "price": 22.7,
+      "change": -0.48,
+      "changePct": -2.07075,
+      "marketCap": 19006440415,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PRAX",
+      "name": "Praxis Precision Medicines, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 344.75,
+      "change": -23.1,
+      "changePct": -6.27973,
+      "marketCap": 9611216300,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 4,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PRDO",
+      "name": "Perdoceo Education Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "A",
+      "price": 33.57,
+      "change": -0.24,
+      "changePct": -0.70985,
+      "marketCap": 2104943067,
+      "scores": {
+        "good": 7,
+        "ok": 1,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PRFT",
+      "name": "Perficient, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 75.96,
+      "change": 0.48,
+      "changePct": 0.6359,
+      "marketCap": 2670502932,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PRGO",
+      "name": "Perrigo Company plc",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 14.48,
+      "change": 0.4,
+      "changePct": 2.84091,
+      "marketCap": 2003565310,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 1,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PRH",
+      "name": "Prudential Financial, Inc. 5.95",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 21.86,
+      "change": -0.14,
+      "changePct": -0.63636,
+      "marketCap": 7607280000,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PRI",
+      "name": "Primerica, Inc.",
+      "sector": "Financial Services",
+      "grade": "B+",
+      "price": 290.39,
+      "change": -1.05,
+      "changePct": -0.36028,
+      "marketCap": 9055524083,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 0,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PRIM",
+      "name": "Primoris Services Corporation",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 73.12,
+      "change": -3.88,
+      "changePct": -5.03896,
+      "marketCap": 3967118288,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PRK",
+      "name": "Park National Corporation",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 198.12,
+      "change": 0.07,
+      "changePct": 0.03534461,
+      "marketCap": 3585199332,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PRKS",
+      "name": "United Parks & Resorts Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 42.49,
+      "change": -6.10352e-07,
+      "changePct": -1.436459e-06,
+      "marketCap": 2002788585,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PRM",
+      "name": "Perimeter Solutions, Inc.",
+      "sector": "Basic Materials",
+      "grade": "D",
+      "price": 30.62,
+      "change": -1.41,
+      "changePct": -4.40212,
+      "marketCap": 4994950577,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PRMB",
+      "name": "Primo Brands Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 23,
+      "change": 0.56,
+      "changePct": 2.49554,
+      "marketCap": 8345976926,
+      "scores": {
+        "good": 1,
+        "ok": 6,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PRMW",
+      "name": "Primo Water Corporation",
+      "sector": "Consumer Defensive",
+      "grade": "B",
+      "price": 24.21,
+      "change": null,
+      "changePct": null,
+      "marketCap": 3883186942,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PRS",
+      "name": "Prudential Financial, Inc. 5.62",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 20.69,
+      "change": -0.09,
+      "changePct": -0.43311,
+      "marketCap": 7200120000,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PRTC",
+      "name": "PureTech Health plc",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 17.38,
+      "change": 0.36,
+      "changePct": 2.11516,
+      "marketCap": 4230930924,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 5,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PRU",
+      "name": "Prudential Financial, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 119.79,
+      "change": -0.58,
+      "changePct": -0.48185,
+      "marketCap": 41567130000,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PRVA",
+      "name": "Privia Health Group, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 20.79,
+      "change": -0.07,
+      "changePct": -0.33557,
+      "marketCap": 2619797255,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PRVB",
+      "name": "Provention Bio, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 24.98,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 2375415796,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PS",
+      "name": "Pershing Square Inc.",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 42.17,
+      "change": 0.05,
+      "changePct": 0.11871,
+      "marketCap": 16868000000,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": null,
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PSA",
+      "name": "Public Storage",
+      "sector": "Real Estate",
+      "grade": "C",
+      "price": 313.51,
+      "change": 2.30999,
+      "changePct": 0.74228,
+      "marketCap": 58462090760,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 2,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PSKY",
+      "name": "Paramount Skydance Corporation Class B Common Stock",
+      "sector": "Communication Services",
+      "grade": "C",
+      "price": 10.88,
+      "change": 0.08,
+      "changePct": 0.74074,
+      "marketCap": 11833849600,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 2,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PSMT",
+      "name": "PriceSmart, Inc.",
+      "sector": "Consumer Defensive",
+      "grade": "D",
+      "price": 169.34,
+      "change": -3.62,
+      "changePct": -2.09297,
+      "marketCap": 5225921134,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PSN",
+      "name": "Parsons Corporation",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 49,
+      "change": -0.28,
+      "changePct": -0.56818,
+      "marketCap": 5233464306,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PSO",
+      "name": "Pearson plc",
+      "sector": "Communication Services",
+      "grade": "B",
+      "price": 16.73,
+      "change": 0.07,
+      "changePct": 0.42017,
+      "marketCap": 10044950796,
+      "scores": {
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PSTG",
+      "name": "Pure Storage Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 86.22,
+      "change": 7.22,
+      "changePct": 9.13924,
+      "marketCap": 28492341385,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "grade": "B",
+      "price": 244.01,
+      "change": 4.2,
+      "changePct": 1.75139,
+      "marketCap": 97832154230,
+      "scores": {
+        "good": 4,
+        "ok": 4,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PTC",
+      "name": "PTC Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 157.15,
+      "change": -1.8,
+      "changePct": -1.13243,
+      "marketCap": 18151767900,
+      "scores": {
+        "good": 4,
+        "ok": 4,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PTCT",
+      "name": "PTC Therapeutics, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 70.09,
+      "change": -1.72,
+      "changePct": -2.39521,
+      "marketCap": 5849767472,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PTEN",
+      "name": "Patterson-UTI Energy, Inc.",
+      "sector": "Energy",
+      "grade": "D",
+      "price": 12.43,
+      "change": 0.17,
+      "changePct": 1.38662,
+      "marketCap": 4718647427,
+      "scores": {
+        "good": 4,
+        "ok": 0,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PTGX",
+      "name": "Protagonist Therapeutics, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 144.33,
+      "change": -5.17,
+      "changePct": -3.4582,
+      "marketCap": 9282060465,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PTON",
+      "name": "Peloton Interactive, Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 5.45,
+      "change": 0.15,
+      "changePct": 2.83019,
+      "marketCap": 2273495845,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PTRN",
+      "name": "Pattern Group Inc. Series A Common Stock",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 21.17,
+      "change": -0.71,
+      "changePct": -3.24497,
+      "marketCap": 3284812777,
+      "scores": {
+        "good": 5,
+        "ok": 1,
+        "bad": 1,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PTVE",
+      "name": "Pactiv Evergreen Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 18.01,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 3269013254,
+      "scores": {
+        "good": 3,
+        "ok": 1,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PUK",
+      "name": "Prudential plc",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 27.65,
+      "change": -0.08,
+      "changePct": -0.2885,
+      "marketCap": 34401853500,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PUYI",
+      "name": "Puyi Inc.",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 8.96,
+      "change": 2.27,
+      "changePct": 33.9312,
+      "marketCap": 2213424640,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PVH",
+      "name": "PVH Corp.",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 75.79,
+      "change": -0.37,
+      "changePct": -0.48582,
+      "marketCap": 3494532899,
+      "scores": {
+        "good": 3,
+        "ok": 4,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "PVLA",
+      "name": "Palvella Therapeutics, Inc.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 149.97,
+      "change": -0.36,
+      "changePct": -0.23947,
+      "marketCap": 2150989716,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "sector": "Industrials",
+      "grade": "B",
+      "price": 602.7,
+      "change": -19.13,
+      "changePct": -3.0764,
+      "marketCap": 90611726100,
+      "scores": {
+        "good": 3,
+        "ok": 4,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PWSC",
+      "name": "PowerSchool Holdings, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 22.81,
+      "change": -0.04,
+      "changePct": -0.1751,
+      "marketCap": 3801742700,
+      "scores": {
+        "good": 0,
+        "ok": 4,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PXD",
+      "name": "Pioneer Natural Resources Company",
+      "sector": "Energy",
+      "grade": "D",
+      "price": 269.62,
+      "change": 1.96,
+      "changePct": 0.7323,
+      "marketCap": 63003455657,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 4,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "PYCR",
+      "name": "Paycor HCM, Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 22.49,
+      "change": 22.49,
+      "changePct": 100,
+      "marketCap": 4089931432,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 3,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "ok",
+        "fcfYield": "bad",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 53.66,
+      "change": -7.81,
+      "changePct": -12.70538,
+      "marketCap": 45904037260,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 0,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "Q",
+      "name": "Qnity Electronics, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 120.26,
+      "change": -6.09,
+      "changePct": -4.81994,
+      "marketCap": 25175132192,
+      "scores": {
+        "good": 2,
+        "ok": 5,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "QBTS",
+      "name": "D-Wave Quantum Inc.",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 17.005,
+      "change": -0.895,
+      "changePct": -5,
+      "marketCap": 6245410603,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 5,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 164.19,
+      "change": -0.59,
+      "changePct": -0.35805,
+      "marketCap": 172399500000,
+      "scores": {
+        "good": 6,
+        "ok": 1,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "QGEN",
+      "name": "Qiagen N.V.",
+      "sector": "Healthcare",
+      "grade": "B",
+      "price": 43.11,
+      "change": -0.63,
+      "changePct": -1.44033,
+      "marketCap": 8891437500,
+      "scores": {
+        "good": 4,
+        "ok": 3,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "QLYS",
+      "name": "Qualys, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 187.05,
+      "change": -1.54,
+      "changePct": -0.81659,
+      "marketCap": 6587339850,
+      "scores": {
+        "good": 4,
+        "ok": 4,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "good",
+        "peRatio": "ok",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "QMMM",
+      "name": "QMMM Holdings Limited Ordinary Shares",
+      "sector": "Communication Services",
+      "grade": "D",
+      "price": 119.4,
+      "change": 0,
+      "changePct": 0,
+      "marketCap": 5844850054,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "QNT",
+      "name": "Quantinuum Inc. Class A Common Stock",
+      "sector": "Technology",
+      "grade": "D",
+      "price": 49.92,
+      "change": -4.08,
+      "changePct": -7.55556,
+      "marketCap": 13144342199,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 4,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "QRVO",
+      "name": "Qorvo, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 94.73,
+      "change": -1.45,
+      "changePct": -1.50759,
+      "marketCap": 8357232168,
+      "scores": {
+        "good": 6,
+        "ok": 1,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "QS",
+      "name": "QuantumScape Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 5.61,
+      "change": -0.29,
+      "changePct": -4.91525,
+      "marketCap": 3450963938,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 3,
+        "total": 5
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": null
+      }
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands International Inc.",
+      "sector": "Consumer Cyclical",
+      "grade": "D",
+      "price": 78.26,
+      "change": 0.19,
+      "changePct": 0.24337,
+      "marketCap": 27153605959,
+      "scores": {
+        "good": 3,
+        "ok": 2,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "bad",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "good",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "QTWO",
+      "name": "Q2 Holdings, Inc.",
+      "sector": "Technology",
+      "grade": "C",
+      "price": 65.13,
+      "change": -0.55,
+      "changePct": -0.83739,
+      "marketCap": 4061161611,
+      "scores": {
+        "good": 4,
+        "ok": 2,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "QURE",
+      "name": "uniQure N.V.",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 48.72,
+      "change": -0.84,
+      "changePct": -1.69492,
+      "marketCap": 3379531008,
+      "scores": {
+        "good": 3,
+        "ok": 0,
+        "bad": 4,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "QXO",
+      "name": "QXO, Inc.",
+      "sector": "Industrials",
+      "grade": "C",
+      "price": 13.52,
+      "change": -0.34,
+      "changePct": -2.4531,
+      "marketCap": 14026729600,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 2,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": "good",
+        "fcfYield": "bad",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "R",
+      "name": "Ryder System, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 245.86,
+      "change": -2.23,
+      "changePct": -0.89887,
+      "marketCap": 9427968834,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "bad",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "RACE",
+      "name": "Ferrari N.V.",
+      "sector": "Consumer Cyclical",
+      "grade": "C",
+      "price": 420.54,
+      "change": 6.49999,
+      "changePct": 1.56989,
+      "marketCap": 73979727677,
+      "scores": {
+        "good": 2,
+        "ok": 4,
+        "bad": 2,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "ok",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "RAL",
+      "name": "Ralliant Corp",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 61.71,
+      "change": -1.61,
+      "changePct": -2.54264,
+      "marketCap": 6827595141,
+      "scores": {
+        "good": 3,
+        "ok": 3,
+        "bad": 1,
+        "total": 7
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": null,
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "RAMP",
+      "name": "LiveRamp Holdings, Inc.",
+      "sector": "Technology",
+      "grade": "B",
+      "price": 37.74,
+      "change": -0.01,
+      "changePct": -0.02649007,
+      "marketCap": 2294075528,
+      "scores": {
+        "good": 6,
+        "ok": 1,
+        "bad": 1,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": "good",
+        "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "RAPP",
+      "name": "Rapport Therapeutics, Inc. Common Stock",
+      "sector": "Healthcare",
+      "grade": "D",
+      "price": 48.77,
+      "change": -2.06,
+      "changePct": -4.05272,
+      "marketCap": 2332519230,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 4,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
         "evToSales": "bad"
       }
     },
@@ -47553,6 +52025,58 @@
         "revenueGrowth": "good",
         "fcfYield": "bad",
         "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "RBA",
+      "name": "RB Global, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 86.06,
+      "change": 0.17,
+      "changePct": 0.19793,
+      "marketCap": 16032978000,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "bad"
+      }
+    },
+    {
+      "ticker": "RBC",
+      "name": "RBC Bearings Incorporated",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 500.62,
+      "change": -8.38001,
+      "changePct": -1.64637,
+      "marketCap": 15837293423,
+      "scores": {
+        "good": 4,
+        "ok": 1,
+        "bad": 3,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "good",
+        "peRatio": "bad",
+        "revenueGrowth": "good",
+        "fcfYield": "ok",
+        "evToSales": "bad"
       }
     },
     {
