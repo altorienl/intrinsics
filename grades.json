@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T11:29:35.454479Z",
+  "updated": "2026-09-06T11:51:05.143366Z",
   "stocks": [
     {
       "ticker": "A",
@@ -6797,13 +6797,13 @@
       "changePct": 0.93776,
       "marketCap": 5571846570,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 2,
-        "bad": 1,
+        "bad": 0,
         "total": 6
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "ok",
@@ -10307,8 +10307,8 @@
       "changePct": -0.42069,
       "marketCap": 13385157513,
       "scores": {
-        "good": 1,
-        "ok": 2,
+        "good": 2,
+        "ok": 1,
         "bad": 3,
         "total": 6
       },
@@ -10316,7 +10316,7 @@
         "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "ok",
+        "operatingMargin": "good",
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": null,
@@ -46363,14 +46363,14 @@
       "ticker": "OLLI",
       "name": "Ollie's Bargain Outlet Holdings, Inc.",
       "sector": "Consumer Defensive",
-      "grade": "A",
+      "grade": "B+",
       "price": 76.565,
       "change": 2.875,
       "changePct": 3.90148,
       "marketCap": 4628606302,
       "scores": {
-        "good": 6,
-        "ok": 2,
+        "good": 5,
+        "ok": 3,
         "bad": 0,
         "total": 8
       },
@@ -46381,7 +46381,7 @@
         "operatingMargin": "ok",
         "peRatio": "good",
         "revenueGrowth": "good",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "good"
       }
     },
