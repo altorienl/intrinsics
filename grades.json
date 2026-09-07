@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T11:51:05.143366Z",
+  "updated": "2026-09-07T12:37:52.771139Z",
   "stocks": [
     {
       "ticker": "A",
@@ -11789,8 +11789,8 @@
       "changePct": -0.79144,
       "marketCap": 10795024597,
       "scores": {
-        "good": 2,
-        "ok": 3,
+        "good": 1,
+        "ok": 4,
         "bad": 2,
         "total": 7
       },
@@ -11801,7 +11801,7 @@
         "operatingMargin": "good",
         "peRatio": null,
         "revenueGrowth": "bad",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "ok"
       }
     },
@@ -16412,10 +16412,10 @@
       "name": "Core Scientific, Inc.",
       "sector": "Technology",
       "grade": "D",
-      "price": 11.19,
-      "change": -0.03,
-      "changePct": -0.26738,
-      "marketCap": 5121154291,
+      "price": 11.2,
+      "change": -0.02,
+      "changePct": -0.17825,
+      "marketCap": 5125730837,
       "scores": {
         "good": 1,
         "ok": 0,
@@ -54865,20 +54865,20 @@
       "ticker": "SAIC",
       "name": "Science Applications International Corporation",
       "sector": "Technology",
-      "grade": "C",
+      "grade": "D",
       "price": 126.75,
       "change": 0.25,
       "changePct": 0.19763,
       "marketCap": 5358586808,
       "scores": {
-        "good": 5,
+        "good": 4,
         "ok": 1,
-        "bad": 2,
+        "bad": 3,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "good",
+        "debtToEquity": "bad",
         "assetTurnover": "good",
         "operatingMargin": "bad",
         "peRatio": "good",
@@ -69062,10 +69062,10 @@
       "name": "Xcel Energy Inc.",
       "sector": "Utilities",
       "grade": "C",
-      "price": 75.72,
-      "change": -0.62,
-      "changePct": -0.81216,
-      "marketCap": 47297286480,
+      "price": 75.7238,
+      "change": -0.6162,
+      "changePct": -0.80718,
+      "marketCap": 47299660089,
       "scores": {
         "good": 1,
         "ok": 5,
