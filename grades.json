@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T12:37:52.771139Z",
+  "updated": "2026-09-08T12:02:31.434461Z",
   "stocks": [
     {
       "ticker": "A",
@@ -531,17 +531,17 @@
       "changePct": -0.38111,
       "marketCap": 2756231345,
       "scores": {
-        "good": 3,
-        "ok": 4,
+        "good": 5,
+        "ok": 2,
         "bad": 1,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "ok",
+        "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
-        "peRatio": "ok",
+        "peRatio": "good",
         "revenueGrowth": "ok",
         "fcfYield": "good",
         "evToSales": "good"
@@ -6797,13 +6797,13 @@
       "changePct": 0.93776,
       "marketCap": 5571846570,
       "scores": {
-        "good": 4,
+        "good": 3,
         "ok": 2,
-        "bad": 0,
+        "bad": 1,
         "total": 6
       },
       "ratioGrades": {
-        "currentRatio": "good",
+        "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "ok",
@@ -10307,8 +10307,8 @@
       "changePct": -0.42069,
       "marketCap": 13385157513,
       "scores": {
-        "good": 2,
-        "ok": 1,
+        "good": 1,
+        "ok": 2,
         "bad": 3,
         "total": 6
       },
@@ -10316,7 +10316,7 @@
         "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "good",
+        "operatingMargin": "ok",
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": null,
@@ -23223,15 +23223,15 @@
       "ticker": "ESLT",
       "name": "Elbit Systems Ltd.",
       "sector": "Industrials",
-      "grade": "B",
+      "grade": "C",
       "price": 703.28,
       "change": 2.06,
       "changePct": 0.29377,
       "marketCap": 32949495761,
       "scores": {
         "good": 2,
-        "ok": 5,
-        "bad": 1,
+        "ok": 4,
+        "bad": 2,
         "total": 8
       },
       "ratioGrades": {
@@ -23242,7 +23242,7 @@
         "peRatio": "bad",
         "revenueGrowth": "good",
         "fcfYield": "ok",
-        "evToSales": "ok"
+        "evToSales": "bad"
       }
     },
     {
@@ -53104,8 +53104,8 @@
       "marketCap": 167815790822,
       "scores": {
         "good": 3,
-        "ok": 5,
-        "bad": 0,
+        "ok": 4,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -53116,7 +53116,7 @@
         "peRatio": "good",
         "revenueGrowth": "ok",
         "fcfYield": "ok",
-        "evToSales": "ok"
+        "evToSales": "bad"
       }
     },
     {
@@ -64563,7 +64563,7 @@
       "ticker": "UNFI",
       "name": "United Natural Foods, Inc.",
       "sector": "Consumer Defensive",
-      "grade": "C",
+      "grade": "D",
       "price": 43.93,
       "change": 0.31,
       "changePct": 0.71068,
@@ -64571,15 +64571,15 @@
       "scores": {
         "good": 4,
         "ok": 1,
-        "bad": 2,
-        "total": 7
+        "bad": 3,
+        "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
         "debtToEquity": "ok",
         "assetTurnover": "good",
         "operatingMargin": "bad",
-        "peRatio": null,
+        "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": "good",
         "evToSales": "good"
@@ -68573,8 +68573,8 @@
       "changePct": -3.18182,
       "marketCap": 12783381588,
       "scores": {
-        "good": 5,
-        "ok": 1,
+        "good": 6,
+        "ok": 0,
         "bad": 1,
         "total": 7
       },
@@ -68583,7 +68583,7 @@
         "debtToEquity": "good",
         "assetTurnover": "bad",
         "operatingMargin": "good",
-        "peRatio": "ok",
+        "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "good",
         "evToSales": null
