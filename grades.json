@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T11:46:10.264909Z",
+  "updated": "2026-09-13T12:43:01.045957Z",
   "stocks": [
     {
       "ticker": "A",
@@ -5679,14 +5679,14 @@
       "changePct": 2.11196,
       "marketCap": 3433337019,
       "scores": {
-        "good": 5,
-        "ok": 2,
+        "good": 4,
+        "ok": 3,
         "bad": 1,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "ok",
         "peRatio": "good",
@@ -10255,8 +10255,8 @@
       "changePct": 0.44713,
       "marketCap": 12703259578,
       "scores": {
-        "good": 1,
-        "ok": 2,
+        "good": 2,
+        "ok": 1,
         "bad": 3,
         "total": 6
       },
@@ -10264,7 +10264,7 @@
         "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "ok",
+        "operatingMargin": "good",
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": null,
