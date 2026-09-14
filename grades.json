@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T12:43:01.045957Z",
+  "updated": "2026-09-14T13:02:33.512028Z",
   "stocks": [
     {
       "ticker": "A",
@@ -297,8 +297,8 @@
       "changePct": 0,
       "marketCap": 69020585106,
       "scores": {
-        "good": 2,
-        "ok": 4,
+        "good": 1,
+        "ok": 5,
         "bad": 2,
         "total": 8
       },
@@ -306,11 +306,11 @@
         "currentRatio": "ok",
         "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "good",
+        "operatingMargin": "ok",
         "peRatio": "bad",
         "revenueGrowth": "ok",
-        "fcfYield": "ok",
-        "evToSales": "bad"
+        "fcfYield": "bad",
+        "evToSales": "ok"
       }
     },
     {
@@ -7993,16 +7993,16 @@
       "changePct": 2900.49215,
       "marketCap": 3734388072,
       "scores": {
-        "good": 2,
-        "ok": 5,
-        "bad": 0,
+        "good": 4,
+        "ok": 2,
+        "bad": 1,
         "total": 7
       },
       "ratioGrades": {
-        "currentRatio": "ok",
-        "debtToEquity": "ok",
+        "currentRatio": "good",
+        "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "ok",
+        "operatingMargin": "bad",
         "peRatio": null,
         "revenueGrowth": "ok",
         "fcfYield": "good",
@@ -10255,8 +10255,8 @@
       "changePct": 0.44713,
       "marketCap": 12703259578,
       "scores": {
-        "good": 2,
-        "ok": 1,
+        "good": 1,
+        "ok": 2,
         "bad": 3,
         "total": 6
       },
@@ -10264,7 +10264,7 @@
         "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "good",
+        "operatingMargin": "ok",
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": null,
@@ -14285,8 +14285,8 @@
       "changePct": 0.71862,
       "marketCap": 34792147777,
       "scores": {
-        "good": 4,
-        "ok": 4,
+        "good": 3,
+        "ok": 5,
         "bad": 0,
         "total": 8
       },
@@ -14297,7 +14297,7 @@
         "operatingMargin": "good",
         "peRatio": "ok",
         "revenueGrowth": "ok",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "ok"
       }
     },
@@ -16151,15 +16151,15 @@
       "ticker": "COO",
       "name": "The Cooper Companies, Inc.",
       "sector": "Healthcare",
-      "grade": "C",
+      "grade": "B",
       "price": 53.91,
       "change": -0.26,
       "changePct": -0.47997,
       "marketCap": 10514121210,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 3,
-        "bad": 2,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -16169,7 +16169,7 @@
         "operatingMargin": "ok",
         "peRatio": "good",
         "revenueGrowth": "bad",
-        "fcfYield": "bad",
+        "fcfYield": "good",
         "evToSales": "good"
       }
     },
@@ -20259,15 +20259,15 @@
       "ticker": "DRD",
       "name": "DRDGOLD Limited",
       "sector": "Basic Materials",
-      "grade": "B",
+      "grade": "B+",
       "price": 26.81,
       "change": -0.3,
       "changePct": -1.1066,
       "marketCap": 2316820172,
       "scores": {
         "good": 5,
-        "ok": 2,
-        "bad": 1,
+        "ok": 3,
+        "bad": 0,
         "total": 8
       },
       "ratioGrades": {
@@ -20278,7 +20278,7 @@
         "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "ok",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -23119,15 +23119,15 @@
       "ticker": "ESLT",
       "name": "Elbit Systems Ltd.",
       "sector": "Industrials",
-      "grade": "C",
+      "grade": "B",
       "price": 728,
       "change": 4.09,
       "changePct": 0.56499,
       "marketCap": 34107656856,
       "scores": {
         "good": 2,
-        "ok": 4,
-        "bad": 2,
+        "ok": 5,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -23138,7 +23138,7 @@
         "peRatio": "bad",
         "revenueGrowth": "good",
         "fcfYield": "ok",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -28580,10 +28580,10 @@
       "name": "Grab Holdings Limited",
       "sector": "Technology",
       "grade": "D",
-      "price": 0.0205,
-      "change": -0.0023,
-      "changePct": -10.08772,
-      "marketCap": 11663487059,
+      "price": 0.0202,
+      "change": -0.0026,
+      "changePct": -11.40351,
+      "marketCap": 11492801882,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -30351,7 +30351,7 @@
       "price": 72.99,
       "change": 0,
       "changePct": 0,
-      "marketCap": 11816408178,
+      "marketCap": 35049725594,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -38517,14 +38517,14 @@
       "changePct": 7.70732,
       "marketCap": 5807878024,
       "scores": {
-        "good": 6,
-        "ok": 0,
+        "good": 5,
+        "ok": 1,
         "bad": 2,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "good",
         "operatingMargin": "bad",
         "peRatio": "good",
@@ -52630,10 +52630,10 @@
       "name": "Rigetti Computing, Inc.",
       "sector": "Technology",
       "grade": "D",
-      "price": 6.41,
-      "change": 0.05,
-      "changePct": 0.78616,
-      "marketCap": 5131585344,
+      "price": 6.43,
+      "change": 0.07,
+      "changePct": 1.10063,
+      "marketCap": 5147596530,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -52661,8 +52661,8 @@
       "changePct": 0.03730786,
       "marketCap": 2534057070,
       "scores": {
-        "good": 2,
-        "ok": 4,
+        "good": 1,
+        "ok": 5,
         "bad": 2,
         "total": 8
       },
@@ -52674,7 +52674,7 @@
         "peRatio": "ok",
         "revenueGrowth": "bad",
         "fcfYield": "good",
-        "evToSales": "good"
+        "evToSales": "ok"
       }
     },
     {
@@ -62879,8 +62879,8 @@
       "changePct": 0.72345,
       "marketCap": 204639300892,
       "scores": {
-        "good": 4,
-        "ok": 4,
+        "good": 3,
+        "ok": 5,
         "bad": 0,
         "total": 8
       },
@@ -62891,7 +62891,7 @@
         "operatingMargin": "ok",
         "peRatio": "good",
         "revenueGrowth": "ok",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "good"
       }
     },
