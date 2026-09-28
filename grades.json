@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27T13:08:34.754704Z",
+  "updated": "2026-09-28T14:11:19.256289Z",
   "stocks": [
     {
       "ticker": "A",
@@ -707,14 +707,14 @@
       "ticker": "ACAD",
       "name": "ACADIA Pharmaceuticals Inc.",
       "sector": "Healthcare",
-      "grade": "B+",
+      "grade": "A",
       "price": 20.68,
       "change": -1.5,
       "changePct": -6.76285,
       "marketCap": 3541160480,
       "scores": {
-        "good": 5,
-        "ok": 3,
+        "good": 6,
+        "ok": 2,
         "bad": 0,
         "total": 8
       },
@@ -725,7 +725,7 @@
         "operatingMargin": "ok",
         "peRatio": "good",
         "revenueGrowth": "ok",
-        "fcfYield": "ok",
+        "fcfYield": "good",
         "evToSales": "good"
       }
     },
@@ -2638,8 +2638,8 @@
       "marketCap": 16565218287,
       "scores": {
         "good": 1,
-        "ok": 3,
-        "bad": 4,
+        "ok": 4,
+        "bad": 3,
         "total": 8
       },
       "ratioGrades": {
@@ -2647,7 +2647,7 @@
         "debtToEquity": "bad",
         "assetTurnover": "bad",
         "operatingMargin": "ok",
-        "peRatio": "bad",
+        "peRatio": "ok",
         "revenueGrowth": "bad",
         "fcfYield": "ok",
         "evToSales": "ok"
@@ -4197,8 +4197,8 @@
       "changePct": 0.68818,
       "marketCap": 58968749398,
       "scores": {
-        "good": 2,
-        "ok": 3,
+        "good": 3,
+        "ok": 2,
         "bad": 1,
         "total": 6
       },
@@ -4207,7 +4207,7 @@
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "ok",
-        "peRatio": "ok",
+        "peRatio": "good",
         "revenueGrowth": "bad",
         "fcfYield": null,
         "evToSales": null
@@ -5049,15 +5049,15 @@
       "ticker": "ARIS",
       "name": "Aris Mining Corporation",
       "sector": "Basic Materials",
-      "grade": "B",
+      "grade": "B+",
       "price": 18.93,
       "change": 0.28,
       "changePct": 1.50134,
       "marketCap": 3907152000,
       "scores": {
         "good": 5,
-        "ok": 2,
-        "bad": 1,
+        "ok": 3,
+        "bad": 0,
         "total": 8
       },
       "ratioGrades": {
@@ -5068,7 +5068,7 @@
         "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "ok",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -6511,8 +6511,8 @@
       "changePct": -1.21581,
       "marketCap": 2756223548,
       "scores": {
-        "good": 4,
-        "ok": 3,
+        "good": 5,
+        "ok": 2,
         "bad": 1,
         "total": 8
       },
@@ -6524,7 +6524,7 @@
         "peRatio": "ok",
         "revenueGrowth": "good",
         "fcfYield": "ok",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -10151,8 +10151,8 @@
       "changePct": 0.62859,
       "marketCap": 12247552178,
       "scores": {
-        "good": 2,
-        "ok": 1,
+        "good": 1,
+        "ok": 2,
         "bad": 3,
         "total": 6
       },
@@ -10160,7 +10160,7 @@
         "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "good",
+        "operatingMargin": "ok",
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": null,
@@ -11497,15 +11497,15 @@
       "ticker": "BWXT",
       "name": "BWX Technologies, Inc.",
       "sector": "Industrials",
-      "grade": "C",
+      "grade": "B",
       "price": 138.47,
       "change": -0.21,
       "changePct": -0.15143,
       "marketCap": 12685873662,
       "scores": {
         "good": 2,
-        "ok": 4,
-        "bad": 2,
+        "ok": 5,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -11516,7 +11516,7 @@
         "peRatio": "bad",
         "revenueGrowth": "good",
         "fcfYield": "ok",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -12933,8 +12933,8 @@
       "changePct": 1.47835,
       "marketCap": 19806874070,
       "scores": {
-        "good": 4,
-        "ok": 2,
+        "good": 6,
+        "ok": 0,
         "bad": 2,
         "total": 8
       },
@@ -12943,9 +12943,9 @@
         "debtToEquity": "good",
         "assetTurnover": "bad",
         "operatingMargin": "good",
-        "peRatio": "ok",
+        "peRatio": "good",
         "revenueGrowth": "good",
-        "fcfYield": "ok",
+        "fcfYield": "good",
         "evToSales": "bad"
       }
     },
@@ -13785,15 +13785,15 @@
       "ticker": "CHD",
       "name": "Church & Dwight Co., Inc.",
       "sector": "Consumer Defensive",
-      "grade": "D",
+      "grade": "C",
       "price": 96.36,
       "change": 1.03,
       "changePct": 1.08046,
       "marketCap": 22831923840,
       "scores": {
         "good": 2,
-        "ok": 3,
-        "bad": 3,
+        "ok": 4,
+        "bad": 2,
         "total": 8
       },
       "ratioGrades": {
@@ -13804,7 +13804,7 @@
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": "ok",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -14545,8 +14545,8 @@
       "changePct": -5.10114,
       "marketCap": 2691455625,
       "scores": {
-        "good": 3,
-        "ok": 4,
+        "good": 4,
+        "ok": 3,
         "bad": 1,
         "total": 8
       },
@@ -14558,7 +14558,7 @@
         "peRatio": "bad",
         "revenueGrowth": "ok",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -15553,15 +15553,15 @@
       "ticker": "CNX",
       "name": "CNX Resources Corporation",
       "sector": "Energy",
-      "grade": "D",
+      "grade": "C",
       "price": 32.79,
       "change": -0.62,
       "changePct": -1.85573,
       "marketCap": 4851071595,
       "scores": {
         "good": 5,
-        "ok": 0,
-        "bad": 3,
+        "ok": 1,
+        "bad": 2,
         "total": 8
       },
       "ratioGrades": {
@@ -15572,7 +15572,7 @@
         "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "good",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -15605,15 +15605,15 @@
       "ticker": "COCO",
       "name": "The Vita Coco Company, Inc.",
       "sector": "Consumer Defensive",
-      "grade": "C",
+      "grade": "B",
       "price": 58.59,
       "change": -0.58,
       "changePct": -0.98023,
       "marketCap": 3362895093,
       "scores": {
         "good": 5,
-        "ok": 1,
-        "bad": 2,
+        "ok": 2,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -15621,7 +15621,7 @@
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "good",
-        "peRatio": "bad",
+        "peRatio": "ok",
         "revenueGrowth": "good",
         "fcfYield": "ok",
         "evToSales": "bad"
@@ -16443,8 +16443,8 @@
       "changePct": -1.60485,
       "marketCap": 25543138788,
       "scores": {
-        "good": 4,
-        "ok": 2,
+        "good": 5,
+        "ok": 1,
         "bad": 2,
         "total": 8
       },
@@ -16455,7 +16455,7 @@
         "operatingMargin": "good",
         "peRatio": "good",
         "revenueGrowth": "bad",
-        "fcfYield": "ok",
+        "fcfYield": "good",
         "evToSales": "bad"
       }
     },
@@ -16781,8 +16781,8 @@
       "changePct": -1.76308,
       "marketCap": 191662380000,
       "scores": {
-        "good": 3,
-        "ok": 4,
+        "good": 4,
+        "ok": 3,
         "bad": 1,
         "total": 8
       },
@@ -16794,7 +16794,7 @@
         "peRatio": "good",
         "revenueGrowth": "ok",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -17035,15 +17035,15 @@
       "ticker": "CSAN",
       "name": "Cosan S.A.",
       "sector": "Energy",
-      "grade": "D",
+      "grade": "C",
       "price": 2.75,
       "change": -0.045,
       "changePct": -1.61002,
       "marketCap": 2694279217,
       "scores": {
-        "good": 2,
+        "good": 3,
         "ok": 2,
-        "bad": 3,
+        "bad": 2,
         "total": 7
       },
       "ratioGrades": {
@@ -17053,7 +17053,7 @@
         "operatingMargin": "good",
         "peRatio": null,
         "revenueGrowth": "bad",
-        "fcfYield": "bad",
+        "fcfYield": "good",
         "evToSales": "ok"
       }
     },
@@ -17139,15 +17139,15 @@
       "ticker": "CSL",
       "name": "Carlisle Companies Incorporated",
       "sector": "Basic Materials",
-      "grade": "D",
+      "grade": "C",
       "price": 326.37,
       "change": 12.24,
       "changePct": 3.89648,
       "marketCap": 13206594687,
       "scores": {
         "good": 4,
-        "ok": 1,
-        "bad": 3,
+        "ok": 2,
+        "bad": 2,
         "total": 8
       },
       "ratioGrades": {
@@ -17158,7 +17158,7 @@
         "peRatio": "ok",
         "revenueGrowth": "bad",
         "fcfYield": "good",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -19791,15 +19791,15 @@
       "ticker": "DOCU",
       "name": "DocuSign, Inc.",
       "sector": "Technology",
-      "grade": "D",
+      "grade": "C",
       "price": 67.5,
       "change": -1.49,
       "changePct": -2.15973,
       "marketCap": 12888787500,
       "scores": {
         "good": 4,
-        "ok": 1,
-        "bad": 3,
+        "ok": 2,
+        "bad": 2,
         "total": 8
       },
       "ratioGrades": {
@@ -19807,7 +19807,7 @@
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "ok",
-        "peRatio": "bad",
+        "peRatio": "ok",
         "revenueGrowth": "bad",
         "fcfYield": "good",
         "evToSales": "good"
@@ -20109,8 +20109,8 @@
       "changePct": -3.59969,
       "marketCap": 22881802899,
       "scores": {
-        "good": 2,
-        "ok": 4,
+        "good": 1,
+        "ok": 5,
         "bad": 2,
         "total": 8
       },
@@ -20121,7 +20121,7 @@
         "operatingMargin": "ok",
         "peRatio": "good",
         "revenueGrowth": "ok",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "ok"
       }
     },
@@ -22911,15 +22911,15 @@
       "ticker": "ESLT",
       "name": "Elbit Systems Ltd.",
       "sector": "Industrials",
-      "grade": "D",
+      "grade": "B",
       "price": 735,
       "change": -4.72,
       "changePct": -0.63808,
       "marketCap": 34435615095,
       "scores": {
         "good": 2,
-        "ok": 3,
-        "bad": 3,
+        "ok": 5,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -22929,8 +22929,8 @@
         "operatingMargin": "ok",
         "peRatio": "bad",
         "revenueGrowth": "good",
-        "fcfYield": "bad",
-        "evToSales": "bad"
+        "fcfYield": "ok",
+        "evToSales": "ok"
       }
     },
     {
@@ -23308,8 +23308,8 @@
       "marketCap": 6494698050,
       "scores": {
         "good": 3,
-        "ok": 1,
-        "bad": 4,
+        "ok": 2,
+        "bad": 3,
         "total": 8
       },
       "ratioGrades": {
@@ -23320,7 +23320,7 @@
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": "good",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -24913,15 +24913,15 @@
       "ticker": "FICO",
       "name": "Fair Isaac Corporation",
       "sector": "Technology",
-      "grade": "C",
+      "grade": "B",
       "price": 863.09,
       "change": 6.61,
       "changePct": 0.77176,
       "marketCap": 18640703655,
       "scores": {
         "good": 5,
-        "ok": 1,
-        "bad": 2,
+        "ok": 2,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -24932,7 +24932,7 @@
         "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "good",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -25179,8 +25179,8 @@
       "changePct": 0.09892976,
       "marketCap": 12308745133,
       "scores": {
-        "good": 4,
-        "ok": 4,
+        "good": 3,
+        "ok": 5,
         "bad": 0,
         "total": 8
       },
@@ -25189,7 +25189,7 @@
         "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "good",
-        "peRatio": "good",
+        "peRatio": "ok",
         "revenueGrowth": "good",
         "fcfYield": "ok",
         "evToSales": "ok"
@@ -27201,15 +27201,15 @@
       "ticker": "GFI",
       "name": "Gold Fields Limited",
       "sector": "Basic Materials",
-      "grade": "B",
+      "grade": "A",
       "price": 40.38,
       "change": 0.48,
       "changePct": 1.20301,
       "marketCap": 36141069120,
       "scores": {
         "good": 7,
-        "ok": 0,
-        "bad": 1,
+        "ok": 1,
+        "bad": 0,
         "total": 8
       },
       "ratioGrades": {
@@ -27220,7 +27220,7 @@
         "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "good",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -28372,10 +28372,10 @@
       "name": "Grab Holdings Limited",
       "sector": "Technology",
       "grade": "D",
-      "price": 0.0285,
-      "change": 0.0081,
-      "changePct": 39.70588,
-      "marketCap": 16215091765,
+      "price": 0.0268,
+      "change": 0.0064,
+      "changePct": 31.37255,
+      "marketCap": 15247875765,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -30117,7 +30117,7 @@
       "price": 72,
       "change": 0,
       "changePct": 0,
-      "marketCap": 11656136304,
+      "marketCap": 34574328576,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -35183,15 +35183,15 @@
       "ticker": "KN",
       "name": "Knowles Corporation",
       "sector": "Technology",
-      "grade": "C",
+      "grade": "B",
       "price": 37.53,
       "change": 0.77,
       "changePct": 2.09467,
       "marketCap": 3205449722,
       "scores": {
         "good": 2,
-        "ok": 4,
-        "bad": 2,
+        "ok": 5,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -35201,7 +35201,7 @@
         "operatingMargin": "ok",
         "peRatio": "bad",
         "revenueGrowth": "ok",
-        "fcfYield": "bad",
+        "fcfYield": "ok",
         "evToSales": "ok"
       }
     },
@@ -36697,8 +36697,8 @@
       "changePct": 0.13346,
       "marketCap": 6356563351,
       "scores": {
-        "good": 4,
-        "ok": 1,
+        "good": 3,
+        "ok": 2,
         "bad": 2,
         "total": 7
       },
@@ -36709,7 +36709,7 @@
         "operatingMargin": "bad",
         "peRatio": null,
         "revenueGrowth": "good",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "good"
       }
     },
@@ -37374,8 +37374,8 @@
       "marketCap": 56273094080,
       "scores": {
         "good": 3,
-        "ok": 2,
-        "bad": 3,
+        "ok": 1,
+        "bad": 4,
         "total": 8
       },
       "ratioGrades": {
@@ -37383,7 +37383,7 @@
         "debtToEquity": "bad",
         "assetTurnover": "ok",
         "operatingMargin": "good",
-        "peRatio": "ok",
+        "peRatio": "bad",
         "revenueGrowth": "good",
         "fcfYield": "good",
         "evToSales": "bad"
@@ -39291,15 +39291,15 @@
       "ticker": "MDB",
       "name": "MongoDB, Inc.",
       "sector": "Technology",
-      "grade": "D",
+      "grade": "C",
       "price": 410.44,
       "change": -10.96,
       "changePct": -2.60085,
       "marketCap": 33012480118,
       "scores": {
         "good": 4,
-        "ok": 1,
-        "bad": 3,
+        "ok": 2,
+        "bad": 2,
         "total": 8
       },
       "ratioGrades": {
@@ -39310,7 +39310,7 @@
         "peRatio": "bad",
         "revenueGrowth": "good",
         "fcfYield": "ok",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -42911,8 +42911,8 @@
       "changePct": 0.10717,
       "marketCap": 127949852468,
       "scores": {
-        "good": 5,
-        "ok": 2,
+        "good": 6,
+        "ok": 1,
         "bad": 1,
         "total": 8
       },
@@ -42921,7 +42921,7 @@
         "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "good",
-        "peRatio": "ok",
+        "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "good",
         "evToSales": "bad"
@@ -43041,8 +43041,8 @@
       "changePct": 0.53062,
       "marketCap": 8258744036,
       "scores": {
-        "good": 4,
-        "ok": 2,
+        "good": 3,
+        "ok": 3,
         "bad": 2,
         "total": 8
       },
@@ -43053,7 +43053,7 @@
         "operatingMargin": "good",
         "peRatio": "ok",
         "revenueGrowth": "bad",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "bad"
       }
     },
@@ -43821,8 +43821,8 @@
       "changePct": -0.20101,
       "marketCap": 7079655563,
       "scores": {
-        "good": 4,
-        "ok": 2,
+        "good": 5,
+        "ok": 1,
         "bad": 2,
         "total": 8
       },
@@ -43833,7 +43833,7 @@
         "operatingMargin": "ok",
         "peRatio": "bad",
         "revenueGrowth": "bad",
-        "fcfYield": "ok",
+        "fcfYield": "good",
         "evToSales": "good"
       }
     },
@@ -45745,8 +45745,8 @@
       "changePct": 5.53657,
       "marketCap": 30054886400,
       "scores": {
-        "good": 2,
-        "ok": 4,
+        "good": 3,
+        "ok": 3,
         "bad": 2,
         "total": 8
       },
@@ -45758,7 +45758,7 @@
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -47357,8 +47357,8 @@
       "changePct": -0.15851,
       "marketCap": 9936489566,
       "scores": {
-        "good": 3,
-        "ok": 3,
+        "good": 4,
+        "ok": 2,
         "bad": 2,
         "total": 8
       },
@@ -47370,7 +47370,7 @@
         "peRatio": "good",
         "revenueGrowth": "bad",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -47773,8 +47773,8 @@
       "changePct": -0.40404,
       "marketCap": 7438877000,
       "scores": {
-        "good": 3,
-        "ok": 3,
+        "good": 4,
+        "ok": 2,
         "bad": 1,
         "total": 7
       },
@@ -47785,7 +47785,7 @@
         "operatingMargin": "bad",
         "peRatio": null,
         "revenueGrowth": "ok",
-        "fcfYield": "ok",
+        "fcfYield": "good",
         "evToSales": "good"
       }
     },
@@ -49847,15 +49847,15 @@
       "ticker": "PRIM",
       "name": "Primoris Services Corporation",
       "sector": "Industrials",
-      "grade": "C",
+      "grade": "B",
       "price": 72.65,
       "change": 0.4,
       "changePct": 0.55363,
       "marketCap": 3941618485,
       "scores": {
         "good": 3,
-        "ok": 3,
-        "bad": 2,
+        "ok": 4,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -49863,7 +49863,7 @@
         "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
-        "peRatio": "bad",
+        "peRatio": "ok",
         "revenueGrowth": "ok",
         "fcfYield": "ok",
         "evToSales": "good"
@@ -50451,8 +50451,8 @@
       "changePct": 2.71399,
       "marketCap": 2052403589,
       "scores": {
-        "good": 2,
-        "ok": 3,
+        "good": 3,
+        "ok": 2,
         "bad": 3,
         "total": 8
       },
@@ -50464,7 +50464,7 @@
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -50789,8 +50789,8 @@
       "changePct": 3.96891,
       "marketCap": 212068500000,
       "scores": {
-        "good": 5,
-        "ok": 2,
+        "good": 6,
+        "ok": 1,
         "bad": 1,
         "total": 8
       },
@@ -50802,7 +50802,7 @@
         "peRatio": "good",
         "revenueGrowth": "bad",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -52583,8 +52583,8 @@
       "changePct": -1.75439,
       "marketCap": 2053387790,
       "scores": {
-        "good": 4,
-        "ok": 3,
+        "good": 5,
+        "ok": 2,
         "bad": 1,
         "total": 8
       },
@@ -52596,7 +52596,7 @@
         "peRatio": "good",
         "revenueGrowth": "good",
         "fcfYield": "ok",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -67242,10 +67242,10 @@
       "name": "Walmart Inc.",
       "sector": "Consumer Defensive",
       "grade": "D",
-      "price": 107.98,
-      "change": 0.39,
-      "changePct": 0.36249,
-      "marketCap": 859313478400,
+      "price": 107.9,
+      "change": -0.08,
+      "changePct": -0.07408779,
+      "marketCap": 858676832000,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -67320,10 +67320,10 @@
       "name": "W. P. Carey Inc.",
       "sector": "Real Estate",
       "grade": "C",
-      "price": 66.09,
-      "change": 0.14,
-      "changePct": 0.21228,
-      "marketCap": 15055781086,
+      "price": 66.11,
+      "change": 0.02,
+      "changePct": 0.03026176,
+      "marketCap": 15060337231,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -67346,10 +67346,10 @@
       "name": "Wheaton Precious Metals Corp.",
       "sector": "Basic Materials",
       "grade": "D",
-      "price": 142.92,
-      "change": -0.96,
-      "changePct": -0.66722,
-      "marketCap": 64903545000,
+      "price": 135.17,
+      "change": -7.75,
+      "changePct": -5.42262,
+      "marketCap": 61384075418,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -67372,10 +67372,10 @@
       "name": "WPP plc",
       "sector": "Communication Services",
       "grade": "D",
-      "price": 25.99,
-      "change": 0.72,
-      "changePct": 2.84923,
-      "marketCap": 5607615161,
+      "price": 25.42,
+      "change": -0.57,
+      "changePct": -2.19315,
+      "marketCap": 5484631698,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -67398,10 +67398,10 @@
       "name": "W. R. Berkley Corporation",
       "sector": "Financial Services",
       "grade": "B",
-      "price": 66.82,
-      "change": -0.475,
-      "changePct": -0.70585,
-      "marketCap": 24875549140,
+      "price": 66.755,
+      "change": -0.065,
+      "changePct": -0.09727626,
+      "marketCap": 24851351135,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -67424,10 +67424,10 @@
       "name": "Warby Parker Inc.",
       "sector": "Consumer Cyclical",
       "grade": "D",
-      "price": 26.71,
-      "change": 0.445,
-      "changePct": 1.69427,
-      "marketCap": 3277723740,
+      "price": 25.94,
+      "change": -0.77,
+      "changePct": -2.88282,
+      "marketCap": 3183233014,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -67476,10 +67476,10 @@
       "name": "WesBanco, Inc.",
       "sector": "Financial Services",
       "grade": "B",
-      "price": 38.66,
-      "change": 0.24,
-      "changePct": 0.62467,
-      "marketCap": 3707721669,
+      "price": 38.695,
+      "change": 0.035,
+      "changePct": 0.09053285,
+      "marketCap": 3711078375,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -67554,10 +67554,10 @@
       "name": "WillScot Holdings Corporation",
       "sector": "Industrials",
       "grade": "D",
-      "price": 18.17,
-      "change": 0.42,
-      "changePct": 2.3662,
-      "marketCap": 3288673317,
+      "price": 17.83,
+      "change": -0.34,
+      "changePct": -1.87122,
+      "marketCap": 3227135127,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -67580,10 +67580,10 @@
       "name": "Wise Group plc Class A Ordinary Shares",
       "sector": "Technology",
       "grade": "B",
-      "price": 11.55,
-      "change": 0.25,
-      "changePct": 2.21239,
-      "marketCap": 11553056130,
+      "price": 11.38,
+      "change": -0.17,
+      "changePct": -1.47186,
+      "marketCap": 11383011148,
       "scores": {
         "good": 6,
         "ok": 0,
@@ -67606,10 +67606,10 @@
       "name": "WSFS Financial Corporation",
       "sector": "Financial Services",
       "grade": "C",
-      "price": 77.76,
-      "change": 0.49,
-      "changePct": 0.63414,
-      "marketCap": 4046941440,
+      "price": 77.81,
+      "change": 0.05,
+      "changePct": 0.06430041,
+      "marketCap": 4049543640,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -67632,10 +67632,10 @@
       "name": "Williams-Sonoma, Inc.",
       "sector": "Consumer Cyclical",
       "grade": "C",
-      "price": 231.9,
-      "change": 3.24,
-      "changePct": 1.41695,
-      "marketCap": 27305439091,
+      "price": 227.98,
+      "change": -3.92,
+      "changePct": -1.69038,
+      "marketCap": 26843872376,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -67658,10 +67658,10 @@
       "name": "Watsco, Inc.",
       "sector": "Industrials",
       "grade": "B",
-      "price": 317.23,
-      "change": -2.98,
-      "changePct": -0.93064,
-      "marketCap": 13066157747,
+      "price": 313.02499,
+      "change": -4.20501,
+      "changePct": -1.32554,
+      "marketCap": 12892960783,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -67684,10 +67684,10 @@
       "name": "Watsco, Inc.",
       "sector": "Industrials",
       "grade": "B",
-      "price": 321.7,
-      "change": -5.005,
-      "changePct": -1.53196,
-      "marketCap": 14039235066,
+      "price": 310.9,
+      "change": -15.8053,
+      "changePct": -4.83779,
+      "marketCap": 13567914771,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -67710,10 +67710,10 @@
       "name": "West Pharmaceutical Services, Inc.",
       "sector": "Healthcare",
       "grade": "C",
-      "price": 370.29,
-      "change": -3.31,
-      "changePct": -0.88597,
-      "marketCap": 26059454982,
+      "price": 367.92,
+      "change": -2.52,
+      "changePct": -0.68027,
+      "marketCap": 25892664336,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -67736,10 +67736,10 @@
       "name": "WisdomTree, Inc.",
       "sector": "Financial Services",
       "grade": "B",
-      "price": 24.33,
-      "change": 0.335,
-      "changePct": 1.39613,
-      "marketCap": 3721054530,
+      "price": 24.05,
+      "change": -0.28,
+      "changePct": -1.15084,
+      "marketCap": 3678231050,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -67762,10 +67762,10 @@
       "name": "White Mountains Insurance Group, Ltd.",
       "sector": "Financial Services",
       "grade": "B",
-      "price": 2028.62,
-      "change": -0.71,
-      "changePct": -0.03498692,
-      "marketCap": 5024222295,
+      "price": 2035.5,
+      "change": 6.88,
+      "changePct": 0.33915,
+      "marketCap": 5041261785,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -67788,10 +67788,10 @@
       "name": "Essential Utilities, Inc.",
       "sector": "Utilities",
       "grade": "D",
-      "price": 39.53,
-      "change": -0.21,
-      "changePct": -0.52843,
-      "marketCap": 11212011818,
+      "price": 39.37,
+      "change": -0.16,
+      "changePct": -0.40476,
+      "marketCap": 11166630541,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -67840,10 +67840,10 @@
       "name": "Select Water Solutions, Inc.",
       "sector": "Energy",
       "grade": "D",
-      "price": 19.84,
-      "change": 0.31,
-      "changePct": 1.5873,
-      "marketCap": 2174813581,
+      "price": 19.78,
+      "change": -0.06,
+      "changePct": -0.30242,
+      "marketCap": 2168236524,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -67866,10 +67866,10 @@
       "name": "Willis Towers Watson Public Limited Company",
       "sector": "Financial Services",
       "grade": "B",
-      "price": 293.99,
-      "change": 0.36,
-      "changePct": 0.1226,
-      "marketCap": 27303421641,
+      "price": 292.57001,
+      "change": -1.42,
+      "changePct": -0.48301,
+      "marketCap": 27171544166,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -67892,10 +67892,10 @@
       "name": "TeraWulf Inc.",
       "sector": "Financial Services",
       "grade": "D",
-      "price": 15.74,
-      "change": -0.55,
-      "changePct": -3.3763,
-      "marketCap": 7799683832,
+      "price": 15.6,
+      "change": -0.14,
+      "changePct": -0.88945,
+      "marketCap": 7730309262,
       "scores": {
         "good": 1,
         "ok": 0,
@@ -67918,10 +67918,10 @@
       "name": "Woodward, Inc.",
       "sector": "Industrials",
       "grade": "D",
-      "price": 330.31,
-      "change": 4.43,
-      "changePct": 1.3594,
-      "marketCap": 19680827699,
+      "price": 328.9069,
+      "change": -1.4031,
+      "changePct": -0.42478,
+      "marketCap": 19597226932,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -67970,10 +67970,10 @@
       "name": "Weyerhaeuser Company",
       "sector": "Real Estate",
       "grade": "D",
-      "price": 20.01,
-      "change": -0.1301,
-      "changePct": -0.64597,
-      "marketCap": 14428062606,
+      "price": 19.83,
+      "change": -0.18,
+      "changePct": -0.89955,
+      "marketCap": 14298274936,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -67996,10 +67996,10 @@
       "name": "Wynn Resorts, Limited",
       "sector": "Consumer Cyclical",
       "grade": "C",
-      "price": 81.12,
-      "change": 0.93,
-      "changePct": 1.15975,
-      "marketCap": 8419201440,
+      "price": 80.92,
+      "change": -0.2,
+      "changePct": -0.24655,
+      "marketCap": 8398443850,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -68048,10 +68048,10 @@
       "name": "Xcel Energy Inc.",
       "sector": "Utilities",
       "grade": "C",
-      "price": 69.8,
-      "change": 0.24,
-      "changePct": 0.34503,
-      "marketCap": 43599453200,
+      "price": 69.455,
+      "change": -0.345,
+      "changePct": -0.49427,
+      "marketCap": 43383954470,
       "scores": {
         "good": 1,
         "ok": 5,
@@ -68074,10 +68074,10 @@
       "name": "Xcel Energy Inc. 6.25% Junior Subordinated Notes, Series due 2085",
       "sector": "Utilities",
       "grade": "C",
-      "price": 21.52,
-      "change": -0.18,
-      "changePct": -0.82949,
-      "marketCap": 13116610955,
+      "price": 21.5,
+      "change": -0.02,
+      "changePct": -0.0929368,
+      "marketCap": 13104420796,
       "scores": {
         "good": 1,
         "ok": 4,
@@ -68100,10 +68100,10 @@
       "name": "Xenon Pharmaceuticals Inc.",
       "sector": "Healthcare",
       "grade": "D",
-      "price": 36.94,
-      "change": -1.12,
-      "changePct": -2.94272,
-      "marketCap": 3570827264,
+      "price": 36.43,
+      "change": -0.51,
+      "changePct": -1.38062,
+      "marketCap": 3521527808,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -68152,10 +68152,10 @@
       "name": "Xometry, Inc.",
       "sector": "Industrials",
       "grade": "D",
-      "price": 100.57,
-      "change": 3.19,
-      "changePct": 3.27583,
-      "marketCap": 5407699185,
+      "price": 99.64,
+      "change": -0.93,
+      "changePct": -0.92473,
+      "marketCap": 5357692620,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -68178,10 +68178,10 @@
       "name": "Exxon Mobil Corporation",
       "sector": "Energy",
       "grade": "B",
-      "price": 160.56,
-      "change": -1.575,
-      "changePct": -0.97141,
-      "marketCap": 665434497600,
+      "price": 163.53,
+      "change": 2.94,
+      "changePct": 1.83075,
+      "marketCap": 677743543800,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -68204,10 +68204,10 @@
       "name": "XP Inc.",
       "sector": "Financial Services",
       "grade": "B",
-      "price": 20.51,
-      "change": -0.01,
-      "changePct": -0.04873294,
-      "marketCap": 10729456722,
+      "price": 20.06,
+      "change": -0.45,
+      "changePct": -2.19405,
+      "marketCap": 10494046897,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -68230,10 +68230,10 @@
       "name": "XPeng Inc.",
       "sector": "Consumer Cyclical",
       "grade": "C",
-      "price": 10.12,
-      "change": -0.13,
-      "changePct": -1.26829,
-      "marketCap": 9614074767,
+      "price": 10.0605,
+      "change": -0.05449986,
+      "changePct": -0.5388,
+      "marketCap": 9557549465,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -68257,8 +68257,8 @@
       "sector": "Industrials",
       "grade": "C",
       "price": 173.17,
-      "change": -2.95,
-      "changePct": -1.67499,
+      "change": 0,
+      "changePct": 0,
       "marketCap": 20275863144,
       "scores": {
         "good": 1,
@@ -68282,10 +68282,10 @@
       "name": "Xylem Inc.",
       "sector": "Industrials",
       "grade": "B",
-      "price": 102.63,
-      "change": -0.03,
-      "changePct": -0.02922268,
-      "marketCap": 23962770810,
+      "price": 101.68,
+      "change": -0.95,
+      "changePct": -0.92565,
+      "marketCap": 23740958231,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -68308,10 +68308,10 @@
       "name": "Block, Inc.",
       "sector": "Technology",
       "grade": "C",
-      "price": 76.42,
-      "change": -0.315,
-      "changePct": -0.4105,
-      "marketCap": 45483729880,
+      "price": 74.41,
+      "change": -2.01,
+      "changePct": -2.6302,
+      "marketCap": 44287416127,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -68334,10 +68334,10 @@
       "name": "YETI Holdings, Inc.",
       "sector": "Consumer Cyclical",
       "grade": "A",
-      "price": 42.28,
-      "change": 0.295,
-      "changePct": 0.70263,
-      "marketCap": 3203060924,
+      "price": 41.855,
+      "change": -0.425,
+      "changePct": -1.0052,
+      "marketCap": 3170863647,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -68360,10 +68360,10 @@
       "name": "Full Truck Alliance Co. Ltd.",
       "sector": "Technology",
       "grade": "C",
-      "price": 8.13,
-      "change": -0.03,
-      "changePct": -0.36765,
-      "marketCap": 8503119659,
+      "price": 8.16,
+      "change": 0.02999985,
+      "changePct": 0.369,
+      "marketCap": 8534496325,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -68412,10 +68412,10 @@
       "name": "Clear Secure, Inc.",
       "sector": "Technology",
       "grade": "B",
-      "price": 39.6,
-      "change": 1.05,
-      "changePct": 2.72374,
-      "marketCap": 3984253733,
+      "price": 39.08,
+      "change": -0.52,
+      "changePct": -1.31313,
+      "marketCap": 3931935434,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -68438,10 +68438,10 @@
       "name": "YPF Sociedad An\u00f3nima",
       "sector": "Energy",
       "grade": "B",
-      "price": 52.1,
-      "change": -1.51,
-      "changePct": -2.81664,
-      "marketCap": 20427110418,
+      "price": 52.675,
+      "change": 0.575,
+      "changePct": 1.10365,
+      "marketCap": 20652553276,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -68464,10 +68464,10 @@
       "name": "Yum! Brands, Inc.",
       "sector": "Consumer Cyclical",
       "grade": "D",
-      "price": 138.72,
-      "change": 1.38,
-      "changePct": 1.00481,
-      "marketCap": 38234145120,
+      "price": 138.88,
+      "change": 0.25,
+      "changePct": 0.18034,
+      "marketCap": 38278245826,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -68490,10 +68490,10 @@
       "name": "Yum China Holdings, Inc.",
       "sector": "Consumer Cyclical",
       "grade": "B+",
-      "price": 40.47,
-      "change": -0.523,
-      "changePct": -1.27583,
-      "marketCap": 14129979090,
+      "price": 41.04,
+      "change": 0.57,
+      "changePct": 1.40845,
+      "marketCap": 14328992880,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -68542,10 +68542,10 @@
       "name": "Zillow Group, Inc. Class C",
       "sector": "Communication Services",
       "grade": "C",
-      "price": 28.43,
-      "change": 0.29,
-      "changePct": 1.03056,
-      "marketCap": 6831622018,
+      "price": 27.7,
+      "change": -0.73,
+      "changePct": -2.56771,
+      "marketCap": 6656205765,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -68568,10 +68568,10 @@
       "name": "Zimmer Biomet Holdings, Inc.",
       "sector": "Healthcare",
       "grade": "B+",
-      "price": 91.04,
-      "change": 1.35,
-      "changePct": 1.50518,
-      "marketCap": 17612780480,
+      "price": 90.29,
+      "change": -0.75,
+      "changePct": -0.82381,
+      "marketCap": 17467683980,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -68620,10 +68620,10 @@
       "name": "Zebra Technologies Corporation",
       "sector": "Technology",
       "grade": "B",
-      "price": 370.04,
-      "change": 4.94,
-      "changePct": 1.35305,
-      "marketCap": 17626263336,
+      "price": 367.86,
+      "change": -2.18,
+      "changePct": -0.58913,
+      "marketCap": 17522422524,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -68646,10 +68646,10 @@
       "name": "Ziff Davis, Inc.",
       "sector": "Communication Services",
       "grade": "C",
-      "price": 56.51,
-      "change": 0.04,
-      "changePct": 0.07083407,
-      "marketCap": 2081568454,
+      "price": 56.385,
+      "change": -0.125,
+      "changePct": -0.2212,
+      "marketCap": 2076964029,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -68672,10 +68672,10 @@
       "name": "Zeta Global Holdings Corp.",
       "sector": "Technology",
       "grade": "B",
-      "price": 29.45,
-      "change": -0.12,
-      "changePct": -0.40582,
-      "marketCap": 7363013549,
+      "price": 28.6516,
+      "change": -0.7984,
+      "changePct": -2.71104,
+      "marketCap": 7163399627,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -68698,10 +68698,10 @@
       "name": "Zillow Group, Inc. Class A",
       "sector": "Communication Services",
       "grade": "C",
-      "price": 29.3,
-      "change": 0.39,
-      "changePct": 1.34901,
-      "marketCap": 7040679744,
+      "price": 28.55,
+      "change": -0.75,
+      "changePct": -2.55973,
+      "marketCap": 6860457566,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -68724,10 +68724,10 @@
       "name": "Ermenegildo Zegna N.V.",
       "sector": "Consumer Cyclical",
       "grade": "B",
-      "price": 12.73,
-      "change": 0.265,
-      "changePct": 2.12595,
-      "marketCap": 3415611760,
+      "price": 12.56,
+      "change": -0.17,
+      "changePct": -1.33543,
+      "marketCap": 3369998720,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -68776,10 +68776,10 @@
       "name": "ZIM Integrated Shipping Services Ltd.",
       "sector": "Industrials",
       "grade": "B",
-      "price": 29.19,
-      "change": -0.19,
-      "changePct": -0.6467,
-      "marketCap": 3517969051,
+      "price": 29.814,
+      "change": 0.624,
+      "changePct": 2.13772,
+      "marketCap": 3593173322,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -68802,10 +68802,10 @@
       "name": "Zions Bancorporation, National Association",
       "sector": "Financial Services",
       "grade": "C",
-      "price": 63.83,
-      "change": 1.01,
-      "changePct": 1.60777,
-      "marketCap": 9315286370,
+      "price": 63.068,
+      "change": -0.762,
+      "changePct": -1.1938,
+      "marketCap": 9204080852,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -68880,10 +68880,10 @@
       "name": "Zions Bancorporation, National Association",
       "sector": "Financial Services",
       "grade": "C",
-      "price": 17.5602,
-      "change": -0.0398,
-      "changePct": -0.22614,
-      "marketCap": 9734138835,
+      "price": 17.5,
+      "change": -0.06,
+      "changePct": -0.34169,
+      "marketCap": 9700768193,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -68932,10 +68932,10 @@
       "name": "Zai Lab Limited",
       "sector": "Healthcare",
       "grade": "D",
-      "price": 24.98,
-      "change": -0.3,
-      "changePct": -1.18671,
-      "marketCap": 2820804899,
+      "price": 25.18,
+      "change": 0.2,
+      "changePct": 0.80064,
+      "marketCap": 2843389406,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -68958,13 +68958,13 @@
       "name": "Zoom Communications, Inc.",
       "sector": "Technology",
       "grade": "B",
-      "price": 89.71,
-      "change": -0.64,
-      "changePct": -0.70836,
-      "marketCap": 26305862725,
+      "price": 86.63,
+      "change": -3.08,
+      "changePct": -3.43329,
+      "marketCap": 25402707478,
       "scores": {
-        "good": 5,
-        "ok": 2,
+        "good": 6,
+        "ok": 1,
         "bad": 1,
         "total": 8
       },
@@ -68976,7 +68976,7 @@
         "peRatio": "good",
         "revenueGrowth": "bad",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -68984,10 +68984,10 @@
       "name": "Zscaler, Inc.",
       "sector": "Technology",
       "grade": "B",
-      "price": 193.05,
-      "change": -21.59,
-      "changePct": -10.0587,
-      "marketCap": 31218023801,
+      "price": 189.87,
+      "change": -3.18,
+      "changePct": -1.64724,
+      "marketCap": 30703787512,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -69010,10 +69010,10 @@
       "name": "ZTO Express (Cayman) Inc.",
       "sector": "Industrials",
       "grade": "B+",
-      "price": 19.49,
-      "change": 0.02,
-      "changePct": 0.10272,
-      "marketCap": 15437048595,
+      "price": 19.64,
+      "change": 0.15,
+      "changePct": 0.76963,
+      "marketCap": 15555856049,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -69036,10 +69036,10 @@
       "name": "Zoetis Inc.",
       "sector": "Healthcare",
       "grade": "C",
-      "price": 71.05,
-      "change": 0.78,
-      "changePct": 1.11,
-      "marketCap": 29786149400,
+      "price": 70.43,
+      "change": -0.62,
+      "changePct": -0.87262,
+      "marketCap": 29526228168,
       "scores": {
         "good": 6,
         "ok": 0,
@@ -69062,10 +69062,10 @@
       "name": "Zurn Elkay Water Solutions Corporation",
       "sector": "Industrials",
       "grade": "C",
-      "price": 46.65,
-      "change": 0.05,
-      "changePct": 0.1073,
-      "marketCap": 7737560452,
+      "price": 46.45,
+      "change": -0.2,
+      "changePct": -0.42872,
+      "marketCap": 7704387757,
       "scores": {
         "good": 3,
         "ok": 3,
