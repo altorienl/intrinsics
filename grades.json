@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T12:58:39.955354Z",
+  "updated": "2026-10-04T13:39:12.057211Z",
   "stocks": [
     {
       "ticker": "A",
@@ -13623,6 +13623,32 @@
         "revenueGrowth": "bad",
         "fcfYield": "ok",
         "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "CG",
+      "name": "The Carlyle Group Inc.",
+      "sector": "Financial Services",
+      "grade": "D",
+      "price": 39.82,
+      "change": -0.57,
+      "changePct": -1.41124,
+      "marketCap": 14334164680,
+      "scores": {
+        "good": 2,
+        "ok": 1,
+        "bad": 3,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "ok",
+        "peRatio": "bad",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
       }
     },
     {
@@ -29347,11 +29373,11 @@
       "ratioGrades": {
         "currentRatio": "good",
         "debtToEquity": "bad",
-        "assetTurnover": "ok",
+        "assetTurnover": "bad",
         "operatingMargin": "good",
         "peRatio": "good",
         "revenueGrowth": "bad",
-        "fcfYield": "bad",
+        "fcfYield": "ok",
         "evToSales": "ok"
       }
     },
@@ -29911,8 +29937,8 @@
       "changePct": 0.01563722,
       "marketCap": 2259598292,
       "scores": {
-        "good": 1,
-        "ok": 3,
+        "good": 0,
+        "ok": 4,
         "bad": 4,
         "total": 8
       },
@@ -29924,7 +29950,7 @@
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": "bad",
-        "evToSales": "good"
+        "evToSales": "ok"
       }
     },
     {
@@ -31991,17 +32017,17 @@
       "changePct": 3.06865,
       "marketCap": 3307065480,
       "scores": {
-        "good": 3,
+        "good": 4,
         "ok": 0,
         "bad": 4,
-        "total": 7
+        "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
         "debtToEquity": "bad",
         "assetTurnover": "bad",
         "operatingMargin": "good",
-        "peRatio": null,
+        "peRatio": "good",
         "revenueGrowth": "bad",
         "fcfYield": "good",
         "evToSales": "bad"
@@ -32381,19 +32407,19 @@
       "changePct": 0,
       "marketCap": 7543075047,
       "scores": {
-        "good": 2,
-        "ok": 2,
-        "bad": 4,
-        "total": 8
+        "good": 1,
+        "ok": 3,
+        "bad": 3,
+        "total": 7
       },
       "ratioGrades": {
         "currentRatio": "good",
         "debtToEquity": "ok",
         "assetTurnover": "bad",
         "operatingMargin": "bad",
-        "peRatio": "bad",
+        "peRatio": null,
         "revenueGrowth": "bad",
-        "fcfYield": "good",
+        "fcfYield": "ok",
         "evToSales": "ok"
       }
     },
@@ -33032,8 +33058,8 @@
       "marketCap": 8927760777,
       "scores": {
         "good": 1,
-        "ok": 3,
-        "bad": 4,
+        "ok": 4,
+        "bad": 3,
         "total": 8
       },
       "ratioGrades": {
@@ -33041,7 +33067,7 @@
         "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "bad",
-        "peRatio": "bad",
+        "peRatio": "ok",
         "revenueGrowth": "bad",
         "fcfYield": "bad",
         "evToSales": "good"
@@ -34306,19 +34332,19 @@
       "marketCap": 29031498564,
       "scores": {
         "good": 1,
-        "ok": 4,
-        "bad": 3,
+        "ok": 2,
+        "bad": 5,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "bad",
         "debtToEquity": "ok",
-        "assetTurnover": "ok",
+        "assetTurnover": "bad",
         "operatingMargin": "ok",
         "peRatio": "bad",
         "revenueGrowth": "good",
         "fcfYield": "bad",
-        "evToSales": "ok"
+        "evToSales": "bad"
       }
     },
     {
