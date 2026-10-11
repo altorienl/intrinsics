@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T13:43:27.769301Z",
+  "updated": "2026-10-11T13:57:49.032721Z",
   "stocks": [
     {
       "ticker": "A",
@@ -7204,6 +7204,32 @@
       }
     },
     {
+      "ticker": "BAC",
+      "name": "Bank of America Corporation",
+      "sector": "Financial Services",
+      "grade": "C",
+      "price": 54.32,
+      "change": 0.71,
+      "changePct": 1.32438,
+      "marketCap": 385486768800,
+      "scores": {
+        "good": 1,
+        "ok": 3,
+        "bad": 2,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "bad",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
+      }
+    },
+    {
       "ticker": "BAH",
       "name": "Booz Allen Hamilton Holding Corporation",
       "sector": "Industrials",
@@ -7227,6 +7253,32 @@
         "revenueGrowth": "bad",
         "fcfYield": "good",
         "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "BALL",
+      "name": "Ball Corporation",
+      "sector": "Consumer Cyclical",
+      "grade": "B",
+      "price": 58.46,
+      "change": 0.09,
+      "changePct": 0.15419,
+      "marketCap": 15564799620,
+      "scores": {
+        "good": 3,
+        "ok": 5,
+        "bad": 0,
+        "total": 8
+      },
+      "ratioGrades": {
+        "currentRatio": "ok",
+        "debtToEquity": "ok",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": "good",
+        "evToSales": "ok"
       }
     },
     {
@@ -7461,6 +7513,32 @@
         "revenueGrowth": "ok",
         "fcfYield": "bad",
         "evToSales": "ok"
+      }
+    },
+    {
+      "ticker": "BBAR",
+      "name": "Banco BBVA Argentina S.A.",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 12.65,
+      "change": -0.04,
+      "changePct": -0.31521,
+      "marketCap": 2583593825,
+      "scores": {
+        "good": 5,
+        "ok": 0,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "good",
+        "operatingMargin": "bad",
+        "peRatio": "good",
+        "revenueGrowth": "good",
+        "fcfYield": null,
+        "evToSales": null
       }
     },
     {
@@ -8426,6 +8504,32 @@
       }
     },
     {
+      "ticker": "BETA",
+      "name": "BETA Technologies, Inc.",
+      "sector": "Industrials",
+      "grade": "D",
+      "price": 20.98,
+      "change": 0.48,
+      "changePct": 2.34146,
+      "marketCap": 4662900039,
+      "scores": {
+        "good": 2,
+        "ok": 0,
+        "bad": 4,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "bad",
+        "operatingMargin": "bad",
+        "peRatio": null,
+        "revenueGrowth": null,
+        "fcfYield": "bad",
+        "evToSales": "bad"
+      }
+    },
+    {
       "ticker": "BF-A",
       "name": "Brown-Forman Corporation",
       "sector": "Consumer Defensive",
@@ -9203,6 +9307,32 @@
         "revenueGrowth": "good",
         "fcfYield": "ok",
         "evToSales": "good"
+      }
+    },
+    {
+      "ticker": "BK",
+      "name": "The Bank of New York Mellon Corporation",
+      "sector": "Financial Services",
+      "grade": "B",
+      "price": 141.91,
+      "change": -0.68,
+      "changePct": -0.47689,
+      "marketCap": 97404043890,
+      "scores": {
+        "good": 2,
+        "ok": 3,
+        "bad": 1,
+        "total": 6
+      },
+      "ratioGrades": {
+        "currentRatio": "good",
+        "debtToEquity": "good",
+        "assetTurnover": "ok",
+        "operatingMargin": "ok",
+        "peRatio": "ok",
+        "revenueGrowth": "bad",
+        "fcfYield": null,
+        "evToSales": null
       }
     },
     {
@@ -26633,7 +26763,7 @@
       "price": 9.5,
       "change": -0.005,
       "changePct": -0.05260389,
-      "marketCap": 4961712060,
+      "marketCap": 4962547709,
       "scores": {
         "good": 1,
         "ok": 5,
@@ -33727,20 +33857,20 @@
       "ticker": "JEF",
       "name": "Jefferies Financial Group Inc.",
       "sector": "Financial Services",
-      "grade": "D",
+      "grade": "C",
       "price": 44.38,
       "change": -0.02,
       "changePct": -0.04504505,
       "marketCap": 9026536738,
       "scores": {
-        "good": 2,
+        "good": 3,
         "ok": 1,
-        "bad": 3,
+        "bad": 2,
         "total": 6
       },
       "ratioGrades": {
         "currentRatio": "bad",
-        "debtToEquity": "bad",
+        "debtToEquity": "good",
         "assetTurnover": "good",
         "operatingMargin": "bad",
         "peRatio": "good",
@@ -42833,14 +42963,14 @@
       "changePct": 6.84713,
       "marketCap": 2944217920,
       "scores": {
-        "good": 1,
+        "good": 2,
         "ok": 0,
-        "bad": 4,
+        "bad": 3,
         "total": 5
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "bad",
+        "debtToEquity": "good",
         "assetTurnover": "bad",
         "operatingMargin": "bad",
         "peRatio": null,
@@ -54583,7 +54713,7 @@
       "price": 16.51,
       "change": -0.015,
       "changePct": -0.09077156,
-      "marketCap": 2046298187,
+      "marketCap": 2047431417,
       "scores": {
         "good": 5,
         "ok": 2,
