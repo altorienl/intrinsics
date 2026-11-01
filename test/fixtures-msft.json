@@ -1,0 +1,28 @@
+{
+  "note": "Real FMP balance-sheet-statement response for MSFT, period=quarter&limit=1, captured 2026-11-01. Trimmed to the fields the debt figure reads. The ratio is the live debtToEquityRatioTTM from the same date.",
+  "MSFT": {
+    "date": "2026-09-30",
+    "shortTermDebt": 4391000000,
+    "longTermDebt": 31090000000,
+    "capitalLeaseObligations": 98450000000,
+    "totalDebt": 133931000000,
+    "totalStockholdersEquity": 470509000000,
+    "debtToEquityRatioTTM": 0.2846513031631701
+  },
+  "AAPL_no_leases": {
+    "note": "capitalLeaseObligations zero, which is why the bug stayed invisible on tickers like this",
+    "shortTermDebt": 10000000000,
+    "longTermDebt": 85000000000,
+    "capitalLeaseObligations": 0,
+    "totalDebt": 95000000000,
+    "totalStockholdersEquity": 60000000000,
+    "debtToEquityRatioTTM": 1.5833333333333333
+  },
+  "MISSING_totalDebt": {
+    "note": "older payloads omit totalDebt entirely; the fallback must still include leases",
+    "shortTermDebt": 1000000000,
+    "longTermDebt": 4000000000,
+    "capitalLeaseObligations": 2000000000,
+    "totalStockholdersEquity": 20000000000
+  }
+}

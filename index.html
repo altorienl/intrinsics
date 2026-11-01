@@ -1985,7 +1985,29 @@
             };
         }
 
-        var debtVal = (bs.longTermDebt || 0) + (bs.shortTermDebt || 0);
+        /* totalDebt, not the two borrowing lines, because that is what the
+           ratio printed beside it divides by.
+
+           The card shows FMP's debtToEquityRatioTTM and then printed
+           "Total Debt" as longTermDebt + shortTermDebt, which omits
+           capitalLeaseObligations. FMP's numerator is bs.totalDebt, and
+           totalDebt == shortTermDebt + longTermDebt + capitalLeaseObligations
+           exactly. For MSFT at 2026-09-30 that is 133,931,000,000 / 470,509,000,000
+           = 0.2846513031631701, bit-for-bit the published ratio -- while the card
+           printed 35,481,000,000 beside it, understating the numerator by the
+           98,450,000,000 of leases. A reader dividing the two figures got 0.0755
+           against a displayed 0.28x.
+
+           Systematic rather than a MSFT quirk: wrong for 12 of 19 sampled tickers,
+           by the lease share each time, and invisible wherever leases are zero --
+           which is why it survived. The figure moves and the ratio does not: the
+           ratio is what both the sector benchmarks and the nightly screener grade
+           against, so changing it would desync this card from grades.json. Post
+           ASC 842, 133.9B genuinely is total debt; the old 35.5B was borrowings
+           mislabeled. */
+        var debtVal = (typeof bs.totalDebt === 'number')
+            ? bs.totalDebt
+            : ((bs.longTermDebt || 0) + (bs.shortTermDebt || 0) + (bs.capitalLeaseObligations || 0));
         var equity = bs.totalStockholdersEquity || 0;
         var deApi = rt.debtToEquityRatioTTM;
         if (typeof deApi === 'number' && deApi !== 0) {
