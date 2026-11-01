@@ -2011,8 +2011,23 @@
         var equity = bs.totalStockholdersEquity || 0;
         var deApi = rt.debtToEquityRatioTTM;
         if (typeof deApi === 'number' && deApi !== 0) {
+            /* The sign is the whole fact, so it is kept.
+             *
+             * This stored Math.abs(deApi), which turned FICO's -1.37 into
+             * 1.37 and compared THAT against a benchmark whose "acceptable"
+             * band runs to 1.5 -- so a company whose liabilities exceed its
+             * equity was graded "Moderate debt levels" and told its balance
+             * sheet was not unusual.
+             *
+             * The nightly screener never agreed: scan.py forces 'bad' when
+             * the ratio is negative. Measured against today's grades.json,
+             * the screener lists BKNG and OTIS at C and FICO at B, all three
+             * on a 'bad' leverage grade, while the card each row clicks
+             * through to graded them better. Fixing this file converges the
+             * two -- scan.py is already right, so grades.json does not move
+             * and nothing has to be regenerated. */
             ratios.debtToEquity = deApi < 0 ? {
-                value: Math.abs(deApi),
+                value: deApi,
                 components: 'Negative equity — total liabilities exceed shareholders\' equity',
                 period: bsPeriod
             } : {
@@ -2119,6 +2134,15 @@
             var def = defs.find(function(d) { return d.key === key; });
             var bench = benchmarks[key];
             if (!def || !bench) return null;
+            /* Negative equity is bad, not excellent.
+             *
+             * debtToEquity is lower-is-better, so a negative ratio sails
+             * under every threshold and would grade 'good' -- the company
+             * with liabilities exceeding its equity scoring better than one
+             * with no debt at all. scan.py has always forced 'bad' here
+             * (line 123); this is index.html catching up, which is why
+             * grades.json does not move. */
+            if (key === 'debtToEquity' && r.value < 0) return 'bad';
             if (def.higherBetter) {
                 return r.value >= bench.good ? 'good' : r.value >= bench.ok ? 'ok' : 'bad';
             } else {
@@ -2253,8 +2277,15 @@
               format: function(v) { return v.toFixed(2) + 'x'; }, barMax: 3, higherBetter: true },
             { key: 'debtToEquity', category: 'Leverage', name: 'Debt to Equity', formula: "Total Debt / Shareholders' Equity",
               tip: 'Shows how much debt a company uses compared to what shareholders own. A lower number means less reliance on borrowed money. Banks naturally run higher.',
-              explain: function(v, g) { return v <= g.good ? 'Conservative use of debt. Not over-leveraged.' : v <= g.ok ? 'Moderate debt levels. Not unusual, but worth watching.' : v > 10 ? 'Negative shareholders\' equity. Liabilities exceed what shareholders own — often from aggressive buybacks or accumulated losses.' : 'Heavy reliance on debt financing. Higher risk if earnings dip or rates rise.'; },
-              format: function(v) { return v.toFixed(2) + 'x'; }, barMax: 4, higherBetter: false },
+              /* Driven by the sign, not by a magnitude heuristic. The
+               negative-equity sentence used to need v > 10 to fire, which
+               was a proxy for "this looks like an absolute value of
+               something negative" -- it missed every company between 0 and
+               10 and said "moderate debt levels" instead. */
+            explain: function(v, g) { return v < 0 ? 'Negative shareholders\' equity. Liabilities exceed what shareholders own — often from aggressive buybacks or accumulated losses.' : v <= g.good ? 'Conservative use of debt. Not over-leveraged.' : v <= g.ok ? 'Moderate debt levels. Not unusual, but worth watching.' : 'Heavy reliance on debt financing. Higher risk if earnings dip or rates rise.'; },
+              /* n/m, because a negative multiple is not a figure a reader
+                 can use and is not on the lower-is-better scale at all. */
+              format: function(v) { return v < 0 ? 'n/m' : v.toFixed(2) + 'x'; }, barMax: 4, higherBetter: false },
             { key: 'assetTurnover', category: 'Efficiency', name: 'Asset Turnover', formula: 'Net Sales / Total Assets',
               tip: 'How efficiently a company turns its assets into revenue. Higher means the company is squeezing more sales out of every dollar of assets it owns.',
               explain: function(v, g) { return v >= g.good ? 'Efficiently turning assets into revenue. Getting strong output from what they own.' : v >= g.ok ? 'Average efficiency. Some industries are naturally asset-heavy.' : 'Low asset utilization. Could signal heavy investments or underperforming sales.'; },

@@ -12,7 +12,11 @@
  */
 var fs = require('fs'), path = require('path');
 var F = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures-msft.json'), 'utf8'));
-var src = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+/* Overridable so test/mutate.js can aim this at a deliberately broken copy in
+   a temp directory and prove the checks below actually fail. Defaults to the
+   real file, so running this on its own is unchanged. */
+var src = fs.readFileSync(process.env.INTRINSICS_INDEX_HTML ||
+    path.join(__dirname, '..', 'index.html'), 'utf8');
 
 var pass = 0, fail = 0;
 function check(name, cond, extra) {
