@@ -1043,8 +1043,9 @@
     </footer>
 
     <script>
-    var API_KEY = 'SVmuQaYdToRtkpfy5olBaRbE6RBNxGPG';
-    var API = 'https://financialmodelingprep.com/stable';
+    // Routed through a Worker that holds the FMP key. A static page cannot keep
+    // a secret, so it no longer carries one.
+    var API = 'https://intrinsics-api.altorien.workers.dev/fmp';
     var FMP_IMG = 'https://financialmodelingprep.com/image-stock/';
 
     var US_MARKET_HOLIDAYS = [
@@ -1383,8 +1384,8 @@
     function loadMovers() {
         if (moversData) { renderMovers(); return; }
         Promise.all([
-            fetch(API + '/biggest-gainers?apikey=' + API_KEY).then(function(r) { return r.json(); }),
-            fetch(API + '/biggest-losers?apikey=' + API_KEY).then(function(r) { return r.json(); })
+            fetch(API + '/biggest-gainers').then(function(r) { return r.json(); }),
+            fetch(API + '/biggest-losers').then(function(r) { return r.json(); })
         ]).then(function(results) {
             var rawGainers = filterMovers(results[0] || []).slice(0, 20);
             var rawLosers = filterMovers(results[1] || []).slice(0, 20);
@@ -1431,7 +1432,7 @@
     function loadEarningsCal() {
         var now = new Date();
         var today = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
-        fetch(API + '/earnings-calendar?from=' + today + '&to=' + today + '&apikey=' + API_KEY)
+        fetch(API + '/earnings-calendar?from=' + today + '&to=' + today)
             .then(function(r) { return r.json(); })
             .then(function(data) {
                 if (!Array.isArray(data)) return;
@@ -1530,7 +1531,7 @@
         list.forEach(function(w) {
             var sym = encodeURIComponent(w.ticker);
             if (info.session === 'market') {
-                fetch(API + '/quote?symbol=' + sym + '&apikey=' + API_KEY)
+                fetch(API + '/quote?symbol=' + sym)
                     .then(function(r) { return r.json(); })
                     .then(function(data) {
                         if (!Array.isArray(data) || !data[0]) return;
@@ -1539,8 +1540,8 @@
                     }).catch(function() {});
             } else {
                 Promise.all([
-                    fetch(API + '/aftermarket-trade?symbol=' + sym + '&apikey=' + API_KEY).then(function(r) { return r.json(); }),
-                    fetch(API + '/quote?symbol=' + sym + '&apikey=' + API_KEY).then(function(r) { return r.json(); })
+                    fetch(API + '/aftermarket-trade?symbol=' + sym).then(function(r) { return r.json(); }),
+                    fetch(API + '/quote?symbol=' + sym).then(function(r) { return r.json(); })
                 ]).then(function(results) {
                     var ah = (Array.isArray(results[0]) && results[0][0]) ? results[0][0] : null;
                     var q = (Array.isArray(results[1]) && results[1][0]) ? results[1][0] : null;
@@ -1686,7 +1687,7 @@
                 return d.exchange === 'NYSE' || d.exchange === 'NASDAQ' || d.exchange === 'AMEX'
                     || d.exchange === 'CBOE' || (d.exchangeFullName && d.exchangeFullName.includes('NASDAQ'));
             };
-            fetch(API + '/search-symbol?query=' + encodeURIComponent(q) + '&limit=12&apikey=' + API_KEY)
+            fetch(API + '/search-symbol?query=' + encodeURIComponent(q) + '&limit=12')
                 .then(function(r) { return r.json(); })
                 .then(function(data) {
                     var results = Array.isArray(data) ? data.filter(usExchanges) : [];
@@ -1696,7 +1697,7 @@
                         renderAC();
                         acList.classList.remove('hidden');
                     } else {
-                        return fetch(API + '/search-name?query=' + encodeURIComponent(q) + '&limit=12&apikey=' + API_KEY)
+                        return fetch(API + '/search-name?query=' + encodeURIComponent(q) + '&limit=12')
                             .then(function(r) { return r.json(); })
                             .then(function(nameData) {
                                 var nameResults = Array.isArray(nameData) ? nameData.filter(usExchanges) : [];
@@ -1774,7 +1775,7 @@
                 { symbol: 'DIA', id: 'idxDJI', label: 'Dow Jones' }
             ];
             indices.forEach(function(idx) {
-                fetch(API + '/quote?symbol=' + idx.symbol + '&apikey=' + API_KEY)
+                fetch(API + '/quote?symbol=' + idx.symbol)
                     .then(function(r) { return r.json(); })
                     .then(function(data) {
                         try {
@@ -1821,7 +1822,7 @@
         var info = getMarketSession();
         var sym = encodeURIComponent(ticker);
         if (info.session === 'market') {
-            fetch(API + '/quote?symbol=' + sym + '&apikey=' + API_KEY)
+            fetch(API + '/quote?symbol=' + sym)
                 .then(function(r) { return r.json(); })
                 .then(function(data) {
                     if (!Array.isArray(data) || !data[0]) return;
@@ -1830,7 +1831,7 @@
                     updateTodayStat(p.change, p.changePercentage);
                 }).catch(function() {});
         } else {
-            fetch(API + '/aftermarket-trade?symbol=' + sym + '&apikey=' + API_KEY)
+            fetch(API + '/aftermarket-trade?symbol=' + sym)
                 .then(function(r) { return r.json(); })
                 .then(function(data) {
                     if (!Array.isArray(data) || !data[0] || !data[0].price) return;
@@ -1882,12 +1883,12 @@
         try {
             var sym = encodeURIComponent(ticker);
             var [bsResp, isResp, profResp, ratiosResp, estResp, kmResp] = await Promise.all([
-                fetch(API + '/balance-sheet-statement?symbol=' + sym + '&period=quarter&limit=1&apikey=' + API_KEY),
-                fetch(API + '/income-statement?symbol=' + sym + '&period=quarter&limit=8&apikey=' + API_KEY),
-                fetch(API + '/profile?symbol=' + sym + '&apikey=' + API_KEY),
-                fetch(API + '/ratios-ttm?symbol=' + sym + '&apikey=' + API_KEY),
-                fetch(API + '/analyst-estimates?symbol=' + sym + '&period=annual&limit=5&apikey=' + API_KEY),
-                fetch(API + '/key-metrics-ttm?symbol=' + sym + '&apikey=' + API_KEY)
+                fetch(API + '/balance-sheet-statement?symbol=' + sym + '&period=quarter&limit=1'),
+                fetch(API + '/income-statement?symbol=' + sym + '&period=quarter&limit=8'),
+                fetch(API + '/profile?symbol=' + sym),
+                fetch(API + '/ratios-ttm?symbol=' + sym),
+                fetch(API + '/analyst-estimates?symbol=' + sym + '&period=annual&limit=5'),
+                fetch(API + '/key-metrics-ttm?symbol=' + sym)
             ]);
 
             var bsText = await bsResp.text();
@@ -2361,7 +2362,7 @@
         var card = document.getElementById('earningsCard');
         card.classList.add('hidden');
         try {
-            var resp = await fetch(API + '/earnings?symbol=' + encodeURIComponent(ticker) + '&limit=5&apikey=' + API_KEY);
+            var resp = await fetch(API + '/earnings?symbol=' + encodeURIComponent(ticker) + '&limit=5');
             var data = await resp.json();
             if (!Array.isArray(data) || data.length === 0) return;
             var reported = data.filter(function(e) { return e.revenueActual !== null; }).slice(0, 3);
@@ -2494,7 +2495,7 @@
         outlookEstimates = [];
         try {
             var sym = encodeURIComponent(ticker);
-            var ptResp = await fetch(API + '/price-target-consensus?symbol=' + sym + '&apikey=' + API_KEY);
+            var ptResp = await fetch(API + '/price-target-consensus?symbol=' + sym);
             var ptData = await ptResp.json();
             var pt = Array.isArray(ptData) && ptData.length > 0 ? ptData[0] : null;
 
@@ -2568,7 +2569,7 @@
         rp.innerHTML = '';
         if (rpLabel) rpLabel.textContent = 'Stock Peers';
         try {
-            var resp = await fetch(API + '/stock-peers?symbol=' + encodeURIComponent(ticker) + '&apikey=' + API_KEY);
+            var resp = await fetch(API + '/stock-peers?symbol=' + encodeURIComponent(ticker));
             var data = await resp.json();
             if (!Array.isArray(data) || data.length === 0) return;
             var peers = data.slice(0, 6);
@@ -2604,7 +2605,7 @@
 
     async function fetchIntradayData(ticker) {
         try {
-            var resp = await fetch(API + '/historical-chart/5min?symbol=' + encodeURIComponent(ticker) + '&apikey=' + API_KEY);
+            var resp = await fetch(API + '/historical-chart/5min?symbol=' + encodeURIComponent(ticker));
             var data = await resp.json();
             if (!Array.isArray(data) || data.length === 0) { intradayData = []; return; }
             var today = data[0].date.slice(0, 10);
@@ -2651,7 +2652,7 @@
         var toStr = today.toISOString().slice(0, 10);
 
         try {
-            var resp = await fetch(API + '/historical-price-eod/light?symbol=' + encodeURIComponent(ticker) + '&from=' + fromStr + '&to=' + toStr + '&apikey=' + API_KEY);
+            var resp = await fetch(API + '/historical-price-eod/light?symbol=' + encodeURIComponent(ticker) + '&from=' + fromStr + '&to=' + toStr);
             var text = await resp.text();
             if (text.startsWith('Premium')) { chartData = []; return; }
             var data = JSON.parse(text);

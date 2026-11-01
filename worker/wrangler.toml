@@ -1,0 +1,22 @@
+# Bare keys must stay ABOVE every [table] and [[array]] below. TOML assigns a
+# bare key to whatever table precedes it, so a `main` written after [vars] is
+# silently read as vars.main and the deploy breaks in a way nothing reports.
+name = "intrinsics-api"
+main = "worker.js"
+compatibility_date = "2026-10-27"
+workers_dev = true
+
+# The FMP key is a secret, never a var:
+#   npx wrangler secret put FMP_API_KEY
+# A var would be readable in the Cloudflare dashboard and committed in plain
+# text here, which is the exact problem this Worker exists to fix.
+
+# Required. originOk() fails closed when this is empty, so a typo takes the app
+# down loudly instead of opening the proxy to the internet quietly.
+#
+# localhost is deliberately NOT here. An Origin header is trivially forged by
+# anything that is not a browser, so a localhost entry in production is a
+# standing bypass for the whole allowlist. For local work, run:
+#   npx wrangler dev --var ALLOWED_ORIGINS:http://localhost:8000
+[vars]
+ALLOWED_ORIGINS = "https://intrinsics.altorien.com,https://intrinsics.app"
