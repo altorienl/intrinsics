@@ -21,6 +21,7 @@ var child = require('child_process');
 
 var TESTS = [
     'test-debt.js',
+    'test-negative-equity.js',
     'test-ratios.js',
     'test-cross-surface.js'
 ];

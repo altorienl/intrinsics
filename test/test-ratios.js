@@ -39,7 +39,7 @@ var EXPECTED = {
         grades: { currentRatio: 'good', debtToEquity: 'ok', assetTurnover: 'bad', operatingMargin: 'bad',
                   peRatio: null, revenueGrowth: 'ok', fcfYield: 'bad', evToSales: 'bad' } },
     SBUX: { letter: 'D', g: 1, o: 2, b: 5, t: 8,
-        why: 'Consumer Cyclical with negative equity: D/E -2.92 becomes 2.92 on the card, which is still past the 2.0 ok ceiling, so both surfaces land on bad anyway',
+        why: 'Consumer Cyclical with negative equity: D/E -2.92 is negative, so both surfaces force bad -- this used to pass for the wrong reason, because the magnitude also cleared the 2.0 ceiling',
         grades: { currentRatio: 'bad', debtToEquity: 'bad', assetTurnover: 'good', operatingMargin: 'ok',
                   peRatio: 'bad', revenueGrowth: 'bad', fcfYield: 'ok', evToSales: 'bad' } },
     O: { letter: 'B', g: 4, o: 3, b: 0, t: 7,
@@ -103,10 +103,10 @@ Object.keys(F).forEach(function (t) {
         if (r.values[key] === null) return;
         var src = SOURCED_FROM[key];
         var api = F[t][src[0]][0][src[1]];
-        /* SBUX is the deliberate exception: a negative D/E is stored as its
-           absolute value, which is the divergence pinned in the cross-surface
-           suite. Assert the relationship rather than exempting the ticker. */
-        var want = (key === 'debtToEquity' && api < 0) ? Math.abs(api) : api;
+        /* No exception any more. A negative D/E used to be stored as its
+           absolute value, which is what this line allowed for; the sign is
+           kept now, so every graded value is simply the field it claims. */
+        var want = api;
         if (r.values[key] !== want) mismatched.push(key + ': card ' + r.values[key] + ' vs ' + src[1] + ' ' + api);
     });
     s.check(t + ': every graded value is bit-for-bit the FMP field it claims',
@@ -269,20 +269,26 @@ s.check('...and on a single-currency company the forward line is sane next to th
 s.check('SBUX really is negative-equity in the captured data',
         F.SBUX['ratios-ttm'][0].debtToEquityRatioTTM < 0 &&
         F.SBUX['balance-sheet-statement'][0].totalStockholdersEquity < 0);
-s.check('the card stores the magnitude, 2.92, not the reported -2.92',
-        R.SBUX.values.debtToEquity === Math.abs(F.SBUX['ratios-ttm'][0].debtToEquityRatioTTM));
+/* These three pinned the bug when it was still live. It is fixed, so they
+   now assert the fix: the sign survives, and the grade follows it. */
+s.check('the card keeps the sign, -2.92, rather than its magnitude',
+        R.SBUX.values.debtToEquity === F.SBUX['ratios-ttm'][0].debtToEquityRatioTTM,
+        String(R.SBUX.values.debtToEquity));
 s.check('...and swaps the components line for a negative-equity sentence',
         /Negative equity/.test(R.SBUX.components.debtToEquity),
         R.SBUX.components.debtToEquity);
-s.check('at this magnitude it still grades bad, which is why the divergence hides',
+s.check('a negative ratio grades bad, which is what scan.py has always said',
         R.SBUX.ratioGrades.debtToEquity === 'bad');
 
+/* The case the magnitude bug got most wrong: small enough that |v| cleared
+   the benchmark, so a balance sheet with more liabilities than equity read
+   as conservative. This was a s.pinned() documenting the defect; it is a
+   plain check now because the defect is gone. */
 var negSmall = I.grade('NEG_DE_SMALL', der.NEG_DE_SMALL.payloads);
-s.pinned('a company at D/E -0.30 is graded "good" on the card, on the magnitude alone',
-         negSmall.ratioGrades.debtToEquity === 'good' &&
-         negSmall.values.debtToEquity === 0.3,
-         'grade negative D/E as bad unconditionally, matching scan.py, and in the ' +
-         'same commit as any scan.py change. See the matching pin in test-cross-surface.js.');
+s.check('a company at D/E -0.30 grades bad, not good on the magnitude alone',
+        negSmall.ratioGrades.debtToEquity === 'bad' &&
+        negSmall.values.debtToEquity === -0.3,
+        negSmall.ratioGrades.debtToEquity + ' / ' + negSmall.values.debtToEquity);
 
 s.check('a loss-maker keeps its negative operating margin and is graded bad on it',
         R.RIVN.values.operatingMargin < 0 && R.RIVN.ratioGrades.operatingMargin === 'bad');

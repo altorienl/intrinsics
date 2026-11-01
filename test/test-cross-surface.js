@@ -169,9 +169,20 @@ function pinDivergence(name, cardLetter, screenerLetter, whenFixed) {
     return got;
 }
 
-pinDivergence('NEG_DE_SMALL', 'C', 'D',
-    'index.html grades Math.abs(deApi); scan.py forces bad. Make index.html ' +
-    'force bad too, IN THE SAME COMMIT, then change this to a plain agreement check.');
+/* Was a pinned divergence; the fix landed, so it is a plain agreement check
+   now, exactly as the pin's own instructions said to do. index.html forces
+   bad on a negative ratio, which is what scan.py always did, so the two
+   surfaces give this company the same letter. */
+(function () {
+    var j = jsGrade('NEG_DE_SMALL'), p2 = pyGrade('NEG_DE_SMALL');
+    var card = j.ok ? j.r.letter : 'THREW';
+    var screener = p2.ok ? p2.r.grade : 'RAISED';
+    s.check('NEG_DE_SMALL: a small negative D/E gets one letter, not two',
+            card === screener, 'card ' + card + ', screener ' + screener);
+    s.check('NEG_DE_SMALL: and both call the leverage bad',
+            (j.ok && j.r.ratioGrades.debtToEquity === 'bad'),
+            j.ok ? String(j.r.ratioGrades.debtToEquity) : 'threw');
+}());
 
 pinDivergence('MSFT_NO_RATIOS', 'C', '?',
     'index.html falls back to balance-sheet arithmetic when ratios-ttm is ' +

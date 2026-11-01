@@ -2323,12 +2323,19 @@
                 return;
             }
             var bench = benchmarks[def.key];
-            var grade;
-            if (def.higherBetter) {
-                grade = ratio.value >= bench.good ? 'good' : ratio.value >= bench.ok ? 'ok' : 'bad';
-            } else {
-                grade = ratio.value <= bench.good ? 'good' : ratio.value <= bench.ok ? 'ok' : 'bad';
-            }
+            /* g(), not a second copy of the same comparison.
+             *
+             * This loop had its own good/ok/bad implementation, identical to
+             * g()'s and three hundred lines away from it. When the
+             * negative-equity rule was added to g() this path kept the old
+             * behaviour, so the cards and the overall letter still graded a
+             * company with more liabilities than equity on the magnitude of
+             * its ratio -- a fix that looked complete, passed its own test,
+             * and changed nothing a reader would see. Found by the
+             * cross-surface suite, which grades through this path.
+             *
+             * One rule now. Adding the next one cannot miss a copy. */
+            var grade = g(def.key);
             scores.push(grade);
             gridEl.innerHTML += renderCard(def, ratio, bench, grade);
         });

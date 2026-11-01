@@ -40,6 +40,11 @@ var REGIONS = {
     forwardEps:     /var forwardEps = null;[\s\S]*?\n            \}\n/,
     processData:    /\n    function processData\(bs, ttm, prof, ticker, ratiosTtm, forwardEps, keyMetrics\) \{[\s\S]*?\n        renderQuickPicks\(ticker, sector\);\n    \}\n/,
     defs:           /\n        var defs = \[\n[\s\S]*?\n        \];\n/,
+    /* g() is the single good/ok/bad rule. The scoring loop used to carry an
+       identical copy of it and was extracted alone; when the negative-equity
+       rule landed in g() that copy kept the old behaviour, so the loop is a
+       call now and this region has to travel with it. */
+    grader:         /\n        function g\(key\) \{[\s\S]*?\n        \}\n/,
     scoreAndLadder: /\n        var scores = \[\];\n[\s\S]*?Proceed with caution\.'; \}\n/
 };
 
@@ -89,6 +94,7 @@ function build() {
         '    var ticker = CAPTURED.ticker, sector = CAPTURED.sector;',
         '    var benchmarks = CAPTURED.benchmarks, ratios = CAPTURED.ratios;',
         '    ' + p.defs,
+        '    ' + p.grader,
         '    ' + p.scoreAndLadder,
         /* scores[] arrives in defs order, for present ratios only, under the
            same presence test the loop above just applied, so zipping it back

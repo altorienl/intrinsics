@@ -122,10 +122,24 @@ var MUTATIONS = [
 
     /* ---- the negative-equity rule, which is already split between the two ---- */
     {
-        id: 'IDX-DROP-ABS', file: 'index',
-        what: 'stop taking the magnitude of a negative D/E on the card, so -2.92 grades good',
-        from: "ratios.debtToEquity = deApi < 0 ? {\n                value: Math.abs(deApi),",
-        to:   "ratios.debtToEquity = deApi < 0 ? {\n                value: deApi,"
+        /* Was IDX-DROP-ABS, which removed a Math.abs that is now gone.
+           Inverted: putting the magnitude back is the regression to guard. */
+        id: 'IDX-RESTORE-ABS', file: 'index',
+        what: 'store the magnitude of a negative D/E again, hiding the sign from the grader',
+        from: "ratios.debtToEquity = deApi < 0 ? {\n                value: deApi,",
+        to:   "ratios.debtToEquity = deApi < 0 ? {\n                value: Math.abs(deApi),"
+    },
+    {
+        id: 'IDX-DROP-NEGATIVE-GUARD', file: 'index',
+        what: 'drop the card rule that forces a negative D/E to bad, so it grades good on a lower-is-better scale',
+        from: "            if (key === 'debtToEquity' && r.value < 0) return 'bad';\n",
+        to:   ""
+    },
+    {
+        id: 'IDX-REDUPLICATE-GRADER', file: 'index',
+        what: 'give the scoring loop its own copy of the comparison again, so a rule added to g() silently misses the cards',
+        from: "            var grade = g(def.key);\n            scores.push(grade);",
+        to:   "            var grade;\n            if (def.higherBetter) {\n                grade = ratio.value >= bench.good ? 'good' : ratio.value >= bench.ok ? 'ok' : 'bad';\n            } else {\n                grade = ratio.value <= bench.good ? 'good' : ratio.value <= bench.ok ? 'ok' : 'bad';\n            }\n            scores.push(grade);"
     },
     {
         id: 'SCAN-DROP-NEGATIVE-DE', file: 'scan',
@@ -166,14 +180,7 @@ var MUTATIONS = [
     /* ---- the pinned checks. A pin records known-wrong behavior, so the way
            it earns its place is by going red when someone fixes the bug. If
            these two survive, every pin in the suite is decoration. ---- */
-    {
-        id: 'PIN-FIX-NEGATIVE-DE', file: 'index',
-        what: 'actually FIX the negative-equity divergence in index.html, which must turn ' +
-              'the NEG_DE_SMALL pin red and tell the fixer to convert it to an agreement check',
-        from: "ratios.debtToEquity = deApi < 0 ? {\n                value: Math.abs(deApi),",
-        to:   "ratios.debtToEquity = deApi < 0 ? {\n                value: Infinity,"
-    },
-    {
+        {
         id: 'PIN-FIX-NULL-REVENUE', file: 'scan',
         what: 'actually FIX the JSON-null revenue crash in scan.py, which must turn the ' +
               'MSFT_NULL_REVENUE pin red because the screener stops raising',
