@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T13:30:26.489233Z",
+  "updated": "2026-11-01T14:25:43.026267Z",
   "stocks": [
     {
       "ticker": "A",
@@ -451,7 +451,7 @@
       "price": 2.66,
       "change": -0.01,
       "changePct": -0.37453,
-      "marketCap": 41736845460,
+      "marketCap": 41880271591,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -581,7 +581,7 @@
       "price": 164.39,
       "change": -2.06,
       "changePct": -1.23761,
-      "marketCap": 98434379579,
+      "marketCap": 98434378922,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -633,7 +633,7 @@
       "price": 86.59,
       "change": -2.47,
       "changePct": -2.77341,
-      "marketCap": 7440573060,
+      "marketCap": 7580217186,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -763,7 +763,7 @@
       "price": 14.74,
       "change": -0.16,
       "changePct": -1.07383,
-      "marketCap": 35662128311,
+      "marketCap": 36293116432,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -789,7 +789,7 @@
       "price": 17.82,
       "change": -0.09,
       "changePct": -0.50251,
-      "marketCap": 35821644766,
+      "marketCap": 36293116436,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -1543,7 +1543,7 @@
       "price": 8.18,
       "change": -0.12,
       "changePct": -1.44578,
-      "marketCap": 12363528067,
+      "marketCap": 12413944147,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -1933,7 +1933,7 @@
       "price": 110.91,
       "change": 3.07,
       "changePct": 2.84681,
-      "marketCap": 7767218065,
+      "marketCap": 7647337443,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -2479,7 +2479,7 @@
       "price": 16.47,
       "change": -0.31,
       "changePct": -1.84744,
-      "marketCap": 14381397944,
+      "marketCap": 14442008631,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -2505,7 +2505,7 @@
       "price": 276.07,
       "change": 7.87,
       "changePct": 2.93438,
-      "marketCap": 70768059870,
+      "marketCap": 70756741000,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -3051,7 +3051,7 @@
       "price": 165,
       "change": -9,
       "changePct": -5.17241,
-      "marketCap": 22078485000,
+      "marketCap": 22099699710,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -3259,7 +3259,7 @@
       "price": 21.47,
       "change": -0.05,
       "changePct": -0.23234,
-      "marketCap": 10141269006,
+      "marketCap": 10141268620,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -3337,7 +3337,7 @@
       "price": 4.5,
       "change": -0.03,
       "changePct": -0.66225,
-      "marketCap": 2689678341,
+      "marketCap": 2689678467,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -3675,7 +3675,7 @@
       "price": 490.83,
       "change": -7.065,
       "changePct": -1.41897,
-      "marketCap": 43356594373,
+      "marketCap": 43356593882,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -3701,7 +3701,7 @@
       "price": 17.08,
       "change": -0.02,
       "changePct": -0.11696,
-      "marketCap": 2265136927,
+      "marketCap": 2265136773,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -3857,7 +3857,7 @@
       "price": 24.48,
       "change": 0.35,
       "changePct": 1.45048,
-      "marketCap": 73094636160,
+      "marketCap": 73088100000,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -4117,7 +4117,7 @@
       "price": 63.07,
       "change": -0.04,
       "changePct": -0.0633814,
-      "marketCap": 8571753699,
+      "marketCap": 8571753447,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -4247,7 +4247,7 @@
       "price": 44.34,
       "change": -0.68,
       "changePct": -1.51044,
-      "marketCap": 19161987569,
+      "marketCap": 19033318520,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -4325,7 +4325,7 @@
       "price": 17.815,
       "change": -1.595,
       "changePct": -8.21741,
-      "marketCap": 5387026293,
+      "marketCap": 5387026525,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -4429,7 +4429,7 @@
       "price": 25,
       "change": -0.02,
       "changePct": -0.07993605,
-      "marketCap": 68237333125,
+      "marketCap": 68408519525,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -4455,7 +4455,7 @@
       "price": 228.5,
       "change": -26.41,
       "changePct": -10.36052,
-      "marketCap": 76762180092,
+      "marketCap": 76762177350,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -4481,7 +4481,7 @@
       "price": 213.25,
       "change": 6.2,
       "changePct": 2.99445,
-      "marketCap": 7560944232,
+      "marketCap": 7560944019,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -4507,7 +4507,7 @@
       "price": 49.1,
       "change": -1.37,
       "changePct": -2.71448,
-      "marketCap": 3516915258,
+      "marketCap": 3516914915,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -4585,7 +4585,7 @@
       "price": 5.46,
       "change": 0.03,
       "changePct": 0.55249,
-      "marketCap": 4203664090,
+      "marketCap": 4203664074,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -4793,7 +4793,7 @@
       "price": 19.11,
       "change": -0.01,
       "changePct": -0.05230126,
-      "marketCap": 13801145647,
+      "marketCap": 13801145495,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -4897,7 +4897,7 @@
       "price": 892.87,
       "change": -4.98,
       "changePct": -0.55466,
-      "marketCap": 55568582319,
+      "marketCap": 56149085321,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -4975,7 +4975,7 @@
       "price": 205.97,
       "change": -22.8,
       "changePct": -9.96634,
-      "marketCap": 219975665257,
+      "marketCap": 219163468699,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -5287,7 +5287,7 @@
       "price": 11.23,
       "change": -0.025,
       "changePct": -0.22212,
-      "marketCap": 2571334448,
+      "marketCap": 2571334347,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -5365,7 +5365,7 @@
       "price": 74.68,
       "change": 0.3,
       "changePct": 0.40333,
-      "marketCap": 3419848424,
+      "marketCap": 3419848648,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -5469,7 +5469,7 @@
       "price": 250.86,
       "change": -2.08,
       "changePct": -0.82233,
-      "marketCap": 7503353047,
+      "marketCap": 7541837480,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -5523,14 +5523,14 @@
       "changePct": -11.33558,
       "marketCap": 87199162335,
       "scores": {
-        "good": 4,
-        "ok": 3,
+        "good": 3,
+        "ok": 4,
         "bad": 1,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "good",
         "operatingMargin": "ok",
         "peRatio": "ok",
@@ -5573,7 +5573,7 @@
       "price": 32.52,
       "change": -0.14,
       "changePct": -0.42866,
-      "marketCap": 4493806964,
+      "marketCap": 4493807094,
       "scores": {
         "good": 7,
         "ok": 1,
@@ -5703,7 +5703,7 @@
       "price": 23.03,
       "change": -0.13,
       "changePct": -0.56131,
-      "marketCap": 4466114905,
+      "marketCap": 4488562246,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -5729,7 +5729,7 @@
       "price": 165.59,
       "change": -9.41,
       "changePct": -5.37714,
-      "marketCap": 22548453721,
+      "marketCap": 22490930570,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -5833,7 +5833,7 @@
       "price": 137.2,
       "change": 6.56,
       "changePct": 5.02143,
-      "marketCap": 8723330899,
+      "marketCap": 8723330350,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -6197,7 +6197,7 @@
       "price": 4.43,
       "change": -0.2,
       "changePct": -4.31965,
-      "marketCap": 5259179650,
+      "marketCap": 5259179518,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -6457,7 +6457,7 @@
       "price": 182.22,
       "change": 0.16,
       "changePct": 0.08788312,
-      "marketCap": 13810114506,
+      "marketCap": 13810114689,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -6561,7 +6561,7 @@
       "price": 90.38,
       "change": -2.17,
       "changePct": -2.34468,
-      "marketCap": 5138826311,
+      "marketCap": 5126445245,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -6743,7 +6743,7 @@
       "price": 34.07,
       "change": 0.46,
       "changePct": 1.36864,
-      "marketCap": 7291661400,
+      "marketCap": 7292513150,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -6921,19 +6921,19 @@
       "ticker": "AZN",
       "name": "AstraZeneca PLC",
       "sector": "Healthcare",
-      "grade": "C",
+      "grade": "B",
       "price": 186.65,
       "change": 12.25,
       "changePct": 7.02408,
       "marketCap": 289470343352,
       "scores": {
         "good": 2,
-        "ok": 4,
-        "bad": 2,
+        "ok": 5,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "ok",
         "debtToEquity": "ok",
         "assetTurnover": "good",
         "operatingMargin": "good",
@@ -7081,7 +7081,7 @@
       "price": 98.04,
       "change": -1.5,
       "changePct": -1.50693,
-      "marketCap": 243898513820,
+      "marketCap": 243700741649,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -7315,7 +7315,7 @@
       "price": 54.72,
       "change": 0.13,
       "changePct": 0.23814,
-      "marketCap": 3511267379,
+      "marketCap": 3511267269,
       "scores": {
         "good": 0,
         "ok": 5,
@@ -7367,7 +7367,7 @@
       "price": 23,
       "change": -0.5,
       "changePct": -2.12766,
-      "marketCap": 11890907977,
+      "marketCap": 11899004000,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -7471,7 +7471,7 @@
       "price": 2.42,
       "change": -0.07,
       "changePct": -2.81124,
-      "marketCap": 27044865645,
+      "marketCap": 27044866046,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -7497,7 +7497,7 @@
       "price": 74.95,
       "change": 4.22,
       "changePct": 5.96635,
-      "marketCap": 14652200350,
+      "marketCap": 14600334950,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -7601,7 +7601,7 @@
       "price": 23.44,
       "change": -1.01,
       "changePct": -4.13088,
-      "marketCap": 134346486834,
+      "marketCap": 129370682779,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -7965,7 +7965,7 @@
       "price": 22.3,
       "change": -0.815,
       "changePct": -3.52585,
-      "marketCap": 74142710094,
+      "marketCap": 76865970439,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -7991,7 +7991,7 @@
       "price": 105.7,
       "change": -1.78,
       "changePct": -1.65612,
-      "marketCap": 4130564789,
+      "marketCap": 4132870000,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -8173,7 +8173,7 @@
       "price": 17.71,
       "change": 0.29,
       "changePct": 1.66475,
-      "marketCap": 20268974058,
+      "marketCap": 19422144499,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -8329,7 +8329,7 @@
       "price": 13.78,
       "change": -0.17,
       "changePct": -1.21864,
-      "marketCap": 8489534625,
+      "marketCap": 8598208790,
       "scores": {
         "good": 0,
         "ok": 3,
@@ -8355,7 +8355,7 @@
       "price": 14.63,
       "change": -0.01,
       "changePct": -0.06830601,
-      "marketCap": 8498058447,
+      "marketCap": 8598208799,
       "scores": {
         "good": 0,
         "ok": 3,
@@ -8433,7 +8433,7 @@
       "price": 29.4,
       "change": 0.65,
       "changePct": 2.26087,
-      "marketCap": 13309954858,
+      "marketCap": 13309953800,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -8459,7 +8459,7 @@
       "price": 28.71,
       "change": 0.67,
       "changePct": 2.38944,
-      "marketCap": 13309953818,
+      "marketCap": 13296472349,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -8537,7 +8537,7 @@
       "price": 96.64,
       "change": 0.62,
       "changePct": 0.6457,
-      "marketCap": 18566392047,
+      "marketCap": 18568773546,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -8563,7 +8563,7 @@
       "price": 11.23,
       "change": -0.19,
       "changePct": -1.66375,
-      "marketCap": 5235156693,
+      "marketCap": 5235156671,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -8641,7 +8641,7 @@
       "price": 8.2,
       "change": -0.71,
       "changePct": -7.96857,
-      "marketCap": 3066722633,
+      "marketCap": 3068987071,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -8719,7 +8719,7 @@
       "price": 15.25,
       "change": -0.05,
       "changePct": -0.3268,
-      "marketCap": 2501387137,
+      "marketCap": 2525907840,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -8745,7 +8745,7 @@
       "price": 9.18,
       "change": -0.02,
       "changePct": -0.21739,
-      "marketCap": 2478144066,
+      "marketCap": 2525907845,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -8771,7 +8771,7 @@
       "price": 10.3,
       "change": -0.05,
       "changePct": -0.48309,
-      "marketCap": 2486994410,
+      "marketCap": 2525907841,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -8797,7 +8797,7 @@
       "price": 12.71,
       "change": -0.01,
       "changePct": -0.07861635,
-      "marketCap": 2499256982,
+      "marketCap": 2525907844,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -8849,7 +8849,7 @@
       "price": 79.16,
       "change": -2.66,
       "changePct": -3.25104,
-      "marketCap": 201330144734,
+      "marketCap": 201183313858,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -8875,7 +8875,7 @@
       "price": 15.42,
       "change": -1.07,
       "changePct": -6.48878,
-      "marketCap": 2329095088,
+      "marketCap": 2329326326,
       "scores": {
         "good": 1,
         "ok": 0,
@@ -8901,7 +8901,7 @@
       "price": 76.4,
       "change": -2.25,
       "changePct": -2.86078,
-      "marketCap": 26013964077,
+      "marketCap": 26013961250,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -8953,7 +8953,7 @@
       "price": 12.68,
       "change": -0.19,
       "changePct": -1.4763,
-      "marketCap": 5241140840,
+      "marketCap": 5267186981,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -9005,7 +9005,7 @@
       "price": 372.18,
       "change": -12.22,
       "changePct": -3.17898,
-      "marketCap": 9951413599,
+      "marketCap": 9951413972,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -9369,7 +9369,7 @@
       "price": 55.23,
       "change": 0.72,
       "changePct": 1.32086,
-      "marketCap": 54825385020,
+      "marketCap": 54847697940,
       "scores": {
         "good": 0,
         "ok": 8,
@@ -9447,7 +9447,7 @@
       "price": 20,
       "change": -0.405,
       "changePct": -1.98481,
-      "marketCap": 7149947360,
+      "marketCap": 7149947380,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -9499,7 +9499,7 @@
       "price": 64.91,
       "change": 1.85,
       "changePct": 2.93371,
-      "marketCap": 6984056360,
+      "marketCap": 6984726166,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -9655,7 +9655,7 @@
       "price": 154.74,
       "change": 4.46,
       "changePct": 2.96779,
-      "marketCap": 6167022506,
+      "marketCap": 6052097727,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -9681,7 +9681,7 @@
       "price": 60.15,
       "change": -1.12,
       "changePct": -1.82797,
-      "marketCap": 3845932715,
+      "marketCap": 3845932775,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -9837,7 +9837,7 @@
       "price": 62.48,
       "change": 1.09,
       "changePct": 1.77553,
-      "marketCap": 127628520800,
+      "marketCap": 127714480784,
       "scores": {
         "good": 6,
         "ok": 0,
@@ -9863,7 +9863,7 @@
       "price": 39.28,
       "change": -0.22,
       "changePct": -0.55696,
-      "marketCap": 87686767823,
+      "marketCap": 87686773401,
       "scores": {
         "good": 1,
         "ok": 2,
@@ -9889,7 +9889,7 @@
       "price": 13.92,
       "change": 0.02,
       "changePct": 0.14388,
-      "marketCap": 86858779053,
+      "marketCap": 87686767811,
       "scores": {
         "good": 1,
         "ok": 2,
@@ -9915,7 +9915,7 @@
       "price": 13.96,
       "change": -0.09,
       "changePct": -0.64057,
-      "marketCap": 86798619817,
+      "marketCap": 87686767818,
       "scores": {
         "good": 1,
         "ok": 2,
@@ -10021,8 +10021,8 @@
       "changePct": -0.60837,
       "marketCap": 13042545380,
       "scores": {
-        "good": 1,
-        "ok": 2,
+        "good": 2,
+        "ok": 1,
         "bad": 3,
         "total": 6
       },
@@ -10030,7 +10030,7 @@
         "currentRatio": "bad",
         "debtToEquity": "good",
         "assetTurnover": "ok",
-        "operatingMargin": "ok",
+        "operatingMargin": "good",
         "peRatio": "bad",
         "revenueGrowth": "bad",
         "fcfYield": null,
@@ -10045,7 +10045,7 @@
       "price": 88.17,
       "change": -0.96,
       "changePct": -1.07708,
-      "marketCap": 21865399886,
+      "marketCap": 22148688950,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -10071,7 +10071,7 @@
       "price": 147.11,
       "change": -2.26,
       "changePct": -1.51302,
-      "marketCap": 99814743006,
+      "marketCap": 99814723440,
       "scores": {
         "good": 1,
         "ok": 4,
@@ -10149,7 +10149,7 @@
       "price": 130.22,
       "change": -2.15,
       "changePct": -1.62424,
-      "marketCap": 7913061811,
+      "marketCap": 7913061291,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -10230,8 +10230,8 @@
       "marketCap": 132148026950,
       "scores": {
         "good": 4,
-        "ok": 3,
-        "bad": 1,
+        "ok": 4,
+        "bad": 0,
         "total": 8
       },
       "ratioGrades": {
@@ -10239,7 +10239,7 @@
         "debtToEquity": "ok",
         "assetTurnover": "good",
         "operatingMargin": "ok",
-        "peRatio": "bad",
+        "peRatio": "ok",
         "revenueGrowth": "good",
         "fcfYield": "good",
         "evToSales": "good"
@@ -10279,7 +10279,7 @@
       "price": 156.61,
       "change": -1.88,
       "changePct": -1.18619,
-      "marketCap": 9840454352,
+      "marketCap": 9840454509,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -10305,7 +10305,7 @@
       "price": 13.12,
       "change": -0.08,
       "changePct": -0.60606,
-      "marketCap": 6495450820,
+      "marketCap": 6410166228,
       "scores": {
         "good": 1,
         "ok": 2,
@@ -10487,7 +10487,7 @@
       "price": 542.49,
       "change": 0.53,
       "changePct": 0.0977932,
-      "marketCap": 1161313665369,
+      "marketCap": 1161313539512,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -10539,7 +10539,7 @@
       "price": 422.39,
       "change": -31.81,
       "changePct": -7.00352,
-      "marketCap": 8746189390,
+      "marketCap": 8695127930,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -11059,7 +11059,7 @@
       "price": 80.38,
       "change": 0.86,
       "changePct": 1.08149,
-      "marketCap": 158278565871,
+      "marketCap": 159546502979,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -11267,7 +11267,7 @@
       "price": 51.63,
       "change": -1.67,
       "changePct": -3.13321,
-      "marketCap": 10515275580,
+      "marketCap": 10368030692,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -11397,7 +11397,7 @@
       "price": 118.51,
       "change": -2.09,
       "changePct": -1.733,
-      "marketCap": 136404804741,
+      "marketCap": 138135137253,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -11475,7 +11475,7 @@
       "price": 72.83,
       "change": 0.4,
       "changePct": 0.55226,
-      "marketCap": 5291493802,
+      "marketCap": 5146635223,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -11501,7 +11501,7 @@
       "price": 16.54,
       "change": 0.26,
       "changePct": 1.59705,
-      "marketCap": 7241285024,
+      "marketCap": 7703952324,
       "scores": {
         "good": 1,
         "ok": 0,
@@ -11605,7 +11605,7 @@
       "price": 26.28,
       "change": 0.03,
       "changePct": 0.11429,
-      "marketCap": 204100335079,
+      "marketCap": 205721241591,
       "scores": {
         "good": 1,
         "ok": 4,
@@ -11631,7 +11631,7 @@
       "price": 23.74,
       "change": -0.73,
       "changePct": -2.98324,
-      "marketCap": 3873853625,
+      "marketCap": 3873853412,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -11657,7 +11657,7 @@
       "price": 464.89,
       "change": -110.89,
       "changePct": -19.25909,
-      "marketCap": 4825837134,
+      "marketCap": 4712806104,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -12047,7 +12047,7 @@
       "price": 32.18,
       "change": -0.32,
       "changePct": -0.98462,
-      "marketCap": 2866384554,
+      "marketCap": 2866384586,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -12073,7 +12073,7 @@
       "price": 53.63,
       "change": -1.91,
       "changePct": -3.43896,
-      "marketCap": 44208552807,
+      "marketCap": 43877933296,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -12229,7 +12229,7 @@
       "price": 364.12,
       "change": 1.84,
       "changePct": 0.50789,
-      "marketCap": 139286845083,
+      "marketCap": 139122687771,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -12281,7 +12281,7 @@
       "price": 35.92,
       "change": 0.06,
       "changePct": 0.16732,
-      "marketCap": 8603024593,
+      "marketCap": 8603023408,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -12489,7 +12489,7 @@
       "price": 7.65,
       "change": -0.03,
       "changePct": -0.39062,
-      "marketCap": 4518801450,
+      "marketCap": 4521464828,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -12645,7 +12645,7 @@
       "price": 119.24,
       "change": 1.04,
       "changePct": 0.87986,
-      "marketCap": 12884120480,
+      "marketCap": 12884057641,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -12801,7 +12801,7 @@
       "price": 28.76,
       "change": 2.07,
       "changePct": 7.75571,
-      "marketCap": 2634260696,
+      "marketCap": 2462209604,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -12827,7 +12827,7 @@
       "price": 87.41,
       "change": 15.89,
       "changePct": 22.21756,
-      "marketCap": 4522086422,
+      "marketCap": 4592764924,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -12853,7 +12853,7 @@
       "price": 327.89,
       "change": -14.86,
       "changePct": -4.33552,
-      "marketCap": 89966133917,
+      "marketCap": 89966132933,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -13139,7 +13139,7 @@
       "price": 45.58,
       "change": 0.48,
       "changePct": 1.0643,
-      "marketCap": 2530637289,
+      "marketCap": 2525567380,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -13165,7 +13165,7 @@
       "price": 39.12,
       "change": 0.33,
       "changePct": 0.85073,
-      "marketCap": 2519128136,
+      "marketCap": 2530637279,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -13321,7 +13321,7 @@
       "price": 63.81,
       "change": -1.43,
       "changePct": -2.19191,
-      "marketCap": 26875304370,
+      "marketCap": 26748836204,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -13373,7 +13373,7 @@
       "price": 157.6,
       "change": -0.25,
       "changePct": -0.15838,
-      "marketCap": 9794650880,
+      "marketCap": 9799646800,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -13473,19 +13473,19 @@
       "ticker": "CGAU",
       "name": "Centerra Gold Inc.",
       "sector": "Basic Materials",
-      "grade": "C",
+      "grade": "B",
       "price": 20.2,
       "change": -0.23,
       "changePct": -1.1258,
       "marketCap": 3951281600,
       "scores": {
-        "good": 4,
+        "good": 5,
         "ok": 2,
-        "bad": 2,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
-        "currentRatio": "bad",
+        "currentRatio": "good",
         "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "good",
@@ -13555,7 +13555,7 @@
       "price": 12.05,
       "change": 0.03,
       "changePct": 0.24958,
-      "marketCap": 2298698259,
+      "marketCap": 2298698235,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -13607,7 +13607,7 @@
       "price": 107.23,
       "change": 1.23,
       "changePct": 1.16038,
-      "marketCap": 25435374948,
+      "marketCap": 25435375269,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -13919,7 +13919,7 @@
       "price": 48.99,
       "change": 0.44,
       "changePct": 0.90628,
-      "marketCap": 38003730648,
+      "marketCap": 38003731775,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -13971,7 +13971,7 @@
       "price": 21.29,
       "change": 0.46,
       "changePct": 2.20835,
-      "marketCap": 8557031003,
+      "marketCap": 8557031493,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -14023,7 +14023,7 @@
       "price": 27.95,
       "change": -0.92,
       "changePct": -3.1867,
-      "marketCap": 10581453126,
+      "marketCap": 10581453685,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -14075,7 +14075,7 @@
       "price": 92.02,
       "change": -1.54,
       "changePct": -1.646,
-      "marketCap": 21731947746,
+      "marketCap": 21731946457,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -14153,7 +14153,7 @@
       "price": 1.83,
       "change": -0.025,
       "changePct": -1.34771,
-      "marketCap": 5235047893,
+      "marketCap": 5235047936,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -14491,7 +14491,7 @@
       "price": 4.46,
       "change": -0.12,
       "changePct": -2.62009,
-      "marketCap": 2368956804,
+      "marketCap": 2368956902,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -14725,7 +14725,7 @@
       "price": 303.14,
       "change": 6.72,
       "changePct": 2.26705,
-      "marketCap": 108504085781,
+      "marketCap": 108504085174,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -14751,7 +14751,7 @@
       "price": 31.89,
       "change": 0.61,
       "changePct": 1.95013,
-      "marketCap": 40354243800,
+      "marketCap": 40340052750,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -14881,7 +14881,7 @@
       "price": 70.1,
       "change": 0.58,
       "changePct": 0.83429,
-      "marketCap": 21985154981,
+      "marketCap": 21985154210,
       "scores": {
         "good": 1,
         "ok": 6,
@@ -15323,7 +15323,7 @@
       "price": 37.49,
       "change": 0.705,
       "changePct": 1.91654,
-      "marketCap": 5546406951,
+      "marketCap": 5355864551,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -15401,7 +15401,7 @@
       "price": 204.85,
       "change": -3.89,
       "changePct": -1.86356,
-      "marketCap": 125672378692,
+      "marketCap": 125672374186,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -15531,7 +15531,7 @@
       "price": 143.54,
       "change": -17.05,
       "changePct": -10.6171,
-      "marketCap": 37871148913,
+      "marketCap": 38004142025,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -15895,7 +15895,7 @@
       "price": 12.85,
       "change": -1.46,
       "changePct": -10.20266,
-      "marketCap": 4204739671,
+      "marketCap": 4257760840,
       "scores": {
         "good": 1,
         "ok": 0,
@@ -15999,7 +15999,7 @@
       "price": 89.68,
       "change": 1.31,
       "changePct": 1.4824,
-      "marketCap": 78835822746,
+      "marketCap": 77981692400,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -16025,7 +16025,7 @@
       "price": 128.92,
       "change": -2.34,
       "changePct": -1.78272,
-      "marketCap": 5303581995,
+      "marketCap": 5303582253,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -16181,7 +16181,7 @@
       "price": 14.37,
       "change": -0.2,
       "changePct": -1.37268,
-      "marketCap": 25830242928,
+      "marketCap": 25830242296,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -16207,7 +16207,7 @@
       "price": 18.68,
       "change": 2.62,
       "changePct": 16.31382,
-      "marketCap": 2144391260,
+      "marketCap": 2123019360,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -16389,7 +16389,7 @@
       "price": 72.54,
       "change": -7.45,
       "changePct": -9.31366,
-      "marketCap": 18416156408,
+      "marketCap": 18416156625,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -16493,7 +16493,7 @@
       "price": 90.81,
       "change": 0.19,
       "changePct": 0.20967,
-      "marketCap": 60414485899,
+      "marketCap": 60414485445,
       "scores": {
         "good": 0,
         "ok": 8,
@@ -16623,7 +16623,7 @@
       "price": 150.52,
       "change": 0.26,
       "changePct": 0.17303,
-      "marketCap": 7216696452,
+      "marketCap": 6882533171,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -16779,7 +16779,7 @@
       "price": 54.87,
       "change": -5.87,
       "changePct": -9.66414,
-      "marketCap": 30262812254,
+      "marketCap": 30262813407,
       "scores": {
         "good": 1,
         "ok": 1,
@@ -16883,7 +16883,7 @@
       "price": 30.17,
       "change": 2.03,
       "changePct": 7.21393,
-      "marketCap": 12224811592,
+      "marketCap": 12138517578,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -17013,7 +17013,7 @@
       "price": 286.16,
       "change": -4.96,
       "changePct": -1.70376,
-      "marketCap": 4662547960,
+      "marketCap": 4662159927,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -17273,7 +17273,7 @@
       "price": 65.11,
       "change": 2.59,
       "changePct": 4.14267,
-      "marketCap": 29328408840,
+      "marketCap": 29106151297,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -17429,7 +17429,7 @@
       "price": 29.55,
       "change": 0.46,
       "changePct": 1.5813,
-      "marketCap": 4863989100,
+      "marketCap": 4863990814,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -17455,7 +17455,7 @@
       "price": 22.58,
       "change": -0.17,
       "changePct": -0.74725,
-      "marketCap": 3974012260,
+      "marketCap": 3962654520,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -17481,7 +17481,7 @@
       "price": 619,
       "change": 71.75,
       "changePct": 13.11101,
-      "marketCap": 4759739838,
+      "marketCap": 4759739219,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -17559,7 +17559,7 @@
       "price": 165.13,
       "change": -6.48,
       "changePct": -3.776,
-      "marketCap": 6843740853,
+      "marketCap": 6755897638,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -17637,7 +17637,7 @@
       "price": 124.33,
       "change": -4.43,
       "changePct": -3.44051,
-      "marketCap": 4209839661,
+      "marketCap": 4134624114,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -17845,7 +17845,7 @@
       "price": 48.5,
       "change": 0.88,
       "changePct": 1.84796,
-      "marketCap": 2999196350,
+      "marketCap": 3049532221,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -18027,7 +18027,7 @@
       "price": 66.62,
       "change": 1.5,
       "changePct": 2.30344,
-      "marketCap": 58594018722,
+      "marketCap": 58594020521,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -18131,7 +18131,7 @@
       "price": 20.09,
       "change": 0.79,
       "changePct": 4.09326,
-      "marketCap": 2380854951,
+      "marketCap": 2328248281,
       "scores": {
         "good": 1,
         "ok": 2,
@@ -18209,7 +18209,7 @@
       "price": 316.79,
       "change": -18.01,
       "changePct": -5.37933,
-      "marketCap": 4040816746,
+      "marketCap": 4040816429,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -18365,7 +18365,7 @@
       "price": 36.25,
       "change": -0.05,
       "changePct": -0.13774,
-      "marketCap": 7882294939,
+      "marketCap": 7882294903,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -18547,7 +18547,7 @@
       "price": 235.27,
       "change": -30.57,
       "changePct": -11.4994,
-      "marketCap": 84479578544,
+      "marketCap": 84479579955,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -18885,7 +18885,7 @@
       "price": 146,
       "change": -0.53,
       "changePct": -0.3617,
-      "marketCap": 40836384982,
+      "marketCap": 40836388778,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -19171,7 +19171,7 @@
       "price": 143.84,
       "change": 1.84,
       "changePct": 1.29577,
-      "marketCap": 12791247741,
+      "marketCap": 12791248460,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -19197,7 +19197,7 @@
       "price": 61.99,
       "change": -0.92,
       "changePct": -1.46241,
-      "marketCap": 5806528416,
+      "marketCap": 5806528478,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -19223,7 +19223,7 @@
       "price": 12.96,
       "change": -0.69,
       "changePct": -5.05495,
-      "marketCap": 3813727679,
+      "marketCap": 3813727730,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -19509,7 +19509,7 @@
       "price": 32.76,
       "change": -0.87,
       "changePct": -2.58698,
-      "marketCap": 5839338534,
+      "marketCap": 5839338338,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -19561,7 +19561,7 @@
       "price": 61.07,
       "change": -0.54,
       "changePct": -0.87648,
-      "marketCap": 4345148638,
+      "marketCap": 4345148821,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -19769,7 +19769,7 @@
       "price": 313.71,
       "change": 1.71,
       "changePct": 0.54808,
-      "marketCap": 10320824031,
+      "marketCap": 10320824972,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -19847,7 +19847,7 @@
       "price": 37.68,
       "change": -1.96,
       "changePct": -4.9445,
-      "marketCap": 10056471908,
+      "marketCap": 10046282860,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -20263,7 +20263,7 @@
       "price": 131.59,
       "change": -4.8,
       "changePct": -3.51932,
-      "marketCap": 6131187871,
+      "marketCap": 6131187608,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -20315,7 +20315,7 @@
       "price": 187.5,
       "change": -5.81,
       "changePct": -3.00554,
-      "marketCap": 11962500000,
+      "marketCap": 11793750188,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -20419,7 +20419,7 @@
       "price": 82.29,
       "change": 2.36,
       "changePct": 2.95258,
-      "marketCap": 31053036690,
+      "marketCap": 30690137790,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -21017,7 +21017,7 @@
       "price": 61.81,
       "change": -0.67,
       "changePct": -1.07234,
-      "marketCap": 2211252812,
+      "marketCap": 2211252750,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -21121,7 +21121,7 @@
       "price": 410.97,
       "change": 10.38,
       "changePct": 2.59118,
-      "marketCap": 15757713392,
+      "marketCap": 15757713803,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -21225,7 +21225,7 @@
       "price": 58.79,
       "change": -0.59,
       "changePct": -0.9936,
-      "marketCap": 22623213825,
+      "marketCap": 22621641663,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -21563,7 +21563,7 @@
       "price": 679.55,
       "change": -9.77,
       "changePct": -1.41734,
-      "marketCap": 29974883225,
+      "marketCap": 29752060818,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -21589,16 +21589,16 @@
       "price": 66.53,
       "change": -1.4,
       "changePct": -2.06095,
-      "marketCap": 7606150228,
+      "marketCap": 7606351814,
       "scores": {
-        "good": 5,
-        "ok": 2,
+        "good": 4,
+        "ok": 3,
         "bad": 1,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "ok",
         "peRatio": "good",
@@ -22187,7 +22187,7 @@
       "price": 55.38,
       "change": 0.84,
       "changePct": 1.54015,
-      "marketCap": 34641076080,
+      "marketCap": 34642903620,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -22291,7 +22291,7 @@
       "price": 11.18,
       "change": 0.04,
       "changePct": 0.35907,
-      "marketCap": 36827598760,
+      "marketCap": 36998128049,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -23227,7 +23227,7 @@
       "price": 46.16,
       "change": 0.25,
       "changePct": 0.54454,
-      "marketCap": 47556523117,
+      "marketCap": 47648660000,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -23903,7 +23903,7 @@
       "price": 26.18,
       "change": -0.52,
       "changePct": -1.94757,
-      "marketCap": 3996848240,
+      "marketCap": 3969118096,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -24007,7 +24007,7 @@
       "price": 182.84,
       "change": 1.6,
       "changePct": 0.88281,
-      "marketCap": 5048504944,
+      "marketCap": 4983157928,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -24215,7 +24215,7 @@
       "price": 46.91,
       "change": 0.08,
       "changePct": 0.17083,
-      "marketCap": 27143999210,
+      "marketCap": 27155870630,
       "scores": {
         "good": 1,
         "ok": 5,
@@ -24319,7 +24319,7 @@
       "price": 32.35,
       "change": -0.43,
       "changePct": -1.31178,
-      "marketCap": 3395745080,
+      "marketCap": 3395745112,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -24657,7 +24657,7 @@
       "price": 21.31,
       "change": -0.25,
       "changePct": -1.15955,
-      "marketCap": 3540448408,
+      "marketCap": 3540448387,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -25151,7 +25151,7 @@
       "price": 22.47,
       "change": -0.66,
       "changePct": -2.85344,
-      "marketCap": 11958985872,
+      "marketCap": 11997498890,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -25255,7 +25255,7 @@
       "price": 47.59,
       "change": -2.75,
       "changePct": -5.46285,
-      "marketCap": 5067859100,
+      "marketCap": 4960506101,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -25437,7 +25437,7 @@
       "price": 56.2,
       "change": -1.05,
       "changePct": -1.83406,
-      "marketCap": 25112313865,
+      "marketCap": 25116087864,
       "scores": {
         "good": 7,
         "ok": 1,
@@ -25463,7 +25463,7 @@
       "price": 63.24,
       "change": -1.27,
       "changePct": -1.96869,
-      "marketCap": 26666641247,
+      "marketCap": 26666641373,
       "scores": {
         "good": 7,
         "ok": 1,
@@ -25489,7 +25489,7 @@
       "price": 25.81,
       "change": -2.54,
       "changePct": -8.95944,
-      "marketCap": 7857309883,
+      "marketCap": 7860408167,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -25671,7 +25671,7 @@
       "price": 14.72,
       "change": -0.29,
       "changePct": -1.93205,
-      "marketCap": 3840753837,
+      "marketCap": 3840753911,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -25749,7 +25749,7 @@
       "price": 174.4,
       "change": -2.49,
       "changePct": -1.40765,
-      "marketCap": 18742731027,
+      "marketCap": 18744686400,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -25827,7 +25827,7 @@
       "price": 112.67,
       "change": -2.54,
       "changePct": -2.20467,
-      "marketCap": 6877557072,
+      "marketCap": 6874729055,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -26035,7 +26035,7 @@
       "price": 68.77,
       "change": 1.82,
       "changePct": 2.71845,
-      "marketCap": 26969144963,
+      "marketCap": 26740069204,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -26087,7 +26087,7 @@
       "price": 21.29,
       "change": -1.845,
       "changePct": -7.97493,
-      "marketCap": 2024679000,
+      "marketCap": 2014034000,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -26243,7 +26243,7 @@
       "price": 98.45,
       "change": -3.02,
       "changePct": -2.97625,
-      "marketCap": 13802148525,
+      "marketCap": 13802146458,
       "scores": {
         "good": 6,
         "ok": 0,
@@ -26295,7 +26295,7 @@
       "price": 92.47,
       "change": -0.14,
       "changePct": -0.15117,
-      "marketCap": 23183013238,
+      "marketCap": 23183013885,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -26399,7 +26399,7 @@
       "price": 181.14,
       "change": 0.67,
       "changePct": 0.37125,
-      "marketCap": 6395158206,
+      "marketCap": 6394242000,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -26503,7 +26503,7 @@
       "price": 58.38,
       "change": -2.24,
       "changePct": -3.69515,
-      "marketCap": 2084763461,
+      "marketCap": 2084763578,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -26867,7 +26867,7 @@
       "price": 32.92,
       "change": -2.2,
       "changePct": -6.26424,
-      "marketCap": 29372599694,
+      "marketCap": 29328313899,
       "scores": {
         "good": 7,
         "ok": 1,
@@ -26971,7 +26971,7 @@
       "price": 32.3,
       "change": -1.43,
       "changePct": -4.23955,
-      "marketCap": 5473345950,
+      "marketCap": 5473346047,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -27075,7 +27075,7 @@
       "price": 1168.51,
       "change": 6.47,
       "changePct": 0.55678,
-      "marketCap": 4948555717,
+      "marketCap": 4948554549,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -27387,7 +27387,7 @@
       "price": 38.98,
       "change": -0.51,
       "changePct": -1.29147,
-      "marketCap": 11340061600,
+      "marketCap": 11340063276,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -27396,12 +27396,12 @@
       },
       "ratioGrades": {
         "currentRatio": "bad",
-        "debtToEquity": "good",
+        "debtToEquity": "ok",
         "assetTurnover": "ok",
         "operatingMargin": "good",
         "peRatio": null,
         "revenueGrowth": "ok",
-        "fcfYield": "ok",
+        "fcfYield": "good",
         "evToSales": "ok"
       }
     },
@@ -27491,7 +27491,7 @@
       "price": 57.06,
       "change": 0.57,
       "changePct": 1.00903,
-      "marketCap": 35086339788,
+      "marketCap": 35086340074,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -27543,7 +27543,7 @@
       "price": 78.05,
       "change": -4.86,
       "changePct": -5.86178,
-      "marketCap": 10479142700,
+      "marketCap": 10479142856,
       "scores": {
         "good": 8,
         "ok": 0,
@@ -27571,20 +27571,20 @@
       "changePct": 0,
       "marketCap": 4197140212,
       "scores": {
-        "good": 1,
-        "ok": 4,
+        "good": 4,
+        "ok": 1,
         "bad": 3,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "good",
         "debtToEquity": "ok",
-        "assetTurnover": "ok",
+        "assetTurnover": "good",
         "operatingMargin": "bad",
         "peRatio": "bad",
         "revenueGrowth": "bad",
-        "fcfYield": "ok",
-        "evToSales": "ok"
+        "fcfYield": "good",
+        "evToSales": "good"
       }
     },
     {
@@ -27751,7 +27751,7 @@
       "price": 279.84,
       "change": -3.98,
       "changePct": -1.4023,
-      "marketCap": 3412310165616,
+      "marketCap": 3411530562158,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -28479,7 +28479,7 @@
       "price": 23.83,
       "change": -2.42,
       "changePct": -9.21905,
-      "marketCap": 6032592381,
+      "marketCap": 6032592333,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -28505,7 +28505,7 @@
       "price": 54.09,
       "change": -2.56,
       "changePct": -4.51898,
-      "marketCap": 9012205458,
+      "marketCap": 9012205566,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -28557,7 +28557,7 @@
       "price": 20.91,
       "change": -1.57,
       "changePct": -6.98399,
-      "marketCap": 3899577078,
+      "marketCap": 3860104225,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -28583,7 +28583,7 @@
       "price": 123.62,
       "change": 1.93,
       "changePct": 1.586,
-      "marketCap": 5410168850,
+      "marketCap": 5455386573,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -28609,7 +28609,7 @@
       "price": 162.59,
       "change": 2.52,
       "changePct": 1.57431,
-      "marketCap": 13331193093,
+      "marketCap": 13435004857,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -28687,7 +28687,7 @@
       "price": 180.57,
       "change": -3.73,
       "changePct": -2.02387,
-      "marketCap": 17016327600,
+      "marketCap": 17016328142,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -28947,7 +28947,7 @@
       "price": 19,
       "change": 0.19,
       "changePct": 1.0101,
-      "marketCap": 31882145939,
+      "marketCap": 31802854189,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -29155,7 +29155,7 @@
       "price": 13.15,
       "change": -0.44,
       "changePct": -3.23767,
-      "marketCap": 2294241418,
+      "marketCap": 2351996271,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -29207,7 +29207,7 @@
       "price": 24.1874,
       "change": -0.0326,
       "changePct": -0.1346,
-      "marketCap": 3105050751,
+      "marketCap": 3144614516,
       "scores": {
         "good": 6,
         "ok": 0,
@@ -29337,7 +29337,7 @@
       "price": 238.72,
       "change": -6.28,
       "changePct": -2.56327,
-      "marketCap": 44604762055,
+      "marketCap": 44771769135,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -29467,7 +29467,7 @@
       "price": 35.06,
       "change": 0.63,
       "changePct": 1.8298,
-      "marketCap": 3457420268,
+      "marketCap": 3454185983,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -29493,7 +29493,7 @@
       "price": 15.58,
       "change": 0.12,
       "changePct": 0.7762,
-      "marketCap": 5353641245,
+      "marketCap": 5353641354,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -29519,7 +29519,7 @@
       "price": 38.44,
       "change": 2.73,
       "changePct": 7.64492,
-      "marketCap": 2987716288,
+      "marketCap": 2914625703,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -29649,7 +29649,7 @@
       "price": 316.88,
       "change": 0.67,
       "changePct": 0.21188,
-      "marketCap": 12486529648,
+      "marketCap": 12486991976,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -29779,7 +29779,7 @@
       "price": 138,
       "change": -1.34,
       "changePct": -0.96168,
-      "marketCap": 9604460244,
+      "marketCap": 9604460106,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -29831,7 +29831,7 @@
       "price": 8.66,
       "change": 0.09,
       "changePct": 1.05018,
-      "marketCap": 38083554805,
+      "marketCap": 38083555325,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -29909,7 +29909,7 @@
       "price": 33.96,
       "change": 0.07,
       "changePct": 0.20655,
-      "marketCap": 44068947708,
+      "marketCap": 44088634388,
       "scores": {
         "good": 1,
         "ok": 4,
@@ -29935,7 +29935,7 @@
       "price": 14.45,
       "change": -1.275,
       "changePct": -8.10811,
-      "marketCap": 9114189156,
+      "marketCap": 9060634610,
       "scores": {
         "good": 7,
         "ok": 0,
@@ -29961,7 +29961,7 @@
       "price": 114.32,
       "change": -2.58,
       "changePct": -2.20701,
-      "marketCap": 9224985866,
+      "marketCap": 9224985523,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -30507,7 +30507,7 @@
       "price": 165.61,
       "change": 5.33,
       "changePct": 3.32543,
-      "marketCap": 33275299712,
+      "marketCap": 33275340121,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -30559,7 +30559,7 @@
       "price": 16.59,
       "change": -0.31,
       "changePct": -1.83432,
-      "marketCap": 3105050760,
+      "marketCap": 3144614526,
       "scores": {
         "good": 6,
         "ok": 0,
@@ -31105,7 +31105,7 @@
       "price": 29.45,
       "change": 0.32,
       "changePct": 1.09852,
-      "marketCap": 104715492077,
+      "marketCap": 104442368035,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -31235,7 +31235,7 @@
       "price": 168.85,
       "change": 5.81,
       "changePct": 3.56354,
-      "marketCap": 94363246919,
+      "marketCap": 94363246581,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -31339,7 +31339,7 @@
       "price": 145.38,
       "change": 1.77,
       "changePct": 1.2325,
-      "marketCap": 8409069960,
+      "marketCap": 8561047159,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -31365,7 +31365,7 @@
       "price": 311.57,
       "change": -22.7,
       "changePct": -6.79092,
-      "marketCap": 8040377289,
+      "marketCap": 8023937922,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -31521,7 +31521,7 @@
       "price": 233.84,
       "change": -5.49,
       "changePct": -2.2939,
-      "marketCap": 17176203921,
+      "marketCap": 17176202986,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -31625,7 +31625,7 @@
       "price": 167.81,
       "change": -1.845,
       "changePct": -1.0875,
-      "marketCap": 24509998182,
+      "marketCap": 24504963882,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -31911,7 +31911,7 @@
       "price": 120.39,
       "change": 3.59,
       "changePct": 3.07363,
-      "marketCap": 24402781641,
+      "marketCap": 24539334480,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -32067,7 +32067,7 @@
       "price": 31.46,
       "change": -0.78,
       "changePct": -2.41936,
-      "marketCap": 89884237171,
+      "marketCap": 89463116600,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -32093,7 +32093,7 @@
       "price": 28.4,
       "change": -0.21,
       "changePct": -0.73401,
-      "marketCap": 6533048244,
+      "marketCap": 6533432553,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -32171,7 +32171,7 @@
       "price": 112.58,
       "change": 0.99,
       "changePct": 0.88718,
-      "marketCap": 24585445560,
+      "marketCap": 24697800400,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -32327,7 +32327,7 @@
       "price": 26.56,
       "change": -0.08,
       "changePct": -0.3003,
-      "marketCap": 15686952617,
+      "marketCap": 15686946880,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -32457,7 +32457,7 @@
       "price": 42.07,
       "change": 0.42,
       "changePct": 1.0084,
-      "marketCap": 24636410259,
+      "marketCap": 24636409838,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -32639,7 +32639,7 @@
       "price": 80.05,
       "change": 0.04,
       "changePct": 0.04999375,
-      "marketCap": 31059354291,
+      "marketCap": 31059357173,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -32951,7 +32951,7 @@
       "price": 126.59,
       "change": 0.07,
       "changePct": 0.05532722,
-      "marketCap": 4303692889,
+      "marketCap": 4303722384,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -33029,7 +33029,7 @@
       "price": 7.13,
       "change": -0.24,
       "changePct": -3.25645,
-      "marketCap": 78587044539,
+      "marketCap": 78587043840,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -33055,7 +33055,7 @@
       "price": 278.55,
       "change": -2.85,
       "changePct": -1.01279,
-      "marketCap": 79331040000,
+      "marketCap": 79163910000,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -33393,7 +33393,7 @@
       "price": 25.68,
       "change": 0.05,
       "changePct": 0.19508,
-      "marketCap": 34680840000,
+      "marketCap": 34680840180,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -33679,7 +33679,7 @@
       "price": 80.32,
       "change": -0.51,
       "changePct": -0.63095,
-      "marketCap": 3933552002,
+      "marketCap": 3958528309,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -33965,7 +33965,7 @@
       "price": 38.7,
       "change": 0.38,
       "changePct": 0.99165,
-      "marketCap": 4878831600,
+      "marketCap": 4880417758,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -33991,7 +33991,7 @@
       "price": 7.77,
       "change": -0.38,
       "changePct": -4.66258,
-      "marketCap": 2326102064,
+      "marketCap": 2326102274,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -34225,7 +34225,7 @@
       "price": 76.55,
       "change": 0.63,
       "changePct": 0.82982,
-      "marketCap": 4176480197,
+      "marketCap": 4176480350,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -34329,7 +34329,7 @@
       "price": 24.52,
       "change": 0.1,
       "changePct": 0.4095,
-      "marketCap": 16447755328,
+      "marketCap": 16447755598,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -34641,7 +34641,7 @@
       "price": 92.24,
       "change": -5.32,
       "changePct": -5.45305,
-      "marketCap": 7247453885,
+      "marketCap": 7247453608,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -34719,7 +34719,7 @@
       "price": 60.77,
       "change": -0.38,
       "changePct": -0.62142,
-      "marketCap": 9890682120,
+      "marketCap": 9891957743,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -34953,7 +34953,7 @@
       "price": 91.27,
       "change": -3.39,
       "changePct": -3.58124,
-      "marketCap": 17343788842,
+      "marketCap": 17343788568,
       "scores": {
         "good": 7,
         "ok": 1,
@@ -35005,7 +35005,7 @@
       "price": 17.28,
       "change": 0.11,
       "changePct": 0.64065,
-      "marketCap": 8181238844,
+      "marketCap": 8293887112,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -35135,7 +35135,7 @@
       "price": 20.14,
       "change": -0.295,
       "changePct": -1.4436,
-      "marketCap": 6027495434,
+      "marketCap": 6027494910,
       "scores": {
         "good": 6,
         "ok": 0,
@@ -35161,7 +35161,7 @@
       "price": 150.95,
       "change": -6.92,
       "changePct": -4.38335,
-      "marketCap": 2597502617,
+      "marketCap": 2595132400,
       "scores": {
         "good": 1,
         "ok": 5,
@@ -35213,7 +35213,7 @@
       "price": 126.63,
       "change": 4.03,
       "changePct": 3.28711,
-      "marketCap": 10529360478,
+      "marketCap": 10810579875,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -35265,7 +35265,7 @@
       "price": 299.72,
       "change": 2.66,
       "changePct": 0.89544,
-      "marketCap": 6588779528,
+      "marketCap": 6480036316,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -35291,7 +35291,7 @@
       "price": 157.53,
       "change": -1.5,
       "changePct": -0.94322,
-      "marketCap": 15997121090,
+      "marketCap": 15997121248,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -35369,7 +35369,7 @@
       "price": 33.22,
       "change": -2.79,
       "changePct": -7.74785,
-      "marketCap": 4576033473,
+      "marketCap": 4509482120,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -35603,7 +35603,7 @@
       "price": 7.77,
       "change": 0.07,
       "changePct": 0.90909,
-      "marketCap": 2619552516,
+      "marketCap": 2619552470,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -35655,7 +35655,7 @@
       "price": 7.68,
       "change": 0.08,
       "changePct": 1.05263,
-      "marketCap": 2619552476,
+      "marketCap": 2619552253,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -35915,7 +35915,7 @@
       "price": 86.94,
       "change": 1.48,
       "changePct": 1.7318,
-      "marketCap": 20683047039,
+      "marketCap": 20683046866,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -35941,7 +35941,7 @@
       "price": 85.95,
       "change": 1.67,
       "changePct": 1.98149,
-      "marketCap": 20683047021,
+      "marketCap": 20683046849,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -35993,7 +35993,7 @@
       "price": 22.5,
       "change": -0.11,
       "changePct": -0.48651,
-      "marketCap": 8628068655,
+      "marketCap": 8628069375,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -36201,7 +36201,7 @@
       "price": 277.61,
       "change": -0.82,
       "changePct": -0.29451,
-      "marketCap": 51695146150,
+      "marketCap": 51691259610,
       "scores": {
         "good": 2,
         "ok": 6,
@@ -36227,7 +36227,7 @@
       "price": 11.03,
       "change": -0.11,
       "changePct": -0.98743,
-      "marketCap": 11201950222,
+      "marketCap": 11205835771,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -36279,7 +36279,7 @@
       "price": 43.39,
       "change": -0.23,
       "changePct": -0.52728,
-      "marketCap": 2819655369,
+      "marketCap": 2819655413,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -36435,7 +36435,7 @@
       "price": 514.24,
       "change": 11.09,
       "changePct": 2.20411,
-      "marketCap": 237054355200,
+      "marketCap": 236079356160,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -36617,7 +36617,7 @@
       "price": 18.56,
       "change": 0.46,
       "changePct": 2.54144,
-      "marketCap": 4695718883,
+      "marketCap": 4684508309,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -36643,7 +36643,7 @@
       "price": 1417.54,
       "change": 43.84,
       "changePct": 3.19138,
-      "marketCap": 1334411201780,
+      "marketCap": 1333543697068,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -36669,7 +36669,7 @@
       "price": 100.62,
       "change": 1.54,
       "changePct": 1.5543,
-      "marketCap": 9602600473,
+      "marketCap": 9602601379,
       "scores": {
         "good": 1,
         "ok": 1,
@@ -36695,7 +36695,7 @@
       "price": 104.37,
       "change": 0.97,
       "changePct": 0.9381,
-      "marketCap": 9602601406,
+      "marketCap": 9602600884,
       "scores": {
         "good": 1,
         "ok": 1,
@@ -36825,7 +36825,7 @@
       "price": 330.32,
       "change": 11.38,
       "changePct": 3.56807,
-      "marketCap": 68222310880,
+      "marketCap": 67452665280,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -36851,7 +36851,7 @@
       "price": 71.65,
       "change": 1.505,
       "changePct": 2.14556,
-      "marketCap": 18577748683,
+      "marketCap": 18577749042,
       "scores": {
         "good": 1,
         "ok": 4,
@@ -36955,7 +36955,7 @@
       "price": 95.53,
       "change": -3.43,
       "changePct": -3.46605,
-      "marketCap": 13714883958,
+      "marketCap": 13547925508,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -37189,7 +37189,7 @@
       "price": 78.36,
       "change": -2.34,
       "changePct": -2.89963,
-      "marketCap": 3294947886,
+      "marketCap": 3294947808,
       "scores": {
         "good": 7,
         "ok": 0,
@@ -37267,7 +37267,7 @@
       "price": 142.7,
       "change": 1.33,
       "changePct": 0.94079,
-      "marketCap": 4842799055,
+      "marketCap": 4810266166,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -37397,7 +37397,7 @@
       "price": 45.1,
       "change": -0.25,
       "changePct": -0.55127,
-      "marketCap": 10078133494,
+      "marketCap": 10129617489,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -37501,7 +37501,7 @@
       "price": 107.24,
       "change": -2.58,
       "changePct": -2.3493,
-      "marketCap": 12421178095,
+      "marketCap": 12421178310,
       "scores": {
         "good": 7,
         "ok": 0,
@@ -37579,7 +37579,7 @@
       "price": 42.43,
       "change": -1.25,
       "changePct": -2.86172,
-      "marketCap": 20768481955,
+      "marketCap": 20768482209,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -37683,7 +37683,7 @@
       "price": 68.64,
       "change": 3.27,
       "changePct": 5.00229,
-      "marketCap": 22173325025,
+      "marketCap": 22173323515,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -37735,7 +37735,7 @@
       "price": 5,
       "change": -0.25,
       "changePct": -4.7619,
-      "marketCap": 75515528520,
+      "marketCap": 71528457850,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -37813,7 +37813,7 @@
       "price": 638.01,
       "change": 2.31,
       "changePct": 0.36338,
-      "marketCap": 559192878305,
+      "marketCap": 559192875753,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -37891,7 +37891,7 @@
       "price": 24.34,
       "change": 0.03,
       "changePct": 0.12341,
-      "marketCap": 7181039060,
+      "marketCap": 7181039084,
       "scores": {
         "good": 0,
         "ok": 4,
@@ -37969,7 +37969,7 @@
       "price": 23.16,
       "change": -1.4,
       "changePct": -5.70033,
-      "marketCap": 11619895462,
+      "marketCap": 11619895995,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -38073,7 +38073,7 @@
       "price": 21.06,
       "change": 0.08,
       "changePct": 0.38132,
-      "marketCap": 3632668779,
+      "marketCap": 3632668694,
       "scores": {
         "good": 0,
         "ok": 2,
@@ -38411,7 +38411,7 @@
       "price": 5.96,
       "change": -0.45,
       "changePct": -7.02028,
-      "marketCap": 5067117887,
+      "marketCap": 5067024381,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -38723,7 +38723,7 @@
       "price": 29.82,
       "change": 0.64,
       "changePct": 2.19328,
-      "marketCap": 2422973406,
+      "marketCap": 2329679091,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -38879,7 +38879,7 @@
       "price": 64.94,
       "change": 2.41,
       "changePct": 3.85415,
-      "marketCap": 82883571400,
+      "marketCap": 82203649600,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -39139,7 +39139,7 @@
       "price": 9.66,
       "change": -0.33,
       "changePct": -3.3033,
-      "marketCap": 116619372553,
+      "marketCap": 118603445971,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -39165,7 +39165,7 @@
       "price": 63.82,
       "change": -0.88,
       "changePct": -1.36012,
-      "marketCap": 17073116572,
+      "marketCap": 16941297000,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -39685,7 +39685,7 @@
       "price": 47.52,
       "change": 0.58,
       "changePct": 1.23562,
-      "marketCap": 12785943329,
+      "marketCap": 12785944565,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -40023,7 +40023,7 @@
       "price": 86.24,
       "change": -7.15,
       "changePct": -7.65607,
-      "marketCap": 5149424896,
+      "marketCap": 5167069600,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -40049,7 +40049,7 @@
       "price": 42.68,
       "change": -0.32,
       "changePct": -0.74419,
-      "marketCap": 4014423694,
+      "marketCap": 4014423609,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -40101,7 +40101,7 @@
       "price": 10.23,
       "change": 0.36,
       "changePct": 3.64742,
-      "marketCap": 3123325228,
+      "marketCap": 3006401791,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -40153,7 +40153,7 @@
       "price": 78.03,
       "change": 1.28,
       "changePct": 1.66775,
-      "marketCap": 130289812200,
+      "marketCap": 129798223200,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -40231,7 +40231,7 @@
       "price": 350.67,
       "change": -12.14,
       "changePct": -3.3461,
-      "marketCap": 11106128132,
+      "marketCap": 11106128833,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -41167,7 +41167,7 @@
       "price": 80.35,
       "change": -0.73,
       "changePct": -0.90035,
-      "marketCap": 3800975391,
+      "marketCap": 3800975311,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -41375,7 +41375,7 @@
       "price": 220.72,
       "change": -3.35,
       "changePct": -1.49507,
-      "marketCap": 31875556245,
+      "marketCap": 31875556466,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -41531,7 +41531,7 @@
       "price": 151.83,
       "change": -2.7,
       "changePct": -1.74723,
-      "marketCap": 5410506992,
+      "marketCap": 5410506840,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -41687,7 +41687,7 @@
       "price": 21.56,
       "change": -0.38,
       "changePct": -1.732,
-      "marketCap": 242674302757,
+      "marketCap": 247196401809,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -41739,7 +41739,7 @@
       "price": 534.95,
       "change": -5.05,
       "changePct": -0.93519,
-      "marketCap": 9832567163,
+      "marketCap": 9832566093,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -42155,7 +42155,7 @@
       "price": 17.57,
       "change": -0.65,
       "changePct": -3.56751,
-      "marketCap": 8067933160,
+      "marketCap": 8069461750,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -42337,7 +42337,7 @@
       "price": 106.61,
       "change": -5.19,
       "changePct": -4.64222,
-      "marketCap": 110788389184,
+      "marketCap": 110788391636,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -42441,7 +42441,7 @@
       "price": 280.7,
       "change": -29.6,
       "changePct": -9.53916,
-      "marketCap": 99951573755,
+      "marketCap": 99951579930,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -42571,7 +42571,7 @@
       "price": 79.55,
       "change": 0.19,
       "changePct": 0.23942,
-      "marketCap": 7560837387,
+      "marketCap": 7560837625,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -42727,7 +42727,7 @@
       "price": 206.14,
       "change": -6.02,
       "changePct": -2.83748,
-      "marketCap": 3228439553,
+      "marketCap": 3228439759,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -42857,7 +42857,7 @@
       "price": 113.76,
       "change": -1.23,
       "changePct": -1.06966,
-      "marketCap": 6844624881,
+      "marketCap": 6676551876,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -42909,7 +42909,7 @@
       "price": 3.21,
       "change": -0.105,
       "changePct": -3.16742,
-      "marketCap": 7570528431,
+      "marketCap": 7608909724,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -42987,7 +42987,7 @@
       "price": 38.67,
       "change": 0.25,
       "changePct": 0.6507,
-      "marketCap": 57436892185,
+      "marketCap": 57436889053,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -43039,7 +43039,7 @@
       "price": 18.23,
       "change": -0.235,
       "changePct": -1.27268,
-      "marketCap": 13740214278,
+      "marketCap": 14362741506,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -43143,7 +43143,7 @@
       "price": 122.47,
       "change": -1.07,
       "changePct": -0.86612,
-      "marketCap": 4381907649,
+      "marketCap": 4381907772,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -43273,7 +43273,7 @@
       "price": 19.29,
       "change": -0.07,
       "changePct": -0.36157,
-      "marketCap": 6876460620,
+      "marketCap": 6877116480,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -43767,7 +43767,7 @@
       "price": 113.64,
       "change": 1.54,
       "changePct": 1.37377,
-      "marketCap": 72445576025,
+      "marketCap": 72379740396,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -43871,7 +43871,7 @@
       "price": 24.3,
       "change": -1.89,
       "changePct": -7.21649,
-      "marketCap": 9928682665,
+      "marketCap": 9928681450,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -43897,7 +43897,7 @@
       "price": 11.61,
       "change": -0.44,
       "changePct": -3.65145,
-      "marketCap": 56084297107,
+      "marketCap": 56084295679,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -44079,7 +44079,7 @@
       "price": 40,
       "change": 0.86,
       "changePct": 2.19724,
-      "marketCap": 176427399360,
+      "marketCap": 176427401200,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -44131,7 +44131,7 @@
       "price": 160.79,
       "change": -0.31,
       "changePct": -0.19243,
-      "marketCap": 303671796362,
+      "marketCap": 303671784142,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -44183,7 +44183,7 @@
       "price": 125.98,
       "change": -12.17,
       "changePct": -8.80927,
-      "marketCap": 20390863155,
+      "marketCap": 20390863785,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -44287,16 +44287,16 @@
       "price": 15.47,
       "change": -1.53,
       "changePct": -9,
-      "marketCap": 30584774642,
+      "marketCap": 30627964608,
       "scores": {
-        "good": 2,
-        "ok": 3,
+        "good": 3,
+        "ok": 2,
         "bad": 1,
         "total": 6
       },
       "ratioGrades": {
         "currentRatio": "good",
-        "debtToEquity": "ok",
+        "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "ok",
         "peRatio": "good",
@@ -44365,7 +44365,7 @@
       "price": 31.74,
       "change": -0.44,
       "changePct": -1.36731,
-      "marketCap": 17087304383,
+      "marketCap": 17084641270,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -44391,7 +44391,7 @@
       "price": 29.12,
       "change": -0.33,
       "changePct": -1.12054,
-      "marketCap": 16221300048,
+      "marketCap": 16223449599,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -44547,7 +44547,7 @@
       "price": 70.17,
       "change": 0.75,
       "changePct": 1.08038,
-      "marketCap": 11317269089,
+      "marketCap": 11317268458,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -44703,7 +44703,7 @@
       "price": 21.71,
       "change": -0.03,
       "changePct": -0.13799,
-      "marketCap": 5827784291,
+      "marketCap": 5827784182,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -44807,7 +44807,7 @@
       "price": 49.47,
       "change": 0.1,
       "changePct": 0.20255,
-      "marketCap": 10226733093,
+      "marketCap": 10226733340,
       "scores": {
         "good": 2,
         "ok": 6,
@@ -44911,7 +44911,7 @@
       "price": 40.86,
       "change": -0.71,
       "changePct": -1.70796,
-      "marketCap": 4066781336,
+      "marketCap": 4066781295,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -44937,7 +44937,7 @@
       "price": 97.07,
       "change": 1.25,
       "changePct": 1.30453,
-      "marketCap": 61197579594,
+      "marketCap": 61197781500,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -45223,7 +45223,7 @@
       "price": 25.09,
       "change": -0.14,
       "changePct": -0.55489,
-      "marketCap": 9598681300,
+      "marketCap": 9490493220,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -45379,7 +45379,7 @@
       "price": 33.78,
       "change": 0.98,
       "changePct": 2.9878,
-      "marketCap": 11126203895,
+      "marketCap": 11126203726,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -45431,7 +45431,7 @@
       "price": 31.83,
       "change": -0.02,
       "changePct": -0.06279435,
-      "marketCap": 4767664571,
+      "marketCap": 4767926118,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -45847,7 +45847,7 @@
       "price": 139.94,
       "change": 4.67,
       "changePct": 3.45235,
-      "marketCap": 8639867612,
+      "marketCap": 8532424059,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -46523,7 +46523,7 @@
       "price": 7.94,
       "change": -0.13,
       "changePct": -1.6109,
-      "marketCap": 2203483082,
+      "marketCap": 2203483154,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -46679,7 +46679,7 @@
       "price": 13.73,
       "change": -0.05,
       "changePct": -0.36284,
-      "marketCap": 7155467418,
+      "marketCap": 7155467390,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -46731,7 +46731,7 @@
       "price": 32.82,
       "change": 0.56,
       "changePct": 1.7359,
-      "marketCap": 4133339313,
+      "marketCap": 4133339116,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -47043,7 +47043,7 @@
       "price": 22.05,
       "change": 0.1518,
       "changePct": 0.6932,
-      "marketCap": 142098267037,
+      "marketCap": 142098268139,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -47095,7 +47095,7 @@
       "price": 101.91,
       "change": -0.38,
       "changePct": -0.37149,
-      "marketCap": 53655615000,
+      "marketCap": 53656124550,
       "scores": {
         "good": 1,
         "ok": 6,
@@ -47277,7 +47277,7 @@
       "price": 78.61,
       "change": -0.67,
       "changePct": -0.8451,
-      "marketCap": 111893191554,
+      "marketCap": 111893195878,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -47407,7 +47407,7 @@
       "price": 318.95,
       "change": -3.02,
       "changePct": -0.93798,
-      "marketCap": 12563249130,
+      "marketCap": 12571217777,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -47537,7 +47537,7 @@
       "price": 111.63,
       "change": -2.02,
       "changePct": -1.77739,
-      "marketCap": 23754864670,
+      "marketCap": 23754864558,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -47849,7 +47849,7 @@
       "price": 26.92,
       "change": -0.2,
       "changePct": -0.73746,
-      "marketCap": 26180795375,
+      "marketCap": 26312347546,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -47901,7 +47901,7 @@
       "price": 62.92,
       "change": 1.86,
       "changePct": 3.04618,
-      "marketCap": 2305268623,
+      "marketCap": 2262583191,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -48109,7 +48109,7 @@
       "price": 149.71,
       "change": -2.26,
       "changePct": -1.48714,
-      "marketCap": 3827327916,
+      "marketCap": 3827328365,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -48395,7 +48395,7 @@
       "price": 53.58,
       "change": -0.14,
       "changePct": -0.26061,
-      "marketCap": 4064001476,
+      "marketCap": 4064001529,
       "scores": {
         "good": 5,
         "ok": 0,
@@ -48733,7 +48733,7 @@
       "price": 205.95,
       "change": 1.83,
       "changePct": 0.89653,
-      "marketCap": 7484376845,
+      "marketCap": 7356966495,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -48759,7 +48759,7 @@
       "price": 44.42,
       "change": 0.23,
       "changePct": 0.52048,
-      "marketCap": 5224147360,
+      "marketCap": 5290510840,
       "scores": {
         "good": 1,
         "ok": 5,
@@ -48915,7 +48915,7 @@
       "price": 119.52,
       "change": -0.48,
       "changePct": -0.4,
-      "marketCap": 26569296000,
+      "marketCap": 26401968120,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -48993,7 +48993,7 @@
       "price": 35.62,
       "change": -0.26,
       "changePct": -0.72464,
-      "marketCap": 2652387127,
+      "marketCap": 2652387020,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -49617,7 +49617,7 @@
       "price": 17.37,
       "change": -0.13,
       "changePct": -0.74286,
-      "marketCap": 10440569242,
+      "marketCap": 10440569850,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -49721,7 +49721,7 @@
       "price": 59.97,
       "change": -4.49,
       "changePct": -6.96556,
-      "marketCap": 5005144176,
+      "marketCap": 5010150592,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -49877,7 +49877,7 @@
       "price": 24.7,
       "change": 0.31,
       "changePct": 1.27101,
-      "marketCap": 30230076924,
+      "marketCap": 30230079468,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -49981,7 +49981,7 @@
       "price": 620.73,
       "change": -14.455,
       "changePct": -2.27571,
-      "marketCap": 93322410390,
+      "marketCap": 93529734210,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -50085,7 +50085,7 @@
       "price": 57.01,
       "change": 0.06,
       "changePct": 0.10536,
-      "marketCap": 47355829626,
+      "marketCap": 47355829569,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -50319,7 +50319,7 @@
       "price": 4.06,
       "change": -0.14,
       "changePct": -3.33333,
-      "marketCap": 2513600842,
+      "marketCap": 2513601021,
       "scores": {
         "good": 2,
         "ok": 0,
@@ -50631,7 +50631,7 @@
       "price": 124.15,
       "change": -9.48,
       "changePct": -7.09422,
-      "marketCap": 25553616593,
+      "marketCap": 25553616841,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -50709,7 +50709,7 @@
       "price": 32.61,
       "change": 1.14,
       "changePct": 3.6225,
-      "marketCap": 17616746153,
+      "marketCap": 17616746479,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -50917,7 +50917,7 @@
       "price": 14.17,
       "change": 0.06,
       "changePct": 0.42523,
-      "marketCap": 11802892148,
+      "marketCap": 11804085616,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -51073,7 +51073,7 @@
       "price": 927.89,
       "change": 109.12,
       "changePct": 13.32731,
-      "marketCap": 95530909383,
+      "marketCap": 95514993285,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -51203,7 +51203,7 @@
       "price": 38.22,
       "change": -0.13,
       "changePct": -0.33898,
-      "marketCap": 8738408564,
+      "marketCap": 8738409443,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -51593,7 +51593,7 @@
       "price": 133.18,
       "change": -1.56,
       "changePct": -1.15779,
-      "marketCap": 9085445974,
+      "marketCap": 9085445575,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -51645,7 +51645,7 @@
       "price": 81.89,
       "change": -1.36,
       "changePct": -1.63363,
-      "marketCap": 133185043771,
+      "marketCap": 133185044426,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -51827,7 +51827,7 @@
       "price": 392.87,
       "change": -7.65,
       "changePct": -1.91002,
-      "marketCap": 23408073450,
+      "marketCap": 23408074629,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -51931,7 +51931,7 @@
       "price": 229.94,
       "change": -22.89,
       "changePct": -9.05351,
-      "marketCap": 32338587535,
+      "marketCap": 32338589835,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -52035,7 +52035,7 @@
       "price": 339.32,
       "change": 0.66,
       "changePct": 0.19489,
-      "marketCap": 13858336083,
+      "marketCap": 13711659924,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -52087,7 +52087,7 @@
       "price": 6.85,
       "change": -0.02,
       "changePct": -0.29112,
-      "marketCap": 2496158406,
+      "marketCap": 2496158351,
       "scores": {
         "good": 2,
         "ok": 1,
@@ -52659,7 +52659,7 @@
       "price": 23.32,
       "change": 0.06,
       "changePct": 0.25795,
-      "marketCap": 11735742824,
+      "marketCap": 11771687269,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -52789,7 +52789,7 @@
       "price": 42.98,
       "change": -0.56,
       "changePct": -1.28617,
-      "marketCap": 5010583644,
+      "marketCap": 5019817982,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -52971,7 +52971,7 @@
       "price": 27.49,
       "change": -0.16,
       "changePct": -0.57866,
-      "marketCap": 4534779484,
+      "marketCap": 4534504722,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -53335,7 +53335,7 @@
       "price": 344.61,
       "change": 1.54,
       "changePct": 0.44889,
-      "marketCap": 9192333906,
+      "marketCap": 9194320583,
       "scores": {
         "good": 3,
         "ok": 4,
@@ -53439,7 +53439,7 @@
       "price": 11.19,
       "change": -0.4161,
       "changePct": -3.58518,
-      "marketCap": 162763280114,
+      "marketCap": 164428778240,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -53855,7 +53855,7 @@
       "price": 76.37,
       "change": 1.2,
       "changePct": 1.59638,
-      "marketCap": 10408620040,
+      "marketCap": 10397734566,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -53933,7 +53933,7 @@
       "price": 74.24,
       "change": -2.31,
       "changePct": -3.01764,
-      "marketCap": 45470852101,
+      "marketCap": 45470851062,
       "scores": {
         "good": 4,
         "ok": 4,
@@ -54557,7 +54557,7 @@
       "price": 65.59,
       "change": -0.3,
       "changePct": -0.4553,
-      "marketCap": 30362364301,
+      "marketCap": 30362379912,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -54895,7 +54895,7 @@
       "price": 29.01,
       "change": 0.34,
       "changePct": 1.18591,
-      "marketCap": 9778313670,
+      "marketCap": 9761487870,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -55181,7 +55181,7 @@
       "price": 30.28,
       "change": -0.84,
       "changePct": -2.69923,
-      "marketCap": 11870615289,
+      "marketCap": 11825085706,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -55389,7 +55389,7 @@
       "price": 53.74,
       "change": -0.07,
       "changePct": -0.13009,
-      "marketCap": 79320240000,
+      "marketCap": 79321831403,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -55753,7 +55753,7 @@
       "price": 62.24,
       "change": 0.37,
       "changePct": 0.59803,
-      "marketCap": 3623629667,
+      "marketCap": 3623629792,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -55883,7 +55883,7 @@
       "price": 5.34,
       "change": -0.34,
       "changePct": -5.98592,
-      "marketCap": 9030995483,
+      "marketCap": 9030995964,
       "scores": {
         "good": 6,
         "ok": 0,
@@ -55909,7 +55909,7 @@
       "price": 1150.89,
       "change": -179.16,
       "changePct": -13.47017,
-      "marketCap": 166335328132,
+      "marketCap": 166335323528,
       "scores": {
         "good": 7,
         "ok": 1,
@@ -55961,7 +55961,7 @@
       "price": 29.23,
       "change": -0.22,
       "changePct": -0.74703,
-      "marketCap": 5124045424,
+      "marketCap": 5124045219,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -56195,7 +56195,7 @@
       "price": 44.34,
       "change": 1.21,
       "changePct": 2.80547,
-      "marketCap": 106244734932,
+      "marketCap": 106899381511,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -56507,7 +56507,7 @@
       "price": 49.96,
       "change": 0.07,
       "changePct": 0.14031,
-      "marketCap": 4939795000,
+      "marketCap": 4939829972,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -56533,7 +56533,7 @@
       "price": 25.3,
       "change": -0.17,
       "changePct": -0.66745,
-      "marketCap": 148573383323,
+      "marketCap": 148693683280,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -56611,7 +56611,7 @@
       "price": 466.55,
       "change": 5.89,
       "changePct": 1.2786,
-      "marketCap": 135252847799,
+      "marketCap": 135252845000,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -56637,7 +56637,7 @@
       "price": 109.14,
       "change": -3.96,
       "changePct": -3.50133,
-      "marketCap": 3919611177,
+      "marketCap": 3919611068,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -56819,7 +56819,7 @@
       "price": 82.99,
       "change": -2.79,
       "changePct": -3.25251,
-      "marketCap": 2987656598,
+      "marketCap": 2941242615,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -56897,7 +56897,7 @@
       "price": 54.65,
       "change": -1.72,
       "changePct": -3.05127,
-      "marketCap": 15610106590,
+      "marketCap": 15610107901,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -56975,7 +56975,7 @@
       "price": 12.03,
       "change": -0.2,
       "changePct": -1.63532,
-      "marketCap": 3560298181,
+      "marketCap": 3560298229,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -57209,7 +57209,7 @@
       "price": 17.22,
       "change": 0.21,
       "changePct": 1.23457,
-      "marketCap": 11038669625,
+      "marketCap": 11038668798,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -57417,7 +57417,7 @@
       "price": 43.22,
       "change": -1.25,
       "changePct": -2.81088,
-      "marketCap": 5579007800,
+      "marketCap": 5579007973,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -57521,7 +57521,7 @@
       "price": 46.74,
       "change": -3.25,
       "changePct": -6.5013,
-      "marketCap": 41804951164,
+      "marketCap": 41750921220,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -57729,7 +57729,7 @@
       "price": 169.77,
       "change": -3.98,
       "changePct": -2.29065,
-      "marketCap": 46318054040,
+      "marketCap": 46190690718,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -57781,7 +57781,7 @@
       "price": 19.38,
       "change": -0.86,
       "changePct": -4.24901,
-      "marketCap": 5290811706,
+      "marketCap": 5290811260,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -57833,7 +57833,7 @@
       "price": 135.33,
       "change": 6.01,
       "changePct": 4.64739,
-      "marketCap": 22901115452,
+      "marketCap": 22901114775,
       "scores": {
         "good": 3,
         "ok": 3,
@@ -58015,7 +58015,7 @@
       "price": 41.92,
       "change": 0.08,
       "changePct": 0.1912,
-      "marketCap": 2440754272,
+      "marketCap": 2441240544,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -58691,7 +58691,7 @@
       "price": 20.91,
       "change": 0.9,
       "changePct": 4.49775,
-      "marketCap": 65486328306,
+      "marketCap": 66805312873,
       "scores": {
         "good": 2,
         "ok": 6,
@@ -58795,7 +58795,7 @@
       "price": 45,
       "change": 0.2,
       "changePct": 0.44643,
-      "marketCap": 7465993650,
+      "marketCap": 7515001620,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -58873,7 +58873,7 @@
       "price": 56.6,
       "change": -0.01,
       "changePct": -0.01766472,
-      "marketCap": 6823853178,
+      "marketCap": 6823853008,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -59211,7 +59211,7 @@
       "price": 191.72,
       "change": -12.38,
       "changePct": -6.06565,
-      "marketCap": 48531774570,
+      "marketCap": 48531775337,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -59237,7 +59237,7 @@
       "price": 72.66,
       "change": -0.05,
       "changePct": -0.06876633,
-      "marketCap": 11394413173,
+      "marketCap": 11411657208,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -59393,7 +59393,7 @@
       "price": 10.61,
       "change": -0.47,
       "changePct": -4.24188,
-      "marketCap": 4942905050,
+      "marketCap": 5161865031,
       "scores": {
         "good": 7,
         "ok": 0,
@@ -59523,7 +59523,7 @@
       "price": 48.79,
       "change": -0.53,
       "changePct": -1.07461,
-      "marketCap": 59603327700,
+      "marketCap": 58474327100,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -59601,7 +59601,7 @@
       "price": 16.43,
       "change": -0.33,
       "changePct": -1.96897,
-      "marketCap": 4607674465,
+      "marketCap": 4607674448,
       "scores": {
         "good": 0,
         "ok": 2,
@@ -59835,7 +59835,7 @@
       "price": 273.25,
       "change": 2.68,
       "changePct": 0.9905,
-      "marketCap": 22001816750,
+      "marketCap": 21747421000,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -59913,7 +59913,7 @@
       "price": 242.09,
       "change": 6.97,
       "changePct": 2.96444,
-      "marketCap": 8429627060,
+      "marketCap": 8429622218,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -60069,7 +60069,7 @@
       "price": 17.68,
       "change": -0.43,
       "changePct": -2.37438,
-      "marketCap": 8446345730,
+      "marketCap": 8497268957,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -60199,7 +60199,7 @@
       "price": 11.17,
       "change": -0.05,
       "changePct": -0.44563,
-      "marketCap": 11011491087,
+      "marketCap": 11011489233,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -60251,7 +60251,7 @@
       "price": 9.1,
       "change": -0.41,
       "changePct": -4.31125,
-      "marketCap": 2985578523,
+      "marketCap": 3092037075,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -60329,7 +60329,7 @@
       "price": 8.41,
       "change": 0.04,
       "changePct": 0.4779,
-      "marketCap": 12071512311,
+      "marketCap": 12349685710,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -60485,7 +60485,7 @@
       "price": 64.28,
       "change": 0.58,
       "changePct": 0.91052,
-      "marketCap": 2950756559,
+      "marketCap": 2944675799,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -60979,7 +60979,7 @@
       "price": 42.69,
       "change": -0.355,
       "changePct": -0.82472,
-      "marketCap": 4362690847,
+      "marketCap": 4363707893,
       "scores": {
         "good": 5,
         "ok": 3,
@@ -61005,7 +61005,7 @@
       "price": 29.46,
       "change": 1.14,
       "changePct": 4.02542,
-      "marketCap": 2347063058,
+      "marketCap": 2303362506,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -61057,7 +61057,7 @@
       "price": 103.9,
       "change": -2.73,
       "changePct": -2.56026,
-      "marketCap": 22163532400,
+      "marketCap": 22164564023,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -61161,7 +61161,7 @@
       "price": 396.22,
       "change": -2.05,
       "changePct": -0.51473,
-      "marketCap": 81203844778,
+      "marketCap": 81203704120,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -61339,15 +61339,15 @@
       "ticker": "TT",
       "name": "Trane Technologies plc",
       "sector": "Industrials",
-      "grade": "C",
+      "grade": "B",
       "price": 410,
       "change": -21.1,
       "changePct": -4.89446,
-      "marketCap": 90209504210,
+      "marketCap": 89747088990,
       "scores": {
         "good": 4,
-        "ok": 2,
-        "bad": 2,
+        "ok": 3,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
@@ -61358,7 +61358,7 @@
         "peRatio": "bad",
         "revenueGrowth": "good",
         "fcfYield": "ok",
-        "evToSales": "bad"
+        "evToSales": "ok"
       }
     },
     {
@@ -61395,7 +61395,7 @@
       "price": 84.26,
       "change": 3.53,
       "changePct": 4.3726,
-      "marketCap": 8128385170,
+      "marketCap": 8128385507,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -61447,7 +61447,7 @@
       "price": 12.29,
       "change": -0.77,
       "changePct": -5.89587,
-      "marketCap": 5810651890,
+      "marketCap": 5810651644,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -61525,7 +61525,7 @@
       "price": 82.94,
       "change": -4.69,
       "changePct": -5.35205,
-      "marketCap": 8737635278,
+      "marketCap": 8739845629,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -61603,7 +61603,7 @@
       "price": 50.39,
       "change": -0.18,
       "changePct": -0.35594,
-      "marketCap": 4749815670,
+      "marketCap": 4749815771,
       "scores": {
         "good": 3,
         "ok": 0,
@@ -61865,9 +61865,9 @@
       "changePct": -0.46036,
       "marketCap": 6429155880,
       "scores": {
-        "good": 2,
-        "ok": 1,
-        "bad": 5,
+        "good": 4,
+        "ok": 0,
+        "bad": 4,
         "total": 8
       },
       "ratioGrades": {
@@ -61876,9 +61876,9 @@
         "assetTurnover": "bad",
         "operatingMargin": "good",
         "peRatio": "bad",
-        "revenueGrowth": "bad",
+        "revenueGrowth": "good",
         "fcfYield": "bad",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -61915,7 +61915,7 @@
       "price": 85.7,
       "change": -1.76,
       "changePct": -2.01235,
-      "marketCap": 14739285900,
+      "marketCap": 14517580000,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -61993,7 +61993,7 @@
       "price": 4.85,
       "change": -0.03,
       "changePct": -0.61475,
-      "marketCap": 2083295903,
+      "marketCap": 2083295869,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -62019,7 +62019,7 @@
       "price": 4.99,
       "change": -0.03,
       "changePct": -0.59761,
-      "marketCap": 2114729036,
+      "marketCap": 2114556362,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -62097,7 +62097,7 @@
       "price": 47.69,
       "change": -0.44,
       "changePct": -0.91419,
-      "marketCap": 146014491145,
+      "marketCap": 146014481512,
       "scores": {
         "good": 0,
         "ok": 4,
@@ -62227,7 +62227,7 @@
       "price": 49.71,
       "change": -4.99,
       "changePct": -9.12249,
-      "marketCap": 2250721112,
+      "marketCap": 2384099504,
       "scores": {
         "good": 3,
         "ok": 2,
@@ -62435,7 +62435,7 @@
       "price": 5.81,
       "change": -0.16,
       "changePct": -2.68007,
-      "marketCap": 6298418283,
+      "marketCap": 6219158205,
       "scores": {
         "good": 6,
         "ok": 2,
@@ -62617,7 +62617,7 @@
       "price": 134.47,
       "change": -1.69,
       "changePct": -1.24119,
-      "marketCap": 10213000534,
+      "marketCap": 10212996500,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -63267,7 +63267,7 @@
       "price": 413.59,
       "change": 3.05,
       "changePct": 0.74292,
-      "marketCap": 773002182027,
+      "marketCap": 773002165897,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -63347,20 +63347,20 @@
       "changePct": 1.87835,
       "marketCap": 48473138098,
       "scores": {
-        "good": 3,
-        "ok": 5,
-        "bad": 0,
+        "good": 5,
+        "ok": 2,
+        "bad": 1,
         "total": 8
       },
       "ratioGrades": {
         "currentRatio": "ok",
-        "debtToEquity": "ok",
+        "debtToEquity": "good",
         "assetTurnover": "ok",
         "operatingMargin": "good",
-        "peRatio": "ok",
+        "peRatio": "bad",
         "revenueGrowth": "good",
         "fcfYield": "good",
-        "evToSales": "ok"
+        "evToSales": "good"
       }
     },
     {
@@ -63553,7 +63553,7 @@
       "price": 15.32,
       "change": 0.46,
       "changePct": 3.09556,
-      "marketCap": 2485179500,
+      "marketCap": 2485179377,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -63891,7 +63891,7 @@
       "price": 87.47,
       "change": -2.06,
       "changePct": -2.3009,
-      "marketCap": 39067436706,
+      "marketCap": 39067437494,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -63917,7 +63917,7 @@
       "price": 12.88,
       "change": 0.14,
       "changePct": 1.0989,
-      "marketCap": 6124439820,
+      "marketCap": 6124440052,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -64047,7 +64047,7 @@
       "price": 399.66,
       "change": 15.09,
       "changePct": 3.92386,
-      "marketCap": 115073091461,
+      "marketCap": 111458942901,
       "scores": {
         "good": 7,
         "ok": 1,
@@ -64203,7 +64203,7 @@
       "price": 281.25,
       "change": 0.94,
       "changePct": 0.33534,
-      "marketCap": 36444093750,
+      "marketCap": 36096868688,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -64307,7 +64307,7 @@
       "price": 47.68,
       "change": 0.85,
       "changePct": 1.81508,
-      "marketCap": 17126412069,
+      "marketCap": 17126412260,
       "scores": {
         "good": 4,
         "ok": 0,
@@ -64359,7 +64359,7 @@
       "price": 15.88,
       "change": 0.31,
       "changePct": 1.99101,
-      "marketCap": 36899428259,
+      "marketCap": 36907328559,
       "scores": {
         "good": 2,
         "ok": 4,
@@ -64749,7 +64749,7 @@
       "price": 31.42,
       "change": 0.415,
       "changePct": 1.33849,
-      "marketCap": 4372723631,
+      "marketCap": 4372723694,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -65061,7 +65061,7 @@
       "price": 44.73,
       "change": 1.07,
       "changePct": 2.45076,
-      "marketCap": 185843309400,
+      "marketCap": 185405850000,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -65425,7 +65425,7 @@
       "price": 343.11,
       "change": -23.6,
       "changePct": -6.4356,
-      "marketCap": 16720729536,
+      "marketCap": 16699104342,
       "scores": {
         "good": 4,
         "ok": 3,
@@ -65477,7 +65477,7 @@
       "price": 197.82,
       "change": 2.36,
       "changePct": 1.20741,
-      "marketCap": 47674620000,
+      "marketCap": 47674621583,
       "scores": {
         "good": 2,
         "ok": 5,
@@ -65685,7 +65685,7 @@
       "price": 184.61,
       "change": 1.14,
       "changePct": 0.62135,
-      "marketCap": 6291805653,
+      "marketCap": 6291804176,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -65945,7 +65945,7 @@
       "price": 2.16,
       "change": 0.05,
       "changePct": 2.36967,
-      "marketCap": 21370503525,
+      "marketCap": 21370505214,
       "scores": {
         "good": 6,
         "ok": 1,
@@ -66075,7 +66075,7 @@
       "price": 51.17,
       "change": -0.27,
       "changePct": -0.52488,
-      "marketCap": 2593496647,
+      "marketCap": 2593496545,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -66127,7 +66127,7 @@
       "price": 233.45,
       "change": 2.55,
       "changePct": 1.10437,
-      "marketCap": 93313466750,
+      "marketCap": 92827890750,
       "scores": {
         "good": 1,
         "ok": 3,
@@ -66179,7 +66179,7 @@
       "price": 30.62,
       "change": 0.15,
       "changePct": 0.49229,
-      "marketCap": 16017620759,
+      "marketCap": 16017620974,
       "scores": {
         "good": 4,
         "ok": 2,
@@ -66361,7 +66361,7 @@
       "price": 27.18,
       "change": 0.19,
       "changePct": 0.70396,
-      "marketCap": 5883650197,
+      "marketCap": 5864140610,
       "scores": {
         "good": 3,
         "ok": 1,
@@ -66413,7 +66413,7 @@
       "price": 24.61,
       "change": 0.02,
       "changePct": 0.08133388,
-      "marketCap": 3041994209,
+      "marketCap": 3041994234,
       "scores": {
         "good": 2,
         "ok": 2,
@@ -66465,7 +66465,7 @@
       "price": 40.66,
       "change": -1.43,
       "changePct": -3.39748,
-      "marketCap": 2082492694,
+      "marketCap": 2082492653,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -66673,7 +66673,7 @@
       "price": 303.56,
       "change": 0.56,
       "changePct": 0.18482,
-      "marketCap": 12640521318,
+      "marketCap": 12640521014,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -66725,7 +66725,7 @@
       "price": 412.62,
       "change": -4.05,
       "changePct": -0.97199,
-      "marketCap": 29038462596,
+      "marketCap": 28743538325,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -66751,7 +66751,7 @@
       "price": 20.71,
       "change": -0.84,
       "changePct": -3.89791,
-      "marketCap": 3137815819,
+      "marketCap": 3137815757,
       "scores": {
         "good": 4,
         "ok": 1,
@@ -66881,7 +66881,7 @@
       "price": 324.42,
       "change": 3.69,
       "changePct": 1.1505,
-      "marketCap": 30129515748,
+      "marketCap": 29916790634,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -67063,7 +67063,7 @@
       "price": 79.82,
       "change": 0.78,
       "changePct": 0.98684,
-      "marketCap": 49858285880,
+      "marketCap": 49858310065,
       "scores": {
         "good": 1,
         "ok": 4,
@@ -67219,7 +67219,7 @@
       "price": 187.25,
       "change": 3.96,
       "changePct": 2.16051,
-      "marketCap": 769955514510,
+      "marketCap": 769955542410,
       "scores": {
         "good": 3,
         "ok": 5,
@@ -67245,7 +67245,7 @@
       "price": 14.29,
       "change": -0.76,
       "changePct": -5.04983,
-      "marketCap": 7388151995,
+      "marketCap": 7388152024,
       "scores": {
         "good": 2,
         "ok": 3,
@@ -67297,7 +67297,7 @@
       "price": 189.57,
       "change": 6.56,
       "changePct": 3.5845,
-      "marketCap": 22196081170,
+      "marketCap": 22086611130,
       "scores": {
         "good": 1,
         "ok": 4,
@@ -67401,7 +67401,7 @@
       "price": 8.37,
       "change": 0.28,
       "changePct": 3.46106,
-      "marketCap": 8754134730,
+      "marketCap": 8754133969,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -67713,7 +67713,7 @@
       "price": 31.89,
       "change": -0.21,
       "changePct": -0.65421,
-      "marketCap": 7171261996,
+      "marketCap": 7171262443,
       "scores": {
         "good": 5,
         "ok": 1,
@@ -67973,7 +67973,7 @@
       "price": 95.5,
       "change": -2.16,
       "changePct": -2.21176,
-      "marketCap": 27865346215,
+      "marketCap": 27865344878,
       "scores": {
         "good": 5,
         "ok": 2,
@@ -68025,7 +68025,7 @@
       "price": 20.15,
       "change": 0.27,
       "changePct": 1.35815,
-      "marketCap": 15053148417,
+      "marketCap": 15047591933,
       "scores": {
         "good": 6,
         "ok": 2,
