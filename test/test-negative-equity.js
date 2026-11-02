@@ -25,13 +25,16 @@ function check(n, c, extra) {
     else { fail++; console.log('  FAIL  ' + n + (extra ? '\n          ' + extra : '')); }
 }
 
-/* Lifted from the shipped file, not retyped, so the test cannot drift. */
-var m = /function g\(key\) \{[\s\S]*?\n        \}/.exec(src);
+/* Lifted from the shipped file, not retyped, so the test cannot drift.
+   Anchored on the module-level rule and its full signature, not on `function
+   g(`, which for a while matched a one-line delegate inside buildOneLiner and
+   then ran on into the statements after it. */
+var m = /function gradeOf\(key, ratios, defs, benchmarks\) \{[\s\S]*?\n    \}/.exec(src);
 check('the grader is still where this test reads it', !!m);
 if (!m) { console.log('\nFAILED 1 of 1'); process.exit(1); }
 
 var grade = new Function('key', 'ratios', 'defs', 'benchmarks',
-    m[0].replace(/^\s*function g\(key\) \{/, '').replace(/\}\s*$/, ''));
+    m[0].replace(/^\s*function gradeOf\([^)]*\) \{/, '').replace(/\}\s*$/, ''));
 var defs = [{ key: 'debtToEquity', higherBetter: false }];
 var bench = { debtToEquity: { good: 0.5, ok: 1.5 } };
 var at = function (v) { return grade('debtToEquity', { debtToEquity: { value: v } }, defs, bench); };

@@ -23,7 +23,11 @@ var TESTS = [
     'test-debt.js',
     'test-negative-equity.js',
     'test-ratios.js',
-    'test-cross-surface.js'
+    'test-cross-surface.js',
+    /* Last, because it is the only one that runs the shipped file rather than
+       regions lifted out of it. If the others pass and this fails, the logic
+       is right and the page still will not load. */
+    'test-scope.js'
 ];
 
 var quiet = process.argv.indexOf('--quiet') !== -1;

@@ -2127,28 +2127,40 @@
         renderQuickPicks(ticker, sector);
     }
 
-    function buildOneLiner(ticker, ratios, benchmarks, defs, overallGrade) {
-        function g(key) {
-            var r = ratios[key];
-            if (!r) return null;
-            var def = defs.find(function(d) { return d.key === key; });
-            var bench = benchmarks[key];
-            if (!def || !bench) return null;
-            /* Negative equity is bad, not excellent.
-             *
-             * debtToEquity is lower-is-better, so a negative ratio sails
-             * under every threshold and would grade 'good' -- the company
-             * with liabilities exceeding its equity scoring better than one
-             * with no debt at all. scan.py has always forced 'bad' here
-             * (line 123); this is index.html catching up, which is why
-             * grades.json does not move. */
-            if (key === 'debtToEquity' && r.value < 0) return 'bad';
-            if (def.higherBetter) {
-                return r.value >= bench.good ? 'good' : r.value >= bench.ok ? 'ok' : 'bad';
-            } else {
-                return r.value <= bench.good ? 'good' : r.value <= bench.ok ? 'ok' : 'bad';
-            }
+    /* One grading rule, for every surface that grades.
+     *
+     * This lived inside buildOneLiner as a closure over its arguments, and
+     * the ratio-card loop in renderResults had its own identical copy three
+     * hundred lines away. Collapsing the copy onto the closure is what broke
+     * production: renderResults cannot see a function scoped to a sibling,
+     * so every ticker threw "g is not defined" before a single card drew.
+     *
+     * So the rule is a function, and its inputs are arguments rather than
+     * whatever the enclosing scope happened to hold. Both callers pass what
+     * they have. Adding the next rule still cannot miss a copy, and now it
+     * also cannot depend on where it is called from. */
+    function gradeOf(key, ratios, defs, benchmarks) {
+        var r = ratios[key];
+        if (!r) return null;
+        var def = defs.find(function(d) { return d.key === key; });
+        var bench = benchmarks[key];
+        if (!def || !bench) return null;
+        /* Negative equity is bad, not excellent.
+         *
+         * debtToEquity is lower-is-better, so a negative ratio sails under
+         * every threshold and would grade 'good' -- the company with
+         * liabilities exceeding its equity scoring better than one with no
+         * debt at all. scan.py has always forced 'bad' here (line 123); this
+         * is index.html catching up, which is why grades.json does not move. */
+        if (key === 'debtToEquity' && r.value < 0) return 'bad';
+        if (def.higherBetter) {
+            return r.value >= bench.good ? 'good' : r.value >= bench.ok ? 'ok' : 'bad';
         }
+        return r.value <= bench.good ? 'good' : r.value <= bench.ok ? 'ok' : 'bad';
+    }
+
+    function buildOneLiner(ticker, ratios, benchmarks, defs, overallGrade) {
+        function g(key) { return gradeOf(key, ratios, defs, benchmarks); }
 
         var liquidity = g('currentRatio');
         var leverage = g('debtToEquity');
@@ -2335,7 +2347,7 @@
              * cross-surface suite, which grades through this path.
              *
              * One rule now. Adding the next one cannot miss a copy. */
-            var grade = g(def.key);
+            var grade = gradeOf(def.key, ratios, defs, benchmarks);
             scores.push(grade);
             gridEl.innerHTML += renderCard(def, ratio, bench, grade);
         });

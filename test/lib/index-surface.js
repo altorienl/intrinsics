@@ -40,11 +40,20 @@ var REGIONS = {
     forwardEps:     /var forwardEps = null;[\s\S]*?\n            \}\n/,
     processData:    /\n    function processData\(bs, ttm, prof, ticker, ratiosTtm, forwardEps, keyMetrics\) \{[\s\S]*?\n        renderQuickPicks\(ticker, sector\);\n    \}\n/,
     defs:           /\n        var defs = \[\n[\s\S]*?\n        \];\n/,
-    /* g() is the single good/ok/bad rule. The scoring loop used to carry an
-       identical copy of it and was extracted alone; when the negative-equity
-       rule landed in g() that copy kept the old behaviour, so the loop is a
-       call now and this region has to travel with it. */
-    grader:         /\n        function g\(key\) \{[\s\S]*?\n        \}\n/,
+    /* gradeOf() is the single good/ok/bad rule. The scoring loop used to
+       carry an identical copy of it and was extracted alone; when the
+       negative-equity rule landed in the rule that copy kept the old
+       behaviour, so the loop is a call now and this region has to travel
+       with it.
+
+       It is matched at module indent, not inside buildOneLiner. It briefly
+       lived as a closure there while the scoring loop called it from
+       renderResults -- a sibling scope that cannot see it -- and every
+       ticker threw "g is not defined" in the browser while this suite
+       stayed green, because the harness below evaluates the region in a
+       flat scope where the name always resolves. See test-scope.js, which
+       runs the real file instead. */
+    grader:         /\n    function gradeOf\(key, ratios, defs, benchmarks\) \{[\s\S]*?\n    \}\n/,
     scoreAndLadder: /\n        var scores = \[\];\n[\s\S]*?Proceed with caution\.'; \}\n/
 };
 
