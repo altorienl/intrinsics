@@ -142,6 +142,36 @@ check('gradeOf is callable from module scope and grades negative equity bad',
         && page.gradeOf('debtToEquity', { debtToEquity: { value: -1.37 } }, defs, bench) === 'bad',
     typeof page.gradeOf !== 'function' ? 'gradeOf is not in module scope' : undefined);
 
+/* The market panel must read indexes, not the ETFs that track them.
+ *
+ * It read SPY / QQQ / DIA under labels saying "S&P 500", "Nasdaq" and
+ * "Dow Jones", so it printed a share price where a reader expects an index
+ * level -- 681.09 for the Nasdaq on a day the Composite closed at 25,164.
+ * A pure display defect with no exception and no failing request, which is
+ * why nothing here caught it and a person had to.
+ *
+ * Asserted against the shipped source rather than by calling the function,
+ * because the function only fetches. The ETF check is the half that matters:
+ * it fails if anyone swaps back. */
+var src = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+var block = /var indices = \[([\s\S]*?)\];/.exec(src);
+check('the market panel declares its index list where this test reads it', !!block);
+if (block) {
+    var decl = block[1];
+    ['GSPC', 'IXIC', 'DJI'].forEach(function (sym) {
+        check('market panel uses ^' + sym + ', the real index',
+            new RegExp('\\^' + sym).test(decl));
+    });
+    ['SPY', 'QQQ', 'DIA'].forEach(function (etf) {
+        check('market panel does NOT quote the ' + etf + ' ETF under an index label',
+            !new RegExp("'" + etf + "'").test(decl),
+            etf + ' tracks an index; its share price is not that index\'s level');
+    });
+    /* A caret in a query string is not safe unencoded. */
+    check('index symbols are URL-encoded before the fetch',
+        /encodeURIComponent\(idx\.symbol\)/.test(src));
+}
+
 console.log('');
 if (fail) { console.log('FAILED ' + fail + ' of ' + (pass + fail)); process.exit(1); }
 console.log('ALL ' + pass + ' CHECKS PASSED');

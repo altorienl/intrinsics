@@ -1769,13 +1769,26 @@
     // ---- Market Overview ----
     function loadMarketOverview() {
         try {
+            /* The indexes themselves, not ETFs that track them.
+             *
+             * This read SPY / QQQ / DIA while the cards said "S&P 500",
+             * "Nasdaq" and "Dow Jones", so the panel printed a share price
+             * under an index name: Nasdaq showed 681.09 on a day the
+             * Composite closed at 25,164.36. Wrong by a factor of 37, and
+             * wrong in kind -- QQQ tracks the Nasdaq-100, so even its
+             * percentage disagreed with the Composite (-1.36% against
+             * -1.07%) and no rescaling would have fixed it.
+             *
+             * FMP serves the real indexes on the same /quote endpoint with
+             * the same fields, so this costs nothing. The ids keep their old
+             * names because they are only DOM handles. */
             var indices = [
-                { symbol: 'SPY', id: 'idxSPY', label: 'S&P 500' },
-                { symbol: 'QQQ', id: 'idxNDX', label: 'Nasdaq' },
-                { symbol: 'DIA', id: 'idxDJI', label: 'Dow Jones' }
+                { symbol: '^GSPC', id: 'idxSPY', label: 'S&P 500' },
+                { symbol: '^IXIC', id: 'idxNDX', label: 'Nasdaq' },
+                { symbol: '^DJI',  id: 'idxDJI', label: 'Dow Jones' }
             ];
             indices.forEach(function(idx) {
-                fetch(API + '/quote?symbol=' + idx.symbol)
+                fetch(API + '/quote?symbol=' + encodeURIComponent(idx.symbol))
                     .then(function(r) { return r.json(); })
                     .then(function(data) {
                         try {
